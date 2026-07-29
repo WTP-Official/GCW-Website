@@ -1,0 +1,120 @@
+{
+  "hero": {
+    "eyebrow": "Strategic HR Operator",
+    "heading": "Đồng hành thực thi quản trị nhân sự cùng doanh nghiệp SME Việt Nam",
+    "subheading": "GCW không chỉ tư vấn lý thuyết — chúng tôi trực tiếp vận hành, kiểm soát tuân thủ và xây dựng bộ máy nhân sự bài bản để doanh nghiệp bạn tăng trưởng bền vững.",
+    "primaryCta": { "label": "Đặt lịch tư vấn", "href": "/contact" },
+    "secondaryCta": { "label": "Xem các gói dịch vụ", "href": "/services" }
+  },
+  "valueProps": [
+    {
+      "icon": "Handshake",
+      "title": "Đồng hành thực thi, không chỉ tư vấn",
+      "description": "GCW trực tiếp tham gia vận hành cùng đội ngũ nhân sự nội bộ của bạn, thay vì chỉ giao báo cáo và rời đi."
+    },
+    {
+      "icon": "Award",
+      "title": "Chuyên gia dày dạn kinh nghiệm",
+      "description": "Đội ngũ cố vấn nhiều năm kinh nghiệm, có thể đảm nhận vai trò cố vấn chuyên môn hoặc thành viên hội đồng quản trị độc lập."
+    },
+    {
+      "icon": "Network",
+      "title": "Hệ sinh thái WTP Group",
+      "description": "Kết nối liền mạch với các công ty thành viên chuyên về chiến lược, tài chính - kế toán - thuế, đào tạo và chuyển đổi số."
+    }
+  ],
+  "stats": [
+    { "value": "70%", "label": "Tiết kiệm chi phí so với tự vận hành bộ phận tuyển dụng" },
+    { "value": "20+", "label": "Quốc gia trong mạng lưới kết nối xuất khẩu" },
+    { "value": "06", "label": "Gói dịch vụ nhân sự chuyên biệt" },
+    { "value": "01", "label": "Hệ sinh thái WTP Group đồng hành toàn diện" }
+  ],
+  "positioning": {
+    "heading": "Vì sao gọi là \"Strategic HR Operator\"?",
+    "body": "Nhiều doanh nghiệp SME đã quen với các đơn vị tư vấn nhân sự chỉ dừng lại ở báo cáo và khuyến nghị. GCW chọn một vai trò khác: trực tiếp vận hành cùng bạn — từ tuân thủ luật lao động, kiểm soát chi phí lương, đến xây dựng bộ máy nhân sự gắn liền với chiến lược kinh doanh — để mọi khuyến nghị đều được thực thi đến cùng.",
+    "linkLabel": "Tìm hiểu về GCW",
+    "linkHref": "/about"
+  },
+  "offerings": [
+    {
+      "icon": "ShieldCheck",
+      "name": "GCW SAFE",
+      "description": "Tuân thủ luật lao động, bảo hiểm xã hội và thuế thu nhập cá nhân — giảm thiểu rủi ro pháp lý cho doanh nghiệp."
+    },
+    {
+      "icon": "Gauge",
+      "name": "GCW CONTROL",
+      "description": "Kiểm soát chi phí nhân sự và tối ưu hiệu quả tuyển dụng theo từng giai đoạn phát triển."
+    },
+    {
+      "icon": "TrendingUp",
+      "name": "GCW SCALE",
+      "description": "Xây dựng hệ thống nhân sự bài bản, sẵn sàng mở rộng cùng tốc độ tăng trưởng của doanh nghiệp."
+    },
+    {
+      "icon": "UserSearch",
+      "name": "GCW TUYỂN DỤNG",
+      "description": "Tuyển đúng người, đủ số lượng, kịp thời gian — với cam kết tối ưu chi phí tuyển dụng."
+    },
+    {
+      "icon": "Receipt",
+      "name": "GCW THUẾ CÁ NHÂN",
+      "description": "Quản lý thuế thu nhập cá nhân chuyên biệt cho nhóm khách hàng đặc thù như CEO, KOL, KOC."
+    },
+    {
+      "icon": "MessageSquareText",
+      "name": "GCW TƯ VẤN HR",
+      "description": "Giải quyết các bài toán nhân sự cốt lõi, từ cơ cấu tổ chức đến chính sách nhân sự."
+    }
+  ],
+  "audiences": {
+    "heading": "GCW phù hợp với doanh nghiệp nào?",
+    "items": [
+      {
+        "icon": "Rocket",
+        "title": "Doanh nghiệp tăng trưởng nhanh",
+        "description": "Cần tổ chức lại bộ máy nhân sự để theo kịp tốc độ mở rộng quy mô."
+      },
+      {
+        "icon": "LineChart",
+        "title": "Doanh nghiệp chuẩn bị gọi vốn",
+        "description": "Cần hệ thống quản trị nhân sự rõ ràng, chuyên nghiệp để đáp ứng yêu cầu của nhà đầu tư."
+      },
+      {
+        "icon": "Globe",
+        "title": "Doanh nghiệp FDI",
+        "description": "Cần đối tác am hiểu sâu luật lao động và thuế tại Việt Nam."
+      }
+    ]
+  },
+  "differentiators": {
+    "heading": "Điểm khác biệt của GCW",
+    "items": [
+      {
+        "icon": "GraduationCap",
+        "title": "Chuyên gia cố vấn chiến lược",
+        "description": "Đội ngũ nhiều năm kinh nghiệm, có thể đảm nhận vai trò cố vấn hoặc thành viên hội đồng quản trị độc lập."
+      },
+      {
+        "icon": "Network",
+        "title": "Hệ sinh thái WTP Group",
+        "description": "Kết nối các công ty thành viên về chiến lược, thương hiệu, marketing, tài chính - kế toán - thuế và chuyển đổi số."
+      },
+      {
+        "icon": "Landmark",
+        "title": "Quan hệ với quỹ đầu tư",
+        "description": "Hợp tác với các quỹ đầu tư, tập đoàn nước ngoài phục vụ tư vấn M&A và gọi vốn."
+      },
+      {
+        "icon": "Globe2",
+        "title": "Mạng lưới kết nối quốc tế",
+        "description": "Kết nối xuất khẩu tới hơn 20 quốc gia, hỗ trợ doanh nghiệp mở rộng ra thị trường toàn cầu."
+      }
+    ]
+  },
+  "finalCta": {
+    "heading": "Sẵn sàng để GCW đồng hành vận hành nhân sự cùng bạn?",
+    "body": "Đặt lịch tư vấn để cùng GCW đánh giá hiện trạng nhân sự và đề xuất lộ trình phù hợp với giai đoạn phát triển của doanh nghiệp.",
+    "cta": { "label": "Đặt lịch tư vấn ngay", "href": "/contact" }
+  }
+}
