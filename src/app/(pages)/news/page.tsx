@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import content from "./content.json";
 import { CONTENT_BRAND_SLUG } from "@/constants/site";
+import { NewsTopicFilter } from "./_components/NewsTopicFilter";
 
 // Articles come from the external public API (same content source as
 // /resources — see src/app/api/resources/topics/route.ts), so the page
@@ -28,16 +29,38 @@ type ApiArticleList = {
   totalPages: number;
 };
 
-async function getArticles(page: number): Promise<ApiArticleList | null> {
+type ApiTopic = { topicName: string };
+
+async function getArticles(
+  page: number,
+  topic?: string,
+): Promise<ApiArticleList | null> {
   try {
+    const topicParam = topic ? `&topic=${encodeURIComponent(topic)}` : "";
     const res = await fetch(
-      `${API_ORIGIN}/api/public/${CONTENT_BRAND_SLUG}/articles?page=${page}&limit=${PAGE_SIZE}`,
+      `${API_ORIGIN}/api/public/${CONTENT_BRAND_SLUG}/articles?page=${page}&limit=${PAGE_SIZE}${topicParam}`,
       { next: { revalidate } },
     );
     if (!res.ok) return null;
     return (await res.json()) as ApiArticleList;
   } catch {
     return null;
+  }
+}
+
+async function getTopics(): Promise<string[]> {
+  try {
+    const res = await fetch(
+      `${API_ORIGIN}/api/public/${CONTENT_BRAND_SLUG}/topics/latest-articles?perTopic=1`,
+      { next: { revalidate } },
+    );
+    if (!res.ok) return [];
+    const topics = (await res.json()) as ApiTopic[];
+    return (Array.isArray(topics) ? topics : [])
+      .map((t) => t?.topicName)
+      .filter((name): name is string => Boolean(name));
+  } catch {
+    return [];
   }
 }
 
@@ -57,16 +80,23 @@ export const metadata: Metadata = {
 export default async function NewsPage({
   searchParams,
 }: {
-  searchParams: Promise<{ page?: string }>;
+  searchParams: Promise<{ page?: string; topic?: string }>;
 }) {
-  const { page: pageParam } = await searchParams;
+  const { page: pageParam, topic } = await searchParams;
   const page = Math.max(1, Number(pageParam) || 1);
-  const list = await getArticles(page);
+  const [list, topics] = await Promise.all([
+    getArticles(page, topic),
+    getTopics(),
+  ]);
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-16">
       <h1 className="text-3xl font-bold">{content.heading}</h1>
       <p className="mt-4 text-ink-soft">{content.intro}</p>
+
+      {topics.length > 0 && (
+        <NewsTopicFilter topics={topics} selectedTopic={topic} />
+      )}
 
       {!list || list.data.length === 0 ? (
         <p className="mt-12 text-ink-soft">
@@ -113,7 +143,10 @@ export default async function NewsPage({
               className="mt-4 flex items-center justify-between text-sm font-medium"
             >
               {page > 1 ? (
-                <Link href={`/news?page=${page - 1}`} className="text-brand-600 hover:text-brand-700">
+                <Link
+                  href={`/news?page=${page - 1}${topic ? `&topic=${encodeURIComponent(topic)}` : ""}`}
+                  className="text-brand-600 hover:text-brand-700"
+                >
                   ← Mới hơn
                 </Link>
               ) : (
@@ -123,7 +156,10 @@ export default async function NewsPage({
                 Trang {list.page} / {list.totalPages}
               </span>
               {page < list.totalPages ? (
-                <Link href={`/news?page=${page + 1}`} className="text-brand-600 hover:text-brand-700">
+                <Link
+                  href={`/news?page=${page + 1}${topic ? `&topic=${encodeURIComponent(topic)}` : ""}`}
+                  className="text-brand-600 hover:text-brand-700"
+                >
                   Cũ hơn →
                 </Link>
               ) : (

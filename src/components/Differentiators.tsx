@@ -5,7 +5,7 @@ import {
   Globe2,
   type LucideIcon,
 } from "lucide-react";
-import content from "../content.json";
+import content from "../app/content.json";
 
 const ICONS: Record<string, LucideIcon> = {
   GraduationCap,
@@ -37,9 +37,7 @@ export function Differentiators() {
                 <h3 className="mt-4 text-base font-semibold text-ink">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-sm text-ink-soft">
-                  {item.description}
-                </p>
+                <p className="mt-2 text-sm text-ink-soft">{item.description}</p>
               </div>
             );
           })}

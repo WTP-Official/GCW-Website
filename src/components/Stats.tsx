@@ -1,4 +1,4 @@
-import content from "../content.json";
+import content from "../app/content.json";
 
 export function Stats() {
   return (

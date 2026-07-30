@@ -1,0 +1,32 @@
+{
+  "title": "GCW SAFE",
+  "metaDescription": "GCW SAFE giúp doanh nghiệp SME tuân thủ luật lao động, bảo hiểm xã hội và thuế thu nhập cá nhân, giảm thiểu rủi ro pháp lý trong vận hành nhân sự hàng ngày.",
+  "eyebrow": "Gói dịch vụ",
+  "icon": "ShieldCheck",
+  "name": "GCW SAFE",
+  "tagline": "Tuân thủ luật lao động, bảo hiểm xã hội và thuế thu nhập cá nhân — nền tảng an toàn cho mọi giai đoạn phát triển.",
+  "intro": "GCW SAFE rà soát toàn diện hồ sơ nhân sự hiện có, thiết lập lại quy trình tuân thủ và trực tiếp vận hành cùng đội ngũ nội bộ để đảm bảo doanh nghiệp luôn tuân thủ đúng quy định pháp luật lao động.",
+  "audience": [
+    "Doanh nghiệp muốn giảm thiểu rủi ro pháp lý và các khoản phạt liên quan đến lao động, bảo hiểm xã hội",
+    "Doanh nghiệp chưa có phòng nhân sự chuyên trách về tuân thủ",
+    "Doanh nghiệp FDI cần đối tác am hiểu sâu luật lao động và thuế tại Việt Nam"
+  ],
+  "included": [
+    "Rà soát hợp đồng lao động, nội quy lao động và thang bảng lương",
+    "Đăng ký, kê khai và báo cáo bảo hiểm xã hội - y tế - thất nghiệp đúng hạn",
+    "Kê khai và quyết toán thuế thu nhập cá nhân cho người lao động",
+    "Cập nhật và áp dụng các quy định pháp luật lao động mới",
+    "Hỗ trợ xử lý tình huống thanh tra, kiểm tra lao động"
+  ],
+  "related": {
+    "label": "Xem giải pháp soát xét tuân thủ",
+    "href": "/solutions",
+    "description": "GCW SAFE thường được triển khai cùng giải pháp soát xét tuân thủ và tối ưu chi phí lương - bảo hiểm - thuế trong Giải pháp GCW."
+  },
+  "cta": {
+    "heading": "Đảm bảo doanh nghiệp bạn luôn tuân thủ đúng quy định",
+    "body": "Đặt lịch tư vấn để GCW rà soát hiện trạng tuân thủ nhân sự và đề xuất lộ trình phù hợp.",
+    "label": "Đặt lịch tư vấn",
+    "href": "/contact"
+  }
+}

@@ -1,11 +1,12 @@
-import { Hero } from "./_components/Hero";
-import { ValueProps } from "./_components/ValueProps";
-import { Stats } from "./_components/Stats";
-import { Positioning } from "./_components/Positioning";
-import { Offerings } from "./_components/Offerings";
-import { Audiences } from "./_components/Audiences";
-import { Differentiators } from "./_components/Differentiators";
-import { FinalCta } from "./_components/FinalCta";
+import { Hero } from "../components/Hero";
+import { ValueProps } from "../components/ValueProps";
+import { Stats } from "../components/Stats";
+import { Positioning } from "../components/Positioning";
+import { Offerings } from "../components/Offerings";
+import { Audiences } from "../components/Audiences";
+import { Differentiators } from "../components/Differentiators";
+import { CaseStudies } from "../components/CaseStudies";
+import { FinalCta } from "../components/FinalCta";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Offerings />
       <Audiences />
       <Differentiators />
+      <CaseStudies />
       <FinalCta />
     </main>
   );

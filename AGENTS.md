@@ -84,7 +84,8 @@ src/app/(pages)/
 **How:**
 
 - Import both via the `@/*` path alias (mapped to `src/` in `tsconfig.json`), e.g. `import { BASE_URL } from "@/constants/site"` and `import { CalendlyButton } from "@/components/CalendlyButton"` — used this way in `layout.tsx`, `sitemap.ts`, `robots.ts`, `middleware.ts`, and `src/app/api/resources/topics/route.ts`.
-- New shared constants go in `src/constants/`; new shared components go in `src/components/`. Route-local components that only one page uses should stay co-located with that route instead.
+- New shared constants go in `src/constants/`; new shared components go in `src/components/`.
+- A component belongs in `src/components/` only if it's used by routes outside its own subtree (e.g. `CalendlyButton` appears in `layout.tsx` and multiple unrelated pages). A component used only by one route or its own children (e.g. a client-side filter used only by `news/page.tsx`, or a detail template shared by `services/`'s own sub-routes) is route-local: co-locate it in a `_components/` folder inside that route, e.g. `src/app/(pages)/news/_components/NewsTopicFilter.tsx` or `src/app/(pages)/services/_components/ServiceDetail.tsx`. The leading `_` makes it a Next.js private folder, so it never contributes a URL segment (see `## Page content structure`). If a route-local component later gets reused by a route outside its subtree, promote it to `src/components/` at that point — don't promote speculatively.
 
 ## SEO: metaDescription rules
 

@@ -1,5 +1,5 @@
 ﻿import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
+import { Inter, Archivo } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { BASE_URL } from "@/constants/site";
@@ -7,10 +7,17 @@ import { CalendlyButton } from "@/components/CalendlyButton";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
-const roboto = Roboto({
-  variable: "--font-roboto",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin", "vietnamese"],
-  weight: ["300", "400", "500", "700", "900"],
+  weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
+});
+
+const archivo = Archivo({
+  variable: "--font-archivo",
+  subsets: ["latin", "vietnamese"],
+  weight: ["600", "700", "800", "900"],
   display: "swap",
 });
 
@@ -65,7 +72,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="vi" className={`${roboto.variable} h-full antialiased`}>
+    <html
+      lang="vi"
+      className={`${inter.variable} ${archivo.variable} h-full antialiased`}
+    >
       <body className="min-h-full flex flex-col bg-white text-ink-soft">
         <Header />
         {children}

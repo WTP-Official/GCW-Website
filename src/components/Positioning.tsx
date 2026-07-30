@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import content from "../content.json";
+import content from "../app/content.json";
 
 export function Positioning() {
   const { positioning } = content;

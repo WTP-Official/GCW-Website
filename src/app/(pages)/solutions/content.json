@@ -1,0 +1,55 @@
+{
+  "title": "Giải pháp",
+  "metaDescription": "Giải pháp vận hành nhân sự của GCW: hồ sơ nhân sự, lương - bảo hiểm - thuế, HR Admin, soát xét tuân thủ, tuyển dụng và cố vấn nhân sự riêng cho CEO.",
+  "heading": "Giải pháp vận hành nhân sự của GCW",
+  "intro": "Mỗi giải pháp là một đầu việc vận hành cụ thể, có thể triển khai riêng lẻ hoặc kết hợp trong các gói dịch vụ GCW để phù hợp với bài toán thực tế của doanh nghiệp bạn.",
+  "items": [
+    {
+      "icon": "FolderCheck",
+      "title": "Rà soát và xây dựng hồ sơ nhân sự",
+      "description": "Chuẩn hoá lại toàn bộ hồ sơ, hợp đồng lao động và quy chế nội bộ theo đúng quy định pháp luật hiện hành.",
+      "href": "/services/gcw-safe"
+    },
+    {
+      "icon": "Wallet",
+      "title": "Quản lý lương, bảo hiểm xã hội và thuế TNCN",
+      "description": "Vận hành quy trình tính lương, bảo hiểm xã hội và thuế thu nhập cá nhân hàng tháng chính xác, đúng hạn.",
+      "href": "/services/gcw-control"
+    },
+    {
+      "icon": "ClipboardList",
+      "title": "HR Admin — vận hành nhân sự hàng ngày",
+      "description": "Đảm nhận các nghiệp vụ hành chính nhân sự thường nhật, giúp doanh nghiệp không phải duy trì bộ máy cồng kềnh.",
+      "href": "/services/gcw-safe"
+    },
+    {
+      "icon": "SearchCheck",
+      "title": "Soát xét tuân thủ và tối ưu chi phí",
+      "description": "Rà soát định kỳ chi phí lương - bảo hiểm - thuế TNCN, phối hợp cùng công ty kế toán ATP thuộc WTP Group.",
+      "href": "/services/gcw-control"
+    },
+    {
+      "icon": "UserSearch",
+      "title": "Tuyển dụng nhân sự",
+      "description": "Tìm kiếm, sàng lọc và bàn giao ứng viên phù hợp cho các vị trí doanh nghiệp đang cần.",
+      "href": "/services/tuyen-dung"
+    },
+    {
+      "icon": "MessageSquareText",
+      "title": "Cố vấn nhân sự riêng cho CEO",
+      "description": "Đồng hành cùng chủ doanh nghiệp giải quyết các bài toán nhân sự chiến lược, không chỉ dừng ở sự vụ.",
+      "href": "/services/tu-van-hr"
+    }
+  ],
+  "resourceLinks": {
+    "heading": "Đọc thêm kiến thức vận hành nhân sự",
+    "linkLabel": "Xem tất cả bài viết",
+    "linkHref": "/news"
+  },
+  "cta": {
+    "heading": "Chưa chắc giải pháp nào phù hợp với doanh nghiệp bạn?",
+    "body": "Xem các gói dịch vụ theo quy mô doanh nghiệp hoặc đặt lịch tư vấn trực tiếp để GCW tư vấn giải pháp phù hợp nhất.",
+    "primaryCta": { "label": "Xem gói dịch vụ theo quy mô", "href": "/packages" },
+    "secondaryCta": { "label": "Đặt lịch tư vấn", "href": "/contact" }
+  }
+}

@@ -3,6 +3,8 @@ import Link from "next/link";
 const FOOTER_LINKS = [
   { href: "/about", label: "Về GCW" },
   { href: "/services", label: "Dịch vụ" },
+  { href: "/solutions", label: "Giải pháp" },
+  { href: "/packages", label: "Gói dịch vụ" },
   { href: "/news", label: "Tin tức" },
 ];
 

@@ -1,0 +1,46 @@
+{
+  "title": "Gói dịch vụ theo quy mô",
+  "metaDescription": "Ba lộ trình đồng hành của GCW theo quy mô doanh nghiệp: tăng trưởng nhanh, chuẩn bị gọi vốn và doanh nghiệp FDI, kết hợp các gói dịch vụ nhân sự phù hợp.",
+  "heading": "Lộ trình đồng hành theo quy mô doanh nghiệp",
+  "intro": "Thay vì chọn từng gói dịch vụ riêng lẻ, GCW đề xuất lộ trình kết hợp phù hợp với giai đoạn phát triển cụ thể của doanh nghiệp bạn.",
+  "tiers": [
+    {
+      "name": "GCW Nền Tảng",
+      "audience": "Doanh nghiệp tăng trưởng nhanh",
+      "description": "Ưu tiên tuân thủ và kiểm soát chi phí trước khi mở rộng quy mô nhân sự.",
+      "highlighted": false,
+      "includes": [
+        { "name": "GCW SAFE", "href": "/services/gcw-safe" },
+        { "name": "GCW CONTROL", "href": "/services/gcw-control" }
+      ]
+    },
+    {
+      "name": "GCW Sẵn Sàng Gọi Vốn",
+      "audience": "Doanh nghiệp chuẩn bị gọi vốn",
+      "description": "Chuẩn hoá cơ cấu tổ chức và chính sách nhân sự để đáp ứng yêu cầu thẩm định của nhà đầu tư.",
+      "highlighted": true,
+      "includes": [
+        { "name": "GCW SCALE", "href": "/services/gcw-scale" },
+        { "name": "GCW TƯ VẤN HR", "href": "/services/tu-van-hr" }
+      ]
+    },
+    {
+      "name": "GCW Toàn Cầu",
+      "audience": "Doanh nghiệp FDI",
+      "description": "Đối tác am hiểu luật lao động và thuế Việt Nam, đồng hành từ những tháng đầu vận hành.",
+      "highlighted": false,
+      "includes": [
+        { "name": "GCW SAFE", "href": "/services/gcw-safe" },
+        { "name": "GCW THUẾ CÁ NHÂN", "href": "/services/thue-thu-nhap-ca-nhan" },
+        { "name": "GCW TƯ VẤN HR", "href": "/services/tu-van-hr" }
+      ]
+    }
+  ],
+  "note": "Phạm vi và chi phí cụ thể được đề xuất sau buổi tư vấn ban đầu, tuỳ theo quy mô và hiện trạng nhân sự thực tế của doanh nghiệp.",
+  "cta": {
+    "heading": "Chưa chắc lộ trình nào phù hợp?",
+    "body": "Đặt lịch tư vấn để đội ngũ GCW đánh giá hiện trạng và đề xuất lộ trình đồng hành phù hợp nhất với doanh nghiệp bạn.",
+    "label": "Đặt lịch tư vấn",
+    "href": "/contact"
+  }
+}

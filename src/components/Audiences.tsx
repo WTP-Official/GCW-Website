@@ -1,5 +1,5 @@
 import { Rocket, LineChart, Globe, type LucideIcon } from "lucide-react";
-import content from "../content.json";
+import content from "../app/content.json";
 
 const ICONS: Record<string, LucideIcon> = { Rocket, LineChart, Globe };
 

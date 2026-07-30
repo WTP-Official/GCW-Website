@@ -112,6 +112,30 @@
       }
     ]
   },
+  "caseStudies": {
+    "heading": "Bài toán nhân sự GCW thường đồng hành giải quyết",
+    "intro": "Ba tình huống minh hoạ điển hình mà GCW thường gặp khi đồng hành cùng doanh nghiệp SME Việt Nam.",
+    "items": [
+      {
+        "icon": "Rocket",
+        "audience": "Doanh nghiệp sản xuất đang tăng trưởng nhanh",
+        "challenge": "Quy mô nhân sự tăng nhanh nhưng chưa có bộ máy và hồ sơ nhân sự chuẩn hoá, dễ phát sinh rủi ro tuân thủ.",
+        "approach": "GCW SAFE và GCW SCALE được triển khai song song: vừa rà soát tuân thủ, vừa thiết kế lại cơ cấu tổ chức cho giai đoạn mở rộng."
+      },
+      {
+        "icon": "LineChart",
+        "audience": "Doanh nghiệp công nghệ chuẩn bị gọi vốn",
+        "challenge": "Nhà đầu tư yêu cầu hệ thống quản trị nhân sự rõ ràng, chuyên nghiệp trước khi hoàn tất vòng gọi vốn.",
+        "approach": "GCW SCALE cùng GCW TƯ VẤN HR xây dựng cơ cấu tổ chức, chính sách lương thưởng và hồ sơ đáp ứng yêu cầu thẩm định (due diligence)."
+      },
+      {
+        "icon": "Globe",
+        "audience": "Doanh nghiệp FDI mới gia nhập thị trường Việt Nam",
+        "challenge": "Chưa am hiểu đầy đủ luật lao động và thuế tại Việt Nam, rủi ro tuân thủ cao trong giai đoạn đầu vận hành.",
+        "approach": "GCW SAFE đảm nhận toàn bộ nghiệp vụ tuân thủ lao động, bảo hiểm xã hội và thuế thu nhập cá nhân ngay từ những tháng đầu tiên."
+      }
+    ]
+  },
   "finalCta": {
     "heading": "Sẵn sàng để GCW đồng hành vận hành nhân sự cùng bạn?",
     "body": "Đặt lịch tư vấn để cùng GCW đánh giá hiện trạng nhân sự và đề xuất lộ trình phù hợp với giai đoạn phát triển của doanh nghiệp.",

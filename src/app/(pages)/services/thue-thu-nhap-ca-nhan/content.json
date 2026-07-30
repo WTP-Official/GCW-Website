@@ -1,0 +1,31 @@
+{
+  "title": "GCW Thuế cá nhân",
+  "metaDescription": "GCW Thuế cá nhân quản lý kê khai, quyết toán và tối ưu thuế thu nhập cá nhân hợp pháp cho CEO, KOL, KOC và nhóm khách hàng có nhiều nguồn thu nhập.",
+  "eyebrow": "Gói dịch vụ",
+  "icon": "Receipt",
+  "name": "GCW THUẾ CÁ NHÂN",
+  "tagline": "Quản lý thuế thu nhập cá nhân chuyên biệt cho nhóm khách hàng đặc thù như CEO, KOL, KOC.",
+  "intro": "GCW Thuế cá nhân đảm nhận toàn bộ nghiệp vụ kê khai, quyết toán và tối ưu thuế thu nhập cá nhân cho những cá nhân có cơ cấu thu nhập phức tạp từ nhiều nguồn khác nhau.",
+  "audience": [
+    "CEO, chủ doanh nghiệp có thu nhập từ nhiều nguồn khác nhau",
+    "KOL, KOC có doanh thu từ hợp tác thương hiệu, nền tảng số",
+    "Cá nhân cần đại diện làm việc với cơ quan thuế khi phát sinh vướng mắc"
+  ],
+  "included": [
+    "Kê khai và quyết toán thuế thu nhập cá nhân định kỳ",
+    "Tư vấn tối ưu thuế hợp pháp theo cơ cấu thu nhập thực tế",
+    "Chuẩn hoá hồ sơ chứng từ cho các nguồn thu nhập đa dạng",
+    "Đại diện làm việc với cơ quan thuế khi cần thiết"
+  ],
+  "related": {
+    "label": "Xem giải pháp soát xét tuân thủ",
+    "href": "/solutions",
+    "description": "Dịch vụ được thực hiện phối hợp cùng công ty kế toán ATP, thành viên WTP Group, trong giải pháp soát xét tuân thủ và tối ưu chi phí lương - bảo hiểm - thuế."
+  },
+  "cta": {
+    "heading": "Quản lý thuế thu nhập cá nhân đúng quy định, tối ưu hợp pháp",
+    "body": "Đặt lịch tư vấn để GCW rà soát cơ cấu thu nhập và đề xuất phương án kê khai phù hợp.",
+    "label": "Đặt lịch tư vấn",
+    "href": "/contact"
+  }
+}

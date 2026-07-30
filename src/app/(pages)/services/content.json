@@ -2,5 +2,43 @@
   "title": "Dịch vụ",
   "metaDescription": "Sáu gói dịch vụ nhân sự của GCW: GCW SAFE, CONTROL, SCALE, Tuyển dụng, Thuế cá nhân và Tư vấn HR — vận hành nhân sự bài bản cho doanh nghiệp SME.",
   "heading": "Các gói dịch vụ của GCW",
-  "body": "GCW cung cấp sáu gói dịch vụ cốt lõi: GCW SAFE tập trung vào tuân thủ luật lao động, bảo hiểm xã hội và thuế thu nhập cá nhân; GCW CONTROL giúp kiểm soát chi phí nhân sự và tối ưu tuyển dụng; GCW SCALE xây dựng hệ thống nhân sự bài bản phục vụ tăng trưởng bền vững; GCW TUYỂN DỤNG cung cấp dịch vụ tuyển dụng đúng người, đủ số lượng, kịp thời gian; GCW THUẾ CÁ NHÂN quản lý thuế thu nhập cá nhân cho nhóm khách hàng đặc thù như CEO, KOL, KOC; và GCW TƯ VẤN HR giải quyết các bài toán nhân sự cốt lõi cho doanh nghiệp, từ cơ cấu tổ chức đến chính sách lương thưởng."
+  "intro": "GCW cung cấp sáu gói dịch vụ cốt lõi, có thể triển khai độc lập hoặc kết hợp theo giai đoạn phát triển của doanh nghiệp bạn.",
+  "services": [
+    {
+      "slug": "gcw-safe",
+      "icon": "ShieldCheck",
+      "name": "GCW SAFE",
+      "tagline": "Tuân thủ luật lao động, bảo hiểm xã hội và thuế thu nhập cá nhân — giảm thiểu rủi ro pháp lý cho doanh nghiệp."
+    },
+    {
+      "slug": "gcw-control",
+      "icon": "Gauge",
+      "name": "GCW CONTROL",
+      "tagline": "Kiểm soát chi phí nhân sự và tối ưu hiệu quả tuyển dụng theo từng giai đoạn phát triển."
+    },
+    {
+      "slug": "gcw-scale",
+      "icon": "TrendingUp",
+      "name": "GCW SCALE",
+      "tagline": "Xây dựng hệ thống nhân sự bài bản, sẵn sàng mở rộng cùng tốc độ tăng trưởng của doanh nghiệp."
+    },
+    {
+      "slug": "tuyen-dung",
+      "icon": "UserSearch",
+      "name": "GCW TUYỂN DỤNG",
+      "tagline": "Tuyển đúng người, đủ số lượng, kịp thời gian — với cam kết tối ưu chi phí tuyển dụng."
+    },
+    {
+      "slug": "thue-thu-nhap-ca-nhan",
+      "icon": "Receipt",
+      "name": "GCW THUẾ CÁ NHÂN",
+      "tagline": "Quản lý thuế thu nhập cá nhân chuyên biệt cho nhóm khách hàng đặc thù như CEO, KOL, KOC."
+    },
+    {
+      "slug": "tu-van-hr",
+      "icon": "MessageSquareText",
+      "name": "GCW TƯ VẤN HR",
+      "tagline": "Giải quyết các bài toán nhân sự cốt lõi, từ cơ cấu tổ chức đến chính sách nhân sự."
+    }
+  ]
 }

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import content from "../content.json";
+import content from "../app/content.json";
 
 export function FinalCta() {
   const { finalCta } = content;

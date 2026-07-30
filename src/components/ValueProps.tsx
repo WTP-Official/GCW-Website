@@ -1,5 +1,5 @@
 import { Handshake, Award, Network, type LucideIcon } from "lucide-react";
-import content from "../content.json";
+import content from "../app/content.json";
 
 const ICONS: Record<string, LucideIcon> = { Handshake, Award, Network };
 
