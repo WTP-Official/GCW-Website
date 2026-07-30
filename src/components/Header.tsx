@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import {
@@ -81,25 +82,6 @@ const NAV_ITEMS: NavItem[] = [
   { label: "Liên hệ", href: "/contact" },
 ];
 
-function Logomark({ className = "" }: { className?: string }) {
-  return (
-    <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
-      <rect
-        x="4"
-        y="4"
-        width="16"
-        height="16"
-        rx="2"
-        transform="rotate(45 12 12)"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.75"
-      />
-      <rect x="9.5" y="9.5" width="5" height="5" rx="0.5" transform="rotate(45 12 12)" fill="currentColor" />
-    </svg>
-  );
-}
-
 export function Header() {
   const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -124,13 +106,15 @@ export function Header() {
   return (
     <header className="sticky top-0 z-30 border-b border-black/5 bg-white/95 backdrop-blur">
       <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-4">
-        <Link
-          href="/"
-          className="flex items-center gap-2 text-xl font-medium text-ink"
-          onClick={closeAll}
-        >
-          <Logomark className="h-7 w-7 text-brand-600" />
-          <span className="text-brand-600">GCW</span>
+        <Link href="/" className="flex items-center" onClick={closeAll}>
+          <Image
+            src="/logo.avif"
+            alt="GCW"
+            width={375}
+            height={116}
+            priority
+            className="h-11 w-auto"
+          />
         </Link>
 
         <nav className="hidden items-center gap-2 lg:flex">

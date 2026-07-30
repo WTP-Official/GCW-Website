@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const FOOTER_LINKS = [
@@ -78,10 +79,8 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-4 py-20">
         <div className="grid gap-10 sm:grid-cols-5">
           <div className="sm:col-span-2">
-            <p className="text-lg font-bold text-white">
-              <span className="text-brand-400">GCW</span>
-            </p>
-            <p className="mt-3 text-sm text-footer-light/70">
+            <Image src="/logo.avif" alt="GCW" width={375} height={116} className="h-10 w-auto" />
+            <p className="mt-4 text-sm text-footer-light/70">
               Strategic HR Operator — đối tác vận hành và quản trị nhân sự
               đồng hành thực thi cùng doanh nghiệp SME Việt Nam. Thành viên
               của WTP Group.

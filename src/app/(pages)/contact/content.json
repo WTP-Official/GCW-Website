@@ -1,23 +1,19 @@
 {
   "title": "Liên hệ",
   "metaDescription": "Liên hệ GCW để đặt lịch tư vấn quản trị nhân sự cho doanh nghiệp SME — gọi hotline hoặc gửi email, đội ngũ GCW sẽ phản hồi sớm nhất.",
-  "heading": "Liên hệ với GCW",
-  "intro": "Chia sẻ với chúng tôi về hiện trạng nhân sự của doanh nghiệp bạn — đội ngũ GCW sẽ liên hệ lại để đặt lịch tư vấn.",
+  "heading": "Chúng tôi cam kết đồng hành và hỗ trợ trên tinh thần Win-Win",
+  "quote": "Muốn đi nhanh thì đi một mình, muốn đi xa hãy đi cùng nhau",
+  "formHeading": "Đăng ký nhận thông tin tư vấn",
   "email": "tuvan@gcw.vn",
+  "website": "gcw.vn",
   "jarvisFormId": "form_uIkW9ToZvdn2NQ",
   "phones": ["+84868974899", "+84931239099"],
   "company": {
-    "legalName": "Công ty Cổ phần GCW (GCW JSC)",
+    "legalName": "Công ty Cổ phần GCW",
     "taxCode": "0316153919"
   },
-  "offices": [
-    {
-      "name": "Văn phòng Vạn Phúc",
-      "address": "Khu đô thị Vạn Phúc, Phường Hiệp Bình, Tp. Hồ Chí Minh"
-    },
-    {
-      "name": "Văn phòng Him Lam",
-      "address": "KDC Him Lam, Phường Tân Hưng, Tp. Hồ Chí Minh"
-    }
+  "addresses": [
+    "75 Đường 39, Khu đô thị Vạn Phúc, Phường Hiệp Bình, Tp. Hồ Chí Minh",
+    "A4 Đường D4, KDC Him Lam, Phường Tân Hưng, Tp. Hồ Chí Minh"
   ]
 }

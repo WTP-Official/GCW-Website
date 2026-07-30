@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import content from "./content.json";
 import { CONTENT_BRAND_SLUG } from "@/constants/site";
-import { NewsTopicFilter } from "./_components/NewsTopicFilter";
+import { NewsTopicFilter } from "./components/NewsTopicFilter";
 
 // Articles come from the external public API (same content source as
 // /resources — see src/app/api/resources/topics/route.ts), so the page
@@ -115,7 +115,7 @@ export default async function NewsPage({
     isSearching ? searchArticles(q!.trim()) : Promise.resolve<ApiArticle[]>([]),
   ]);
 
-  const posts = isSearching ? searchResults : list?.data ?? [];
+  const posts = isSearching ? searchResults : (list?.data ?? []);
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-24">
@@ -125,7 +125,10 @@ export default async function NewsPage({
       {isSearching ? (
         <p className="mt-8 text-sm text-ink-soft">
           Kết quả tìm kiếm cho “{q!.trim()}” —{" "}
-          <Link href="/news" className="font-medium text-brand-600 hover:text-brand-700">
+          <Link
+            href="/news"
+            className="font-medium text-brand-600 hover:text-brand-700"
+          >
             xóa tìm kiếm
           </Link>
         </p>
@@ -161,7 +164,10 @@ export default async function NewsPage({
                   )}
                 </div>
                 <h2 className="mt-2 text-xl">
-                  <Link href={`/news/${post.slug}`} className="hover:text-brand-600">
+                  <Link
+                    href={`/news/${post.slug}`}
+                    className="hover:text-brand-600"
+                  >
                     {post.title}
                   </Link>
                 </h2>
