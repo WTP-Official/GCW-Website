@@ -73,7 +73,7 @@ export default async function NewsPostPage({
   }
 
   return (
-    <main className="mx-auto max-w-3xl px-4 py-16">
+    <main className="mx-auto max-w-3xl px-4 py-24">
       <Link href="/news" className="text-sm font-medium text-brand-600 hover:text-brand-700">
         ← Về trang Tin tức
       </Link>
@@ -87,10 +87,10 @@ export default async function NewsPostPage({
           </>
         )}
       </div>
-      <h1 className="mt-2 text-3xl font-bold">{post.title}</h1>
+      <h1 className="mt-2 text-3xl leading-snug">{post.title}</h1>
 
       <div
-        className="mt-8 text-ink-soft [&_h2]:mt-8 [&_h2]:text-xl [&_h2]:font-semibold [&_h2]:text-ink [&_h3]:mt-6 [&_h3]:text-lg [&_h3]:font-semibold [&_h3]:text-ink [&_p]:mt-4 [&_ul]:mt-4 [&_ul]:list-disc [&_ul]:pl-6 [&_ol]:mt-4 [&_ol]:list-decimal [&_ol]:pl-6 [&_li]:mt-1 [&_a]:text-brand-600 [&_a]:underline [&_table]:mt-6 [&_table]:w-full [&_table]:border-collapse [&_th]:border [&_th]:border-surface-3 [&_th]:bg-surface [&_th]:p-2 [&_th]:text-left [&_td]:border [&_td]:border-surface-3 [&_td]:p-2 [&_strong]:font-semibold [&_strong]:text-ink"
+        className="mt-8 text-ink-soft [&_h2]:mt-8 [&_h2]:text-xl [&_h2]:font-medium [&_h2]:text-ink [&_h3]:mt-6 [&_h3]:text-lg [&_h3]:font-medium [&_h3]:text-ink [&_p]:mt-4 [&_ul]:mt-4 [&_ul]:list-disc [&_ul]:pl-6 [&_ol]:mt-4 [&_ol]:list-decimal [&_ol]:pl-6 [&_li]:mt-1 [&_a]:text-brand-600 [&_a]:underline [&_table]:mt-6 [&_table]:w-full [&_table]:border-collapse [&_th]:border [&_th]:border-surface-3 [&_th]:bg-surface [&_th]:p-2 [&_th]:text-left [&_td]:border [&_td]:border-surface-3 [&_td]:p-2 [&_strong]:font-medium [&_strong]:text-ink"
         dangerouslySetInnerHTML={{ __html: post.content }}
       />
 
@@ -124,7 +124,7 @@ export default async function NewsPostPage({
 
       {post.relatedArticles?.length > 0 && (
         <div className="mt-12 border-t border-surface-3 pt-8">
-          <h2 className="text-lg font-semibold text-ink">Bài viết liên quan</h2>
+          <h2 className="text-lg text-ink">Bài viết liên quan</h2>
           <div className="mt-4 flex flex-col gap-3">
             {post.relatedArticles.map((related) => (
               <Link

@@ -48,6 +48,29 @@ async function getArticles(
   }
 }
 
+// The public articles API has no free-text search endpoint, so search fetches
+// a larger batch and filters title/excerpt locally instead of paginating.
+const SEARCH_FETCH_LIMIT = 50;
+
+async function searchArticles(query: string): Promise<ApiArticle[]> {
+  try {
+    const res = await fetch(
+      `${API_ORIGIN}/api/public/${CONTENT_BRAND_SLUG}/articles?page=1&limit=${SEARCH_FETCH_LIMIT}`,
+      { next: { revalidate } },
+    );
+    if (!res.ok) return [];
+    const list = (await res.json()) as ApiArticleList;
+    const needle = query.toLowerCase();
+    return list.data.filter(
+      (post) =>
+        post.title.toLowerCase().includes(needle) ||
+        post.excerpt.toLowerCase().includes(needle),
+    );
+  } catch {
+    return [];
+  }
+}
+
 async function getTopics(): Promise<string[]> {
   try {
     const res = await fetch(
@@ -80,32 +103,48 @@ export const metadata: Metadata = {
 export default async function NewsPage({
   searchParams,
 }: {
-  searchParams: Promise<{ page?: string; topic?: string }>;
+  searchParams: Promise<{ page?: string; topic?: string; q?: string }>;
 }) {
-  const { page: pageParam, topic } = await searchParams;
+  const { page: pageParam, topic, q } = await searchParams;
   const page = Math.max(1, Number(pageParam) || 1);
-  const [list, topics] = await Promise.all([
-    getArticles(page, topic),
+  const isSearching = Boolean(q?.trim());
+
+  const [list, topics, searchResults] = await Promise.all([
+    isSearching ? Promise.resolve(null) : getArticles(page, topic),
     getTopics(),
+    isSearching ? searchArticles(q!.trim()) : Promise.resolve<ApiArticle[]>([]),
   ]);
 
+  const posts = isSearching ? searchResults : list?.data ?? [];
+
   return (
-    <main className="mx-auto max-w-3xl px-4 py-16">
-      <h1 className="text-3xl font-bold">{content.heading}</h1>
+    <main className="mx-auto max-w-3xl px-4 py-24">
+      <h1 className="text-3xl leading-snug">{content.heading}</h1>
       <p className="mt-4 text-ink-soft">{content.intro}</p>
 
-      {topics.length > 0 && (
-        <NewsTopicFilter topics={topics} selectedTopic={topic} />
+      {isSearching ? (
+        <p className="mt-8 text-sm text-ink-soft">
+          Kết quả tìm kiếm cho “{q!.trim()}” —{" "}
+          <Link href="/news" className="font-medium text-brand-600 hover:text-brand-700">
+            xóa tìm kiếm
+          </Link>
+        </p>
+      ) : (
+        topics.length > 0 && (
+          <NewsTopicFilter topics={topics} selectedTopic={topic} />
+        )
       )}
 
-      {!list || list.data.length === 0 ? (
+      {posts.length === 0 ? (
         <p className="mt-12 text-ink-soft">
-          Chưa có bài viết nào, vui lòng quay lại sau.
+          {isSearching
+            ? "Không tìm thấy bài viết phù hợp."
+            : "Chưa có bài viết nào, vui lòng quay lại sau."}
         </p>
       ) : (
         <>
           <div className="mt-12 flex flex-col gap-10">
-            {list.data.map((post) => (
+            {posts.map((post) => (
               <article
                 key={post.slug}
                 className="border-b border-surface-3 pb-10 last:border-b-0"
@@ -121,7 +160,7 @@ export default async function NewsPage({
                     </>
                   )}
                 </div>
-                <h2 className="mt-2 text-xl font-semibold">
+                <h2 className="mt-2 text-xl">
                   <Link href={`/news/${post.slug}`} className="hover:text-brand-600">
                     {post.title}
                   </Link>
@@ -137,7 +176,7 @@ export default async function NewsPage({
             ))}
           </div>
 
-          {list.totalPages > 1 && (
+          {!isSearching && list && list.totalPages > 1 && (
             <nav
               aria-label="News pagination"
               className="mt-4 flex items-center justify-between text-sm font-medium"

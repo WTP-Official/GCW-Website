@@ -11,9 +11,9 @@ export function ImagePlaceholder({
 }) {
   return (
     <div
-      className={`flex items-center justify-center bg-gradient-to-br from-brand-500 to-brand-800 ${className}`}
+      className={`flex items-center justify-center border border-black/5 bg-bg-muted ${className}`}
     >
-      <Icon className={`text-white/90 ${iconClassName}`} aria-hidden="true" />
+      <Icon className={`text-ink-soft/60 ${iconClassName}`} aria-hidden="true" />
     </div>
   );
 }

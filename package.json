@@ -12,7 +12,7 @@
     "postcss": ">=8.5.10"
   },
   "scripts": {
-    "dev": "cross-env NODE_OPTIONS=--max-old-space-size=4096 next dev --port=3005",
+    "dev": "cross-env NODE_OPTIONS=--max-old-space-size=4096 next dev --port=3006",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import { Mail, Phone, MapPin, Building2 } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 import content from "./content.json";
-import { ImagePlaceholder } from "@/components/ImagePlaceholder";
+import { JarvisFormEmbed } from "@/components/JarvisFormEmbed";
 
 export const metadata: Metadata = {
   title: content.title,
@@ -18,79 +18,76 @@ function formatPhoneLabel(phone: string) {
 export default function ContactPage() {
   return (
     <main>
-      <section className="bg-gradient-to-b from-brand-900 via-brand-700 to-brand-600 text-white">
-        <div className="mx-auto max-w-4xl px-4 py-20 text-center sm:py-24">
-          <h1 className="text-3xl font-bold sm:text-4xl">
-            {content.heading}
-          </h1>
-          <p className="mx-auto mt-4 max-w-xl text-lg text-brand-50/90">
+      <section className="bg-bg-dark text-white">
+        <div className="mx-auto max-w-3xl px-4 py-28 text-center sm:py-32">
+          <h1 className="font-serif-hero text-3xl leading-snug sm:text-4xl">{content.heading}</h1>
+          <p className="mx-auto mt-6 max-w-xl text-lg text-white/70">
             {content.intro}
           </p>
           <a
             href={`mailto:${content.email}`}
-            className="mt-8 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-brand-700 transition-colors hover:bg-brand-50"
+            className="mt-10 inline-flex items-center gap-2 rounded-md bg-brand-600 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-brand-700"
           >
             Gửi email tới {content.email}
           </a>
         </div>
       </section>
 
-      <section className="mx-auto max-w-4xl px-4 py-16">
-        <div className="grid gap-6 sm:grid-cols-2">
-          <div className="rounded-2xl border border-black/5 bg-surface p-6">
-            <span className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-brand-50 text-brand-600">
-              <Phone className="h-5 w-5" aria-hidden="true" />
-            </span>
-            <h2 className="mt-4 text-base font-semibold text-ink">
-              Điện thoại tư vấn
-            </h2>
-            <ul className="mt-2 space-y-1">
-              {content.phones.map((phone) => (
-                <li key={phone}>
-                  <a
-                    href={`tel:${phone}`}
-                    className="text-sm text-ink-soft transition-colors hover:text-brand-600"
-                  >
-                    {formatPhoneLabel(phone)}
-                  </a>
-                </li>
-              ))}
-            </ul>
+      <section className="mx-auto max-w-6xl px-4 py-24">
+        <div className="grid gap-10 lg:grid-cols-5">
+          <div className="flex flex-col gap-6 lg:col-span-2">
+            <div className="rounded-md border border-black/5 bg-surface p-6">
+              <Phone className="h-6 w-6 text-ink-soft" aria-hidden="true" />
+              <h2 className="mt-4 text-base text-ink">
+                Điện thoại tư vấn
+              </h2>
+              <ul className="mt-2 space-y-1">
+                {content.phones.map((phone) => (
+                  <li key={phone}>
+                    <a
+                      href={`tel:${phone}`}
+                      className="text-sm text-ink-soft transition-colors hover:text-brand-600"
+                    >
+                      {formatPhoneLabel(phone)}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="rounded-md border border-black/5 bg-surface p-6">
+              <Mail className="h-6 w-6 text-ink-soft" aria-hidden="true" />
+              <h2 className="mt-4 text-base text-ink">Email</h2>
+              <a
+                href={`mailto:${content.email}`}
+                className="mt-2 block text-sm text-ink-soft transition-colors hover:text-brand-600"
+              >
+                {content.email}
+              </a>
+            </div>
           </div>
 
-          <div className="rounded-2xl border border-black/5 bg-surface p-6">
-            <span className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-brand-50 text-brand-600">
-              <Mail className="h-5 w-5" aria-hidden="true" />
-            </span>
-            <h2 className="mt-4 text-base font-semibold text-ink">Email</h2>
-            <a
-              href={`mailto:${content.email}`}
-              className="mt-2 block text-sm text-ink-soft transition-colors hover:text-brand-600"
-            >
-              {content.email}
-            </a>
+          <div className="rounded-md border border-black/5 bg-surface p-6 sm:p-8 lg:col-span-3">
+            <JarvisFormEmbed
+              formId={content.jarvisFormId}
+              title="Biểu mẫu liên hệ GCW"
+              className="rounded-md"
+            />
           </div>
         </div>
 
-        <h2 className="mt-12 text-xl font-semibold text-ink">Văn phòng</h2>
-        <div className="mt-4 grid gap-6 sm:grid-cols-2">
+        <h2 className="mt-16 text-xl text-ink">Văn phòng</h2>
+        <div className="mt-6 grid gap-8 sm:grid-cols-2">
           {content.offices.map((office) => (
             <div
               key={office.name}
-              className="overflow-hidden rounded-lg border border-black/5 bg-surface"
+              className="overflow-hidden rounded-md border border-black/5 bg-surface p-6"
             >
-              <div className="relative aspect-video w-full overflow-hidden">
-                <ImagePlaceholder icon={Building2} className="h-full w-full" iconClassName="h-8 w-8" />
-              </div>
-              <div className="p-6">
-                <span className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-brand-50 text-brand-600">
-                  <MapPin className="h-5 w-5" aria-hidden="true" />
-                </span>
-                <h3 className="mt-4 text-base font-semibold text-ink">
-                  {office.name}
-                </h3>
-                <p className="mt-2 text-sm text-ink-soft">{office.address}</p>
-              </div>
+              <MapPin className="h-6 w-6 text-ink-soft" aria-hidden="true" />
+              <h3 className="mt-4 text-base text-ink">
+                {office.name}
+              </h3>
+              <p className="mt-2 text-sm text-ink-soft">{office.address}</p>
             </div>
           ))}
         </div>

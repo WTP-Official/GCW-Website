@@ -6,6 +6,8 @@ import { useEffect, useRef } from "react";
  * Embeds a Jarvis helpdesk form via iframe and bridges host <-> iframe
  * messaging for auto-resize and font inheritance.
  */
+const EMBED_ORIGIN = "https://helpdesk.jarvis.cx";
+
 export function JarvisFormEmbed({
   formId,
   title = "Jarvis Form",
@@ -60,6 +62,9 @@ export function JarvisFormEmbed({
         }, 150);
       }
       if (e.data.type === "jarvis-form-request-style") sendHostStyle();
+      if (e.origin === EMBED_ORIGIN && e.data.type === "jarvis-form-redirect" && e.data.url) {
+        window.location.href = e.data.url;
+      }
     }
 
     window.addEventListener("message", onMessage);

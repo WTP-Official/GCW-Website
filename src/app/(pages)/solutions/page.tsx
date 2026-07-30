@@ -54,28 +54,28 @@ export default async function SolutionsPage() {
 
   return (
     <main>
-      <div className="mx-auto max-w-6xl px-4 py-16">
+      <div className="mx-auto max-w-6xl px-4 py-24">
         <div className="max-w-2xl">
-          <h1 className="text-3xl font-bold text-ink sm:text-4xl">
+          <h1 className="text-3xl leading-snug text-ink sm:text-4xl">
             {content.heading}
           </h1>
           <p className="mt-4 text-ink-soft">{content.intro}</p>
         </div>
 
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {content.items.map((item) => {
             const Icon = ICONS[item.icon];
             return (
               <Link
                 key={item.title}
                 href={item.href}
-                className="group flex flex-col overflow-hidden rounded-lg border border-black/5 bg-white transition-shadow hover:shadow-md"
+                className="group flex flex-col overflow-hidden rounded-md border border-black/5 bg-white transition-shadow hover:shadow-md"
               >
                 <div className="relative aspect-[4/3] w-full overflow-hidden">
                   <ImagePlaceholder icon={Icon} className="h-full w-full" />
                 </div>
                 <div className="flex flex-1 flex-col p-6">
-                  <h2 className="text-lg font-semibold text-ink group-hover:text-brand-600">
+                  <h2 className="text-lg text-ink group-hover:text-brand-600">
                     {item.title}
                   </h2>
                   <p className="mt-2 text-sm text-ink-soft">
@@ -89,15 +89,15 @@ export default async function SolutionsPage() {
       </div>
 
       {articles.length > 0 && (
-        <section className="bg-surface-2 py-16">
+        <section className="bg-surface-2 py-24">
           <div className="mx-auto max-w-6xl px-4">
             <div className="flex items-center justify-between">
-              <h2 className="text-xl font-semibold text-ink">
+              <h2 className="text-xl text-ink">
                 {content.resourceLinks.heading}
               </h2>
               <Link
                 href={content.resourceLinks.linkHref}
-                className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-600 hover:text-brand-700"
+                className="inline-flex items-center gap-1.5 text-sm font-medium text-brand-600 hover:text-brand-700"
               >
                 {content.resourceLinks.linkLabel}
                 <ArrowRight className="h-4 w-4" aria-hidden="true" />
@@ -108,7 +108,7 @@ export default async function SolutionsPage() {
                 <Link
                   key={article.slug}
                   href={`/news/${article.slug}`}
-                  className="rounded-lg border border-black/5 bg-white p-5 text-sm font-medium text-ink transition-shadow hover:shadow-md hover:text-brand-600"
+                  className="rounded-md border border-black/5 bg-white p-5 text-sm font-medium text-ink transition-shadow hover:shadow-md hover:text-brand-600"
                 >
                   {article.title}
                 </Link>
@@ -118,22 +118,22 @@ export default async function SolutionsPage() {
         </section>
       )}
 
-      <section className="bg-brand-700">
-        <div className="mx-auto max-w-4xl px-4 py-16 text-center text-white">
-          <h2 className="text-2xl font-bold sm:text-3xl">
+      <section className="bg-bg-muted">
+        <div className="mx-auto max-w-2xl px-4 py-24 text-center">
+          <h2 className="text-2xl leading-snug text-ink sm:text-3xl">
             {content.cta.heading}
           </h2>
-          <p className="mt-4 text-brand-50/90">{content.cta.body}</p>
+          <p className="mt-4 text-ink-soft">{content.cta.body}</p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <Link
               href={content.cta.primaryCta.href}
-              className="inline-flex items-center gap-2 rounded-md bg-white px-6 py-3 text-sm font-semibold text-brand-700 transition-colors hover:bg-brand-50"
+              className="inline-flex items-center gap-2 rounded-md bg-brand-600 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-brand-700"
             >
               {content.cta.primaryCta.label}
             </Link>
             <Link
               href={content.cta.secondaryCta.href}
-              className="inline-flex items-center gap-2 rounded-md border border-white/40 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10"
+              className="inline-flex items-center gap-2 rounded-md border border-black/15 px-6 py-3 text-sm font-medium text-ink transition-colors hover:bg-white"
             >
               {content.cta.secondaryCta.label}
             </Link>

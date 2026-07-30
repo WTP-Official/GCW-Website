@@ -1,5 +1,5 @@
 ﻿import type { Metadata } from "next";
-import { Inter, Archivo } from "next/font/google";
+import { Inter, Manrope, Lora } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { BASE_URL } from "@/constants/site";
@@ -14,10 +14,18 @@ const inter = Inter({
   display: "swap",
 });
 
-const archivo = Archivo({
-  variable: "--font-archivo",
+const manrope = Manrope({
+  variable: "--font-manrope",
   subsets: ["latin", "vietnamese"],
-  weight: ["600", "700", "800", "900"],
+  weight: ["400", "500", "600"],
+  display: "swap",
+});
+
+const lora = Lora({
+  variable: "--font-lora",
+  subsets: ["latin", "vietnamese"],
+  weight: ["400", "500"],
+  style: ["normal", "italic"],
   display: "swap",
 });
 
@@ -74,7 +82,7 @@ export default function RootLayout({
   return (
     <html
       lang="vi"
-      className={`${inter.variable} ${archivo.variable} h-full antialiased`}
+      className={`${inter.variable} ${manrope.variable} ${lora.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-white text-ink-soft">
         <Header />

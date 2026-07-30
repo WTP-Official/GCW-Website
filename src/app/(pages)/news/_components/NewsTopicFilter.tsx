@@ -23,7 +23,7 @@ export function NewsTopicFilter({
           const value = e.target.value;
           router.push(value ? `/news?topic=${encodeURIComponent(value)}` : "/news");
         }}
-        className="rounded-full border border-black/10 bg-white px-4 py-2 text-sm font-medium text-ink"
+        className="rounded-none border border-black/10 bg-white px-4 py-2 text-sm font-medium text-ink"
       >
         <option value="">Tất cả chủ đề</option>
         {topics.map((topic) => (

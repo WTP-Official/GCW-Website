@@ -18,23 +18,21 @@ export function Differentiators() {
   const { differentiators } = content;
 
   return (
-    <section className="bg-surface-2 py-16">
+    <section className="bg-surface-2 py-24">
       <div className="mx-auto max-w-6xl px-4">
-        <h2 className="text-2xl font-bold text-ink sm:text-3xl">
+        <h2 className="text-2xl leading-snug text-ink sm:text-3xl">
           {differentiators.heading}
         </h2>
-        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {differentiators.items.map((item) => {
             const Icon = ICONS[item.icon];
             return (
               <div
                 key={item.title}
-                className="rounded-2xl bg-white p-6 shadow-sm"
+                className="rounded-md bg-white p-6 shadow-sm"
               >
-                <span className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-brand-50 text-brand-600">
-                  <Icon className="h-5 w-5" aria-hidden="true" />
-                </span>
-                <h3 className="mt-4 text-base font-semibold text-ink">
+                <Icon className="h-6 w-6 text-ink-soft" aria-hidden="true" />
+                <h3 className="mt-4 text-base text-ink">
                   {item.title}
                 </h3>
                 <p className="mt-2 text-sm text-ink-soft">{item.description}</p>
