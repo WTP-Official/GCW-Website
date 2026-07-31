@@ -1,0 +1,23 @@
+[
+  {
+    "id": "speaker-01",
+    "name": "Chuyên gia cố vấn vận hành nhân sự",
+    "role": "Vận hành nhân sự",
+    "bio": "Tư vấn chiến lược vận hành nhân sự và xây dựng bộ máy nhân sự bài bản cho doanh nghiệp SME.",
+    "topics": ["Vận hành nhân sự", "Onboarding", "Quản lý hiệu suất"]
+  },
+  {
+    "id": "speaker-02",
+    "name": "Chuyên gia tuân thủ lao động",
+    "role": "Tuân thủ lao động",
+    "bio": "Chia sẻ kinh nghiệm thực tế về tuân thủ luật lao động, bảo hiểm xã hội và thuế TNCN.",
+    "topics": ["Luật lao động", "Bảo hiểm xã hội", "Thuế TNCN"]
+  },
+  {
+    "id": "speaker-03",
+    "name": "Cố vấn chiến lược tổ chức",
+    "role": "Chiến lược & tổ chức",
+    "bio": "Đồng hành cùng doanh nghiệp thiết kế cơ cấu tổ chức và chính sách nhân sự cho giai đoạn tăng trưởng.",
+    "topics": ["Cơ cấu tổ chức", "Chính sách lương thưởng", "Gọi vốn"]
+  }
+]

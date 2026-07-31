@@ -4,9 +4,15 @@ import { useState, type ReactNode } from "react";
 import Link from "next/link";
 import { ArrowLeft, Plus, Minus } from "lucide-react";
 
-type AccordionItem = { title: string; description: string };
+type AccordionItem = { id: string; title: string; description: string };
 type AccordionCategory = { heading: string; items: AccordionItem[] };
-type ToolCard = { title: string; description: string; ctaLabel: string; ctaHref: string };
+type ToolCard = {
+  id: string;
+  title: string;
+  description: string;
+  ctaLabel: string;
+  ctaHref: string;
+};
 
 type Content = {
   heading: string;
@@ -59,7 +65,7 @@ export function FeaturedAccordionList({
             <div className="mt-8 grid gap-6 sm:grid-cols-3">
               {tools.map((tool) => (
                 <div
-                  key={tool.title}
+                  key={tool.id}
                   className="flex flex-col justify-between rounded-md bg-bg-dark p-6 text-white"
                 >
                   <div>
@@ -91,7 +97,7 @@ export function FeaturedAccordionList({
                     const key = `${categoryIndex}-${itemIndex}`;
                     const isOpen = openKey === key;
                     return (
-                      <li key={item.title} className="border-b border-black/10">
+                      <li key={item.id} className="border-b border-black/10">
                         <button
                           type="button"
                           onClick={() => setOpenKey(isOpen ? null : key)}

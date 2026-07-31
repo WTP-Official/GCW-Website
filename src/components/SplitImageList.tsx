@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowLeft, type LucideIcon } from "lucide-react";
 
-type SplitItem = { title: string; description: string; meta: string };
+type SplitItem = { id: string; title: string; description: string; meta: string };
 
 type Content = {
   heading: string;
@@ -47,7 +47,7 @@ export function SplitImageList({
         <div className="mt-8 grid gap-6 sm:grid-cols-2">
           {items.map((item) => (
             <div
-              key={item.title}
+              key={item.id}
               className="flex flex-col overflow-hidden rounded-md bg-bg-dark text-white sm:flex-row"
             >
               <div className="flex flex-1 flex-col justify-center p-6">

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowLeft, type LucideIcon } from "lucide-react";
 
-type Speaker = { name: string; role: string; bio: string; topics: string[] };
+type Speaker = { id: string; name: string; role: string; bio: string; topics: string[] };
 
 type Content = {
   heading: string;
@@ -46,7 +46,7 @@ export function SpeakerGrid({
         <h2 className="mt-8 text-2xl leading-snug text-ink sm:text-3xl">{speakersHeading}</h2>
         <div className="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {speakers.map((speaker) => (
-            <div key={speaker.name} className="rounded-md border border-black/5 bg-surface p-6">
+            <div key={speaker.id} className="rounded-md border border-black/5 bg-surface p-6">
               <div className="flex h-16 w-16 items-center justify-center rounded-full bg-bg-dark text-white">
                 <Icon className="h-7 w-7" aria-hidden="true" />
               </div>

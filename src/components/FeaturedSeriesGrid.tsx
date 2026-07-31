@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowLeft, type LucideIcon } from "lucide-react";
 
-type SeriesItem = { label: string; title: string; description: string };
+type SeriesItem = { id: string; label: string; title: string; description: string };
 
 type Content = {
   heading: string;
@@ -61,7 +61,7 @@ export function FeaturedSeriesGrid({
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {series.map((item, index) => (
             <div
-              key={item.title}
+              key={item.id}
               className={`flex flex-col justify-between rounded-md p-6 ${
                 index % 2 === 0 ? "bg-bg-dark text-white" : "bg-surface-2 text-ink"
               }`}

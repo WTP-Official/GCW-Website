@@ -42,6 +42,8 @@ import contactContent from "@/app/(pages)/contact/content.json";
 import homeContent from "@/app/content.json";
 import eventsContent from "@/app/(pages)/su-kien/content.json";
 import resourcesContent from "@/app/(pages)/tai-nguyen/content.json";
+import eventCategories from "@/app/_data/su-kien-categories.json";
+import resourceFormats from "@/app/_data/tai-nguyen-upcoming.json";
 
 const ICONS: Record<string, LucideIcon> = {
   ShieldCheck,
@@ -188,7 +190,7 @@ const NAV_ITEMS: NavItem[] = [
     dropdown: {
       columns: [
         {
-          items: eventsContent.categories.map((category) => ({
+          items: eventCategories.map((category) => ({
             href: category.href,
             label: category.title,
             description: category.description,
@@ -240,7 +242,7 @@ const MAX_ARTICLES_PER_TOPIC = 3;
 // Guides, Podcasts, Videos...) — each links to its own /tai-nguyen/* page.
 const RESOURCES_COLUMN: DropdownColumn = {
   heading: "Định dạng khác",
-  items: resourcesContent.upcoming.map((item) => ({
+  items: resourceFormats.map((item) => ({
     href: item.href,
     label: item.title,
     description: item.description,

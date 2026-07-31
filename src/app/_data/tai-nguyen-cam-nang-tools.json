@@ -1,0 +1,23 @@
+[
+  {
+    "id": "tool-01",
+    "title": "Công cụ tự đánh giá tuân thủ nhân sự",
+    "description": "Trả lời 15 câu hỏi nhanh để biết mức độ tuân thủ hiện tại của doanh nghiệp bạn.",
+    "ctaLabel": "Bắt đầu đánh giá",
+    "ctaHref": "/contact"
+  },
+  {
+    "id": "tool-02",
+    "title": "Bộ tính lương Gross-Net nhanh",
+    "description": "Ước tính nhanh lương thực nhận, mức đóng bảo hiểm xã hội và thuế TNCN phải nộp hàng tháng.",
+    "ctaLabel": "Dùng công cụ",
+    "ctaHref": "/contact"
+  },
+  {
+    "id": "tool-03",
+    "title": "Đánh giá mức độ sẵn sàng mở rộng nhân sự",
+    "description": "Kiểm tra xem bộ máy nhân sự hiện tại đã sẵn sàng cho giai đoạn tăng trưởng tiếp theo chưa.",
+    "ctaLabel": "Kiểm tra ngay",
+    "ctaHref": "/contact"
+  }
+]

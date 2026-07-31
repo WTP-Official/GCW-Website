@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowLeft, type LucideIcon } from "lucide-react";
 
-type CatalogItem = { eyebrow: string; title: string; description: string };
+type CatalogItem = { id: string; eyebrow: string; title: string; description: string };
 
 type Content = {
   heading: string;
@@ -65,7 +65,7 @@ export function FeaturedCatalogGrid({
         <h2 className="mt-16 text-2xl leading-snug text-ink sm:text-3xl">{itemsHeading}</h2>
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((item) => (
-            <div key={item.title} className="flex flex-col rounded-md bg-bg-dark p-6 text-white">
+            <div key={item.id} className="flex flex-col rounded-md bg-bg-dark p-6 text-white">
               <p className="text-xs font-medium uppercase tracking-widest text-white/50">
                 {item.eyebrow}
               </p>

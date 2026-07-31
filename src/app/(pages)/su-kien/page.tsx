@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Radio, Presentation, Mic, Users2, ArrowRight, type LucideIcon } from "lucide-react";
 import content from "./content.json";
+import categories from "@/app/_data/su-kien-categories.json";
 
 export const metadata: Metadata = {
   title: content.title,
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
 const ICONS: Record<string, LucideIcon> = { Radio, Presentation, Mic, Users2 };
 
 export default function EventsPage() {
-  const { heading, intro, categories, cta } = content;
+  const { heading, intro, cta } = content;
 
   return (
     <main>

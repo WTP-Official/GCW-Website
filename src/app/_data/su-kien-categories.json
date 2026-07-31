@@ -1,0 +1,30 @@
+[
+  {
+    "id": "webcasts",
+    "icon": "Radio",
+    "title": "Hội thảo trực tuyến",
+    "description": "Chuỗi webinar chia sẻ kinh nghiệm vận hành nhân sự thực tế, được GCW tổ chức định kỳ.",
+    "href": "/su-kien/hoi-thao-truc-tuyen"
+  },
+  {
+    "id": "conferences",
+    "icon": "Presentation",
+    "title": "Hội nghị & sự kiện",
+    "description": "Hội nghị chuyên đề quy tụ cộng đồng doanh nghiệp SME và chuyên gia nhân sự.",
+    "href": "/su-kien/hoi-nghi"
+  },
+  {
+    "id": "speakers-bureau",
+    "icon": "Mic",
+    "title": "Đội ngũ diễn giả",
+    "description": "Đội ngũ chuyên gia cố vấn của GCW sẵn sàng chia sẻ tại sự kiện của đối tác — liên hệ để trao đổi lịch diễn giả.",
+    "href": "/su-kien/doi-ngu-dien-gia"
+  },
+  {
+    "id": "workshops",
+    "icon": "Users2",
+    "title": "Workshop nội bộ",
+    "description": "Chương trình workshop thực chiến trong khuôn khổ GCW TƯ VẤN HR, thiết kế riêng theo bài toán nhân sự của từng doanh nghiệp.",
+    "href": "/su-kien/workshop"
+  }
+]

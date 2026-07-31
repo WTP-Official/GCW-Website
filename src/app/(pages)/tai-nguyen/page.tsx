@@ -12,6 +12,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import content from "./content.json";
+import upcoming from "@/app/_data/tai-nguyen-upcoming.json";
 import { ImagePlaceholder } from "@/components/ImagePlaceholder";
 
 export const metadata: Metadata = {
@@ -30,7 +31,7 @@ const ICONS: Record<string, LucideIcon> = {
 };
 
 export default function ResourcesPage() {
-  const { heading, intro, live, upcoming, cta } = content;
+  const { heading, intro, live, cta } = content;
   const LiveIcon = ICONS[live.icon];
 
   return (
