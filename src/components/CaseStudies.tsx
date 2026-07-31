@@ -28,7 +28,7 @@ export function CaseStudies() {
   }
 
   return (
-    <section className="bg-surface-2 py-24">
+    <section id="case-studies" className="scroll-mt-24 bg-surface-2 py-24">
       <div className="mx-auto max-w-6xl px-4">
         <div className="flex items-end justify-between gap-4">
           <div className="max-w-2xl">

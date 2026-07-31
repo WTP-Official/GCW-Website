@@ -1,0 +1,30 @@
+{
+  "title": "Hội thảo trực tuyến",
+  "metaDescription": "Chuỗi webinar của GCW chia sẻ kinh nghiệm thực tế về vận hành nhân sự, tuân thủ lao động và tối ưu chi phí nhân sự cho doanh nghiệp SME Việt Nam.",
+  "heading": "Hội thảo trực tuyến",
+  "intro": "Chuỗi webinar chia sẻ kinh nghiệm vận hành nhân sự thực tế, được GCW tổ chức định kỳ dành cho cộng đồng doanh nghiệp SME.",
+  "itemsHeading": "Lịch hội thảo trực tuyến",
+  "items": [
+    {
+      "title": "Tối ưu chi phí nhân sự cho doanh nghiệp SME",
+      "description": "Webinar chia sẻ phương pháp rà soát và tối ưu chi phí lương, bảo hiểm xã hội và thuế TNCN.",
+      "meta": "Webinar · Dự kiến Quý 3/2026"
+    },
+    {
+      "title": "Chuẩn hoá hồ sơ nhân sự trước khi gọi vốn",
+      "description": "Webinar hướng dẫn doanh nghiệp chuẩn bị hồ sơ nhân sự đáp ứng yêu cầu thẩm định của nhà đầu tư.",
+      "meta": "Webinar · Dự kiến Quý 3/2026"
+    },
+    {
+      "title": "Quản lý lương, bảo hiểm xã hội và thuế TNCN đúng hạn",
+      "description": "Webinar tổng hợp quy trình tính lương và các mốc thời hạn quan trọng doanh nghiệp cần nắm rõ.",
+      "meta": "Webinar · Dự kiến Quý 4/2026"
+    }
+  ],
+  "cta": {
+    "heading": "Muốn nhận lời mời tham dự webinar?",
+    "body": "Để lại thông tin liên hệ, GCW sẽ gửi lời mời ngay khi lịch hội thảo trực tuyến được chốt.",
+    "label": "Đăng ký nhận lời mời",
+    "href": "/contact"
+  }
+}

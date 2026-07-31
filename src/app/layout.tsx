@@ -2,7 +2,7 @@
 import { Inter, Manrope, Lora } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
-import { BASE_URL } from "@/constants/site";
+import { BASE_URL, GOOGLE_VERIFICATION_TOKENS } from "@/constants/site";
 import { CalendlyButton } from "@/components/CalendlyButton";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -56,10 +56,7 @@ export const metadata: Metadata = {
       "GCW đồng hành thực thi quản trị nhân sự cùng doanh nghiệp SME Việt Nam — không chỉ tư vấn lý thuyết.",
   },
   verification: {
-    google: [
-      process.env.GOOGLE_SITE_VERIFICATION,
-      process.env.GOOGLE_SITE_VERIFICATION_2,
-    ].filter(Boolean) as string[],
+    google: GOOGLE_VERIFICATION_TOKENS,
   },
   icons: {
     icon: { url: "/icon.png", sizes: "32x32", type: "image/png" },

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import content from "./content.json";
-import { CONTENT_BRAND_SLUG } from "@/constants/site";
+import { AEO_SECRET_KEY, CONTENT_BRAND_SLUG } from "@/constants/site";
 import { NewsTopicFilter } from "./components/NewsTopicFilter";
 
 // Articles come from the external public API (same content source as
@@ -39,7 +39,10 @@ async function getArticles(
     const topicParam = topic ? `&topic=${encodeURIComponent(topic)}` : "";
     const res = await fetch(
       `${API_ORIGIN}/api/public/${CONTENT_BRAND_SLUG}/articles?page=${page}&limit=${PAGE_SIZE}${topicParam}`,
-      { next: { revalidate } },
+      {
+        headers: { "x-aeo-secret-key": AEO_SECRET_KEY },
+        next: { revalidate },
+      },
     );
     if (!res.ok) return null;
     return (await res.json()) as ApiArticleList;
@@ -56,7 +59,10 @@ async function searchArticles(query: string): Promise<ApiArticle[]> {
   try {
     const res = await fetch(
       `${API_ORIGIN}/api/public/${CONTENT_BRAND_SLUG}/articles?page=1&limit=${SEARCH_FETCH_LIMIT}`,
-      { next: { revalidate } },
+      {
+        headers: { "x-aeo-secret-key": AEO_SECRET_KEY },
+        next: { revalidate },
+      },
     );
     if (!res.ok) return [];
     const list = (await res.json()) as ApiArticleList;
@@ -75,7 +81,10 @@ async function getTopics(): Promise<string[]> {
   try {
     const res = await fetch(
       `${API_ORIGIN}/api/public/${CONTENT_BRAND_SLUG}/topics/latest-articles?perTopic=1`,
-      { next: { revalidate } },
+      {
+        headers: { "x-aeo-secret-key": AEO_SECRET_KEY },
+        next: { revalidate },
+      },
     );
     if (!res.ok) return [];
     const topics = (await res.json()) as ApiTopic[];

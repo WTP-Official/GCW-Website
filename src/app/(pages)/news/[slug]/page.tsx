@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { CONTENT_BRAND_SLUG } from "@/constants/site";
+import { AEO_SECRET_KEY, CONTENT_BRAND_SLUG } from "@/constants/site";
 
 const API_ORIGIN = "https://api.aeo.how";
 
@@ -27,7 +27,10 @@ async function getArticle(slug: string): Promise<ApiArticleDetail | null> {
   try {
     const res = await fetch(
       `${API_ORIGIN}/api/public/${CONTENT_BRAND_SLUG}/articles/${slug}`,
-      { next: { revalidate } },
+      {
+        headers: { "x-aeo-secret-key": AEO_SECRET_KEY },
+        next: { revalidate },
+      },
     );
     if (!res.ok) return null;
     return (await res.json()) as ApiArticleDetail;

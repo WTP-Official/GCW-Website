@@ -1,0 +1,40 @@
+{
+  "title": "Podcast",
+  "metaDescription": "Podcast GCW trò chuyện cùng chuyên gia nhân sự về tuân thủ lao động, vận hành nhân sự và những bài toán thực tế của doanh nghiệp SME Việt Nam.",
+  "heading": "Podcast",
+  "intro": "Chuỗi podcast trò chuyện cùng chuyên gia GCW về các bài toán nhân sự thường gặp, từ tuân thủ lao động đến xây dựng chính sách lương thưởng.",
+  "featured": {
+    "label": "Tập mới nhất",
+    "title": "Tập 04: Thiết kế chính sách lương thưởng minh bạch",
+    "description": "Nguyên tắc xây dựng hệ thống lương thưởng công bằng, minh bạch và giữ chân nhân tài, cùng chuyên gia cố vấn GCW."
+  },
+  "seriesHeading": "Các chuỗi podcast",
+  "series": [
+    {
+      "label": "Chuỗi định kỳ",
+      "title": "GCW On Air",
+      "description": "Trò chuyện cùng chuyên gia GCW về các bài toán vận hành nhân sự thường gặp mỗi tháng."
+    },
+    {
+      "label": "Chuỗi giới hạn",
+      "title": "Câu Chuyện SME",
+      "description": "Góc nhìn thực tế từ các doanh nghiệp SME đã cùng GCW chuẩn hoá bộ máy nhân sự."
+    },
+    {
+      "label": "Chuỗi giới hạn",
+      "title": "Hỏi Đáp Tuân Thủ",
+      "description": "Giải đáp nhanh các câu hỏi thường gặp về luật lao động, bảo hiểm xã hội và thuế TNCN."
+    },
+    {
+      "label": "Chuỗi định kỳ",
+      "title": "Case Study Talks",
+      "description": "Phân tích chuyên sâu các case study vận hành nhân sự cùng chuyên gia GCW."
+    }
+  ],
+  "cta": {
+    "heading": "Muốn nhận thông báo khi có tập mới?",
+    "body": "Để lại email, GCW sẽ gửi thông báo ngay khi tập podcast mới được phát hành.",
+    "label": "Đăng ký nhận thông báo",
+    "href": "/contact"
+  }
+}

@@ -89,7 +89,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-surface-2 py-24">
+      <section id="ecosystem" className="scroll-mt-24 bg-surface-2 py-24">
         <div className="mx-auto max-w-6xl px-4">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-2xl leading-snug text-ink sm:text-3xl">
@@ -119,7 +119,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-4 py-24">
+      <section id="differentiators" className="mx-auto max-w-6xl scroll-mt-24 px-4 py-24">
         <h2 className="text-2xl leading-snug text-ink sm:text-3xl">
           {differentiators.heading}
         </h2>

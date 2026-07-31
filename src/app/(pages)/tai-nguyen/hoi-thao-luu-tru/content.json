@@ -1,0 +1,66 @@
+{
+  "title": "Hội thảo lưu trữ",
+  "metaDescription": "Bản ghi các buổi hội thảo trực tuyến của GCW về quản trị nhân sự, tuân thủ lao động và vận hành nhân sự cho doanh nghiệp SME, xem lại bất cứ lúc nào.",
+  "heading": "Hội thảo lưu trữ",
+  "intro": "Bản ghi các buổi hội thảo trực tuyến của GCW, xem lại bất cứ lúc nào để không bỏ lỡ kiến thức vận hành nhân sự thực tiễn.",
+  "categoriesHeading": "Hội thảo theo chủ đề",
+  "categories": [
+    {
+      "heading": "Tuân thủ lao động",
+      "items": [
+        {
+          "title": "Tuân thủ lao động cho doanh nghiệp FDI mới gia nhập",
+          "description": "Tổng hợp các quy định lao động và thuế cần lưu ý khi mới vận hành tại Việt Nam."
+        },
+        {
+          "title": "Chuẩn hoá hồ sơ nhân sự trước đợt thanh tra lao động",
+          "description": "Hướng dẫn doanh nghiệp chuẩn bị hồ sơ nhân sự sẵn sàng cho các đợt thanh tra."
+        },
+        {
+          "title": "Cập nhật quy định bảo hiểm xã hội và thuế TNCN mới nhất",
+          "description": "Tổng hợp các thay đổi quan trọng về bảo hiểm xã hội và thuế thu nhập cá nhân."
+        }
+      ]
+    },
+    {
+      "heading": "Vận hành nhân sự",
+      "items": [
+        {
+          "title": "Quản trị nhân sự trong giai đoạn tăng trưởng nhanh",
+          "description": "Chia sẻ cách xây dựng bộ máy nhân sự bắt kịp tốc độ tăng trưởng doanh nghiệp."
+        },
+        {
+          "title": "Xây dựng quy trình onboarding hiệu quả",
+          "description": "Hội thảo hướng dẫn thiết kế quy trình onboarding giúp nhân sự mới hoà nhập nhanh."
+        },
+        {
+          "title": "Tối ưu vận hành nhân sự với nguồn lực tinh gọn",
+          "description": "Phương pháp vận hành nhân sự hiệu quả khi đội ngũ HR nội bộ còn hạn chế."
+        }
+      ]
+    },
+    {
+      "heading": "Chiến lược & tổ chức",
+      "items": [
+        {
+          "title": "Chuẩn hoá hồ sơ nhân sự trước khi gọi vốn",
+          "description": "Hướng dẫn chuẩn bị hồ sơ nhân sự đáp ứng yêu cầu thẩm định của nhà đầu tư."
+        },
+        {
+          "title": "Thiết kế cơ cấu tổ chức cho giai đoạn mở rộng",
+          "description": "Hội thảo chia sẻ cách xây dựng sơ đồ tổ chức phù hợp với tốc độ tăng trưởng."
+        },
+        {
+          "title": "Xây dựng chính sách lương thưởng minh bạch",
+          "description": "Nguyên tắc xây dựng hệ thống lương thưởng công bằng, minh bạch và giữ chân nhân tài."
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "heading": "Muốn xem lại các buổi hội thảo khác?",
+    "body": "Để lại thông tin liên hệ, GCW sẽ gửi đường dẫn xem lại các buổi hội thảo trực tuyến đã tổ chức.",
+    "label": "Đăng ký xem hội thảo",
+    "href": "/contact"
+  }
+}

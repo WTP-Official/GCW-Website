@@ -48,7 +48,10 @@ export default function ContactPage() {
                 <h3 className="text-sm font-semibold text-white">Liên hệ</h3>
                 <ul className="mt-3 space-y-2 text-sm text-white/70">
                   <li className="flex flex-wrap items-center gap-1">
-                    <Phone className="mr-1 h-4 w-4 text-white/70" aria-hidden="true" />
+                    <Phone
+                      className="mr-1 h-4 w-4 text-white/70"
+                      aria-hidden="true"
+                    />
                     {content.phones.map((phone, i) => (
                       <span key={phone}>
                         {i > 0 && <span className="mx-1 text-white/40">|</span>}
@@ -62,7 +65,10 @@ export default function ContactPage() {
                     ))}
                   </li>
                   <li className="flex items-center gap-2">
-                    <Mail className="h-4 w-4 text-white/70" aria-hidden="true" />
+                    <Mail
+                      className="h-4 w-4 text-white/70"
+                      aria-hidden="true"
+                    />
                     <a
                       href={`mailto:${content.email}`}
                       className="transition-colors hover:text-white"
@@ -71,7 +77,10 @@ export default function ContactPage() {
                     </a>
                   </li>
                   <li className="flex items-center gap-2">
-                    <Globe className="h-4 w-4 text-white/70" aria-hidden="true" />
+                    <Globe
+                      className="h-4 w-4 text-white/70"
+                      aria-hidden="true"
+                    />
                     <a
                       href={`https://${content.website}`}
                       target="_blank"
@@ -86,17 +95,11 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <div className="rounded-md bg-surface p-6 text-ink sm:p-8">
-            <h2 className="text-xl text-ink">{content.formHeading}</h2>
-
-            <div className="mt-6">
-              <JarvisFormEmbed
-                formId={content.jarvisFormId}
-                title="Biểu mẫu liên hệ GCW"
-                className="rounded-md"
-              />
-            </div>
-          </div>
+          <JarvisFormEmbed
+            formId={content.jarvisFormId}
+            title="Biểu mẫu liên hệ GCW"
+            className="rounded-md"
+          />
         </div>
       </section>
     </main>

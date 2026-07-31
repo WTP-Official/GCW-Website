@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { CONTENT_BRAND_SLUG } from "@/constants/site";
+import { AEO_SECRET_KEY, CONTENT_BRAND_SLUG } from "@/constants/site";
 
 // Topics + their latest articles for the "Tài nguyên" (Resources) mega-menu
 // come from the external content API. We fetch them server-side here because
@@ -31,7 +31,10 @@ export async function GET() {
   try {
     const res = await fetch(
       `${API_ORIGIN}/api/public/${CONTENT_BRAND_SLUG}/topics/latest-articles?perTopic=6`,
-      { next: { revalidate } },
+      {
+        headers: { "x-aeo-secret-key": AEO_SECRET_KEY },
+        next: { revalidate },
+      },
     );
     if (!res.ok) {
       return NextResponse.json([]);
