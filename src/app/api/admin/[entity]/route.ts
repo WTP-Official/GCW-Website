@@ -1,13 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-import { readFile, writeFile } from "fs/promises";
-import path from "path";
 import { getEntity } from "@/app/admin/lib/entities";
-
-// Dev-only: reads/writes each route's own content.json on disk. Vercel's
-// production filesystem is read-only, so writes only work via `pnpm dev`.
-function contentFilePath(contentFile: string) {
-  return path.join(process.cwd(), "src/app/(pages)", contentFile);
-}
+import { mutateContentItems, readContentItems } from "../_lib/content-store";
 
 function slugify(input: string) {
   return input
@@ -39,9 +32,16 @@ export async function GET(
     return NextResponse.json({ error: "Unknown entity" }, { status: 404 });
   }
 
-  const raw = await readFile(contentFilePath(entity.contentFile), "utf-8");
-  const data = JSON.parse(raw) as Record<string, unknown>;
-  return NextResponse.json(data[entity.itemsKey] ?? []);
+  try {
+    const items = await readContentItems(entity.contentFile, entity.itemsKey);
+    return NextResponse.json(items);
+  } catch (err) {
+    console.error(`[admin:${slug}] GET failed`, err);
+    return NextResponse.json(
+      { error: err instanceof Error ? err.message : "Không đọc được dữ liệu" },
+      { status: 500 },
+    );
+  }
 }
 
 export async function POST(
@@ -54,7 +54,13 @@ export async function POST(
     return NextResponse.json({ error: "Unknown entity" }, { status: 404 });
   }
 
-  const body = await req.json();
+  let body: Record<string, unknown>;
+  try {
+    body = await req.json();
+  } catch {
+    return NextResponse.json({ error: "Payload không hợp lệ" }, { status: 400 });
+  }
+
   for (const field of entity.fields) {
     if (field.type === "tags" || field.type === "image" || field.optional) continue;
     if (!String(body[field.key] ?? "").trim()) {
@@ -65,20 +71,26 @@ export async function POST(
     }
   }
 
-  const filePath = contentFilePath(entity.contentFile);
-  const raw = await readFile(filePath, "utf-8");
-  const data = JSON.parse(raw) as Record<string, unknown>;
-  const items = (data[entity.itemsKey] as Record<string, unknown>[]) ?? [];
-
-  const label = String(body.title ?? body.name ?? "").trim();
-  const id = uniqueSlug(
-    slugify(label),
-    new Set(items.map((item) => String(item.id))),
-  );
-  const newItem = { id, ...body };
-  items.push(newItem);
-  data[entity.itemsKey] = items;
-  await writeFile(filePath, `${JSON.stringify(data, null, 2)}\n`, "utf-8");
-
-  return NextResponse.json(newItem, { status: 201 });
+  try {
+    const newItem = await mutateContentItems(
+      entity.contentFile,
+      entity.itemsKey,
+      (items) => {
+        const label = String(body.title ?? body.name ?? "").trim();
+        const id = uniqueSlug(
+          slugify(label),
+          new Set(items.map((item) => String(item.id))),
+        );
+        const created = { id, ...body };
+        return { items: [...items, created], result: created };
+      },
+    );
+    return NextResponse.json(newItem, { status: 201 });
+  } catch (err) {
+    console.error(`[admin:${slug}] POST failed`, err);
+    return NextResponse.json(
+      { error: err instanceof Error ? err.message : "Đã có lỗi xảy ra khi lưu" },
+      { status: 500 },
+    );
+  }
 }

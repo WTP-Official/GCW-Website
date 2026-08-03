@@ -1,12 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowLeft, type LucideIcon } from "lucide-react";
+import { formatEventMeta } from "@/lib/formatEventMeta";
 
 type SplitItem = {
   id: string;
   title: string;
   description: string;
-  meta: string;
+  format?: string;
+  eventDate?: string;
+  duration?: string;
+  location?: string;
   image?: string;
 };
 
@@ -62,7 +66,7 @@ export function SplitImageList({
             >
               <div className="flex flex-1 flex-col justify-center p-6">
                 <span className="inline-flex w-fit rounded-none bg-white/10 px-3 py-1 text-xs font-medium text-white/70">
-                  {item.meta}
+                  {formatEventMeta(item)}
                 </span>
                 <h3 className="mt-4 text-lg leading-snug group-hover:text-brand-200">
                   {item.title}

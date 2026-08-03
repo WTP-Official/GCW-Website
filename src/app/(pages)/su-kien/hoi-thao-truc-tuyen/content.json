@@ -9,19 +9,25 @@
       "id": "webinar-01",
       "title": "Tối ưu chi phí nhân sự cho doanh nghiệp SME",
       "description": "Webinar chia sẻ phương pháp rà soát và tối ưu chi phí lương, bảo hiểm xã hội và thuế TNCN.",
-      "meta": "Webinar · Dự kiến Quý 3/2026"
+      "format": "Online",
+      "eventDate": "2026-08-20T09:00",
+      "location": "Link Zoom sẽ gửi sau khi đăng ký"
     },
     {
       "id": "webinar-02",
       "title": "Chuẩn hoá hồ sơ nhân sự trước khi gọi vốn",
       "description": "Webinar hướng dẫn doanh nghiệp chuẩn bị hồ sơ nhân sự đáp ứng yêu cầu thẩm định của nhà đầu tư.",
-      "meta": "Webinar · Dự kiến Quý 3/2026"
+      "format": "Online",
+      "eventDate": "2026-09-10T09:00",
+      "location": "Link Zoom sẽ gửi sau khi đăng ký"
     },
     {
       "id": "webinar-03",
       "title": "Quản lý lương, bảo hiểm xã hội và thuế TNCN đúng hạn",
       "description": "Webinar tổng hợp quy trình tính lương và các mốc thời hạn quan trọng doanh nghiệp cần nắm rõ.",
-      "meta": "Webinar · Dự kiến Quý 4/2026"
+      "format": "Online",
+      "eventDate": "2026-11-12T09:00",
+      "location": "Link Zoom sẽ gửi sau khi đăng ký"
     }
   ],
   "cta": {

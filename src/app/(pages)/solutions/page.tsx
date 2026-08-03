@@ -107,7 +107,7 @@ export default async function SolutionsPage() {
               {articles.map((article) => (
                 <Link
                   key={article.slug}
-                  href={`/tai-nguyen/blog/${article.slug}`}
+                  href={`/blog/${article.slug}`}
                   className="rounded-md border border-black/5 bg-white p-5 text-sm font-medium text-ink transition-shadow hover:shadow-md hover:text-brand-600"
                 >
                   {article.title}

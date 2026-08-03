@@ -2,13 +2,11 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import {
   Menu,
   X,
   ChevronDown,
-  Search,
   ShieldCheck,
   Gauge,
   TrendingUp,
@@ -110,21 +108,24 @@ const NAV_ITEMS: NavItem[] = [
             {
               href: "/about",
               label: "Giới thiệu GCW",
-              description: "Strategic HR Operator — đồng hành thực thi cùng doanh nghiệp SME.",
+              description:
+                "Strategic HR Operator — đồng hành thực thi cùng doanh nghiệp SME.",
               icon: Building2,
               image: homeContent.positioning.image,
             },
             {
               href: "/about#ecosystem",
               label: "Hệ sinh thái WTP Group",
-              description: "Mạng lưới các công ty thành viên đồng hành cùng doanh nghiệp SME.",
+              description:
+                "Mạng lưới các công ty thành viên đồng hành cùng doanh nghiệp SME.",
               icon: Network,
               image: "/images/case-tech-funding.jpg",
             },
             {
               href: "/about#differentiators",
               label: "Điểm khác biệt của GCW",
-              description: "Vì sao doanh nghiệp lựa chọn GCW làm đối tác vận hành nhân sự.",
+              description:
+                "Vì sao doanh nghiệp lựa chọn GCW làm đối tác vận hành nhân sự.",
               icon: Award,
               image: "/images/case-manufacturing.jpg",
             },
@@ -211,7 +212,7 @@ const NAV_ITEMS: NavItem[] = [
 ];
 
 // The external content app groups articles by topic — reuse that grouping for
-// the "Tài nguyên" mega-menu, but point at the site's own /tai-nguyen/blog
+// the "Tài nguyên" mega-menu, but point at the site's own /blog
 // pages (which render the same articles with GCW's own layout) instead of
 // the raw /blog proxy.
 type ResourceTopicGroup = {
@@ -222,10 +223,10 @@ type ResourceTopicGroup = {
 
 function toBlogHref(href: string): string {
   if (href.startsWith("/blog/articles?topic=")) {
-    return href.replace("/blog/articles", "/tai-nguyen/blog");
+    return href.replace("/blog/articles", "/blog");
   }
   if (href.startsWith("/blog/")) {
-    return href.replace("/blog/", "/tai-nguyen/blog/");
+    return href.replace("/blog/", "/blog/");
   }
   return href;
 }
@@ -253,17 +254,18 @@ const DROPDOWN_GRID_BY_COLUMNS: Record<1 | 2 | 3 | 4, string> = {
 };
 
 export function Header() {
-  const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [openMobileDropdown, setOpenMobileDropdown] = useState<string | null>(null);
-  const [isSearchOpen, setIsSearchOpen] = useState(false);
-  const [searchQuery, setSearchQuery] = useState("");
+  const [openMobileDropdown, setOpenMobileDropdown] = useState<string | null>(
+    null,
+  );
   const [newsColumns, setNewsColumns] = useState<DropdownColumn[] | null>(null);
 
   useEffect(() => {
     let cancelled = false;
     fetch("/api/blog/topics")
-      .then((res) => (res.ok ? (res.json() as Promise<ResourceTopicGroup[]>) : []))
+      .then((res) =>
+        res.ok ? (res.json() as Promise<ResourceTopicGroup[]>) : [],
+      )
       .then((groups) => {
         if (cancelled || !Array.isArray(groups)) return;
         const columns: DropdownColumn[] = groups
@@ -271,11 +273,13 @@ export function Header() {
           .slice(0, MAX_NEWS_TOPICS)
           .map((group) => ({
             heading: group.title,
-            items: group.items.slice(0, MAX_ARTICLES_PER_TOPIC).map((article) => ({
-              href: toBlogHref(article.href),
-              label: article.title,
-              description: article.desc,
-            })),
+            items: group.items
+              .slice(0, MAX_ARTICLES_PER_TOPIC)
+              .map((article) => ({
+                href: toBlogHref(article.href),
+                label: article.title,
+                description: article.desc,
+              })),
           }));
         if (columns.length > 0) setNewsColumns(columns);
       })
@@ -291,12 +295,15 @@ export function Header() {
           ...item,
           dropdown: {
             columns: [...(newsColumns ?? []), RESOURCES_COLUMN],
-            viewAll: { href: "/tai-nguyen/blog", label: "Xem tất cả tin tức" },
+            viewAll: { href: "/blog", label: "Xem tất cả tin tức" },
             featured: {
               icon: Newspaper,
               heading: resourcesContent.live.title,
               body: resourcesContent.live.description,
-              cta: { href: resourcesContent.live.href, label: resourcesContent.live.label },
+              cta: {
+                href: resourcesContent.live.href,
+                label: resourcesContent.live.label,
+              },
             },
           },
         }
@@ -308,19 +315,14 @@ export function Header() {
     setOpenMobileDropdown(null);
   };
 
-  function submitSearch(e: React.FormEvent) {
-    e.preventDefault();
-    const q = searchQuery.trim();
-    if (!q) return;
-    router.push(`/tai-nguyen/blog?q=${encodeURIComponent(q)}`);
-    setIsSearchOpen(false);
-    closeAll();
-  }
-
   return (
     <header className="sticky top-0 z-30 border-b border-black/5 bg-white/95 backdrop-blur">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-4">
-        <Link href="/" className="flex shrink-0 items-center" onClick={closeAll}>
+        <Link
+          href="/"
+          className="flex shrink-0 items-center"
+          onClick={closeAll}
+        >
           <Image
             src="/logo.avif"
             alt="GCW"
@@ -333,7 +335,10 @@ export function Header() {
 
         <nav className="hidden h-full items-stretch lg:flex">
           {navItems.map((item) => (
-            <div key={item.href} className="group relative flex h-full items-stretch">
+            <div
+              key={item.href}
+              className="group relative flex h-full items-stretch"
+            >
               <Link
                 href={item.href}
                 className="flex items-center gap-1 whitespace-nowrap border-b-2 border-transparent px-3 text-sm font-medium tracking-wide text-ink-soft transition-colors group-hover:border-brand-600 group-hover:text-brand-600"
@@ -353,7 +358,11 @@ export function Header() {
                     <div
                       className={`grid flex-1 gap-x-10 gap-y-8 ${
                         DROPDOWN_GRID_BY_COLUMNS[
-                          Math.min(item.dropdown.columns.length, 4) as 1 | 2 | 3 | 4
+                          Math.min(item.dropdown.columns.length, 4) as
+                            | 1
+                            | 2
+                            | 3
+                            | 4
                         ]
                       }`}
                     >
@@ -386,7 +395,10 @@ export function Header() {
                                     ) : (
                                       Icon && (
                                         <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-brand-50 text-brand-600">
-                                          <Icon className="h-4 w-4" aria-hidden="true" />
+                                          <Icon
+                                            className="h-4 w-4"
+                                            aria-hidden="true"
+                                          />
                                         </span>
                                       )
                                     )}
@@ -412,7 +424,11 @@ export function Header() {
                         <div
                           className={
                             DROPDOWN_GRID_BY_COLUMNS[
-                              Math.min(item.dropdown.columns.length, 4) as 1 | 2 | 3 | 4
+                              Math.min(item.dropdown.columns.length, 4) as
+                                | 1
+                                | 2
+                                | 3
+                                | 4
                             ] === "grid-cols-1"
                               ? ""
                               : "col-span-full"
@@ -432,7 +448,10 @@ export function Header() {
                     {item.dropdown.featured && (
                       <div className="hidden w-72 shrink-0 border-l border-black/5 pl-10 lg:block">
                         <div className="flex h-10 w-10 items-center justify-center rounded-md bg-bg-dark text-white">
-                          <item.dropdown.featured.icon className="h-5 w-5" aria-hidden="true" />
+                          <item.dropdown.featured.icon
+                            className="h-5 w-5"
+                            aria-hidden="true"
+                          />
                         </div>
                         <h3 className="mt-4 text-base leading-snug text-ink">
                           {item.dropdown.featured.heading}
@@ -457,31 +476,6 @@ export function Header() {
         </nav>
 
         <div className="hidden shrink-0 items-center gap-3 lg:flex">
-          <div className="relative flex items-center">
-            {isSearchOpen && (
-              <form onSubmit={submitSearch} className="absolute right-full mr-2">
-                <input
-                  type="search"
-                  autoFocus
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  onBlur={() => !searchQuery && setIsSearchOpen(false)}
-                  placeholder="Tìm kiếm bài viết…"
-                  className="w-56 rounded-md border border-black/10 bg-white px-3 py-2 text-sm text-ink outline-none focus:border-brand-600"
-                />
-              </form>
-            )}
-            <button
-              type="button"
-              onClick={() => setIsSearchOpen((open) => !open)}
-              aria-label="Tìm kiếm"
-              aria-expanded={isSearchOpen}
-              className="inline-flex items-center justify-center rounded-md p-2 text-ink-soft transition-colors hover:text-brand-600"
-            >
-              <Search className="h-4 w-4" aria-hidden="true" />
-            </button>
-          </div>
-
           <Link
             href="/contact"
             className="inline-flex shrink-0 items-center whitespace-nowrap rounded-full border border-brand-600 px-5 py-2.5 text-sm font-medium text-brand-600 transition-colors hover:bg-brand-600 hover:text-white"
@@ -508,22 +502,6 @@ export function Header() {
       {isMenuOpen && (
         <nav className="border-t border-black/5 bg-white lg:hidden">
           <div className="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-4">
-            <form onSubmit={submitSearch} className="mb-2 flex items-center gap-2">
-              <input
-                type="search"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Tìm kiếm bài viết…"
-                className="w-full rounded-md border border-black/10 bg-white px-3 py-2 text-sm text-ink outline-none focus:border-brand-600"
-              />
-              <button
-                type="submit"
-                aria-label="Tìm kiếm"
-                className="inline-flex items-center justify-center rounded-md p-2 text-ink-soft"
-              >
-                <Search className="h-4 w-4" aria-hidden="true" />
-              </button>
-            </form>
             {navItems.map((item) => (
               <div key={item.href}>
                 <div className="flex items-center justify-between">
@@ -540,7 +518,9 @@ export function Header() {
                       aria-label={`Mở rộng ${item.label}`}
                       aria-expanded={openMobileDropdown === item.href}
                       onClick={() =>
-                        setOpenMobileDropdown((open) => (open === item.href ? null : item.href))
+                        setOpenMobileDropdown((open) =>
+                          open === item.href ? null : item.href,
+                        )
                       }
                       className="rounded-md p-2 text-ink-soft"
                     >

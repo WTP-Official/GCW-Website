@@ -11,6 +11,7 @@ type Item = {
   description: string;
   image?: string;
   body?: string;
+  downloadUrl?: string;
 };
 
 const itemList = content.items as Item[];
@@ -46,6 +47,7 @@ export default async function BookDetailPage({
       heading={item.title}
       image={item.image}
       body={item.body || item.description}
+      primaryAction={item.downloadUrl ? { label: "Tải ấn phẩm", href: item.downloadUrl } : undefined}
       backHref="/tai-nguyen/sach"
       backLabel="Quay lại danh sách"
       cta={content.cta}

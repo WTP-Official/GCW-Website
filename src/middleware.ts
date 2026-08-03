@@ -13,8 +13,12 @@ export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // The admin CRUD UI has no auth — only allow it when running locally in dev.
-  if (pathname === "/admin" || pathname.startsWith("/admin/") ||
-      pathname === "/api/admin" || pathname.startsWith("/api/admin/")) {
+  if (
+    pathname === "/admin" ||
+    pathname.startsWith("/admin/") ||
+    pathname === "/api/admin" ||
+    pathname.startsWith("/api/admin/")
+  ) {
     if (process.env.NODE_ENV !== "development") {
       return new NextResponse(null, { status: 404 });
     }
@@ -47,13 +51,27 @@ export function middleware(request: NextRequest) {
   }
 
   // When a /blog page requests its own static assets, serve them from the external app.
-  const referer = request.headers.get("referer") || "";
+  // Match on the referer's actual path segment (not a substring check) so routes like
+  // /blog — which merely contain "/blog" — aren't mistaken for the proxy.
   if (
-    (pathname.startsWith("/_next/static/") ||
-      pathname.startsWith("/static/")) &&
-    (referer.includes(PUBLIC_BASE) || referer.includes(EXTERNAL_BASE))
+    pathname.startsWith("/_next/static/") ||
+    pathname.startsWith("/static/")
   ) {
-    return NextResponse.rewrite(new URL(`${BLOG_ORIGIN}${pathname}`));
+    const referer = request.headers.get("referer") || "";
+    let refererPath = "";
+    try {
+      refererPath = new URL(referer).pathname;
+    } catch {
+      refererPath = "";
+    }
+    const fromBlogProxy =
+      refererPath === PUBLIC_BASE ||
+      refererPath.startsWith(`${PUBLIC_BASE}/`) ||
+      refererPath === EXTERNAL_BASE ||
+      refererPath.startsWith(`${EXTERNAL_BASE}/`);
+    if (fromBlogProxy) {
+      return NextResponse.rewrite(new URL(`${BLOG_ORIGIN}${pathname}`));
+    }
   }
 }
 

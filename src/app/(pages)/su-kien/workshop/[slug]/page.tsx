@@ -3,12 +3,17 @@ import type { Metadata } from "next";
 import { Users2 } from "lucide-react";
 import content from "../content.json";
 import { ItemDetail } from "@/components/ItemDetail";
+import { formatEventMeta } from "@/lib/formatEventMeta";
 
 type Item = {
   id: string;
   title: string;
   description: string;
-  meta: string;
+  format?: string;
+  eventDate?: string;
+  location?: string;
+  duration?: string;
+  registerUrl?: string;
   image?: string;
   body?: string;
 };
@@ -42,10 +47,11 @@ export default async function WorkshopDetailPage({
   return (
     <ItemDetail
       icon={Users2}
-      eyebrow={item.meta}
+      eyebrow={formatEventMeta(item)}
       heading={item.title}
       image={item.image}
       body={item.body || item.description}
+      primaryAction={item.registerUrl ? { label: "Đăng ký tham dự", href: item.registerUrl } : undefined}
       backHref="/su-kien/workshop"
       backLabel="Quay lại danh sách"
       cta={content.cta}

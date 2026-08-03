@@ -11,8 +11,22 @@ export const metadata: Metadata = {
 
 const PILLARS = ["Tuân thủ lao động", "Vận hành nhân sự", "Chiến lược & tổ chức"];
 
+type Item = {
+  id: string;
+  category: string;
+  title: string;
+  description: string;
+  image?: string;
+  fileUrl?: string;
+};
+
 export default function GuidesPage() {
-  const categories = groupByCategory(content.items, PILLARS);
+  const items = (content.items as Item[]).map((item) => ({
+    ...item,
+    actionLabel: item.fileUrl ? "Tải checklist" : undefined,
+    actionHref: item.fileUrl,
+  }));
+  const categories = groupByCategory(items, PILLARS);
 
   return (
     <FeaturedAccordionList

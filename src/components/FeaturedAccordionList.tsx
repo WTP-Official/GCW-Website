@@ -1,11 +1,16 @@
-"use client";
-
-import { useState, type ReactNode } from "react";
+import { type ReactNode } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowLeft, Plus, Minus } from "lucide-react";
+import { ArrowLeft, ArrowUpRight } from "lucide-react";
 
-type AccordionItem = { id: string; title: string; description: string; image?: string };
+type AccordionItem = {
+  id: string;
+  title: string;
+  description: string;
+  image?: string;
+  actionLabel?: string;
+  actionHref?: string;
+};
 type AccordionCategory = { heading: string; items: AccordionItem[] };
 type ToolCard = {
   id: string;
@@ -37,7 +42,6 @@ export function FeaturedAccordionList({
   backHref: string;
   backLabel: string;
 }) {
-  const [openKey, setOpenKey] = useState<string | null>(null);
   const { heading, intro, toolsHeading, tools, categoriesHeading, categories, cta } = content;
 
   return (
@@ -102,51 +106,44 @@ export function FeaturedAccordionList({
         <div className="mt-16">
           <h2 className="text-2xl leading-snug text-ink sm:text-3xl">{categoriesHeading}</h2>
           <div className="mt-8 grid gap-x-10 gap-y-10 sm:grid-cols-3">
-            {categories.map((category, categoryIndex) => (
+            {categories.map((category) => (
               <div key={category.heading}>
                 <p className="rounded-md bg-bg-dark px-4 py-3 text-center text-sm font-medium text-white">
                   {category.heading}
                 </p>
                 <ul className="mt-6 space-y-0">
-                  {category.items.map((item, itemIndex) => {
-                    const key = `${categoryIndex}-${itemIndex}`;
-                    const isOpen = openKey === key;
-                    return (
-                      <li key={item.id} className="border-b border-black/10">
-                        <button
-                          type="button"
-                          onClick={() => setOpenKey(isOpen ? null : key)}
-                          aria-expanded={isOpen}
-                          className="flex w-full items-start justify-between gap-3 py-4 text-left"
-                        >
-                          <span className="flex items-start gap-3">
-                            {item.image && (
-                              <span className="relative block h-9 w-9 shrink-0 overflow-hidden rounded-md">
-                                <Image
-                                  src={item.image}
-                                  alt=""
-                                  fill
-                                  sizes="36px"
-                                  className="object-cover"
-                                />
-                              </span>
-                            )}
-                            <span className="text-sm font-medium text-ink">{item.title}</span>
+                  {category.items.map((item) => (
+                    <li key={item.id} className="border-b border-black/10 py-4">
+                      <div className="flex items-start gap-3">
+                        {item.image && (
+                          <span className="relative block h-9 w-9 shrink-0 overflow-hidden rounded-md">
+                            <Image
+                              src={item.image}
+                              alt=""
+                              fill
+                              sizes="36px"
+                              className="object-cover"
+                            />
                           </span>
-                          <span className="mt-0.5 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brand-600 text-white">
-                            {isOpen ? (
-                              <Minus className="h-3 w-3" aria-hidden="true" />
-                            ) : (
-                              <Plus className="h-3 w-3" aria-hidden="true" />
-                            )}
-                          </span>
-                        </button>
-                        {isOpen && (
-                          <p className="pb-4 text-sm text-ink-soft">{item.description}</p>
                         )}
-                      </li>
-                    );
-                  })}
+                        <div>
+                          <span className="text-sm font-medium text-ink">{item.title}</span>
+                          <p className="mt-1 text-sm text-ink-soft">{item.description}</p>
+                          {item.actionHref && item.actionLabel && (
+                            <a
+                              href={item.actionHref}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="mt-2 inline-flex items-center gap-1 text-sm font-medium text-brand-600 hover:text-brand-700"
+                            >
+                              {item.actionLabel}
+                              <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
+                            </a>
+                          )}
+                        </div>
+                      </div>
+                    </li>
+                  ))}
                 </ul>
               </div>
             ))}

@@ -1,4 +1,12 @@
-export type FieldType = "text" | "textarea" | "richtext" | "select" | "tags" | "image";
+export type FieldType =
+  | "text"
+  | "textarea"
+  | "richtext"
+  | "select"
+  | "tags"
+  | "image"
+  | "url"
+  | "datetime-local";
 
 export type FieldConfig = {
   key: string;
@@ -22,6 +30,7 @@ export type EntityConfig = {
 };
 
 const PILLARS = ["Tuân thủ lao động", "Vận hành nhân sự", "Chiến lược & tổ chức"];
+const EVENT_FORMATS = ["Online", "Offline", "Kết hợp (Online & Offline)"];
 
 export const ENTITIES: EntityConfig[] = [
   {
@@ -51,6 +60,13 @@ export const ENTITIES: EntityConfig[] = [
       { key: "title", label: "Tiêu đề sách", type: "text" },
       { key: "image", label: "Ảnh bìa", type: "image" },
       { key: "description", label: "Mô tả", type: "textarea" },
+      {
+        key: "downloadUrl",
+        label: "Đường dẫn tải ấn phẩm",
+        type: "url",
+        placeholder: "https://...",
+        optional: true,
+      },
       { key: "body", label: "Nội dung chi tiết (trang riêng)", type: "richtext", optional: true },
     ],
   },
@@ -81,6 +97,13 @@ export const ENTITIES: EntityConfig[] = [
       { key: "title", label: "Tiêu đề", type: "text" },
       { key: "image", label: "Hình ảnh", type: "image" },
       { key: "description", label: "Mô tả", type: "textarea" },
+      {
+        key: "fileUrl",
+        label: "Đường dẫn tải checklist",
+        type: "url",
+        placeholder: "https://...",
+        optional: true,
+      },
     ],
   },
   {
@@ -100,6 +123,13 @@ export const ENTITIES: EntityConfig[] = [
       { key: "title", label: "Tên chuỗi", type: "text" },
       { key: "image", label: "Hình ảnh", type: "image" },
       { key: "description", label: "Mô tả", type: "textarea" },
+      {
+        key: "episodesUrl",
+        label: "Đường dẫn nghe (Spotify, Apple Podcasts, RSS...)",
+        type: "url",
+        placeholder: "https://...",
+        optional: true,
+      },
       { key: "body", label: "Nội dung chi tiết (trang riêng)", type: "richtext", optional: true },
     ],
   },
@@ -115,6 +145,13 @@ export const ENTITIES: EntityConfig[] = [
       { key: "title", label: "Tiêu đề", type: "text" },
       { key: "image", label: "Hình ảnh", type: "image" },
       { key: "description", label: "Mô tả", type: "textarea" },
+      {
+        key: "videoUrl",
+        label: "Đường dẫn video (YouTube, Vimeo...)",
+        type: "url",
+        placeholder: "https://www.youtube.com/watch?v=...",
+        optional: true,
+      },
     ],
   },
   {
@@ -129,6 +166,13 @@ export const ENTITIES: EntityConfig[] = [
       { key: "title", label: "Tiêu đề", type: "text" },
       { key: "image", label: "Hình ảnh", type: "image" },
       { key: "description", label: "Mô tả", type: "textarea" },
+      {
+        key: "fileUrl",
+        label: "Đường dẫn tải file mẫu (.docx/.xlsx/.pdf)",
+        type: "url",
+        placeholder: "https://...",
+        optional: true,
+      },
       { key: "body", label: "Nội dung chi tiết (trang riêng)", type: "richtext", optional: true },
     ],
   },
@@ -144,6 +188,13 @@ export const ENTITIES: EntityConfig[] = [
       { key: "title", label: "Tiêu đề", type: "text" },
       { key: "image", label: "Hình ảnh", type: "image" },
       { key: "description", label: "Mô tả", type: "textarea" },
+      {
+        key: "recordingUrl",
+        label: "Đường dẫn bản ghi webinar",
+        type: "url",
+        placeholder: "https://...",
+        optional: true,
+      },
     ],
   },
   {
@@ -177,11 +228,21 @@ export const ENTITIES: EntityConfig[] = [
       { key: "title", label: "Tiêu đề", type: "text" },
       { key: "image", label: "Hình ảnh", type: "image" },
       { key: "description", label: "Mô tả", type: "textarea" },
+      { key: "format", label: "Hình thức", type: "select", options: EVENT_FORMATS },
+      { key: "eventDate", label: "Ngày giờ diễn ra", type: "datetime-local", optional: true },
       {
-        key: "meta",
-        label: "Nhãn phụ (định dạng · thời gian)",
+        key: "location",
+        label: "Địa điểm / nền tảng",
         type: "text",
-        placeholder: "Webinar · Dự kiến Quý 3/2026",
+        placeholder: "Link Zoom sẽ gửi sau khi đăng ký",
+        optional: true,
+      },
+      {
+        key: "registerUrl",
+        label: "Đường dẫn đăng ký tham dự",
+        type: "url",
+        placeholder: "https://...",
+        optional: true,
       },
       { key: "body", label: "Nội dung chi tiết (trang riêng)", type: "richtext", optional: true },
     ],
@@ -197,7 +258,22 @@ export const ENTITIES: EntityConfig[] = [
       { key: "title", label: "Tiêu đề", type: "text" },
       { key: "image", label: "Hình ảnh", type: "image" },
       { key: "description", label: "Mô tả", type: "textarea" },
-      { key: "meta", label: "Nhãn phụ (định dạng · thời gian)", type: "text" },
+      { key: "format", label: "Hình thức", type: "select", options: EVENT_FORMATS },
+      { key: "eventDate", label: "Ngày giờ diễn ra", type: "datetime-local", optional: true },
+      {
+        key: "location",
+        label: "Địa điểm / nền tảng",
+        type: "text",
+        placeholder: "Văn phòng GCW, TP.HCM",
+        optional: true,
+      },
+      {
+        key: "registerUrl",
+        label: "Đường dẫn đăng ký tham dự",
+        type: "url",
+        placeholder: "https://...",
+        optional: true,
+      },
       { key: "body", label: "Nội dung chi tiết (trang riêng)", type: "richtext", optional: true },
     ],
   },
@@ -212,7 +288,29 @@ export const ENTITIES: EntityConfig[] = [
       { key: "title", label: "Tiêu đề", type: "text" },
       { key: "image", label: "Hình ảnh", type: "image" },
       { key: "description", label: "Mô tả", type: "textarea" },
-      { key: "meta", label: "Nhãn phụ (thời lượng)", type: "text" },
+      { key: "format", label: "Hình thức", type: "select", options: EVENT_FORMATS },
+      { key: "eventDate", label: "Ngày giờ diễn ra", type: "datetime-local", optional: true },
+      {
+        key: "location",
+        label: "Địa điểm / nền tảng",
+        type: "text",
+        placeholder: "Tại doanh nghiệp (theo yêu cầu)",
+        optional: true,
+      },
+      {
+        key: "duration",
+        label: "Thời lượng dự kiến",
+        type: "text",
+        placeholder: "1 ngày / Nửa ngày",
+        optional: true,
+      },
+      {
+        key: "registerUrl",
+        label: "Đường dẫn đăng ký tham dự",
+        type: "url",
+        placeholder: "https://...",
+        optional: true,
+      },
       { key: "body", label: "Nội dung chi tiết (trang riêng)", type: "richtext", optional: true },
     ],
   },

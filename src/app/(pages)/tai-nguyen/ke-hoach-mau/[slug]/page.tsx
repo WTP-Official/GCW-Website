@@ -11,6 +11,7 @@ type Item = {
   description: string;
   image?: string;
   body?: string;
+  fileUrl?: string;
 };
 
 const itemList = content.items as Item[];
@@ -46,6 +47,7 @@ export default async function PlannerDetailPage({
       heading={item.title}
       image={item.image}
       body={item.body || item.description}
+      primaryAction={item.fileUrl ? { label: "Tải mẫu", href: item.fileUrl } : undefined}
       backHref="/tai-nguyen/ke-hoach-mau"
       backLabel="Quay lại danh sách"
       cta={content.cta}

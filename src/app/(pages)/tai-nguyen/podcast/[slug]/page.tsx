@@ -11,6 +11,7 @@ type SeriesItem = {
   description: string;
   image?: string;
   body?: string;
+  episodesUrl?: string;
 };
 
 const seriesList = content.series as SeriesItem[];
@@ -46,6 +47,7 @@ export default async function SeriesDetailPage({
       heading={item.title}
       image={item.image}
       body={item.body || item.description}
+      primaryAction={item.episodesUrl ? { label: "Nghe podcast", href: item.episodesUrl } : undefined}
       backHref="/tai-nguyen/podcast"
       backLabel="Quay lại danh sách"
       cta={content.cta}

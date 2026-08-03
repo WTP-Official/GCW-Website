@@ -1,12 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-import { readFile, writeFile } from "fs/promises";
-import path from "path";
 import { getEntity } from "@/app/admin/lib/entities";
-
-// Dev-only: see ../route.ts for the filesystem caveat.
-function contentFilePath(contentFile: string) {
-  return path.join(process.cwd(), "src/app/(pages)", contentFile);
-}
+import { mutateContentItems } from "../../_lib/content-store";
 
 export async function PATCH(
   req: NextRequest,
@@ -18,22 +12,39 @@ export async function PATCH(
     return NextResponse.json({ error: "Unknown entity" }, { status: 404 });
   }
 
-  const body = await req.json();
-  const filePath = contentFilePath(entity.contentFile);
-  const raw = await readFile(filePath, "utf-8");
-  const data = JSON.parse(raw) as Record<string, unknown>;
-  const items = (data[entity.itemsKey] as Record<string, unknown>[]) ?? [];
-
-  const index = items.findIndex((item) => item.id === id);
-  if (index === -1) {
-    return NextResponse.json({ error: "Not found" }, { status: 404 });
+  let body: Record<string, unknown>;
+  try {
+    body = await req.json();
+  } catch {
+    return NextResponse.json({ error: "Payload không hợp lệ" }, { status: 400 });
   }
 
-  items[index] = { ...items[index], ...body, id };
-  data[entity.itemsKey] = items;
-  await writeFile(filePath, `${JSON.stringify(data, null, 2)}\n`, "utf-8");
+  try {
+    const updated = await mutateContentItems(
+      entity.contentFile,
+      entity.itemsKey,
+      (items) => {
+        const index = items.findIndex((item) => item.id === id);
+        if (index === -1) {
+          return { items, result: null };
+        }
+        const next = [...items];
+        next[index] = { ...next[index], ...body, id };
+        return { items: next, result: next[index] };
+      },
+    );
 
-  return NextResponse.json(items[index]);
+    if (!updated) {
+      return NextResponse.json({ error: "Not found" }, { status: 404 });
+    }
+    return NextResponse.json(updated);
+  } catch (err) {
+    console.error(`[admin:${slug}] PATCH failed`, err);
+    return NextResponse.json(
+      { error: err instanceof Error ? err.message : "Đã có lỗi xảy ra khi lưu" },
+      { status: 500 },
+    );
+  }
 }
 
 export async function DELETE(
@@ -46,17 +57,25 @@ export async function DELETE(
     return NextResponse.json({ error: "Unknown entity" }, { status: 404 });
   }
 
-  const filePath = contentFilePath(entity.contentFile);
-  const raw = await readFile(filePath, "utf-8");
-  const data = JSON.parse(raw) as Record<string, unknown>;
-  const items = (data[entity.itemsKey] as Record<string, unknown>[]) ?? [];
+  try {
+    const deleted = await mutateContentItems(
+      entity.contentFile,
+      entity.itemsKey,
+      (items) => {
+        const next = items.filter((item) => item.id !== id);
+        return { items: next, result: next.length !== items.length };
+      },
+    );
 
-  const next = items.filter((item) => item.id !== id);
-  if (next.length === items.length) {
-    return NextResponse.json({ error: "Not found" }, { status: 404 });
+    if (!deleted) {
+      return NextResponse.json({ error: "Not found" }, { status: 404 });
+    }
+    return NextResponse.json({ ok: true });
+  } catch (err) {
+    console.error(`[admin:${slug}] DELETE failed`, err);
+    return NextResponse.json(
+      { error: err instanceof Error ? err.message : "Đã có lỗi xảy ra khi xóa" },
+      { status: 500 },
+    );
   }
-
-  data[entity.itemsKey] = next;
-  await writeFile(filePath, `${JSON.stringify(data, null, 2)}\n`, "utf-8");
-  return NextResponse.json({ ok: true });
 }

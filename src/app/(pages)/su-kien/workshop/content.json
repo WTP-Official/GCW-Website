@@ -9,19 +9,25 @@
       "id": "workshop-01",
       "title": "Thiết kế cơ cấu tổ chức cho giai đoạn mở rộng",
       "description": "Workshop thực chiến giúp đội ngũ quản lý xây dựng sơ đồ tổ chức phù hợp với giai đoạn tăng trưởng.",
-      "meta": "Workshop nội bộ · 1 ngày"
+      "format": "Offline",
+      "location": "Tại doanh nghiệp (theo yêu cầu)",
+      "duration": "1 ngày"
     },
     {
       "id": "workshop-02",
       "title": "Xây dựng chính sách lương thưởng minh bạch",
       "description": "Workshop hướng dẫn thiết kế hệ thống lương thưởng công bằng, cạnh tranh và dễ vận hành.",
-      "meta": "Workshop nội bộ · 1 ngày"
+      "format": "Offline",
+      "location": "Tại doanh nghiệp (theo yêu cầu)",
+      "duration": "1 ngày"
     },
     {
       "id": "workshop-03",
       "title": "Rà soát tuân thủ nhân sự toàn diện",
       "description": "Workshop cùng đội ngũ HR rà soát toàn bộ hồ sơ, quy trình và chính sách nhân sự hiện tại.",
-      "meta": "Workshop nội bộ · Nửa ngày"
+      "format": "Offline",
+      "location": "Tại doanh nghiệp (theo yêu cầu)",
+      "duration": "Nửa ngày"
     }
   ],
   "cta": {

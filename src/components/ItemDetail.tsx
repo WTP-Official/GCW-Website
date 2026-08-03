@@ -10,6 +10,7 @@ export function ItemDetail({
   image,
   body,
   tags,
+  primaryAction,
   backHref,
   backLabel,
   cta,
@@ -20,6 +21,7 @@ export function ItemDetail({
   image?: string;
   body: string;
   tags?: string[];
+  primaryAction?: { label: string; href: string };
   backHref: string;
   backLabel: string;
   cta: { heading: string; body: string; label: string; href: string };
@@ -53,6 +55,17 @@ export function ItemDetail({
           </div>
         ) : (
           <ImagePlaceholder icon={Icon} className="mt-8 aspect-[16/9] w-full rounded-md" />
+        )}
+
+        {primaryAction && (
+          <a
+            href={primaryAction.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-8 inline-flex items-center gap-2 rounded-md bg-brand-600 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-brand-700"
+          >
+            {primaryAction.label}
+          </a>
         )}
 
         {/<\/?[a-z][\s\S]*>/i.test(body) ? (

@@ -225,7 +225,13 @@ export function EntityManager({
               ) : (
                 <input
                   id={field.key}
-                  type="text"
+                  type={
+                    field.type === "url"
+                      ? "url"
+                      : field.type === "datetime-local"
+                        ? "datetime-local"
+                        : "text"
+                  }
                   required={field.type !== "tags" && !field.optional}
                   placeholder={field.placeholder}
                   value={form[field.key]}
