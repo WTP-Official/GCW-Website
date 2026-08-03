@@ -1,7 +1,14 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowLeft, type LucideIcon } from "lucide-react";
 
-type SplitItem = { id: string; title: string; description: string; meta: string };
+type SplitItem = {
+  id: string;
+  title: string;
+  description: string;
+  meta: string;
+  image?: string;
+};
 
 type Content = {
   heading: string;
@@ -16,11 +23,13 @@ export function SplitImageList({
   content,
   backHref,
   backLabel,
+  basePath,
 }: {
   icon: LucideIcon;
   content: Content;
   backHref: string;
   backLabel: string;
+  basePath: string;
 }) {
   const { heading, intro, itemsHeading, items, cta } = content;
 
@@ -46,21 +55,34 @@ export function SplitImageList({
         <h2 className="mt-8 text-2xl leading-snug text-ink sm:text-3xl">{itemsHeading}</h2>
         <div className="mt-8 grid gap-6 sm:grid-cols-2">
           {items.map((item) => (
-            <div
+            <Link
               key={item.id}
-              className="flex flex-col overflow-hidden rounded-md bg-bg-dark text-white sm:flex-row"
+              href={`${basePath}/${item.id}`}
+              className="group flex flex-col overflow-hidden rounded-md bg-bg-dark text-white transition-shadow hover:shadow-md sm:flex-row"
             >
               <div className="flex flex-1 flex-col justify-center p-6">
                 <span className="inline-flex w-fit rounded-none bg-white/10 px-3 py-1 text-xs font-medium text-white/70">
                   {item.meta}
                 </span>
-                <h3 className="mt-4 text-lg leading-snug">{item.title}</h3>
+                <h3 className="mt-4 text-lg leading-snug group-hover:text-brand-200">
+                  {item.title}
+                </h3>
                 <p className="mt-2 text-sm text-white/70">{item.description}</p>
               </div>
-              <div className="flex w-full shrink-0 items-center justify-center bg-black/20 p-6 sm:w-40">
-                <Icon className="h-10 w-10 text-white/40" aria-hidden="true" />
+              <div className="relative flex w-full shrink-0 items-center justify-center bg-black/20 p-6 sm:w-40">
+                {item.image ? (
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    sizes="(min-width: 640px) 160px, 100vw"
+                    className="object-cover"
+                  />
+                ) : (
+                  <Icon className="h-10 w-10 text-white/40" aria-hidden="true" />
+                )}
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </section>

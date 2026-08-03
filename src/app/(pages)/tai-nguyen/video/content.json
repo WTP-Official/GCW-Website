@@ -4,6 +4,87 @@
   "heading": "Video",
   "intro": "Video hướng dẫn thực hành các nghiệp vụ nhân sự phổ biến cho đội ngũ HR, dễ áp dụng ngay vào công việc hàng ngày.",
   "categoriesHeading": "Video theo chủ đề",
+  "items": [
+    {
+      "id": "video-01",
+      "category": "Tuân thủ lao động",
+      "title": "Hướng dẫn tính lương và bảo hiểm xã hội đúng quy định",
+      "description": "Video hướng dẫn từng bước cách tính lương, bảo hiểm xã hội và thuế TNCN theo quy định mới nhất."
+    },
+    {
+      "id": "video-02",
+      "category": "Tuân thủ lao động",
+      "title": "Quy trình soát xét hồ sơ nhân sự",
+      "description": "Hướng dẫn quy trình rà soát và chuẩn hoá hồ sơ nhân sự, hợp đồng lao động cho doanh nghiệp."
+    },
+    {
+      "id": "video-03",
+      "category": "Tuân thủ lao động",
+      "title": "Những lỗi tuân thủ lao động doanh nghiệp SME hay gặp",
+      "description": "Điểm qua các lỗi tuân thủ phổ biến nhất và cách khắc phục nhanh, đúng quy định."
+    },
+    {
+      "id": "video-04",
+      "category": "Tuân thủ lao động",
+      "title": "Cách xử lý khi có đợt thanh tra lao động đột xuất",
+      "description": "Hướng dẫn quy trình chuẩn bị và làm việc với đoàn thanh tra lao động."
+    },
+    {
+      "id": "video-05",
+      "category": "Vận hành nhân sự",
+      "title": "Quy trình onboarding nhân sự mới trong 30 ngày đầu",
+      "description": "Video minh hoạ lộ trình onboarding chuẩn giúp nhân sự mới hoà nhập nhanh với doanh nghiệp."
+    },
+    {
+      "id": "video-06",
+      "category": "Vận hành nhân sự",
+      "title": "Cách xây dựng quy trình đánh giá hiệu suất",
+      "description": "Hướng dẫn thiết kế chu trình đánh giá hiệu suất công bằng, dễ áp dụng."
+    },
+    {
+      "id": "video-07",
+      "category": "Vận hành nhân sự",
+      "title": "Kỹ năng xử lý xung đột trong đội ngũ",
+      "description": "Phương pháp hoà giải và xử lý xung đột nội bộ hiệu quả cho quản lý nhân sự."
+    },
+    {
+      "id": "video-08",
+      "category": "Vận hành nhân sự",
+      "title": "Xây dựng văn hoá phản hồi hai chiều",
+      "description": "Cách thiết lập cơ chế phản hồi hai chiều giúp đội ngũ gắn kết và cải thiện liên tục."
+    },
+    {
+      "id": "video-09",
+      "category": "Chiến lược & tổ chức",
+      "title": "Cách xây dựng cơ cấu tổ chức cho giai đoạn mở rộng",
+      "description": "Hướng dẫn thiết kế sơ đồ tổ chức phù hợp khi doanh nghiệp bước vào giai đoạn tăng trưởng nhanh."
+    },
+    {
+      "id": "video-10",
+      "category": "Chiến lược & tổ chức",
+      "title": "Thiết kế chính sách lương thưởng cạnh tranh",
+      "description": "Nguyên tắc xây dựng chính sách lương thưởng vừa cạnh tranh vừa bền vững về chi phí."
+    },
+    {
+      "id": "video-11",
+      "category": "Chiến lược & tổ chức",
+      "title": "Chuẩn bị hồ sơ nhân sự trước khi gọi vốn",
+      "description": "Video hướng dẫn chuẩn hoá hồ sơ nhân sự đáp ứng yêu cầu thẩm định của nhà đầu tư."
+    },
+    {
+      "id": "video-12",
+      "category": "Chiến lược & tổ chức",
+      "title": "Xây dựng khung năng lực lãnh đạo kế cận",
+      "description": "Cách xác định và phát triển đội ngũ kế cận cho các vị trí lãnh đạo chủ chốt."
+    },
+    {
+      "id": "test",
+      "category": "Tuân thủ lao động",
+      "title": "TEST",
+      "description": "test",
+      "image": "/uploads/test.png"
+    }
+  ],
   "cta": {
     "heading": "Muốn xem thêm video hướng dẫn?",
     "body": "Để lại thông tin liên hệ, GCW sẽ gửi danh sách video hướng dẫn phù hợp với nghiệp vụ doanh nghiệp bạn đang cần.",

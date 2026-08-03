@@ -2,9 +2,10 @@
 
 import { useState, type ReactNode } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowLeft, Plus, Minus } from "lucide-react";
 
-type AccordionItem = { id: string; title: string; description: string };
+type AccordionItem = { id: string; title: string; description: string; image?: string };
 type AccordionCategory = { heading: string; items: AccordionItem[] };
 type ToolCard = {
   id: string;
@@ -12,6 +13,7 @@ type ToolCard = {
   description: string;
   ctaLabel: string;
   ctaHref: string;
+  image?: string;
 };
 
 type Content = {
@@ -66,18 +68,31 @@ export function FeaturedAccordionList({
               {tools.map((tool) => (
                 <div
                   key={tool.id}
-                  className="flex flex-col justify-between rounded-md bg-bg-dark p-6 text-white"
+                  className="flex flex-col justify-between overflow-hidden rounded-md bg-bg-dark text-white"
                 >
-                  <div>
-                    <h3 className="text-lg leading-snug">{tool.title}</h3>
-                    <p className="mt-2 text-sm text-white/70">{tool.description}</p>
+                  {tool.image && (
+                    <div className="relative aspect-video w-full shrink-0">
+                      <Image
+                        src={tool.image}
+                        alt={tool.title}
+                        fill
+                        sizes="(min-width: 640px) 33vw, 100vw"
+                        className="object-cover"
+                      />
+                    </div>
+                  )}
+                  <div className="flex flex-1 flex-col justify-between p-6">
+                    <div>
+                      <h3 className="text-lg leading-snug">{tool.title}</h3>
+                      <p className="mt-2 text-sm text-white/70">{tool.description}</p>
+                    </div>
+                    <Link
+                      href={tool.ctaHref}
+                      className="mt-6 inline-flex w-fit items-center rounded-full bg-brand-600 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-brand-700"
+                    >
+                      {tool.ctaLabel}
+                    </Link>
                   </div>
-                  <Link
-                    href={tool.ctaHref}
-                    className="mt-6 inline-flex w-fit items-center rounded-full bg-brand-600 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-brand-700"
-                  >
-                    {tool.ctaLabel}
-                  </Link>
                 </div>
               ))}
             </div>
@@ -104,7 +119,20 @@ export function FeaturedAccordionList({
                           aria-expanded={isOpen}
                           className="flex w-full items-start justify-between gap-3 py-4 text-left"
                         >
-                          <span className="text-sm font-medium text-ink">{item.title}</span>
+                          <span className="flex items-start gap-3">
+                            {item.image && (
+                              <span className="relative block h-9 w-9 shrink-0 overflow-hidden rounded-md">
+                                <Image
+                                  src={item.image}
+                                  alt=""
+                                  fill
+                                  sizes="36px"
+                                  className="object-cover"
+                                />
+                              </span>
+                            )}
+                            <span className="text-sm font-medium text-ink">{item.title}</span>
+                          </span>
                           <span className="mt-0.5 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brand-600 text-white">
                             {isOpen ? (
                               <Minus className="h-3 w-3" aria-hidden="true" />

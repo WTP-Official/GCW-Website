@@ -35,15 +35,12 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import servicesContent from "@/app/(pages)/services/content.json";
-import solutionsContent from "@/app/(pages)/solutions/content.json";
 import packagesContent from "@/app/(pages)/packages/content.json";
 import aboutContent from "@/app/(pages)/about/content.json";
 import contactContent from "@/app/(pages)/contact/content.json";
 import homeContent from "@/app/content.json";
 import eventsContent from "@/app/(pages)/su-kien/content.json";
 import resourcesContent from "@/app/(pages)/tai-nguyen/content.json";
-import eventCategories from "@/app/_data/su-kien-categories.json";
-import resourceFormats from "@/app/_data/tai-nguyen-upcoming.json";
 
 const ICONS: Record<string, LucideIcon> = {
   ShieldCheck,
@@ -75,6 +72,7 @@ type DropdownLink = {
   label: string;
   description?: string;
   icon?: LucideIcon;
+  image?: string;
 };
 
 type DropdownColumn = {
@@ -114,24 +112,28 @@ const NAV_ITEMS: NavItem[] = [
               label: "Giới thiệu GCW",
               description: "Strategic HR Operator — đồng hành thực thi cùng doanh nghiệp SME.",
               icon: Building2,
+              image: homeContent.positioning.image,
             },
             {
               href: "/about#ecosystem",
               label: "Hệ sinh thái WTP Group",
               description: "Mạng lưới các công ty thành viên đồng hành cùng doanh nghiệp SME.",
               icon: Network,
+              image: "/images/case-tech-funding.jpg",
             },
             {
               href: "/about#differentiators",
               label: "Điểm khác biệt của GCW",
               description: "Vì sao doanh nghiệp lựa chọn GCW làm đối tác vận hành nhân sự.",
               icon: Award,
+              image: "/images/case-manufacturing.jpg",
             },
             {
               href: "/#case-studies",
               label: "Câu chuyện khách hàng",
               description: homeContent.caseStudies.intro,
               icon: Rocket,
+              image: "/images/case-fdi.jpg",
             },
           ],
         },
@@ -156,14 +158,7 @@ const NAV_ITEMS: NavItem[] = [
             label: service.name,
             description: service.tagline,
             icon: ICONS[service.icon],
-          })),
-        },
-        {
-          heading: "Giải pháp theo nhu cầu",
-          items: solutionsContent.items.map((item) => ({
-            href: item.href,
-            label: item.title,
-            description: item.description,
+            image: service.image,
           })),
         },
         {
@@ -190,7 +185,7 @@ const NAV_ITEMS: NavItem[] = [
     dropdown: {
       columns: [
         {
-          items: eventCategories.map((category) => ({
+          items: eventsContent.categories.map((category) => ({
             href: category.href,
             label: category.title,
             description: category.description,
@@ -207,7 +202,7 @@ const NAV_ITEMS: NavItem[] = [
       },
     },
   },
-  { label: "Tài nguyên", href: "/news" },
+  { label: "Tài nguyên", href: "/tai-nguyen" },
   {
     label: "Đào tạo",
     href: "/about#ecosystem",
@@ -216,21 +211,21 @@ const NAV_ITEMS: NavItem[] = [
 ];
 
 // The external content app groups articles by topic — reuse that grouping for
-// the "Tin tức" mega-menu, but point at the site's own /news pages (which
-// render the same articles with GCW's own layout) instead of the raw
-// /resources proxy.
+// the "Tài nguyên" mega-menu, but point at the site's own /tai-nguyen/blog
+// pages (which render the same articles with GCW's own layout) instead of
+// the raw /blog proxy.
 type ResourceTopicGroup = {
   title: string;
   href: string;
   items: { title: string; desc?: string; href: string }[];
 };
 
-function toNewsHref(href: string): string {
-  if (href.startsWith("/resources/articles?topic=")) {
-    return href.replace("/resources/articles", "/news");
+function toBlogHref(href: string): string {
+  if (href.startsWith("/blog/articles?topic=")) {
+    return href.replace("/blog/articles", "/tai-nguyen/blog");
   }
-  if (href.startsWith("/resources/")) {
-    return href.replace("/resources/", "/news/");
+  if (href.startsWith("/blog/")) {
+    return href.replace("/blog/", "/tai-nguyen/blog/");
   }
   return href;
 }
@@ -242,7 +237,7 @@ const MAX_ARTICLES_PER_TOPIC = 3;
 // Guides, Podcasts, Videos...) — each links to its own /tai-nguyen/* page.
 const RESOURCES_COLUMN: DropdownColumn = {
   heading: "Định dạng khác",
-  items: resourceFormats.map((item) => ({
+  items: resourcesContent.items.map((item) => ({
     href: item.href,
     label: item.title,
     description: item.description,
@@ -267,7 +262,7 @@ export function Header() {
 
   useEffect(() => {
     let cancelled = false;
-    fetch("/api/resources/topics")
+    fetch("/api/blog/topics")
       .then((res) => (res.ok ? (res.json() as Promise<ResourceTopicGroup[]>) : []))
       .then((groups) => {
         if (cancelled || !Array.isArray(groups)) return;
@@ -277,7 +272,7 @@ export function Header() {
           .map((group) => ({
             heading: group.title,
             items: group.items.slice(0, MAX_ARTICLES_PER_TOPIC).map((article) => ({
-              href: toNewsHref(article.href),
+              href: toBlogHref(article.href),
               label: article.title,
               description: article.desc,
             })),
@@ -291,12 +286,12 @@ export function Header() {
   }, []);
 
   const navItems: NavItem[] = NAV_ITEMS.map((item) =>
-    item.href === "/news"
+    item.href === "/tai-nguyen"
       ? {
           ...item,
           dropdown: {
             columns: [...(newsColumns ?? []), RESOURCES_COLUMN],
-            viewAll: { href: "/news", label: "Xem tất cả tin tức" },
+            viewAll: { href: "/tai-nguyen/blog", label: "Xem tất cả tin tức" },
             featured: {
               icon: Newspaper,
               heading: resourcesContent.live.title,
@@ -317,7 +312,7 @@ export function Header() {
     e.preventDefault();
     const q = searchQuery.trim();
     if (!q) return;
-    router.push(`/news?q=${encodeURIComponent(q)}`);
+    router.push(`/tai-nguyen/blog?q=${encodeURIComponent(q)}`);
     setIsSearchOpen(false);
     closeAll();
   }
@@ -336,7 +331,7 @@ export function Header() {
           />
         </Link>
 
-        <nav className="hidden h-full items-stretch xl:flex">
+        <nav className="hidden h-full items-stretch lg:flex">
           {navItems.map((item) => (
             <div key={item.href} className="group relative flex h-full items-stretch">
               <Link
@@ -378,10 +373,22 @@ export function Header() {
                                     href={sub.href}
                                     className="flex items-start gap-3 rounded-md p-2 transition-colors hover:bg-surface"
                                   >
-                                    {Icon && (
-                                      <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-brand-50 text-brand-600">
-                                        <Icon className="h-4 w-4" aria-hidden="true" />
+                                    {sub.image ? (
+                                      <span className="relative h-12 w-16 shrink-0 overflow-hidden rounded-md">
+                                        <Image
+                                          src={sub.image}
+                                          alt=""
+                                          fill
+                                          sizes="64px"
+                                          className="photo-grade object-cover"
+                                        />
                                       </span>
+                                    ) : (
+                                      Icon && (
+                                        <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-brand-50 text-brand-600">
+                                          <Icon className="h-4 w-4" aria-hidden="true" />
+                                        </span>
+                                      )
                                     )}
                                     <span>
                                       <span className="block text-sm font-medium text-ink">
@@ -423,7 +430,7 @@ export function Header() {
                     </div>
 
                     {item.dropdown.featured && (
-                      <div className="hidden w-72 shrink-0 border-l border-black/5 pl-10 xl:block">
+                      <div className="hidden w-72 shrink-0 border-l border-black/5 pl-10 lg:block">
                         <div className="flex h-10 w-10 items-center justify-center rounded-md bg-bg-dark text-white">
                           <item.dropdown.featured.icon className="h-5 w-5" aria-hidden="true" />
                         </div>
@@ -449,7 +456,7 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden shrink-0 items-center gap-3 xl:flex">
+        <div className="hidden shrink-0 items-center gap-3 lg:flex">
           <div className="relative flex items-center">
             {isSearchOpen && (
               <form onSubmit={submitSearch} className="absolute right-full mr-2">
@@ -488,7 +495,7 @@ export function Header() {
           onClick={() => setIsMenuOpen((open) => !open)}
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           aria-expanded={isMenuOpen}
-          className="inline-flex items-center justify-center rounded-md p-2 text-ink xl:hidden"
+          className="inline-flex items-center justify-center rounded-md p-2 text-ink lg:hidden"
         >
           {isMenuOpen ? (
             <X className="h-6 w-6" aria-hidden="true" />
@@ -499,7 +506,7 @@ export function Header() {
       </div>
 
       {isMenuOpen && (
-        <nav className="border-t border-black/5 bg-white xl:hidden">
+        <nav className="border-t border-black/5 bg-white lg:hidden">
           <div className="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-4">
             <form onSubmit={submitSearch} className="mb-2 flex items-center gap-2">
               <input

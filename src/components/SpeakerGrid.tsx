@@ -1,7 +1,15 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowLeft, type LucideIcon } from "lucide-react";
 
-type Speaker = { id: string; name: string; role: string; bio: string; topics: string[] };
+type Speaker = {
+  id: string;
+  name: string;
+  role: string;
+  bio: string;
+  topics: string[];
+  image?: string;
+};
 
 type Content = {
   heading: string;
@@ -16,11 +24,13 @@ export function SpeakerGrid({
   content,
   backHref,
   backLabel,
+  basePath,
 }: {
   icon: LucideIcon;
   content: Content;
   backHref: string;
   backLabel: string;
+  basePath: string;
 }) {
   const { heading, intro, speakersHeading, speakers, cta } = content;
 
@@ -46,11 +56,21 @@ export function SpeakerGrid({
         <h2 className="mt-8 text-2xl leading-snug text-ink sm:text-3xl">{speakersHeading}</h2>
         <div className="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {speakers.map((speaker) => (
-            <div key={speaker.id} className="rounded-md border border-black/5 bg-surface p-6">
-              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-bg-dark text-white">
-                <Icon className="h-7 w-7" aria-hidden="true" />
-              </div>
-              <h3 className="mt-4 text-lg text-ink">{speaker.name}</h3>
+            <Link
+              key={speaker.id}
+              href={`${basePath}/${speaker.id}`}
+              className="group rounded-md border border-black/5 bg-surface p-6 transition-shadow hover:shadow-md"
+            >
+              {speaker.image ? (
+                <div className="relative h-16 w-16 overflow-hidden rounded-full">
+                  <Image src={speaker.image} alt={speaker.name} fill sizes="64px" className="object-cover" />
+                </div>
+              ) : (
+                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-bg-dark text-white">
+                  <Icon className="h-7 w-7" aria-hidden="true" />
+                </div>
+              )}
+              <h3 className="mt-4 text-lg text-ink group-hover:text-brand-600">{speaker.name}</h3>
               <p className="text-sm font-medium text-brand-600">{speaker.role}</p>
               <p className="mt-3 text-sm text-ink-soft">{speaker.bio}</p>
               <div className="mt-4 flex flex-wrap gap-2">
@@ -63,7 +83,7 @@ export function SpeakerGrid({
                   </span>
                 ))}
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </section>

@@ -1,7 +1,14 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowLeft, type LucideIcon } from "lucide-react";
 
-type SeriesItem = { id: string; label: string; title: string; description: string };
+type SeriesItem = {
+  id: string;
+  label: string;
+  title: string;
+  description: string;
+  image?: string;
+};
 
 type Content = {
   heading: string;
@@ -17,11 +24,13 @@ export function FeaturedSeriesGrid({
   content,
   backHref,
   backLabel,
+  basePath,
 }: {
   icon: LucideIcon;
   content: Content;
   backHref: string;
   backLabel: string;
+  basePath: string;
 }) {
   const { heading, intro, featured, seriesHeading, series, cta } = content;
 
@@ -60,9 +69,10 @@ export function FeaturedSeriesGrid({
         <h2 className="mt-16 text-2xl leading-snug text-ink sm:text-3xl">{seriesHeading}</h2>
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {series.map((item, index) => (
-            <div
+            <Link
               key={item.id}
-              className={`flex flex-col justify-between rounded-md p-6 ${
+              href={`${basePath}/${item.id}`}
+              className={`flex flex-col justify-between rounded-md p-6 transition-shadow hover:shadow-md ${
                 index % 2 === 0 ? "bg-bg-dark text-white" : "bg-surface-2 text-ink"
               }`}
             >
@@ -80,16 +90,26 @@ export function FeaturedSeriesGrid({
                 </p>
               </div>
               <div
-                className={`mt-6 flex aspect-square w-full items-center justify-center rounded-md border ${
+                className={`relative mt-6 flex aspect-square w-full items-center justify-center overflow-hidden rounded-md border ${
                   index % 2 === 0 ? "border-white/10 bg-black/20" : "border-black/5 bg-white"
                 }`}
               >
-                <Icon
-                  className={`h-8 w-8 ${index % 2 === 0 ? "text-white/40" : "text-ink-soft/40"}`}
-                  aria-hidden="true"
-                />
+                {item.image ? (
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+                    className="object-cover"
+                  />
+                ) : (
+                  <Icon
+                    className={`h-8 w-8 ${index % 2 === 0 ? "text-white/40" : "text-ink-soft/40"}`}
+                    aria-hidden="true"
+                  />
+                )}
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </section>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import {
   Newspaper,
   BookOpen,
@@ -12,7 +13,6 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import content from "./content.json";
-import upcoming from "@/app/_data/tai-nguyen-upcoming.json";
 import { ImagePlaceholder } from "@/components/ImagePlaceholder";
 
 export const metadata: Metadata = {
@@ -30,9 +30,19 @@ const ICONS: Record<string, LucideIcon> = {
   PlayCircle,
 };
 
+type UpcomingItem = {
+  id: string;
+  icon: string;
+  title: string;
+  description: string;
+  href: string;
+  image?: string;
+};
+
 export default function ResourcesPage() {
   const { heading, intro, live, cta } = content;
   const LiveIcon = ICONS[live.icon];
+  const upcomingItems = content.items as UpcomingItem[];
 
   return (
     <main>
@@ -65,7 +75,7 @@ export default function ResourcesPage() {
           Khám phá theo định dạng
         </h2>
         <div className="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {upcoming.map((item) => {
+          {upcomingItems.map((item) => {
             const Icon = ICONS[item.icon];
             return (
               <Link
@@ -74,7 +84,17 @@ export default function ResourcesPage() {
                 className="group flex flex-col overflow-hidden rounded-md border border-black/5 bg-white transition-shadow hover:shadow-md"
               >
                 <div className="relative aspect-[4/3] w-full overflow-hidden">
-                  <ImagePlaceholder icon={Icon} className="h-full w-full" />
+                  {item.image ? (
+                    <Image
+                      src={item.image}
+                      alt={item.title}
+                      fill
+                      sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                      className="object-cover"
+                    />
+                  ) : (
+                    <ImagePlaceholder icon={Icon} className="h-full w-full" />
+                  )}
                 </div>
                 <div className="flex flex-1 flex-col p-6">
                   <h3 className="text-lg text-ink group-hover:text-brand-600">{item.title}</h3>

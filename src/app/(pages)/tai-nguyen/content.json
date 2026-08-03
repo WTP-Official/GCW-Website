@@ -7,9 +7,53 @@
     "icon": "Newspaper",
     "title": "Tin tức & Kiến thức",
     "description": "Bài viết cập nhật về tuân thủ lao động, lương - bảo hiểm xã hội - thuế TNCN và quản trị nhân sự cho doanh nghiệp SME.",
-    "href": "/news",
+    "href": "/tai-nguyen/blog",
     "label": "Xem tất cả bài viết"
   },
+  "items": [
+    {
+      "id": "books",
+      "icon": "BookOpen",
+      "title": "Sách & Ấn phẩm",
+      "description": "Ấn phẩm chuyên sâu về vận hành nhân sự, đúc kết từ kinh nghiệm thực tế cùng doanh nghiệp SME.",
+      "href": "/tai-nguyen/sach"
+    },
+    {
+      "id": "guides",
+      "icon": "ClipboardList",
+      "title": "Cẩm nang & Công cụ",
+      "description": "Biểu mẫu và checklist thực hành giúp doanh nghiệp tự rà soát tuân thủ nhân sự.",
+      "href": "/tai-nguyen/cam-nang"
+    },
+    {
+      "id": "podcasts",
+      "icon": "Mic2",
+      "title": "Podcast",
+      "description": "Chuỗi podcast trò chuyện cùng chuyên gia GCW về các bài toán nhân sự thường gặp.",
+      "href": "/tai-nguyen/podcast"
+    },
+    {
+      "id": "videos",
+      "icon": "Video",
+      "title": "Video",
+      "description": "Video hướng dẫn thực hành các nghiệp vụ nhân sự phổ biến cho đội ngũ HR.",
+      "href": "/tai-nguyen/video"
+    },
+    {
+      "id": "planners",
+      "icon": "CalendarCheck",
+      "title": "Kế hoạch mẫu",
+      "description": "Mẫu kế hoạch vận hành nhân sự theo từng giai đoạn phát triển doanh nghiệp.",
+      "href": "/tai-nguyen/ke-hoach-mau"
+    },
+    {
+      "id": "on-demand-webcasts",
+      "icon": "PlayCircle",
+      "title": "Hội thảo lưu trữ",
+      "description": "Bản ghi các buổi hội thảo trực tuyến của GCW, xem lại bất cứ lúc nào.",
+      "href": "/tai-nguyen/hoi-thao-luu-tru"
+    }
+  ],
   "cta": {
     "heading": "Muốn nhận tài nguyên mới đầu tiên?",
     "body": "Để lại thông tin liên hệ, GCW sẽ gửi tài nguyên mới ngay khi phát hành.",

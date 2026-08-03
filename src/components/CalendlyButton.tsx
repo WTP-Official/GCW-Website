@@ -24,7 +24,7 @@ export function CalendlyButton() {
           window.Calendly?.initPopupWidget({ url: CALENDLY_URL })
         }
         aria-label="Schedule a meeting"
-        className="fixed bottom-6 right-6 z-40 flex items-center gap-2 rounded-md bg-brand-600 px-5 py-3 text-white shadow-lg transition-colors hover:bg-brand-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-400"
+        className="fixed bottom-6 right-6 z-40 flex items-center gap-2 rounded-full bg-brand-600 px-5 py-3 text-white shadow-lg transition-all hover:-translate-y-0.5 hover:bg-brand-700 hover:shadow-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-400"
       >
         <Calendar className="h-5 w-5" aria-hidden="true" />
         <span className="text-sm font-medium">Book a call</span>

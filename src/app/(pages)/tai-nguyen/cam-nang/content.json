@@ -4,7 +4,104 @@
   "heading": "Cẩm nang & Công cụ",
   "intro": "Biểu mẫu, checklist và công cụ thực hành giúp doanh nghiệp tự rà soát tuân thủ nhân sự, không cần chờ đến đợt kiểm tra mới phát hiện thiếu sót.",
   "toolsHeading": "Công cụ tự đánh giá",
+  "tools": [
+    {
+      "id": "tool-01",
+      "title": "Công cụ tự đánh giá tuân thủ nhân sự",
+      "description": "Trả lời 15 câu hỏi nhanh để biết mức độ tuân thủ hiện tại của doanh nghiệp bạn.",
+      "ctaLabel": "Bắt đầu đánh giá",
+      "ctaHref": "/contact"
+    },
+    {
+      "id": "tool-02",
+      "title": "Bộ tính lương Gross-Net nhanh",
+      "description": "Ước tính nhanh lương thực nhận, mức đóng bảo hiểm xã hội và thuế TNCN phải nộp hàng tháng.",
+      "ctaLabel": "Dùng công cụ",
+      "ctaHref": "/contact"
+    },
+    {
+      "id": "tool-03",
+      "title": "Đánh giá mức độ sẵn sàng mở rộng nhân sự",
+      "description": "Kiểm tra xem bộ máy nhân sự hiện tại đã sẵn sàng cho giai đoạn tăng trưởng tiếp theo chưa.",
+      "ctaLabel": "Kiểm tra ngay",
+      "ctaHref": "/contact"
+    }
+  ],
   "categoriesHeading": "Cẩm nang theo chủ đề",
+  "items": [
+    {
+      "id": "cam-nang-01",
+      "category": "Tuân thủ lao động",
+      "title": "Checklist rà soát hợp đồng lao động",
+      "description": "20 điểm cần kiểm tra để đảm bảo hợp đồng lao động tuân thủ đúng quy định pháp luật hiện hành."
+    },
+    {
+      "id": "cam-nang-02",
+      "category": "Tuân thủ lao động",
+      "title": "Checklist chuẩn bị hồ sơ nhân sự cho đợt thanh tra lao động",
+      "description": "Danh mục hồ sơ bắt buộc cần có để sẵn sàng cho các đợt thanh tra, kiểm tra lao động định kỳ."
+    },
+    {
+      "id": "cam-nang-03",
+      "category": "Tuân thủ lao động",
+      "title": "Bộ câu hỏi đánh giá rủi ro tuân thủ nhân sự",
+      "description": "Tự đánh giá nhanh mức độ tuân thủ nhân sự hiện tại của doanh nghiệp trong 15 phút."
+    },
+    {
+      "id": "cam-nang-04",
+      "category": "Tuân thủ lao động",
+      "title": "Biểu mẫu tính lương, bảo hiểm xã hội và thuế TNCN",
+      "description": "Công cụ tính toán nhanh lương gross-net, mức đóng bảo hiểm xã hội và thuế thu nhập cá nhân hàng tháng."
+    },
+    {
+      "id": "cam-nang-05",
+      "category": "Vận hành nhân sự",
+      "title": "Checklist onboarding nhân sự mới 30 ngày đầu",
+      "description": "Danh mục việc cần làm theo từng tuần để nhân sự mới hoà nhập nhanh và hiệu quả."
+    },
+    {
+      "id": "cam-nang-06",
+      "category": "Vận hành nhân sự",
+      "title": "Biểu mẫu đánh giá hiệu suất nhân viên theo quý",
+      "description": "Mẫu đánh giá hiệu suất chuẩn hoá, dễ áp dụng cho mọi cấp bậc nhân sự."
+    },
+    {
+      "id": "cam-nang-07",
+      "category": "Vận hành nhân sự",
+      "title": "Quy trình bàn giao công việc khi nhân sự nghỉ việc",
+      "description": "Các bước bàn giao công việc và hồ sơ cần thực hiện khi nhân sự thôi việc."
+    },
+    {
+      "id": "cam-nang-08",
+      "category": "Vận hành nhân sự",
+      "title": "Mẫu quy chế lương thưởng nội bộ",
+      "description": "Khung quy chế lương thưởng mẫu để doanh nghiệp điều chỉnh theo thực tế vận hành."
+    },
+    {
+      "id": "cam-nang-09",
+      "category": "Chiến lược & tổ chức",
+      "title": "Mẫu sơ đồ tổ chức theo giai đoạn tăng trưởng",
+      "description": "Các mẫu sơ đồ tổ chức tham khảo cho từng quy mô doanh nghiệp từ 20 đến 200 nhân sự."
+    },
+    {
+      "id": "cam-nang-10",
+      "category": "Chiến lược & tổ chức",
+      "title": "Checklist chuẩn bị hồ sơ nhân sự trước khi gọi vốn",
+      "description": "Danh mục hồ sơ nhân sự nhà đầu tư thường yêu cầu trong quá trình thẩm định."
+    },
+    {
+      "id": "cam-nang-11",
+      "category": "Chiến lược & tổ chức",
+      "title": "Bộ khung năng lực cho vị trí quản lý cấp trung",
+      "description": "Khung năng lực mẫu giúp doanh nghiệp chuẩn hoá tiêu chí tuyển và đánh giá quản lý cấp trung."
+    },
+    {
+      "id": "cam-nang-12",
+      "category": "Chiến lược & tổ chức",
+      "title": "Mẫu kế hoạch nhân sự theo quý",
+      "description": "Công cụ lập kế hoạch nhân sự theo từng quý, gắn với mục tiêu tăng trưởng kinh doanh."
+    }
+  ],
   "cta": {
     "heading": "Cần bản đầy đủ của cẩm nang và công cụ?",
     "body": "Để lại thông tin liên hệ, GCW sẽ gửi file cẩm nang phù hợp với nhu cầu vận hành nhân sự của doanh nghiệp bạn.",

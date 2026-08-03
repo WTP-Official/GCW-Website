@@ -29,7 +29,7 @@
     { "value": "20+", "label": "Quốc gia trong mạng lưới kết nối xuất khẩu" }
   ],
   "ecosystem": {
-    "heading": "Thành viên hệ sinh thái WTP Group",
+    "heading": "Thành viên hệ sinh thái, WTP Group",
     "body": "GCW là một mắt xích trong WTP Group — hệ sinh thái các công ty chuyên biệt cùng đồng hành với doanh nghiệp SME Việt Nam trên nhiều mặt trận, thay vì chỉ dừng lại ở nhân sự.",
     "members": [
       { "icon": "Compass", "name": "Cố vấn chiến lược", "description": "Định hướng chiến lược kinh doanh tổng thể cho doanh nghiệp." },
@@ -45,23 +45,23 @@
     "items": [
       {
         "icon": "GraduationCap",
-        "title": "Chuyên gia cố vấn chiến lược",
-        "description": "Đội ngũ nhiều năm kinh nghiệm, có thể đảm nhận vai trò cố vấn chuyên môn hoặc thành viên hội đồng quản trị độc lập."
+        "title": "Cố vấn đồng hành dài hạn",
+        "description": "Không dừng lại ở một bản báo cáo — chuyên gia GCW tham gia các buổi họp định kỳ, theo sát chỉ số vận hành nhân sự và điều chỉnh giải pháp theo từng giai đoạn phát triển của doanh nghiệp."
       },
       {
         "icon": "Network",
-        "title": "Hệ sinh thái WTP Group",
-        "description": "Kết nối liền mạch với các công ty thành viên về chiến lược, tài chính - kế toán - thuế, đào tạo và chuyển đổi số."
+        "title": "Một đầu mối, nhiều năng lực",
+        "description": "Doanh nghiệp chỉ cần làm việc với một đầu mối GCW để tiếp cận toàn bộ năng lực của WTP Group — pháp lý, kế toán thuế, đào tạo, công nghệ — thay vì tự tìm và quản lý nhiều nhà cung cấp riêng lẻ."
       },
       {
         "icon": "Landmark",
-        "title": "Quan hệ với quỹ đầu tư",
-        "description": "Hợp tác với các quỹ đầu tư, tập đoàn nước ngoài phục vụ tư vấn M&A và gọi vốn."
+        "title": "Chuẩn bị hồ sơ sẵn sàng gọi vốn",
+        "description": "Khi doanh nghiệp cần huy động vốn, GCW hỗ trợ chuẩn hoá hồ sơ nhân sự theo yêu cầu thẩm định (due diligence) và kết nối trực tiếp với mạng lưới quỹ đầu tư, tập đoàn nước ngoài đang hợp tác."
       },
       {
         "icon": "Globe2",
-        "title": "Mạng lưới kết nối quốc tế",
-        "description": "Kết nối xuất khẩu tới hơn 20 quốc gia, hỗ trợ doanh nghiệp mở rộng ra thị trường toàn cầu."
+        "title": "Lối đi ra thị trường quốc tế",
+        "description": "Doanh nghiệp muốn xuất khẩu hoặc mở rộng ra nước ngoài có thể tận dụng ngay mạng lưới đối tác Marketing và bán hàng tại hơn 20 quốc gia của hệ sinh thái, không cần xây dựng lại từ đầu."
       }
     ]
   },

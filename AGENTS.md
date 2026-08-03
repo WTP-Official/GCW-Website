@@ -19,7 +19,7 @@ This version has breaking changes — APIs, conventions, and file structure may 
 - `src/app/layout.tsx` → the whole `metadata` object (`title`, `description`, `keywords`, `openGraph`, `siteName`) is hardcoded for the current client and must be rewritten; the RocketChat livechat snippet's `tenantid` and the Calendly integration are this client's accounts, not generic scaffolding — remove or replace them for a new client.
 - `favicon.ico`, `favicon-16.png`, `favicon-32.png`, `apple-touch-icon.png` → brand-specific assets.
 - `src/app/(pages)/about/`, `services/`, `services/web-design/`, `news/` → these are **reference examples only**, showing the co-location pattern (and, for `news/`, the dynamic `[slug]` detail-route pattern) in `## Page content structure` below. Delete or overwrite them with the new project's real pages; don't ship them as-is.
-- `middleware.ts` → the `/resources` → external blog proxy is this project's specific integration, driven by `CONTENT_BRAND_SLUG`; remove it (and the matching `src/app/api/resources/topics/route.ts`) if the new project doesn't have an equivalent external content app.
+- `src/middleware.ts` → the `/blog` → external blog proxy is this project's specific integration, driven by `CONTENT_BRAND_SLUG`; remove it (and the matching `src/app/api/blog/topics/route.ts`) if the new project doesn't have an equivalent external content app.
 
 **Exception:** Anything not listed here (routing conventions, the `content.json` co-location pattern, the SEO check script, image rules) is infrastructure, not client content — carry it forward unchanged into new projects.
 
@@ -83,7 +83,7 @@ src/app/(pages)/
 
 **How:**
 
-- Import both via the `@/*` path alias (mapped to `src/` in `tsconfig.json`), e.g. `import { BASE_URL } from "@/constants/site"` and `import { CalendlyButton } from "@/components/CalendlyButton"` — used this way in `layout.tsx`, `sitemap.ts`, `robots.ts`, `middleware.ts`, and `src/app/api/resources/topics/route.ts`.
+- Import both via the `@/*` path alias (mapped to `src/` in `tsconfig.json`), e.g. `import { BASE_URL } from "@/constants/site"` and `import { CalendlyButton } from "@/components/CalendlyButton"` — used this way in `layout.tsx`, `sitemap.ts`, `robots.ts`, `middleware.ts`, and `src/app/api/blog/topics/route.ts`.
 - New shared constants go in `src/constants/`; new shared components go in `src/components/`.
 - A component belongs in `src/components/` only if it's used by routes outside its own subtree (e.g. `CalendlyButton` appears in `layout.tsx` and multiple unrelated pages). A component used only by one route or its own children (e.g. a client-side filter used only by `news/page.tsx`, or a detail template shared by `services/`'s own sub-routes) is route-local: co-locate it in a `_components/` folder inside that route, e.g. `src/app/(pages)/news/_components/NewsTopicFilter.tsx` or `src/app/(pages)/services/_components/ServiceDetail.tsx`. The leading `_` makes it a Next.js private folder, so it never contributes a URL segment (see `## Page content structure`). If a route-local component later gets reused by a route outside its subtree, promote it to `src/components/` at that point — don't promote speculatively.
 

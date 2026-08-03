@@ -72,6 +72,13 @@ h6 {
   line-height: 1.3;
 }
 
+/* Shared photo treatment so images sourced from different photographers read
+   as one consistent set (same warmth/saturation) across the whole site.
+   Apply with the `photo-grade` utility on any <Image>. */
+@utility photo-grade {
+  filter: saturate(0.92) sepia(0.06) contrast(1.03) brightness(1.01);
+}
+
 /* Slim, brand-tinted scrollbar. Apply with the `scrollbar-brand` utility on
    any scrollable element. Firefox uses the standard properties; WebKit/Blink
    gets the inset rounded thumb that lightens the track and darkens on hover. */

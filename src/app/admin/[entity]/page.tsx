@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
-import { getEntity } from "../_lib/entities";
-import { EntityManager } from "./_components/EntityManager";
+import { getEntity } from "../lib/entities";
+import { EntityManager } from "./components/EntityManager";
 
 export async function generateMetadata({
   params,

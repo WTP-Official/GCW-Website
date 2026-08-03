@@ -6,7 +6,7 @@ const FOOTER_LINKS = [
   { href: "/services", label: "Dịch vụ" },
   { href: "/solutions", label: "Giải pháp" },
   { href: "/packages", label: "Gói dịch vụ" },
-  { href: "/news", label: "Tin tức" },
+  { href: "/tai-nguyen/blog", label: "Tin tức" },
 ];
 
 const SOCIAL_LINKS = [
@@ -160,7 +160,12 @@ export function Footer() {
         </div>
 
         <div className="mt-16 border-t border-white/10 pt-6 text-xs text-footer-light/60">
-          © {year} GCW JSC. All rights reserved.
+          <p>
+            *Dựa trên cam kết tiết kiệm chi phí của GCW khi triển khai dịch vụ
+            Tuyển dụng và Nhân sự - Tính lương (C&B) thuê ngoài, so với doanh
+            nghiệp tự tổ chức bộ phận tương ứng.
+          </p>
+          <p className="mt-3">© {year} GCW JSC. All rights reserved.</p>
         </div>
       </div>
     </footer>

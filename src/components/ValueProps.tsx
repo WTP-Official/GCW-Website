@@ -5,8 +5,8 @@ const ICONS: Record<string, LucideIcon> = { Handshake, Award, Network };
 
 export function ValueProps() {
   return (
-    <section className="mx-auto max-w-6xl px-4 py-24">
-      <div className="grid gap-8 sm:grid-cols-3">
+    <section className="mx-auto max-w-6xl px-4 py-32">
+      <div className="grid gap-10 sm:grid-cols-3 lg:gap-12">
         {content.valueProps.map((item) => {
           const Icon = ICONS[item.icon];
           return (

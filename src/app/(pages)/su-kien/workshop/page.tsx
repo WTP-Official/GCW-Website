@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Users2 } from "lucide-react";
 import content from "./content.json";
-import items from "@/app/_data/su-kien-workshop.json";
 import { SplitImageList } from "@/components/SplitImageList";
 
 export const metadata: Metadata = {
@@ -13,9 +12,10 @@ export default function WorkshopsPage() {
   return (
     <SplitImageList
       icon={Users2}
-      content={{ ...content, items }}
+      content={content}
       backHref="/su-kien"
       backLabel="Quay lại Sự kiện"
+      basePath="/su-kien/workshop"
     />
   );
 }

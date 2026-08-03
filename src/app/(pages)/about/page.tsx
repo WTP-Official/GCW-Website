@@ -40,7 +40,7 @@ export default function AboutPage() {
   return (
     <main>
       <section className="bg-bg-dark text-white">
-        <div className="mx-auto max-w-3xl px-4 py-28 text-center sm:py-32">
+        <div className="mx-auto max-w-3xl px-4 py-32 text-center sm:py-40">
           <p className="text-sm font-medium uppercase tracking-widest text-white/50">
             {hero.eyebrow}
           </p>
@@ -53,8 +53,8 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-4 py-24">
-        <div className="grid gap-8 sm:grid-cols-3">
+      <section className="mx-auto max-w-6xl px-4 py-32">
+        <div className="grid gap-10 sm:grid-cols-3 lg:gap-12">
           {pillars.map((item, index) => {
             const Icon = ICONS[item.icon];
             return (
@@ -78,26 +78,34 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-bg-muted">
-        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-4 py-16 sm:grid-cols-3">
+      <section className="border-t border-black/5 bg-white">
+        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-4 py-20 sm:grid-cols-3">
           {stats.map((stat) => (
             <div key={stat.label} className="text-center">
-              <p className="text-2xl text-ink sm:text-3xl">{stat.value}</p>
+              <p className="font-serif-hero text-2xl text-ink sm:text-3xl">
+                {stat.value}
+                {stat.value === "70%" && (
+                  <sup className="ml-0.5 text-base text-ink/60">*</sup>
+                )}
+              </p>
               <p className="mt-2 text-sm text-ink-soft">{stat.label}</p>
             </div>
           ))}
         </div>
       </section>
 
-      <section id="ecosystem" className="scroll-mt-24 bg-surface-2 py-24">
+      <section id="ecosystem" className="scroll-mt-24 border-t border-black/5 bg-white py-32">
         <div className="mx-auto max-w-6xl px-4">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-2xl leading-snug text-ink sm:text-3xl">
-              {ecosystem.heading}
+            <h2 className="font-serif-hero text-2xl leading-snug text-ink sm:text-3xl">
+              {ecosystem.heading.split(", ")[0]},{" "}
+              <em className="italic text-brand-600">
+                {ecosystem.heading.split(", ")[1]}
+              </em>
             </h2>
             <p className="mt-4 text-ink-soft">{ecosystem.body}</p>
           </div>
-          <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-12">
             {ecosystem.members.map((member) => {
               const Icon = ICONS[member.icon];
               return (
@@ -119,11 +127,11 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section id="differentiators" className="mx-auto max-w-6xl scroll-mt-24 px-4 py-24">
-        <h2 className="text-2xl leading-snug text-ink sm:text-3xl">
+      <section id="differentiators" className="mx-auto max-w-6xl scroll-mt-24 border-t border-black/5 px-4 py-32">
+        <h2 className="font-serif-hero text-2xl leading-snug text-ink sm:text-3xl">
           {differentiators.heading}
         </h2>
-        <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-12">
           {differentiators.items.map((item) => {
             const Icon = ICONS[item.icon];
             return (
@@ -144,13 +152,13 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-bg-muted">
-        <div className="mx-auto max-w-2xl px-4 py-24 text-center">
-          <h2 className="text-2xl leading-snug text-ink sm:text-3xl">{cta.heading}</h2>
-          <p className="mt-4 text-ink-soft">{cta.body}</p>
+      <section className="bg-bg-dark text-white">
+        <div className="mx-auto max-w-2xl px-4 py-32 text-center sm:py-40">
+          <h2 className="font-serif-hero text-2xl leading-snug sm:text-3xl">{cta.heading}</h2>
+          <p className="mt-4 text-white/70">{cta.body}</p>
           <Link
             href={cta.href}
-            className="mt-8 inline-flex items-center gap-2 rounded-md bg-brand-600 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-brand-700"
+            className="mt-8 inline-flex items-center gap-2 rounded-full bg-brand-600 px-6 py-3 text-sm font-medium text-white shadow-sm transition-all hover:-translate-y-0.5 hover:bg-brand-700 hover:shadow-md"
           >
             {cta.label}
             <ArrowRight className="h-4 w-4" aria-hidden="true" />

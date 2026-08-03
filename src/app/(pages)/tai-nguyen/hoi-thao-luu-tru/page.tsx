@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { PlayCircle } from "lucide-react";
 import content from "./content.json";
-import items from "@/app/_data/tai-nguyen-hoi-thao-luu-tru-items.json";
 import { FeaturedAccordionList } from "@/components/FeaturedAccordionList";
 import { groupByCategory } from "@/lib/groupByCategory";
 
@@ -13,7 +12,7 @@ export const metadata: Metadata = {
 const PILLARS = ["Tuân thủ lao động", "Vận hành nhân sự", "Chiến lược & tổ chức"];
 
 export default function OnDemandWebcastsPage() {
-  const categories = groupByCategory(items, PILLARS);
+  const categories = groupByCategory(content.items, PILLARS);
 
   return (
     <FeaturedAccordionList

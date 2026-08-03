@@ -79,6 +79,17 @@ export default function RootLayout({
         {children}
         <Footer />
         <CalendlyButton />
+        <Script id="rocketchat-livechat" strategy="afterInteractive">
+          {`(function(w, d, s, u) {
+    w.RocketChat = function(c) { w.RocketChat._.push(c) }; w.RocketChat._ = []; w.RocketChat.url = u;
+    var h = d.getElementsByTagName(s)[0], j = d.createElement(s);
+    j.async = true; j.src = 'https://livechat.jarvis.cx/livechat/rocketchat-livechat.min.js?_=201903270000';
+    h.parentNode.insertBefore(j, h);
+    w.ticketplus = w.ticketplus || {};
+    w.ticketplus.tenantid = 'ca965aac-e908-408e-bc8b-15c93eb31233';
+    w.RocketChat(function() { this.setLanguage('vi-VN') });
+  })(window, document, 'script', 'https://livechat.jarvis.cx/livechat');`}
+        </Script>
         {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
           <>
             <Script

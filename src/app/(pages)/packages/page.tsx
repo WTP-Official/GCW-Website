@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Check, Rocket, LineChart, Globe, type LucideIcon } from "lucide-react";
 import content from "./content.json";
 import homeContent from "@/app/content.json";
-import { ImagePlaceholder } from "@/components/ImagePlaceholder";
 
 export const metadata: Metadata = {
   title: content.title,
@@ -57,9 +57,9 @@ export default function PackagesPage() {
 
               <Link
                 href="/contact"
-                className={`mt-6 inline-flex items-center justify-center rounded-md px-5 py-2.5 text-sm font-medium transition-colors ${
+                className={`mt-6 inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-medium transition-all hover:-translate-y-0.5 ${
                   tier.highlighted
-                    ? "bg-brand-600 text-white hover:bg-brand-700"
+                    ? "bg-brand-600 text-white shadow-sm hover:bg-brand-700 hover:shadow-md"
                     : "border border-brand-600 text-brand-600 hover:bg-brand-50"
                 }`}
               >
@@ -74,7 +74,7 @@ export default function PackagesPage() {
 
       <section className="bg-surface-2 py-24">
         <div className="mx-auto max-w-6xl px-4">
-          <h2 className="text-2xl leading-snug text-ink sm:text-3xl">
+          <h2 className="font-serif-hero text-3xl leading-snug text-ink sm:text-4xl">
             {homeContent.caseStudies.heading}
           </h2>
           <div className="mt-8 grid gap-8 sm:grid-cols-3">
@@ -83,7 +83,16 @@ export default function PackagesPage() {
               return (
                 <article key={item.audience} className="overflow-hidden rounded-md bg-white shadow-sm">
                   <div className="relative aspect-video w-full overflow-hidden">
-                    <ImagePlaceholder icon={Icon} className="h-full w-full" iconClassName="h-8 w-8" />
+                    <Image
+                      src={item.image}
+                      alt={item.audience}
+                      fill
+                      sizes="(min-width: 640px) 33vw, 100vw"
+                      className="object-cover"
+                    />
+                    <div className="absolute bottom-3 left-3 flex h-9 w-9 items-center justify-center rounded-full bg-white shadow-md">
+                      <Icon className="h-4 w-4 text-brand-600" aria-hidden="true" />
+                    </div>
                   </div>
                   <div className="p-6">
                     <h3 className="text-base text-ink">
@@ -100,11 +109,11 @@ export default function PackagesPage() {
 
       <section className="bg-bg-muted">
         <div className="mx-auto max-w-2xl px-4 py-24 text-center">
-          <h2 className="text-2xl leading-snug text-ink sm:text-3xl">{content.cta.heading}</h2>
+          <h2 className="font-serif-hero text-3xl leading-snug text-ink sm:text-4xl">{content.cta.heading}</h2>
           <p className="mt-4 text-ink-soft">{content.cta.body}</p>
           <Link
             href={content.cta.href}
-            className="mt-8 inline-flex items-center gap-2 rounded-md bg-brand-600 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-brand-700"
+            className="mt-8 inline-flex items-center gap-2 rounded-full bg-brand-600 px-6 py-3 text-sm font-medium text-white shadow-sm transition-all hover:-translate-y-0.5 hover:bg-brand-700 hover:shadow-md"
           >
             {content.cta.label}
           </Link>

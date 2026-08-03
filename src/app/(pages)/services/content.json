@@ -8,37 +8,43 @@
       "slug": "gcw-safe",
       "icon": "ShieldCheck",
       "name": "GCW SAFE",
-      "tagline": "Tuân thủ luật lao động, bảo hiểm xã hội và thuế thu nhập cá nhân — giảm thiểu rủi ro pháp lý cho doanh nghiệp."
+      "tagline": "Tuân thủ luật lao động, bảo hiểm xã hội và thuế thu nhập cá nhân — giảm thiểu rủi ro pháp lý cho doanh nghiệp.",
+      "image": "/images/offering-gcw-safe.jpg"
     },
     {
       "slug": "gcw-control",
       "icon": "Gauge",
       "name": "GCW CONTROL",
-      "tagline": "Kiểm soát chi phí nhân sự và tối ưu hiệu quả tuyển dụng theo từng giai đoạn phát triển."
+      "tagline": "Kiểm soát chi phí nhân sự và tối ưu hiệu quả tuyển dụng theo từng giai đoạn phát triển.",
+      "image": "/images/offering-gcw-control.jpg"
     },
     {
       "slug": "gcw-scale",
       "icon": "TrendingUp",
       "name": "GCW SCALE",
-      "tagline": "Xây dựng hệ thống nhân sự bài bản, sẵn sàng mở rộng cùng tốc độ tăng trưởng của doanh nghiệp."
+      "tagline": "Xây dựng hệ thống nhân sự bài bản, sẵn sàng mở rộng cùng tốc độ tăng trưởng của doanh nghiệp.",
+      "image": "/images/offering-gcw-scale.jpg"
     },
     {
       "slug": "tuyen-dung",
       "icon": "UserSearch",
       "name": "GCW TUYỂN DỤNG",
-      "tagline": "Tuyển đúng người, đủ số lượng, kịp thời gian — với cam kết tối ưu chi phí tuyển dụng."
+      "tagline": "Tuyển đúng người, đủ số lượng, kịp thời gian — với cam kết tối ưu chi phí tuyển dụng.",
+      "image": "/images/offering-tuyen-dung.jpg"
     },
     {
       "slug": "thue-thu-nhap-ca-nhan",
       "icon": "Receipt",
       "name": "GCW THUẾ CÁ NHÂN",
-      "tagline": "Quản lý thuế thu nhập cá nhân chuyên biệt cho nhóm khách hàng đặc thù như CEO, KOL, KOC."
+      "tagline": "Quản lý thuế thu nhập cá nhân chuyên biệt cho nhóm khách hàng đặc thù như CEO, KOL, KOC.",
+      "image": "/images/offering-thue-ca-nhan.jpg"
     },
     {
       "slug": "tu-van-hr",
       "icon": "MessageSquareText",
       "name": "GCW TƯ VẤN HR",
-      "tagline": "Giải quyết các bài toán nhân sự cốt lõi, từ cơ cấu tổ chức đến chính sách nhân sự."
+      "tagline": "Giải quyết các bài toán nhân sự cốt lõi, từ cơ cấu tổ chức đến chính sách nhân sự.",
+      "image": "/images/offering-tu-van-hr.jpg"
     }
   ]
 }

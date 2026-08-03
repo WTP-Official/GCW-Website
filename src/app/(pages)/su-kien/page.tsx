@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Radio, Presentation, Mic, Users2, ArrowRight, type LucideIcon } from "lucide-react";
 import content from "./content.json";
-import categories from "@/app/_data/su-kien-categories.json";
+import { ImagePlaceholder } from "@/components/ImagePlaceholder";
 
 export const metadata: Metadata = {
   title: content.title,
@@ -11,8 +12,18 @@ export const metadata: Metadata = {
 
 const ICONS: Record<string, LucideIcon> = { Radio, Presentation, Mic, Users2 };
 
+type Category = {
+  id: string;
+  icon: string;
+  title: string;
+  description: string;
+  href: string;
+  image?: string;
+};
+
 export default function EventsPage() {
   const { heading, intro, cta } = content;
+  const categoryList = content.categories as Category[];
 
   return (
     <main>
@@ -25,26 +36,40 @@ export default function EventsPage() {
 
       <section className="mx-auto max-w-6xl px-4 py-24">
         <div className="grid gap-8 sm:grid-cols-2">
-          {categories.map((category, index) => {
+          {categoryList.map((category, index) => {
             const Icon = ICONS[category.icon];
             return (
               <Link
                 key={category.id}
                 href={category.href}
-                className="group rounded-md border border-black/5 bg-surface p-6 transition-shadow hover:shadow-md"
+                className="group overflow-hidden rounded-md border border-black/5 bg-surface transition-shadow hover:shadow-md"
               >
-                <span className="text-sm font-medium text-brand-600">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-                <Icon className="mt-3 h-6 w-6 text-ink-soft" aria-hidden="true" />
-                <h2 className="mt-4 text-lg text-ink group-hover:text-brand-600">
-                  {category.title}
-                </h2>
-                <p className="mt-2 text-sm text-ink-soft">{category.description}</p>
-                <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-brand-600">
-                  Xem chi tiết
-                  <ArrowRight className="h-4 w-4" aria-hidden="true" />
-                </span>
+                {category.image ? (
+                  <div className="relative aspect-[4/3] w-full">
+                    <Image
+                      src={category.image}
+                      alt={category.title}
+                      fill
+                      sizes="(min-width: 640px) 50vw, 100vw"
+                      className="object-cover"
+                    />
+                  </div>
+                ) : (
+                  <ImagePlaceholder icon={Icon} className="aspect-[4/3] w-full" />
+                )}
+                <div className="p-6">
+                  <span className="text-sm font-medium text-brand-600">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                  <h2 className="mt-3 text-lg text-ink group-hover:text-brand-600">
+                    {category.title}
+                  </h2>
+                  <p className="mt-2 text-sm text-ink-soft">{category.description}</p>
+                  <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-brand-600">
+                    Xem chi tiết
+                    <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                  </span>
+                </div>
               </Link>
             );
           })}

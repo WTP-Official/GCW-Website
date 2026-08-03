@@ -17,9 +17,9 @@ export const GOOGLE_VERIFICATION_TOKENS = [
       Boolean(token) && !GOOGLE_TAG_ID.test(token as string),
   );
 
-// Brand slug for the external content app (blog/resources proxy). Client-specific —
+// Brand slug for the external content app (/blog proxy). Client-specific —
 // swap via env when bootstrapping a new project. See middleware.ts and
-// src/app/api/resources/topics/route.ts for its usage.
+// src/app/api/blog/topics/route.ts for its usage.
 export const CONTENT_BRAND_SLUG = process.env.CONTENT_BRAND_SLUG ?? "";
 
 // Secret key required by api.aeo.how, sent as the x-aeo-secret-key header when

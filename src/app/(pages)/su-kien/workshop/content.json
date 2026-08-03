@@ -4,6 +4,26 @@
   "heading": "Workshop nội bộ",
   "intro": "Chương trình workshop thực chiến trong khuôn khổ GCW TƯ VẤN HR, thiết kế riêng theo bài toán nhân sự của từng doanh nghiệp.",
   "itemsHeading": "Workshop tiêu biểu",
+  "items": [
+    {
+      "id": "workshop-01",
+      "title": "Thiết kế cơ cấu tổ chức cho giai đoạn mở rộng",
+      "description": "Workshop thực chiến giúp đội ngũ quản lý xây dựng sơ đồ tổ chức phù hợp với giai đoạn tăng trưởng.",
+      "meta": "Workshop nội bộ · 1 ngày"
+    },
+    {
+      "id": "workshop-02",
+      "title": "Xây dựng chính sách lương thưởng minh bạch",
+      "description": "Workshop hướng dẫn thiết kế hệ thống lương thưởng công bằng, cạnh tranh và dễ vận hành.",
+      "meta": "Workshop nội bộ · 1 ngày"
+    },
+    {
+      "id": "workshop-03",
+      "title": "Rà soát tuân thủ nhân sự toàn diện",
+      "description": "Workshop cùng đội ngũ HR rà soát toàn bộ hồ sơ, quy trình và chính sách nhân sự hiện tại.",
+      "meta": "Workshop nội bộ · Nửa ngày"
+    }
+  ],
   "cta": {
     "heading": "Muốn tổ chức workshop riêng cho doanh nghiệp bạn?",
     "body": "Để lại thông tin liên hệ, GCW sẽ tư vấn nội dung workshop phù hợp với bài toán nhân sự của doanh nghiệp.",
