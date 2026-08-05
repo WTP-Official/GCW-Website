@@ -3,7 +3,6 @@
 import { useEffect } from "react";
 import { useEditor, EditorContent, type Editor } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
-import Link from "@tiptap/extension-link";
 import {
   Bold,
   Italic,
@@ -142,10 +141,11 @@ export function RichTextEditor({
 }) {
   const editor = useEditor({
     extensions: [
-      StarterKit,
-      Link.configure({
-        openOnClick: false,
-        HTMLAttributes: { rel: "noopener noreferrer" },
+      StarterKit.configure({
+        link: {
+          openOnClick: false,
+          HTMLAttributes: { rel: "noopener noreferrer" },
+        },
       }),
     ],
     content: value,

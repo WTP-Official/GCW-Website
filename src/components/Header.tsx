@@ -353,10 +353,10 @@ export function Header() {
               </Link>
 
               {item.dropdown && (
-                <div className="fixed inset-x-0 top-20 z-40 hidden max-h-[calc(100vh-5rem)] overflow-y-auto border-t border-black/5 bg-white shadow-xl group-hover:block">
-                  <div className="mx-auto flex max-w-7xl gap-12 px-4 py-10">
+                <div className="invisible fixed inset-x-0 top-20 z-40 max-h-[calc(100vh-5rem)] -translate-y-1 overflow-y-auto border-t border-black/5 bg-white opacity-0 shadow-xl transition-all duration-200 ease-out group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
+                  <div className="mx-auto flex max-w-7xl gap-12 px-4 py-6">
                     <div
-                      className={`grid flex-1 gap-x-10 gap-y-8 ${
+                      className={`grid flex-1 gap-x-10 gap-y-6 ${
                         DROPDOWN_GRID_BY_COLUMNS[
                           Math.min(item.dropdown.columns.length, 4) as
                             | 1
@@ -369,26 +369,32 @@ export function Header() {
                       {item.dropdown.columns.map((column, columnIndex) => (
                         <div key={column.heading ?? columnIndex}>
                           {column.heading && (
-                            <p className="mb-3 border-b border-black/5 pb-3 text-xs font-semibold uppercase tracking-wider text-muted">
+                            <p className="mb-2 border-b border-black/5 pb-2 text-xs font-semibold uppercase tracking-wider text-muted">
                               {column.heading}
                             </p>
                           )}
-                          <ul className="space-y-1">
+                          <ul
+                            className={
+                              column.items.length > 4
+                                ? "grid grid-cols-2 gap-x-6 gap-y-0.5"
+                                : "space-y-0.5"
+                            }
+                          >
                             {column.items.map((sub) => {
                               const Icon = sub.icon;
                               return (
                                 <li key={sub.label}>
                                   <Link
                                     href={sub.href}
-                                    className="flex items-start gap-3 rounded-md p-2 transition-colors hover:bg-surface"
+                                    className="flex items-start gap-3 rounded-md p-1.5 transition-colors hover:bg-surface"
                                   >
                                     {sub.image ? (
-                                      <span className="relative h-12 w-16 shrink-0 overflow-hidden rounded-md">
+                                      <span className="relative h-10 w-14 shrink-0 overflow-hidden rounded-md">
                                         <Image
                                           src={sub.image}
                                           alt=""
                                           fill
-                                          sizes="64px"
+                                          sizes="56px"
                                           className="photo-grade object-cover"
                                         />
                                       </span>
@@ -407,7 +413,7 @@ export function Header() {
                                         {sub.label}
                                       </span>
                                       {sub.description && (
-                                        <span className="mt-0.5 block text-xs leading-relaxed text-muted">
+                                        <span className="mt-0.5 line-clamp-1 block text-xs leading-relaxed text-muted">
                                           {sub.description}
                                         </span>
                                       )}
@@ -436,7 +442,7 @@ export function Header() {
                         >
                           <Link
                             href={item.dropdown.viewAll.href}
-                            className="inline-flex items-center gap-1 border-t border-black/5 pt-4 text-sm font-medium text-brand-600 hover:text-brand-700"
+                            className="mt-1 inline-flex items-center gap-1 border-t border-black/5 pt-3 text-sm font-medium text-brand-600 hover:text-brand-700"
                           >
                             {item.dropdown.viewAll.label}
                             <span aria-hidden="true">→</span>
@@ -499,8 +505,13 @@ export function Header() {
         </button>
       </div>
 
-      {isMenuOpen && (
-        <nav className="border-t border-black/5 bg-white lg:hidden">
+      <div
+        inert={!isMenuOpen}
+        className={`grid overflow-hidden border-black/5 bg-white transition-[grid-template-rows] duration-300 ease-out lg:hidden ${
+          isMenuOpen ? "grid-rows-[1fr] border-t" : "grid-rows-[0fr]"
+        }`}
+      >
+        <nav className="min-h-0">
           <div className="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-4">
             {navItems.map((item) => (
               <div key={item.href}>
@@ -584,7 +595,7 @@ export function Header() {
             ))}
           </div>
         </nav>
-      )}
+      </div>
     </header>
   );
 }

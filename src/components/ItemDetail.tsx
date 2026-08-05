@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowLeft, type LucideIcon } from "lucide-react";
 import { ImagePlaceholder } from "@/components/ImagePlaceholder";
+import { Reveal } from "@/components/Reveal";
 
 export function ItemDetail({
   icon: Icon,
@@ -29,15 +30,17 @@ export function ItemDetail({
   return (
     <main>
       <section className="bg-bg-dark text-white">
-        <div className="mx-auto max-w-3xl px-4 py-28 text-center sm:py-32">
-          <Icon className="mx-auto h-8 w-8 text-white/60" aria-hidden="true" />
-          {eyebrow && (
-            <p className="mt-4 text-sm font-medium uppercase tracking-widest text-white/50">
-              {eyebrow}
-            </p>
-          )}
-          <h1 className="mt-3 font-serif-hero text-3xl leading-snug sm:text-4xl">{heading}</h1>
-        </div>
+        <Reveal>
+          <div className="mx-auto max-w-3xl px-4 py-28 text-center sm:py-32">
+            <Icon className="mx-auto h-8 w-8 text-white/60" aria-hidden="true" />
+            {eyebrow && (
+              <p className="mt-4 text-sm font-medium uppercase tracking-widest text-white/50">
+                {eyebrow}
+              </p>
+            )}
+            <h1 className="mt-3 font-serif-hero text-3xl leading-snug sm:text-4xl">{heading}</h1>
+          </div>
+        </Reveal>
       </section>
 
       <section className="mx-auto max-w-3xl px-4 py-24">
@@ -49,13 +52,15 @@ export function ItemDetail({
           {backLabel}
         </Link>
 
-        {image ? (
-          <div className="relative mt-8 aspect-[16/9] w-full overflow-hidden rounded-md">
-            <Image src={image} alt={heading} fill sizes="(min-width: 768px) 768px, 100vw" className="object-cover" />
-          </div>
-        ) : (
-          <ImagePlaceholder icon={Icon} className="mt-8 aspect-[16/9] w-full rounded-md" />
-        )}
+        <Reveal delay={100}>
+          {image ? (
+            <div className="relative mt-8 aspect-[16/9] w-full overflow-hidden rounded-md">
+              <Image src={image} alt={heading} fill sizes="(min-width: 768px) 768px, 100vw" className="object-cover" />
+            </div>
+          ) : (
+            <ImagePlaceholder icon={Icon} className="mt-8 aspect-[16/9] w-full rounded-md" />
+          )}
+        </Reveal>
 
         {primaryAction && (
           <a
@@ -92,16 +97,18 @@ export function ItemDetail({
       </section>
 
       <section className="bg-bg-muted">
-        <div className="mx-auto max-w-2xl px-4 py-24 text-center">
-          <h2 className="text-2xl leading-snug text-ink sm:text-3xl">{cta.heading}</h2>
-          <p className="mt-4 text-ink-soft">{cta.body}</p>
-          <Link
-            href={cta.href}
-            className="mt-8 inline-flex items-center gap-2 rounded-md bg-brand-600 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-brand-700"
-          >
-            {cta.label}
-          </Link>
-        </div>
+        <Reveal>
+          <div className="mx-auto max-w-2xl px-4 py-24 text-center">
+            <h2 className="text-2xl leading-snug text-ink sm:text-3xl">{cta.heading}</h2>
+            <p className="mt-4 text-ink-soft">{cta.body}</p>
+            <Link
+              href={cta.href}
+              className="mt-8 inline-flex items-center gap-2 rounded-md bg-brand-600 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-brand-700"
+            >
+              {cta.label}
+            </Link>
+          </div>
+        </Reveal>
       </section>
     </main>
   );
