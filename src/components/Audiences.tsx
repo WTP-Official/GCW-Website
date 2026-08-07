@@ -16,7 +16,7 @@ export function Audiences() {
         <Reveal>
           <h2 className="font-serif-hero text-2xl leading-snug text-ink sm:text-3xl">
             {lead}
-            <em className="italic text-brand-600">{EMPHASIS}</em>
+            <em className="not-italic text-brand-600">{EMPHASIS}</em>
             {tail}
           </h2>
         </Reveal>

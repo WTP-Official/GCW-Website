@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import content from "../app/content.json";
 import { Reveal } from "@/components/Reveal";
@@ -8,25 +7,16 @@ export function Positioning() {
   const { positioning } = content;
 
   return (
-    <section className="overflow-hidden py-32 sm:py-36">
-      <div className="mx-auto grid max-w-6xl gap-12 px-4 lg:grid-cols-5 lg:items-center lg:gap-8">
-        <Reveal className="lg:col-span-3">
-          <div className="relative aspect-4/3 w-full overflow-hidden rounded-md shadow-lg lg:aspect-auto lg:h-104 lg:-ml-4">
-            <Image
-              src={positioning.image}
-              alt={positioning.heading}
-              fill
-              sizes="(min-width: 1024px) 60vw, 100vw"
-              className="photo-grade object-cover"
-            />
-          </div>
+    <section className="border-b border-black/5 py-24 sm:py-28">
+      <div className="mx-auto grid max-w-6xl gap-x-16 gap-y-8 px-4 lg:grid-cols-2">
+        <Reveal>
+          <h2 className="font-serif-hero text-3xl leading-snug text-ink sm:text-4xl">
+            {positioning.heading}
+          </h2>
         </Reveal>
-        <Reveal delay={120} className="lg:col-span-2">
+        <Reveal delay={120}>
           <div>
-            <h2 className="font-serif-hero text-3xl leading-snug text-ink sm:text-4xl">
-              {positioning.heading}
-            </h2>
-            <p className="mt-5 text-ink-soft">{positioning.body}</p>
+            <p className="text-ink-soft">{positioning.body}</p>
             <Link
               href={positioning.linkHref}
               className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-brand-600 underline decoration-transparent underline-offset-4 transition-colors hover:decoration-brand-600"

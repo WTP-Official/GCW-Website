@@ -1,0 +1,56 @@
+{
+  "title": "Giáo dục",
+  "metaDescription": "GCW đồng hành cùng trường học và cơ sở giáo dục Việt Nam phát triển năng lực lãnh đạo cho học sinh, sinh viên và đội ngũ giáo viên.",
+  "hero": {
+    "eyebrow": "Giáo dục",
+    "heading": "Phát triển lãnh đạo cho thế hệ tiếp theo",
+    "body": "GCW đồng hành cùng các trường học và cơ sở giáo dục xây dựng năng lực lãnh đạo — từ lớp học đến phòng họp ban giám hiệu."
+  },
+  "audiences": [
+    {
+      "title": "Trường phổ thông",
+      "description": "Chương trình cải tiến toàn trường giúp mọi học sinh phát triển năng lực lãnh đạo và trách nhiệm với việc học của chính mình.",
+      "image": "/images/case-manufacturing.jpg"
+    },
+    {
+      "title": "Đại học & Cao đẳng",
+      "description": "Trang bị năng lực lãnh đạo cho sinh viên và đội ngũ cán bộ, giảng viên trước khi bước vào môi trường làm việc thực tế.",
+      "image": "/images/case-tech-funding.jpg"
+    }
+  ],
+  "programsHeading": "Chương trình dành cho giáo dục",
+  "programs": [
+    {
+      "name": "LÃNH ĐẠO TRONG TÔI",
+      "description": "Mô hình cải tiến toàn trường giúp mọi học sinh phát triển năng lực lãnh đạo, xây dựng sự tự tin và trách nhiệm với việc học.",
+      "image": "/images/offering-gcw-safe.jpg"
+    },
+    {
+      "name": "PHÁT TRIỂN CHUYÊN MÔN GIÁO VIÊN",
+      "description": "Chương trình đào tạo giúp giáo viên và cán bộ nhà trường áp dụng tư duy lãnh đạo vào công tác giảng dạy hằng ngày.",
+      "image": "/images/offering-gcw-control.jpg"
+    },
+    {
+      "name": "GCW LEADERU",
+      "description": "Chương trình phát triển lãnh đạo dành cho sinh viên đại học, chuẩn bị hành trang trước khi bước vào môi trường làm việc.",
+      "image": "/images/offering-gcw-scale.jpg"
+    },
+    {
+      "name": "GCW ACADEMY",
+      "description": "Chương trình chứng chỉ giúp giáo viên và huấn luyện viên trở thành người hướng dẫn được công nhận trong hệ thống GCW.",
+      "image": "/images/offering-tuyen-dung.jpg"
+    }
+  ],
+  "caseStudiesHeading": "Câu chuyện từ trường học",
+  "caseStudies": [
+    { "name": "Trường Tiểu học Ánh Dương", "image": "/uploads/annie-spratt-qckxruozjrg-unsplash-e15fd1fb.jpg" },
+    { "name": "Trường THCS Sao Mai", "image": "/uploads/imagine-buddy-vslbaidhwau-unsplash-341d5944.jpg" },
+    { "name": "Trường Cao đẳng Kỹ thuật Miền Đông", "image": "/uploads/annie-spratt-qckxruozjrg-unsplash-e15fd1fb.jpg" }
+  ],
+  "cta": {
+    "heading": "Sẵn sàng đưa năng lực lãnh đạo vào trường học của bạn?",
+    "body": "Đặt lịch tư vấn để đội ngũ GCW giới thiệu chương trình phù hợp với cấp học và quy mô nhà trường của bạn.",
+    "label": "Đặt lịch tư vấn",
+    "href": "/contact"
+  }
+}

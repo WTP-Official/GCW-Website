@@ -37,12 +37,11 @@ export function FeaturedSeriesGrid({
 
   return (
     <main>
-      <section className="bg-bg-dark text-white">
+      <section className="border-b border-black/10 bg-white">
         <Reveal>
-          <div className="mx-auto max-w-3xl px-4 py-28 text-center sm:py-32">
-            <Icon className="mx-auto h-8 w-8 text-white/60" aria-hidden="true" />
-            <h1 className="mt-4 font-serif-hero text-3xl leading-snug sm:text-4xl">{heading}</h1>
-            <p className="mx-auto mt-6 max-w-xl text-lg text-white/70">{intro}</p>
+          <div className="mx-auto max-w-5xl px-4 py-16">
+            <h1 className="max-w-2xl font-serif-hero text-5xl leading-[1.1] text-ink sm:text-6xl">{heading}</h1>
+            <p className="mt-6 max-w-xl text-lg text-ink-soft">{intro}</p>
           </div>
         </Reveal>
       </section>

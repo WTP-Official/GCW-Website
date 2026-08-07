@@ -1,45 +1,84 @@
 {
-  "title": "Gói dịch vụ theo quy mô",
-  "metaDescription": "Ba lộ trình đồng hành của GCW theo quy mô doanh nghiệp: tăng trưởng nhanh, chuẩn bị gọi vốn và doanh nghiệp FDI, kết hợp các gói dịch vụ nhân sự phù hợp.",
-  "heading": "Lộ trình đồng hành theo quy mô doanh nghiệp",
-  "intro": "Thay vì chọn từng gói dịch vụ riêng lẻ, GCW đề xuất lộ trình kết hợp phù hợp với giai đoạn phát triển cụ thể của doanh nghiệp bạn.",
-  "tiers": [
+  "title": "Gói All Access",
+  "metaDescription": "Gói All Access của GCW: truy cập không giới hạn nội dung, đội ngũ chuyên gia và công nghệ để chuyển hoá năng lực lãnh đạo và hiệu suất tổ chức.",
+  "hero": {
+    "heading": "Gói All Access của GCW",
+    "body": "Truy cập không giới hạn vào nội dung, đội ngũ chuyên gia và công nghệ được thiết kế riêng của GCW để chuyển hoá năng lực lãnh đạo và hiệu suất tổ chức bạn."
+  },
+  "resources": [
     {
-      "name": "GCW Nền Tảng",
-      "audience": "Doanh nghiệp tăng trưởng nhanh",
-      "description": "Ưu tiên tuân thủ và kiểm soát chi phí trước khi mở rộng quy mô nhân sự.",
-      "highlighted": false,
-      "includes": [
-        { "name": "GCW SAFE", "href": "/services/gcw-safe" },
-        { "name": "GCW CONTROL", "href": "/services/gcw-control" }
-      ]
+      "label": "Cẩm nang miễn phí",
+      "title": "Tạo Thay Đổi Hành Vi Tập Thể Bền Vững",
+      "description": "Cẩm nang dành cho người phụ trách đào tạo & phát triển",
+      "ctaLabel": "Tải ngay",
+      "href": "/tai-nguyen/cam-nang",
+      "dark": false
     },
     {
-      "name": "GCW Sẵn Sàng Gọi Vốn",
-      "audience": "Doanh nghiệp chuẩn bị gọi vốn",
-      "description": "Chuẩn hoá cơ cấu tổ chức và chính sách nhân sự để đáp ứng yêu cầu thẩm định của nhà đầu tư.",
-      "highlighted": true,
-      "includes": [
-        { "name": "GCW SCALE", "href": "/services/gcw-scale" },
-        { "name": "GCW TƯ VẤN HR", "href": "/services/tu-van-hr" }
-      ]
+      "label": "Hội thảo trực tiếp",
+      "title": "Tổng Quan Nền Tảng Impact Cho Thành Viên All Access",
+      "description": "Nâng tầm chiến lược học tập của bạn",
+      "ctaLabel": "Xem ngay",
+      "href": "/su-kien/hoi-thao-truc-tuyen",
+      "dark": true
     },
     {
-      "name": "GCW Toàn Cầu",
-      "audience": "Doanh nghiệp FDI",
-      "description": "Đối tác am hiểu luật lao động và thuế Việt Nam, đồng hành từ những tháng đầu vận hành.",
-      "highlighted": false,
-      "includes": [
-        { "name": "GCW SAFE", "href": "/services/gcw-safe" },
-        { "name": "GCW THUẾ CÁ NHÂN", "href": "/services/thue-thu-nhap-ca-nhan" },
-        { "name": "GCW TƯ VẤN HR", "href": "/services/tu-van-hr" }
-      ]
+      "label": "Báo cáo chuyên sâu",
+      "title": "Những Nhà Lãnh Đạo Giỏi Đang Ở Đâu?",
+      "description": "Khám phá gián đoạn, niềm tin và AI",
+      "ctaLabel": "Tải ngay",
+      "href": "/tai-nguyen/cam-nang",
+      "dark": false
+    },
+    {
+      "label": "Cẩm nang miễn phí",
+      "title": "Ứng Dụng Khoa Học Học Tập Để Tạo Tác Động Lâu Dài",
+      "description": "Nguyên tắc khoa học cho sự gắn kết của người học",
+      "ctaLabel": "Tải ngay",
+      "href": "/tai-nguyen/cam-nang",
+      "dark": true
     }
   ],
-  "note": "Phạm vi và chi phí cụ thể được đề xuất sau buổi tư vấn ban đầu, tuỳ theo quy mô và hiện trạng nhân sự thực tế của doanh nghiệp.",
+  "included": {
+    "heading": "Gói All Access của GCW bao gồm những gì?",
+    "body": "Gói của bạn bao gồm đầy đủ công cụ, bài đánh giá, video, học liệu số và toàn bộ thư viện chương trình của GCW — triển khai trực tiếp, trực tuyến hoặc tự học.",
+    "linkLabel": "Xem chi tiết những gì được bao gồm trong gói All Access",
+    "categories": [
+      {
+        "name": "Nội dung",
+        "description": "Phát triển lãnh đạo giỏi và đội ngũ hiệu suất cao với thư viện chương trình toàn diện của GCW.",
+        "image": "/images/case-manufacturing.jpg"
+      },
+      {
+        "name": "Con người",
+        "description": "Tận dụng năng lực của đội ngũ chuyên gia cố vấn GCW, hoặc đội ngũ nội bộ được chứng nhận.",
+        "image": "/images/case-tech-funding.jpg"
+      },
+      {
+        "name": "Công nghệ",
+        "description": "Giữ người học luôn gắn kết, theo dõi tiến độ và duy trì tác động lâu dài.",
+        "image": "/images/case-fdi.jpg"
+      },
+      {
+        "name": "Dịch vụ",
+        "description": "Tận dụng các dịch vụ tuỳ chỉnh như một phần mở rộng của gói All Access.",
+        "image": "/images/positioning-strategic-operator.jpg"
+      }
+    ]
+  },
+  "stats": [
+    { "value": "24", "label": "ngôn ngữ được hỗ trợ trong gói All Access" },
+    { "value": "06", "label": "chương trình cốt lõi trong thư viện GCW" },
+    { "value": "40+", "label": "năm kinh nghiệm và hàng trăm lượt triển khai" }
+  ],
+  "testimonial": {
+    "quote": "Gói All Access giúp chúng tôi xây dựng chương trình phát triển lãnh đạo bài bản với chi phí hợp lý. Sự linh hoạt của hình thức tự học giúp đội ngũ tiếp cận đúng nội dung, đúng thời điểm cần thiết.",
+    "author": "Giám đốc Nhân sự",
+    "role": "Doanh nghiệp sản xuất, TP.HCM"
+  },
   "cta": {
-    "heading": "Chưa chắc lộ trình nào phù hợp?",
-    "body": "Đặt lịch tư vấn để đội ngũ GCW đánh giá hiện trạng và đề xuất lộ trình đồng hành phù hợp nhất với doanh nghiệp bạn.",
+    "heading": "Chưa chắc gói nào phù hợp?",
+    "body": "Đặt lịch tư vấn để đội ngũ GCW đánh giá hiện trạng và đề xuất gói All Access phù hợp nhất với tổ chức bạn.",
     "label": "Đặt lịch tư vấn",
     "href": "/contact"
   }

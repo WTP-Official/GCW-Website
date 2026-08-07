@@ -47,6 +47,17 @@ next-env.d.ts
 .env
 .playwright-mcp
 .next-dev.log
+.local
+.cache
+
+# Claude Code — local state, KHONG commit (chua OAuth token + lich su chat)
+/.claude.json
+/.claude.json.tmp.*
+/.config/
+/.claude/*
+# ...tru phan dung chung cho ca team:
+!/.claude/skills/
+!/.claude/commands/
 
 /services_pages/*
 /services_screenshots/*

@@ -1,34 +1,88 @@
 {
   "title": "Hội nghị & sự kiện",
-  "metaDescription": "Hội nghị chuyên đề của GCW quy tụ cộng đồng doanh nghiệp SME và chuyên gia nhân sự, chia sẻ kinh nghiệm vận hành nhân sự thực chiến tại Việt Nam.",
+  "metaDescription": "Hội nghị chuyên đề của GCW quy tụ cộng đồng lãnh đạo doanh nghiệp Việt Nam, bàn về năng lực lãnh đạo, văn hoá tin cậy và thực thi chiến lược trong kỷ nguyên AI.",
   "heading": "Hội nghị & sự kiện",
-  "intro": "Hội nghị chuyên đề quy tụ cộng đồng doanh nghiệp SME và chuyên gia nhân sự, do GCW tổ chức định kỳ.",
+  "intro": "Hội nghị chuyên đề quy tụ cộng đồng lãnh đạo doanh nghiệp và chuyên gia phát triển tổ chức, nơi GCW đồng hành chia sẻ và kết nối định kỳ.",
   "itemsHeading": "Hội nghị sắp diễn ra",
   "items": [
     {
-      "id": "hoi-nghi-01",
-      "title": "Vận hành nhân sự bài bản cho doanh nghiệp tăng trưởng nhanh",
-      "description": "Hội nghị chuyên đề dành cho doanh nghiệp đang mở rộng quy mô, cần chuẩn hoá bộ máy nhân sự.",
+      "id": "hoi-nghi-lanh-dao-doanh-nghiep-viet-nam",
+      "title": "Hội nghị Lãnh đạo Doanh nghiệp Việt Nam 2026",
+      "description": "Diễn đàn thường niên quy tụ lãnh đạo cấp cao bàn về năng lực lãnh đạo cần thiết trong kỷ nguyên AI và thị trường biến động.",
       "format": "Offline",
-      "eventDate": "2026-09-05T08:30",
-      "location": "Văn phòng GCW, TP.HCM",
+      "eventDate": "2026-09-17T08:30",
+      "location": "Trung tâm Hội nghị Quốc gia, Hà Nội",
+      "image": "/uploads/annie-spratt-qckxruozjrg-unsplash-e15fd1fb.jpg",
+      "registerUrl": "",
+      "jarvisFormId": "",
+      "body": "<p>Hội nghị Lãnh đạo Doanh nghiệp Việt Nam 2026 quy tụ ban điều hành, chủ doanh nghiệp và chuyên gia phát triển tổ chức để cùng nhìn lại một năm nhiều biến động và định hình năng lực lãnh đạo cho giai đoạn tới.</p><p>Đội ngũ cố vấn của GCW sẽ tham gia chia sẻ về cách xây dựng đội ngũ quản lý kế cận, giữ vững kỷ luật thực thi khi tổ chức mở rộng quy mô, và tận dụng AI như một đòn bẩy cho năng suất lãnh đạo thay vì một mối đe doạ.</p><p>Đây là dịp để lãnh đạo doanh nghiệp Việt Nam kết nối, học hỏi lẫn nhau và mang về những khung tư duy có thể áp dụng ngay cho tổ chức của mình.</p>",
+      "speakers": "Ông Lê Minh Khoa | Nhà sáng lập & Cố vấn trưởng, GCW\nBà Đặng Thu Hiền | Giám đốc Chương trình Lãnh đạo, GCW",
+      "takeaways": "Khung năng lực lãnh đạo cần thiết để dẫn dắt tổ chức trong kỷ nguyên AI\nCách xây dựng đội ngũ quản lý kế cận sẵn sàng cho giai đoạn tăng trưởng tiếp theo",
+      "audience": "Chủ doanh nghiệp và thành viên ban điều hành cấp cao\nTrưởng bộ phận nhân sự và phát triển tổ chức"
+    },
+    {
+      "id": "dien-dan-nhan-su-phat-trien-to-chuc-chau-a",
+      "title": "Diễn đàn Nhân sự & Phát triển Tổ chức Châu Á",
+      "description": "Diễn đàn khu vực chia sẻ xu hướng phát triển tổ chức, đo lường hiệu suất và xây dựng văn hoá tin cậy trong doanh nghiệp.",
+      "format": "Kết hợp (Online & Offline)",
+      "eventDate": "2026-10-08T08:30",
+      "location": "Khách sạn Rex, TP.HCM (kết hợp trực tuyến)"
+    },
+    {
+      "id": "hoi-nghi-thuong-dinh-van-hoa-doanh-nghiep",
+      "title": "Hội nghị Thượng đỉnh Văn hoá Doanh nghiệp",
+      "description": "Sự kiện bàn về cách xây dựng văn hoá tin cậy, gắn kết đội ngũ và giữ nhân tài trong giai đoạn tổ chức liên tục thay đổi.",
+      "format": "Offline",
+      "eventDate": "2026-10-29T08:30",
+      "location": "Văn phòng GCW, TP.HCM"
+    },
+    {
+      "id": "dien-dan-tang-truong-ben-vung-doanh-nghiep-vua-va-nho",
+      "title": "Diễn đàn Tăng trưởng Bền vững cho Doanh nghiệp Vừa và Nhỏ",
+      "description": "Diễn đàn dành cho lãnh đạo SME bàn về chiến lược tăng trưởng và kỷ luật thực thi trong thị trường nhiều biến động.",
+      "format": "Offline",
+      "eventDate": "2026-11-12T08:30",
+      "location": "Trung tâm Hội nghị White Palace, TP.HCM",
       "image": "",
       "registerUrl": "",
       "jarvisFormId": "",
       "body": ""
     },
     {
-      "id": "hoi-nghi-02",
-      "title": "Kết nối cộng đồng chủ doanh nghiệp SME và chuyên gia nhân sự",
-      "description": "Sự kiện kết nối, giao lưu giữa chủ doanh nghiệp SME và mạng lưới chuyên gia nhân sự của GCW.",
+      "id": "hoi-nghi-chuyen-doi-so-va-lanh-dao-ai",
+      "title": "Hội nghị Chuyển đổi số & Lãnh đạo trong Kỷ nguyên AI",
+      "description": "Hội nghị chuyên đề về cách lãnh đạo biến khoản đầu tư công nghệ và AI thành hiệu suất tổ chức thực tế.",
       "format": "Kết hợp (Online & Offline)",
-      "eventDate": "2026-11-20T08:30",
+      "eventDate": "2026-11-26T08:30",
+      "location": "Trung tâm Hội nghị Quốc gia, Hà Nội (kết hợp trực tuyến)",
+      "image": "/uploads/v89pqztek-k-unsplash-e24d82cb.jpg",
+      "registerUrl": "",
+      "jarvisFormId": "",
+      "body": "<p>Công nghệ và AI đang thay đổi cách các tổ chức vận hành, nhưng khoảng cách lớn nhất không nằm ở công cụ mà ở năng lực lãnh đạo để dẫn dắt sự thay đổi đó.</p><p>Tại hội nghị này, đội ngũ GCW chia sẻ khung đánh giá mức độ sẵn sàng AI của đội ngũ quản lý, cùng những bài học thực tế từ các tổ chức đã chuyển hoá thành công đầu tư công nghệ thành kết quả kinh doanh đo lường được.</p>",
+      "speakers": "Ông Phạm Anh Tuấn | Chuyên gia Chuyển đổi Lãnh đạo, GCW",
+      "takeaways": "Cách chuyển hoá năng lực AI thành kết quả kinh doanh đo lường được\nKhung đánh giá mức độ sẵn sàng AI của đội ngũ quản lý",
+      "audience": "Giám đốc điều hành và giám đốc công nghệ\nTrưởng phòng chuyển đổi số và nhân sự"
+    },
+    {
+      "id": "summit-thuc-thi-chien-luoc",
+      "title": "Summit Thực thi Chiến lược 2026",
+      "description": "Summit dành cho lãnh đạo bàn về kỷ luật thực thi và cách biến mục tiêu chiến lược thành kết quả đo lường được.",
+      "format": "Offline",
+      "eventDate": "2026-12-10T08:30",
       "location": "Văn phòng GCW, TP.HCM"
+    },
+    {
+      "id": "dien-dan-ket-noi-lanh-dao-tre-viet-nam",
+      "title": "Diễn đàn Kết nối Lãnh đạo Trẻ Việt Nam",
+      "description": "Diễn đàn kết nối thế hệ lãnh đạo trẻ, chia sẻ kinh nghiệm xây dựng đội ngũ và dẫn dắt thay đổi trong tổ chức.",
+      "format": "Offline",
+      "eventDate": "2026-12-18T08:30",
+      "location": "Dreamplex, TP.HCM"
     }
   ],
   "cta": {
-    "heading": "Muốn nhận lời mời tham dự hội nghị?",
-    "body": "Để lại thông tin liên hệ, GCW sẽ gửi lời mời khi lịch hội nghị được công bố chính thức.",
+    "heading": "Muốn cùng GCW tham dự các hội nghị lãnh đạo sắp tới?",
+    "body": "Để lại thông tin liên hệ, GCW sẽ gửi lời mời khi lịch hội nghị được công bố chính thức, hoặc trao đổi cơ hội đồng hành cùng đội ngũ diễn giả.",
     "label": "Đăng ký nhận lời mời",
     "href": "/contact"
   }

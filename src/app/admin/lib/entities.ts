@@ -35,7 +35,7 @@ export type EntityConfig = {
   fields: FieldConfig[];
 };
 
-const PILLARS = ["Tuân thủ lao động", "Vận hành nhân sự", "Chiến lược & tổ chức"];
+const PILLARS = ["Phát triển lãnh đạo", "Xây dựng văn hoá tin cậy", "Tạo kết quả đột phá"];
 const EVENT_FORMATS = ["Online", "Offline", "Kết hợp (Online & Offline)"];
 
 export const ENTITIES: EntityConfig[] = [

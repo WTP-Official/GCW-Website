@@ -1,47 +1,179 @@
 {
   "title": "Đội ngũ diễn giả",
-  "metaDescription": "Đội ngũ chuyên gia cố vấn của GCW sẵn sàng chia sẻ tại sự kiện của đối tác về tuân thủ lao động, vận hành nhân sự và xây dựng tổ chức cho SME.",
+  "metaDescription": "Đội ngũ chuyên gia cố vấn lãnh đạo của GCW sẵn sàng chia sẻ tại sự kiện của đối tác về phát triển lãnh đạo, văn hoá tin cậy và tạo kết quả đột phá.",
   "heading": "Đội ngũ diễn giả",
-  "intro": "Đội ngũ chuyên gia cố vấn của GCW sẵn sàng chia sẻ tại sự kiện của đối tác — liên hệ để trao đổi lịch diễn giả phù hợp.",
+  "intro": "Đội ngũ chuyên gia cố vấn lãnh đạo của GCW sẵn sàng chia sẻ tại sự kiện của đối tác — liên hệ để trao đổi lịch diễn giả phù hợp với chủ đề sự kiện của bạn.",
   "speakersHeading": "Chuyên gia tiêu biểu",
   "speakers": [
     {
-      "id": "speaker-01",
-      "name": "Chuyên gia cố vấn vận hành nhân sự",
-      "role": "Vận hành nhân sự",
-      "bio": "Tư vấn chiến lược vận hành nhân sự và xây dựng bộ máy nhân sự bài bản cho doanh nghiệp SME.",
+      "id": "le-minh-khoa",
+      "name": "Lê Minh Khoa",
+      "role": "Phát triển lãnh đạo",
+      "bio": "Nhà sáng lập & Cố vấn trưởng của GCW, đồng hành cùng hơn 50 tổ chức xây dựng đội ngũ quản lý kế cận trong hơn một thập kỷ.",
       "topics": [
-        "Vận hành nhân sự",
-        "Onboarding",
-        "Quản lý hiệu suất"
+        "Phát triển lãnh đạo kế cận",
+        "Chiến lược tổ chức",
+        "Lãnh đạo trong kỷ nguyên AI"
       ]
     },
     {
-      "id": "speaker-02",
-      "name": "Chuyên gia tuân thủ lao động",
-      "role": "Tuân thủ lao động",
-      "bio": "Chia sẻ kinh nghiệm thực tế về tuân thủ luật lao động, bảo hiểm xã hội và thuế TNCN.",
+      "id": "dang-thu-hien",
+      "name": "Đặng Thu Hiền",
+      "role": "Phát triển lãnh đạo",
+      "bio": "Giám đốc Chương trình Lãnh đạo tại GCW, thiết kế và dẫn dắt hàng chục chương trình phát triển năng lực quản lý cho doanh nghiệp vừa và lớn.",
       "topics": [
-        "Luật lao động",
-        "Bảo hiểm xã hội",
-        "Thuế TNCN"
+        "Thói quen hiệu quả cá nhân",
+        "Phát triển năng lực quản lý",
+        "Huấn luyện lãnh đạo"
       ]
     },
     {
-      "id": "speaker-03",
-      "name": "Cố vấn chiến lược tổ chức",
-      "role": "Chiến lược & tổ chức",
-      "bio": "Đồng hành cùng doanh nghiệp thiết kế cơ cấu tổ chức và chính sách nhân sự cho giai đoạn tăng trưởng.",
+      "id": "tran-quoc-bao",
+      "name": "Trần Quốc Bảo",
+      "role": "Phát triển lãnh đạo",
+      "bio": "Chuyên gia huấn luyện lãnh đạo cấp cao, từng cố vấn trực tiếp cho ban điều hành của nhiều doanh nghiệp trong giai đoạn chuyển giao thế hệ lãnh đạo.",
       "topics": [
-        "Cơ cấu tổ chức",
-        "Chính sách lương thưởng",
-        "Gọi vốn"
+        "Huấn luyện lãnh đạo cấp cao",
+        "Chuyển giao thế hệ lãnh đạo",
+        "Ra quyết định chiến lược"
+      ]
+    },
+    {
+      "id": "ngo-thanh-mai",
+      "name": "Ngô Thanh Mai",
+      "role": "Phát triển lãnh đạo",
+      "bio": "Cố vấn phát triển lãnh đạo kế cận, chuyên xây dựng lộ trình quy hoạch nhân sự tiềm năng lên vị trí quản lý.",
+      "topics": [
+        "Quy hoạch nhân sự kế cận",
+        "Phát triển lãnh đạo trẻ",
+        "Đánh giá năng lực quản lý"
+      ]
+    },
+    {
+      "id": "vu-dinh-phong",
+      "name": "Vũ Đình Phong",
+      "role": "Phát triển lãnh đạo",
+      "bio": "Chuyên gia lãnh đạo chuyển đổi, đồng hành cùng đội ngũ quản lý dẫn dắt tổ chức qua các giai đoạn tái cấu trúc và thay đổi lớn.",
+      "topics": [
+        "Lãnh đạo trong thay đổi",
+        "Quản trị bất định",
+        "Tái cấu trúc tổ chức"
+      ]
+    },
+    {
+      "id": "pham-bich-ngoc",
+      "name": "Phạm Bích Ngọc",
+      "role": "Xây dựng văn hoá tin cậy",
+      "bio": "Cố vấn văn hoá tổ chức, giúp hơn 30 doanh nghiệp xây dựng môi trường làm việc dựa trên niềm tin và sự minh bạch.",
+      "topics": [
+        "Văn hoá tổ chức",
+        "Niềm tin & minh bạch",
+        "Gắn kết nhân sự"
+      ]
+    },
+    {
+      "id": "hoang-anh-dung",
+      "name": "Hoàng Anh Dũng",
+      "role": "Xây dựng văn hoá tin cậy",
+      "bio": "Chuyên gia xây dựng niềm tin đội nhóm, chuyên thiết kế các chương trình can thiệp giúp đội ngũ phục hồi niềm tin sau xung đột hoặc thay đổi.",
+      "topics": [
+        "Xây dựng niềm tin đội nhóm",
+        "Giải quyết xung đột",
+        "Phục hồi tinh thần đội ngũ"
+      ]
+    },
+    {
+      "id": "do-khanh-linh",
+      "name": "Đỗ Khánh Linh",
+      "role": "Xây dựng văn hoá tin cậy",
+      "bio": "Cố vấn gắn kết nhân sự, tập trung vào việc giữ chân nhân tài thông qua trải nghiệm nhân viên và văn hoá lắng nghe.",
+      "topics": [
+        "Gắn kết & giữ chân nhân tài",
+        "Trải nghiệm nhân viên",
+        "Văn hoá lắng nghe"
+      ]
+    },
+    {
+      "id": "nguyen-huu-thang",
+      "name": "Nguyễn Hữu Thắng",
+      "role": "Xây dựng văn hoá tin cậy",
+      "bio": "Chuyên gia đối thoại và giao tiếp lãnh đạo, huấn luyện quản lý xử lý các cuộc trò chuyện khó một cách xây dựng và hiệu quả.",
+      "topics": [
+        "Kỹ năng đối thoại khó",
+        "Giao tiếp lãnh đạo",
+        "Phản hồi hiệu suất"
+      ]
+    },
+    {
+      "id": "lam-tuyet-trinh",
+      "name": "Lâm Tuyết Trinh",
+      "role": "Xây dựng văn hoá tin cậy",
+      "bio": "Cố vấn văn hoá doanh nghiệp, đồng hành cùng các tổ chức đang mở rộng nhanh giữ được bản sắc và sự gắn kết của đội ngũ ban đầu.",
+      "topics": [
+        "Văn hoá trong giai đoạn mở rộng",
+        "Bản sắc tổ chức",
+        "Truyền thông nội bộ"
+      ]
+    },
+    {
+      "id": "pham-anh-tuan",
+      "name": "Phạm Anh Tuấn",
+      "role": "Tạo kết quả đột phá",
+      "bio": "Chuyên gia chuyển đổi lãnh đạo trong kỷ nguyên AI, giúp ban điều hành chuyển hoá đầu tư công nghệ thành hiệu suất tổ chức thực tế.",
+      "topics": [
+        "Lãnh đạo & AI",
+        "Chuyển đổi số",
+        "Hiệu suất tổ chức"
+      ]
+    },
+    {
+      "id": "trinh-hai-yen",
+      "name": "Trịnh Hải Yến",
+      "role": "Tạo kết quả đột phá",
+      "bio": "Cố vấn thực thi chiến lược, chuyên thiết kế bảng điểm mục tiêu và nhịp trách nhiệm giải trình giúp đội ngũ bám sát kết quả.",
+      "topics": [
+        "Thực thi chiến lược",
+        "Bảng điểm mục tiêu",
+        "Nhịp trách nhiệm giải trình"
+      ]
+    },
+    {
+      "id": "bui-xuan-truong",
+      "name": "Bùi Xuân Trường",
+      "role": "Tạo kết quả đột phá",
+      "bio": "Chuyên gia đo lường hiệu suất tổ chức, giúp doanh nghiệp thiết lập hệ thống chỉ số phản ánh đúng tiến độ mục tiêu chiến lược.",
+      "topics": [
+        "Đo lường hiệu suất",
+        "Chỉ số quản trị mục tiêu",
+        "Ra quyết định dựa trên dữ liệu"
+      ]
+    },
+    {
+      "id": "vuong-ngoc-anh",
+      "name": "Vương Ngọc Ánh",
+      "role": "Tạo kết quả đột phá",
+      "bio": "Cố vấn quản trị mục tiêu và KPI, đồng hành cùng ban điều hành thiết kế hệ thống mục tiêu liên kết từ chiến lược đến từng cá nhân.",
+      "topics": [
+        "Quản trị mục tiêu & KPI",
+        "Liên kết chiến lược",
+        "Quản lý hiệu suất cá nhân"
+      ]
+    },
+    {
+      "id": "dinh-cong-hieu",
+      "name": "Đinh Công Hiếu",
+      "role": "Tạo kết quả đột phá",
+      "bio": "Chuyên gia tăng trưởng và thực thi, tư vấn cho doanh nghiệp SME xây dựng kỷ luật vận hành để duy trì tăng trưởng bền vững.",
+      "topics": [
+        "Tăng trưởng bền vững",
+        "Kỷ luật vận hành",
+        "Quản lý dự án"
       ]
     }
   ],
   "cta": {
     "heading": "Muốn mời diễn giả GCW cho sự kiện của bạn?",
-    "body": "Để lại thông tin sự kiện, đội ngũ GCW sẽ liên hệ trao đổi lịch diễn giả phù hợp.",
+    "body": "Để lại thông tin sự kiện, đội ngũ GCW sẽ liên hệ trao đổi chủ đề và lịch diễn giả phù hợp.",
     "label": "Liên hệ mời diễn giả",
     "href": "/contact"
   }

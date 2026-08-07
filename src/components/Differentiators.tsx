@@ -31,12 +31,12 @@ export function Differentiators() {
             const Icon = ICONS[item.icon];
             return (
               <Reveal key={item.title} delay={(index % 4) * 90}>
-                <div className="rounded-md border border-black/5 bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
-                  <Icon className="h-6 w-6 text-ink-soft" aria-hidden="true" />
-                  <h3 className="mt-4 text-base text-ink">
+                <div className="rounded-md bg-bg-dark p-6 text-white transition-shadow hover:shadow-md">
+                  <Icon className="h-6 w-6 text-brand-300" aria-hidden="true" />
+                  <h3 className="mt-4 text-base text-white">
                     {item.title}
                   </h3>
-                  <p className="mt-2 text-sm text-ink-soft">{item.description}</p>
+                  <p className="mt-2 text-sm text-white/70">{item.description}</p>
                 </div>
               </Reveal>
             );

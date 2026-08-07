@@ -1,86 +1,110 @@
 {
   "title": "Video",
-  "metaDescription": "Video hướng dẫn thực hành các nghiệp vụ nhân sự phổ biến: tính lương, bảo hiểm xã hội, soát xét hồ sơ và tuân thủ lao động cho doanh nghiệp SME.",
+  "metaDescription": "Video của GCW về phát triển lãnh đạo, xây dựng văn hoá tin cậy và tạo kết quả đột phá, giúp nhà quản lý áp dụng ngay các phương pháp dẫn dắt đội ngũ.",
   "heading": "Video",
-  "intro": "Video hướng dẫn thực hành các nghiệp vụ nhân sự phổ biến cho đội ngũ HR, dễ áp dụng ngay vào công việc hàng ngày.",
+  "intro": "Video ngắn gọn, trực quan giới thiệu các phương pháp lãnh đạo và kỹ năng quản lý đội nhóm, dễ áp dụng ngay vào công việc hàng ngày.",
   "categoriesHeading": "Video theo chủ đề",
   "items": [
     {
       "id": "video-01",
-      "category": "Tuân thủ lao động",
-      "title": "Hướng dẫn tính lương và bảo hiểm xã hội đúng quy định",
-      "description": "Video hướng dẫn từng bước cách tính lương, bảo hiểm xã hội và thuế TNCN theo quy định mới nhất."
+      "category": "Phát triển lãnh đạo",
+      "title": "7 Thói Quen Của Người Hiệu Quả",
+      "description": "Tổng quan bảy thói quen nền tảng giúp mỗi cá nhân làm chủ tư duy và hành động của chính mình.",
+      "image": "",
+      "videoUrl": ""
     },
     {
       "id": "video-02",
-      "category": "Tuân thủ lao động",
-      "title": "Quy trình soát xét hồ sơ nhân sự",
-      "description": "Hướng dẫn quy trình rà soát và chuẩn hoá hồ sơ nhân sự, hợp đồng lao động cho doanh nghiệp."
+      "category": "Phát triển lãnh đạo",
+      "title": "Điều Hướng Những Cuộc Đối Thoại Khó Khăn",
+      "description": "Cách giữ được sự tôn trọng và hiệu quả khi phải trao đổi những vấn đề nhạy cảm với đội ngũ.",
+      "image": "",
+      "videoUrl": ""
     },
     {
       "id": "video-03",
-      "category": "Tuân thủ lao động",
-      "title": "Những lỗi tuân thủ lao động doanh nghiệp SME hay gặp",
-      "description": "Điểm qua các lỗi tuân thủ phổ biến nhất và cách khắc phục nhanh, đúng quy định."
+      "category": "Phát triển lãnh đạo",
+      "title": "6 Thực Hành Trọng Yếu Để Dẫn Dắt Đội Nhóm",
+      "description": "Sáu thực hành cốt lõi giúp người quản lý mới chuyển đổi thành công sang vai trò dẫn dắt đội nhóm.",
+      "image": "",
+      "videoUrl": ""
     },
     {
       "id": "video-04",
-      "category": "Tuân thủ lao động",
-      "title": "Cách xử lý khi có đợt thanh tra lao động đột xuất",
-      "description": "Hướng dẫn quy trình chuẩn bị và làm việc với đoàn thanh tra lao động."
+      "category": "Phát triển lãnh đạo",
+      "title": "4 Vai Trò Thiết Yếu Của Người Lãnh Đạo",
+      "description": "Bốn vai trò mà mọi nhà lãnh đạo cần đảm nhận để truyền cảm hứng và dẫn dắt tổ chức hiệu quả.",
+      "image": "",
+      "videoUrl": ""
     },
     {
       "id": "video-05",
-      "category": "Vận hành nhân sự",
-      "title": "Quy trình onboarding nhân sự mới trong 30 ngày đầu",
-      "description": "Video minh hoạ lộ trình onboarding chuẩn giúp nhân sự mới hoà nhập nhanh với doanh nghiệp."
+      "category": "Xây dựng văn hoá tin cậy",
+      "title": "Lãnh Đạo Bằng Tốc Độ Của Niềm Tin",
+      "description": "Giải thích cách niềm tin trong tổ chức làm tăng tốc độ vận hành và giảm chi phí quản trị.",
+      "image": "/uploads/3ym6i13y9lu-unsplash-b49eef3c.jpg",
+      "videoUrl": ""
     },
     {
       "id": "video-06",
-      "category": "Vận hành nhân sự",
-      "title": "Cách xây dựng quy trình đánh giá hiệu suất",
-      "description": "Hướng dẫn thiết kế chu trình đánh giá hiệu suất công bằng, dễ áp dụng."
+      "category": "Xây dựng văn hoá tin cậy",
+      "title": "Thay Đổi: Biến Bất Định Thành Cơ Hội",
+      "description": "Phương pháp giúp lãnh đạo dẫn dắt đội ngũ nhìn nhận thay đổi như một cơ hội, thay vì một mối đe doạ cần né tránh.",
+      "image": "",
+      "videoUrl": ""
     },
     {
       "id": "video-07",
-      "category": "Vận hành nhân sự",
-      "title": "Kỹ năng xử lý xung đột trong đội ngũ",
-      "description": "Phương pháp hoà giải và xử lý xung đột nội bộ hiệu quả cho quản lý nhân sự."
+      "category": "Xây dựng văn hoá tin cậy",
+      "title": "Định Kiến Vô Thức",
+      "description": "Cách nhận diện định kiến vô thức trong các quyết định hàng ngày và xây dựng môi trường làm việc công bằng hơn.",
+      "image": "",
+      "videoUrl": ""
     },
     {
       "id": "video-08",
-      "category": "Vận hành nhân sự",
-      "title": "Xây dựng văn hoá phản hồi hai chiều",
-      "description": "Cách thiết lập cơ chế phản hồi hai chiều giúp đội ngũ gắn kết và cải thiện liên tục."
+      "category": "Xây dựng văn hoá tin cậy",
+      "title": "Lãnh Đạo Bao Trùm",
+      "description": "Nguyên tắc lãnh đạo bao trùm giúp phát huy tối đa giá trị từ một đội ngũ đa dạng về góc nhìn.",
+      "image": "",
+      "videoUrl": ""
     },
     {
       "id": "video-09",
-      "category": "Chiến lược & tổ chức",
-      "title": "Cách xây dựng cơ cấu tổ chức cho giai đoạn mở rộng",
-      "description": "Hướng dẫn thiết kế sơ đồ tổ chức phù hợp khi doanh nghiệp bước vào giai đoạn tăng trưởng nhanh."
+      "category": "Tạo kết quả đột phá",
+      "title": "4 Kỷ Luật Thực Thi",
+      "description": "Bốn kỷ luật giúp đội ngũ biến mục tiêu chiến lược thành kết quả thực thi nhất quán.",
+      "image": "/uploads/imagine-buddy-vslbaidhwau-unsplash-341d5944.jpg",
+      "videoUrl": ""
     },
     {
       "id": "video-10",
-      "category": "Chiến lược & tổ chức",
-      "title": "Thiết kế chính sách lương thưởng cạnh tranh",
-      "description": "Nguyên tắc xây dựng chính sách lương thưởng vừa cạnh tranh vừa bền vững về chi phí."
+      "category": "Tạo kết quả đột phá",
+      "title": "Lãnh Đạo Bán Hàng Khác Biệt Rõ Rệt",
+      "description": "Cách người lãnh đạo đội bán hàng tạo ra sự khác biệt rõ rệt trong trải nghiệm và kết quả kinh doanh.",
+      "image": "",
+      "videoUrl": ""
     },
     {
       "id": "video-11",
-      "category": "Chiến lược & tổ chức",
-      "title": "Chuẩn bị hồ sơ nhân sự trước khi gọi vốn",
-      "description": "Video hướng dẫn chuẩn hoá hồ sơ nhân sự đáp ứng yêu cầu thẩm định của nhà đầu tư."
+      "category": "Tạo kết quả đột phá",
+      "title": "Giúp Khách Hàng Thành Công: Thúc Đẩy Quyết Định",
+      "description": "Kỹ năng giúp đội ngũ bán hàng đồng hành cùng khách hàng thúc đẩy các quyết định quan trọng, thay vì chỉ chờ đợi.",
+      "image": "",
+      "videoUrl": ""
     },
     {
       "id": "video-12",
-      "category": "Chiến lược & tổ chức",
-      "title": "Xây dựng khung năng lực lãnh đạo kế cận",
-      "description": "Cách xác định và phát triển đội ngũ kế cận cho các vị trí lãnh đạo chủ chốt."
+      "category": "Tạo kết quả đột phá",
+      "title": "Giúp Khách Hàng Thành Công: Đàm Phán Cùng Thắng",
+      "description": "Nguyên tắc đàm phán hướng đến kết quả cùng thắng, xây dựng quan hệ hợp tác lâu dài với khách hàng.",
+      "image": "",
+      "videoUrl": ""
     }
   ],
   "cta": {
     "heading": "Muốn xem thêm video hướng dẫn?",
-    "body": "Để lại thông tin liên hệ, GCW sẽ gửi danh sách video hướng dẫn phù hợp với nghiệp vụ doanh nghiệp bạn đang cần.",
+    "body": "Để lại thông tin liên hệ, GCW sẽ gửi danh sách video phù hợp với nhu cầu phát triển lãnh đạo của đội ngũ bạn.",
     "label": "Đăng ký nhận video",
     "href": "/contact"
   }

@@ -26,7 +26,7 @@ export default function ContactPage() {
               <h1 className="font-serif-hero text-3xl leading-snug sm:text-4xl">
                 {content.heading}
               </h1>
-              <p className="mt-6 max-w-md text-lg italic text-white/70">
+              <p className="mt-6 max-w-md text-lg text-white/70">
                 &ldquo;{content.quote}&rdquo;
               </p>
 

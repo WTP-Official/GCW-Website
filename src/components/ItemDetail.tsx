@@ -69,19 +69,13 @@ export function ItemDetail({
   const eventTimeOnly = formatEventTimeOnly(eventDate);
   return (
     <main>
-      <section className="bg-bg-dark text-white">
+      <section className="border-b border-black/10 bg-white">
         <Reveal>
-          <div className="mx-auto max-w-3xl px-4 py-28 text-center sm:py-32">
-            <Icon
-              className="mx-auto h-8 w-8 text-white/60"
-              aria-hidden="true"
-            />
+          <div className="mx-auto max-w-5xl px-4 py-16">
             {eyebrow && (
-              <p className="mt-4 text-sm font-medium uppercase tracking-widest text-white/50">
-                {eyebrow}
-              </p>
+              <p className="text-sm font-semibold text-ink">{eyebrow}</p>
             )}
-            <h1 className="mt-3 font-serif-hero text-3xl leading-snug sm:text-4xl">
+            <h1 className="mt-2 max-w-2xl font-serif-hero text-5xl leading-[1.1] text-ink sm:text-6xl">
               {heading}
             </h1>
           </div>

@@ -3,9 +3,10 @@ import Link from "next/link";
 
 const FOOTER_LINKS = [
   { href: "/about", label: "Về GCW" },
-  { href: "/services", label: "Dịch vụ" },
-  { href: "/solutions", label: "Giải pháp" },
-  { href: "/packages", label: "Gói dịch vụ" },
+  { href: "/services", label: "Chương trình" },
+  { href: "/solutions", label: "Vì sao chọn GCW" },
+  { href: "/packages", label: "Gói All Access" },
+  { href: "/giao-duc", label: "Giáo dục" },
   { href: "/blog", label: "Tin tức" },
 ];
 
@@ -87,9 +88,8 @@ export function Footer() {
               className="h-10 w-auto"
             />
             <p className="mt-4 text-sm text-footer-light/70">
-              Strategic HR Operator — đối tác vận hành và quản trị nhân sự đồng
-              hành thực thi cùng doanh nghiệp SME Việt Nam. Thành viên của WTP
-              Group.
+              Đối tác phát triển lãnh đạo & hiệu suất tổ chức — đồng hành thực
+              thi cùng doanh nghiệp Việt Nam. Thành viên của WTP Group.
             </p>
             <p className="mt-3 text-xs text-footer-light/50">
               Công ty Cổ phần GCW (GCW JSC) — MST 0316153919
@@ -167,9 +167,9 @@ export function Footer() {
 
         <div className="mt-16 border-t border-white/10 pt-6 text-xs text-footer-light/60">
           <p>
-            *Dựa trên cam kết tiết kiệm chi phí của GCW khi triển khai dịch vụ
-            Tuyển dụng và Nhân sự - Tính lương (C&B) thuê ngoài, so với doanh
-            nghiệp tự tổ chức bộ phận tương ứng.
+            *Dựa trên các nghiên cứu về tỷ lệ thất bại của những chương trình
+            chuyển đổi tổ chức không ưu tiên yếu tố con người, được GCW tổng
+            hợp và trích dẫn lại.
           </p>
           <p className="mt-3">© {year} GCW JSC. All rights reserved.</p>
         </div>

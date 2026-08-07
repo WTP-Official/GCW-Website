@@ -1,43 +1,43 @@
 {
   "title": "Về GCW",
-  "metaDescription": "GCW là Strategic HR Operator, thành viên WTP Group, đồng hành thực thi quản trị nhân sự cùng doanh nghiệp SME Việt Nam thay vì chỉ tư vấn lý thuyết.",
+  "metaDescription": "GCW là đối tác phát triển lãnh đạo và hiệu suất tổ chức, thành viên WTP Group, đồng hành thực thi các chương trình đào tạo lãnh đạo cùng doanh nghiệp Việt Nam.",
   "hero": {
     "eyebrow": "Về GCW",
-    "heading": "Strategic HR Operator — đồng hành thực thi, không chỉ tư vấn",
-    "body": "Công ty Cổ phần GCW (GCW JSC) là đối tác vận hành và quản trị nhân sự cho doanh nghiệp SME Việt Nam. Chúng tôi trực tiếp tham gia thực thi cùng đội ngũ nội bộ của khách hàng, từ tuân thủ pháp lý đến xây dựng hệ thống nhân sự bài bản."
+    "heading": "Đối tác phát triển lãnh đạo — đồng hành thực thi, không chỉ đào tạo lý thuyết",
+    "body": "Công ty Cổ phần GCW (GCW JSC) là đối tác phát triển lãnh đạo và hiệu suất tổ chức cho doanh nghiệp Việt Nam. Chúng tôi mang đến khung năng lực được kiểm chứng toàn cầu, đội ngũ chuyên gia cố vấn giàu kinh nghiệm và công nghệ đo lường tác động, để mọi chương trình đào tạo đều chuyển hoá thành kết quả thực thi."
   },
   "pillars": [
     {
       "icon": "ShieldCheck",
-      "title": "Tuân thủ trước, tối ưu sau",
-      "description": "Mọi lộ trình đồng hành đều bắt đầu từ việc đảm bảo tuân thủ luật lao động, bảo hiểm xã hội và thuế thu nhập cá nhân, trước khi tối ưu chi phí và mở rộng quy mô."
+      "title": "Con người quyết định thành bại chiến lược",
+      "description": "Mọi lộ trình đồng hành đều bắt đầu từ phát triển năng lực lãnh đạo và xây dựng niềm tin, trước khi bàn đến công cụ hay quy trình."
     },
     {
       "icon": "Users",
-      "title": "Thực thi cùng đội ngũ nội bộ",
-      "description": "GCW không bàn giao báo cáo rồi rời đi — đội ngũ chuyên gia trực tiếp vận hành song song với bộ phận nhân sự hiện có của doanh nghiệp."
+      "title": "Đồng hành thực thi cùng đội ngũ",
+      "description": "GCW không bàn giao tài liệu đào tạo rồi rời đi — chuyên gia trực tiếp đồng hành cùng đội ngũ quản lý trong suốt hành trình áp dụng."
     },
     {
       "icon": "Building2",
-      "title": "Gắn với chiến lược kinh doanh",
-      "description": "Hệ thống nhân sự được thiết kế bám sát mục tiêu tăng trưởng, gọi vốn hoặc mở rộng thị trường của từng doanh nghiệp, không áp dụng khuôn mẫu chung."
+      "title": "Gắn với mục tiêu kinh doanh",
+      "description": "Chương trình phát triển lãnh đạo được thiết kế bám sát chiến lược tăng trưởng, gọi vốn hoặc mở rộng thị trường của từng tổ chức."
     }
   ],
   "stats": [
-    { "value": "06", "label": "Gói dịch vụ nhân sự chuyên biệt" },
-    { "value": "70%", "label": "Tiết kiệm chi phí tuyển dụng so với tự vận hành" },
-    { "value": "20+", "label": "Quốc gia trong mạng lưới kết nối xuất khẩu" }
+    { "value": "40+", "label": "Năm kinh nghiệm phát triển lãnh đạo và hiệu suất tổ chức" },
+    { "value": "160+", "label": "Quốc gia đã triển khai chương trình cùng mạng lưới đối tác" },
+    { "value": "15.000+", "label": "Lượt đồng hành cùng doanh nghiệp mỗi năm" }
   ],
   "ecosystem": {
     "heading": "Thành viên hệ sinh thái, WTP Group",
-    "body": "GCW là một mắt xích trong WTP Group — hệ sinh thái các công ty chuyên biệt cùng đồng hành với doanh nghiệp SME Việt Nam trên nhiều mặt trận, thay vì chỉ dừng lại ở nhân sự.",
+    "body": "GCW là một mắt xích trong WTP Group — hệ sinh thái các công ty chuyên biệt cùng đồng hành với doanh nghiệp Việt Nam trên nhiều mặt trận, thay vì chỉ dừng lại ở đào tạo lãnh đạo.",
     "members": [
       { "icon": "Compass", "name": "Cố vấn chiến lược", "description": "Định hướng chiến lược kinh doanh tổng thể cho doanh nghiệp." },
-      { "icon": "Users", "name": "Nhân sự (GCW)", "description": "Vận hành và quản trị nhân sự, tuân thủ và tuyển dụng." },
-      { "icon": "Calculator", "name": "Tài chính - Kế toán - Thuế", "description": "Đối tác kế toán ATP phối hợp soát xét lương, bảo hiểm và thuế." },
-      { "icon": "GraduationCap", "name": "Đào tạo", "description": "Nâng cao năng lực đội ngũ quản lý và nhân viên." },
+      { "icon": "Users", "name": "Phát triển lãnh đạo (GCW)", "description": "Đào tạo, coaching và phát triển năng lực lãnh đạo, văn hoá tổ chức." },
+      { "icon": "Calculator", "name": "Tài chính - Kế toán - Thuế", "description": "Đối tác kế toán ATP phối hợp soát xét tài chính và tuân thủ thuế." },
+      { "icon": "GraduationCap", "name": "Đào tạo chuyên môn", "description": "Nâng cao năng lực chuyên môn cho đội ngũ quản lý và nhân viên." },
       { "icon": "Landmark", "name": "Đầu tư / M&A", "description": "Kết nối quỹ đầu tư và tập đoàn nước ngoài phục vụ gọi vốn." },
-      { "icon": "Cpu", "name": "AI - Chuyển đổi số", "description": "Ứng dụng công nghệ vào vận hành và quản trị doanh nghiệp." }
+      { "icon": "Cpu", "name": "AI - Chuyển đổi số", "description": "Ứng dụng công nghệ vào vận hành và đo lường hiệu quả lãnh đạo." }
     ]
   },
   "differentiators": {
@@ -45,29 +45,29 @@
     "items": [
       {
         "icon": "GraduationCap",
-        "title": "Cố vấn đồng hành dài hạn",
-        "description": "Không dừng lại ở một bản báo cáo — chuyên gia GCW tham gia các buổi họp định kỳ, theo sát chỉ số vận hành nhân sự và điều chỉnh giải pháp theo từng giai đoạn phát triển của doanh nghiệp."
+        "title": "Nội dung đúc kết từ hơn 40 năm nghiên cứu",
+        "description": "Khung năng lực và phương pháp được kiểm chứng qua hàng chục ngàn tổ chức trên toàn cầu."
       },
       {
         "icon": "Network",
         "title": "Một đầu mối, nhiều năng lực",
-        "description": "Doanh nghiệp chỉ cần làm việc với một đầu mối GCW để tiếp cận toàn bộ năng lực của WTP Group — pháp lý, kế toán thuế, đào tạo, công nghệ — thay vì tự tìm và quản lý nhiều nhà cung cấp riêng lẻ."
+        "description": "Doanh nghiệp chỉ cần làm việc với một đầu mối GCW để tiếp cận toàn bộ năng lực của WTP Group — chiến lược, tài chính kế toán thuế, đào tạo, công nghệ."
       },
       {
         "icon": "Landmark",
-        "title": "Chuẩn bị hồ sơ sẵn sàng gọi vốn",
-        "description": "Khi doanh nghiệp cần huy động vốn, GCW hỗ trợ chuẩn hoá hồ sơ nhân sự theo yêu cầu thẩm định (due diligence) và kết nối trực tiếp với mạng lưới quỹ đầu tư, tập đoàn nước ngoài đang hợp tác."
+        "title": "Chuẩn bị đội ngũ sẵn sàng gọi vốn",
+        "description": "GCW hỗ trợ chuẩn hoá năng lực lãnh đạo và tổ chức theo yêu cầu thẩm định của nhà đầu tư."
       },
       {
         "icon": "Globe2",
-        "title": "Lối đi ra thị trường quốc tế",
-        "description": "Doanh nghiệp muốn xuất khẩu hoặc mở rộng ra nước ngoài có thể tận dụng ngay mạng lưới đối tác Marketing và bán hàng tại hơn 20 quốc gia của hệ sinh thái, không cần xây dựng lại từ đầu."
+        "title": "Mạng lưới chuyên gia quốc tế",
+        "description": "Kết nối mạng lưới chuyên gia và nội dung đào tạo được áp dụng tại hơn 160 quốc gia."
       }
     ]
   },
   "cta": {
     "heading": "Sẵn sàng tìm hiểu GCW có thể đồng hành như thế nào?",
-    "body": "Chia sẻ hiện trạng nhân sự của doanh nghiệp bạn để đội ngũ GCW đề xuất lộ trình đồng hành phù hợp.",
+    "body": "Chia sẻ mục tiêu phát triển lãnh đạo của tổ chức bạn để đội ngũ GCW đề xuất lộ trình đồng hành phù hợp.",
     "label": "Đặt lịch tư vấn",
     "href": "/contact"
   }

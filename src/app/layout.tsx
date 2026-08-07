@@ -1,5 +1,5 @@
 ﻿import type { Metadata } from "next";
-import { Inter, Manrope, Lora } from "next/font/google";
+import { Be_Vietnam_Pro } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { BASE_URL, GOOGLE_VERIFICATION_TOKENS } from "@/constants/site";
@@ -7,53 +7,38 @@ import { CalendlyButton } from "@/components/CalendlyButton";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
-const inter = Inter({
-  variable: "--font-inter",
+const beVietnamPro = Be_Vietnam_Pro({
+  variable: "--font-be-vietnam-pro",
   subsets: ["latin", "vietnamese"],
   weight: ["300", "400", "500", "600", "700"],
-  display: "swap",
-});
-
-const manrope = Manrope({
-  variable: "--font-manrope",
-  subsets: ["latin", "vietnamese"],
-  weight: ["400", "500", "600"],
-  display: "swap",
-});
-
-const lora = Lora({
-  variable: "--font-lora",
-  subsets: ["latin", "vietnamese"],
-  weight: ["400", "500"],
-  style: ["normal", "italic"],
   display: "swap",
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "GCW - Đối Tác Vận Hành Nhân Sự Chiến Lược Cho Doanh Nghiệp SME",
+    default: "GCW - Đối Tác Phát Triển Lãnh Đạo & Hiệu Suất Tổ Chức",
     template: "%s | GCW",
   },
   description:
-    "GCW (GCW JSC) là Strategic HR Operator đồng hành thực thi quản trị nhân sự cho doanh nghiệp SME Việt Nam: tuân thủ lao động, lương - bảo hiểm - thuế TNCN, tuyển dụng và tư vấn chiến lược nhân sự.",
+    "GCW (GCW JSC) là đối tác phát triển lãnh đạo và hiệu suất tổ chức, đồng hành thực thi cùng doanh nghiệp Việt Nam: phát triển lãnh đạo, xây dựng văn hoá tin cậy và tạo kết quả đột phá.",
   keywords: [
     "GCW",
     "GCW JSC",
-    "dịch vụ nhân sự thuê ngoài",
-    "HR Outsourcing Việt Nam",
-    "tư vấn nhân sự doanh nghiệp SME",
-    "quản lý lương bảo hiểm xã hội thuế TNCN",
-    "tuyển dụng nhân sự",
-    "giám đốc nhân sự thuê ngoài CHRO",
+    "phát triển lãnh đạo",
+    "đào tạo lãnh đạo doanh nghiệp",
+    "xây dựng văn hoá tin cậy",
+    "thực thi chiến lược 4DX",
+    "coaching lãnh đạo",
+    "hiệu suất tổ chức",
   ],
   openGraph: {
     type: "website",
     locale: "vi_VN",
     siteName: "GCW",
-    title: "GCW - Đối Tác Vận Hành Nhân Sự Chiến Lược Cho Doanh Nghiệp SME",
+    title: "GCW - Đối Tác Phát Triển Lãnh Đạo & Hiệu Suất Tổ Chức",
     description:
-      "GCW đồng hành thực thi quản trị nhân sự cùng doanh nghiệp SME Việt Nam — không chỉ tư vấn lý thuyết.",
+      "GCW mang đến lợi thế con người cho chiến lược của bạn — đồng hành thực thi phát triển lãnh đạo cùng doanh nghiệp Việt Nam, không chỉ tư vấn lý thuyết.",
   },
   verification: {
     google: GOOGLE_VERIFICATION_TOKENS,
@@ -72,7 +57,7 @@ export default function RootLayout({
   return (
     <html
       lang="vi"
-      className={`${inter.variable} ${manrope.variable} ${lora.variable} h-full antialiased`}
+      className={`${beVietnamPro.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-white text-ink-soft">
         <Header />

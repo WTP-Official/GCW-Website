@@ -1,55 +1,107 @@
 {
-  "title": "Giải pháp",
-  "metaDescription": "Giải pháp vận hành nhân sự của GCW: hồ sơ nhân sự, lương - bảo hiểm - thuế, HR Admin, soát xét tuân thủ, tuyển dụng và cố vấn nhân sự riêng cho CEO.",
-  "heading": "Giải pháp vận hành nhân sự của GCW",
-  "intro": "Mỗi giải pháp là một đầu việc vận hành cụ thể, có thể triển khai riêng lẻ hoặc kết hợp trong các gói dịch vụ GCW để phù hợp với bài toán thực tế của doanh nghiệp bạn.",
-  "items": [
+  "title": "Vì sao chọn GCW",
+  "metaDescription": "Không phải chiến lược hay công nghệ tạo nên khác biệt — mà là năng lực con người. Tìm hiểu vì sao GCW là đối tác phát triển lãnh đạo và hiệu suất tổ chức.",
+  "hero": {
+    "label": "70% các nỗ lực thất bại",
+    "heading": "Điều gì tạo nên khác biệt cho 30% thành công?",
+    "subheading": "Không phải chiến lược hay công nghệ… mà là yếu tố con người.",
+    "body": "Đó là tốc độ con người dẫn dắt, thích ứng và thực thi ở những việc chỉ con người mới làm được: đánh giá, niềm tin, sáng tạo và hợp tác.",
+    "cta": { "label": "Tìm hiểu vì sao chọn GCW", "href": "/contact" },
+    "image": "/images/positioning-strategic-operator.jpg"
+  },
+  "claims": [
+    "Họ phát triển những nhà lãnh đạo xuất sắc ở mọi cấp bậc.",
+    "Họ xây dựng văn hoá tin cậy cao, nơi những ý tưởng hay được nuôi dưỡng.",
+    "Họ thực thi như một đội ngũ thống nhất và đạt được kết quả quan trọng nhất."
+  ],
+  "stats": [
     {
-      "icon": "FolderCheck",
-      "title": "Rà soát và xây dựng hồ sơ nhân sự",
-      "description": "Chuẩn hoá lại toàn bộ hồ sơ, hợp đồng lao động và quy chế nội bộ theo đúng quy định pháp luật hiện hành.",
-      "href": "/services/gcw-safe"
+      "lead": "Đội ngũ được lãnh đạo tốt",
+      "value": "6x",
+      "label": "có khả năng đạt kết quả cao hơn.*"
     },
     {
-      "icon": "Wallet",
-      "title": "Quản lý lương, bảo hiểm xã hội và thuế TNCN",
-      "description": "Vận hành quy trình tính lương, bảo hiểm xã hội và thuế thu nhập cá nhân hàng tháng chính xác, đúng hạn.",
-      "href": "/services/gcw-control"
+      "lead": "Tổ chức có độ tin cậy cao nhất có mức tăng trưởng doanh thu gấp",
+      "value": "3,6x",
+      "label": "so với tổ chức có độ tin cậy thấp nhất.†"
     },
     {
-      "icon": "ClipboardList",
-      "title": "HR Admin — vận hành nhân sự hàng ngày",
-      "description": "Đảm nhận các nghiệp vụ hành chính nhân sự thường nhật, giúp doanh nghiệp không phải duy trì bộ máy cồng kềnh.",
-      "href": "/services/gcw-safe"
-    },
-    {
-      "icon": "SearchCheck",
-      "title": "Soát xét tuân thủ và tối ưu chi phí",
-      "description": "Rà soát định kỳ chi phí lương - bảo hiểm - thuế TNCN, phối hợp cùng công ty kế toán ATP thuộc WTP Group.",
-      "href": "/services/gcw-control"
-    },
-    {
-      "icon": "UserSearch",
-      "title": "Tuyển dụng nhân sự",
-      "description": "Tìm kiếm, sàng lọc và bàn giao ứng viên phù hợp cho các vị trí doanh nghiệp đang cần.",
-      "href": "/services/tuyen-dung"
-    },
-    {
-      "icon": "MessageSquareText",
-      "title": "Cố vấn nhân sự riêng cho CEO",
-      "description": "Đồng hành cùng chủ doanh nghiệp giải quyết các bài toán nhân sự chiến lược, không chỉ dừng ở sự vụ.",
-      "href": "/services/tu-van-hr"
+      "lead": "Tổ chức có đội ngũ liên kết chặt với thực thi có khả năng vượt trội hơn",
+      "value": "133%",
+      "label": "so với đối thủ cùng ngành.‡"
     }
   ],
-  "resourceLinks": {
-    "heading": "Đọc thêm kiến thức vận hành nhân sự",
-    "linkLabel": "Xem tất cả bài viết",
-    "linkHref": "/blog"
+  "positioning": {
+    "heading": "GCW mang đến lợi thế con người để đạt được kết quả quan trọng nhất.",
+    "body": "Là đối tác phát triển lãnh đạo và hiệu suất tổ chức với mạng lưới hoạt động tại hơn 160 quốc gia, chúng tôi xây dựng đội ngũ lãnh đạo tin cậy cao và văn hoá hiệu suất cao giúp tổ chức chuyển hoá chiến lược thành thực thi nhất quán."
+  },
+  "missingPiece": {
+    "heading": "Mảnh ghép còn thiếu giữa chiến lược và công nghệ.",
+    "bodyLeft": "Ngày nay, các tổ chức đều có quyền tiếp cận cùng một nguồn dữ liệu, công nghệ và hệ thống quản trị. Công cụ từng tạo ra khác biệt giờ đã trở nên phổ biến và dễ sao chép. Vì vậy, khi chiến lược thất bại, đó không phải vì kế hoạch hay công nghệ.",
+    "bodyLeftBold": "Đó là vì năng lực con người.",
+    "bodyRight": "Ngay cả chiến lược tinh vi nhất cũng sẽ chững lại nếu thiếu những lãnh đạo biết xây dựng niềm tin, liên kết đội ngũ và biến ưu tiên hàng đầu thành hành động nhất quán. Tổ chức chiến thắng trong giai đoạn này sẽ là tổ chức đầu tư vào năng lực duy nhất có thể tích luỹ theo thời gian.\n\nTổ chức thành công khi con người của họ mang lại sự rõ ràng giữa phức tạp, can đảm trong ra quyết định và kỷ luật trong thực thi. Chúng tôi giúp lãnh đạo tập trung vào điều quan trọng nhất, huy động đội ngũ quanh những sáng kiến ưu tiên, và thực thi với trách nhiệm giải trình và mục đích rõ ràng."
+  },
+  "pillars": [
+    {
+      "title": "Phát triển lãnh đạo",
+      "description": "Xây dựng đội ngũ lãnh đạo hiệu quả ở mọi cấp bậc, gắn kết mọi người quanh mục tiêu và ưu tiên chung.",
+      "href": "/solutions/phat-trien-lanh-dao",
+      "image": "/images/offering-gcw-safe.jpg"
+    },
+    {
+      "title": "Xây dựng văn hoá tin cậy",
+      "description": "Kiến tạo văn hoá tin cậy cao trong tổ chức, nơi những ý tưởng tốt nhất được nuôi dưỡng và phát triển.",
+      "href": "/solutions/xay-dung-van-hoa",
+      "image": "/images/offering-gcw-control.jpg"
+    },
+    {
+      "title": "Tạo kết quả đột phá",
+      "description": "Đồng hành thực thi cùng đội ngũ để đạt được những mục tiêu quan trọng nhất, không chỉ dừng ở khuyến nghị.",
+      "href": "/solutions/tao-ket-qua-dot-pha",
+      "image": "/images/offering-gcw-scale.jpg"
+    }
+  ],
+  "resources": {
+    "heading": "Tài nguyên nổi bật",
+    "items": [
+      {
+        "label": "Báo cáo chuyên sâu",
+        "title": "AI & Yếu Tố Con Người",
+        "description": "Khám phá tác động của gián đoạn, niềm tin và AI",
+        "ctaLabel": "Tải ngay",
+        "href": "/tai-nguyen/cam-nang",
+        "dark": true
+      },
+      {
+        "label": "Cẩm nang miễn phí",
+        "title": "Từ Kiệt Sức Đến Bứt Phá",
+        "description": "Thúc đẩy gắn kết và kết quả cao hơn",
+        "ctaLabel": "Tải ngay",
+        "href": "/tai-nguyen/cam-nang",
+        "dark": false
+      },
+      {
+        "label": "Cẩm nang miễn phí",
+        "title": "Quá Nhiều Gián Đoạn, Quá Ít Lãnh Đạo",
+        "description": "Khoảng trống phía sau kiệt sức và mất gắn kết",
+        "ctaLabel": "Tải ngay",
+        "href": "/tai-nguyen/cam-nang",
+        "dark": true
+      },
+      {
+        "label": "Hội thảo trực tiếp",
+        "title": "Từ Gián Đoạn Đến Định Hướng",
+        "description": "Cùng chuyên gia cố vấn lãnh đạo của GCW",
+        "ctaLabel": "Tìm hiểu thêm",
+        "href": "/su-kien/hoi-thao-truc-tuyen",
+        "dark": false
+      }
+    ]
   },
   "cta": {
-    "heading": "Chưa chắc giải pháp nào phù hợp với doanh nghiệp bạn?",
-    "body": "Xem các gói dịch vụ theo quy mô doanh nghiệp hoặc đặt lịch tư vấn trực tiếp để GCW tư vấn giải pháp phù hợp nhất.",
-    "primaryCta": { "label": "Xem gói dịch vụ theo quy mô", "href": "/packages" },
-    "secondaryCta": { "label": "Đặt lịch tư vấn", "href": "/contact" }
+    "heading": "Nâng tầm lợi thế của bạn.",
+    "body": "Trao đổi cùng chuyên gia GCW để tìm ra chương trình phù hợp với mục tiêu phát triển lãnh đạo của tổ chức bạn.",
+    "primaryCta": { "label": "Đặt lịch tư vấn", "href": "/contact" },
+    "secondaryCta": { "label": "Xem các gói All Access", "href": "/packages" }
   }
 }

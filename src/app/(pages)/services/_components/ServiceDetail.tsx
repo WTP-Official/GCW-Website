@@ -1,24 +1,5 @@
 import Link from "next/link";
-import {
-  ArrowRight,
-  CheckCircle2,
-  ShieldCheck,
-  Gauge,
-  TrendingUp,
-  UserSearch,
-  Receipt,
-  MessageSquareText,
-  type LucideIcon,
-} from "lucide-react";
-
-const ICONS: Record<string, LucideIcon> = {
-  ShieldCheck,
-  Gauge,
-  TrendingUp,
-  UserSearch,
-  Receipt,
-  MessageSquareText,
-};
+import { ArrowRight, CheckCircle2 } from "lucide-react";
 
 type ServiceDetailContent = {
   eyebrow: string;
@@ -33,20 +14,15 @@ type ServiceDetailContent = {
 };
 
 export function ServiceDetail({ content }: { content: ServiceDetailContent }) {
-  const { eyebrow, icon, name, tagline, intro, audience, included, related, cta } =
-    content;
-  const Icon = ICONS[icon];
+  const { eyebrow, name, tagline, intro, audience, included, related, cta } = content;
 
   return (
     <main>
-      <section className="bg-bg-dark text-white">
-        <div className="mx-auto max-w-2xl px-4 py-28 text-center sm:py-32">
-          <Icon className="mx-auto h-8 w-8 text-white/60" aria-hidden="true" />
-          <p className="mt-4 text-sm font-medium uppercase tracking-widest text-white/50">
-            {eyebrow}
-          </p>
-          <h1 className="mt-4 font-serif-hero text-3xl leading-snug sm:text-4xl">{name}</h1>
-          <p className="mx-auto mt-6 max-w-xl text-lg text-white/70">{tagline}</p>
+      <section className="border-b border-black/10 bg-white">
+        <div className="mx-auto max-w-5xl px-4 py-16">
+          <p className="text-sm font-semibold text-ink">{eyebrow}</p>
+          <h1 className="mt-2 max-w-2xl font-serif-hero text-5xl leading-[1.1] text-ink sm:text-6xl">{name}</h1>
+          <p className="mt-6 max-w-xl text-lg text-ink-soft">{tagline}</p>
         </div>
       </section>
 

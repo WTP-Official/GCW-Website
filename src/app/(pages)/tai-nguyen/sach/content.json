@@ -1,11 +1,11 @@
 {
   "title": "Sách & Ấn phẩm",
-  "metaDescription": "Ấn phẩm và ebook của GCW về vận hành nhân sự, tuân thủ lao động và xây dựng bộ máy nhân sự bài bản cho doanh nghiệp SME Việt Nam.",
+  "metaDescription": "Tủ sách GCW về phát triển lãnh đạo, xây dựng văn hoá tin cậy và tạo kết quả đột phá, đúc kết từ kinh nghiệm đồng hành cùng các tổ chức trong hành trình dẫn dắt.",
   "heading": "Sách & Ấn phẩm",
-  "intro": "Các ấn phẩm chuyên sâu do đội ngũ chuyên gia GCW biên soạn, đúc kết từ kinh nghiệm thực tế vận hành nhân sự cùng doanh nghiệp SME.",
+  "intro": "Các ấn phẩm do đội ngũ chuyên gia GCW biên soạn, giúp lãnh đạo và quản lý xây dựng năng lực dẫn dắt con người và tổ chức một cách bền vững.",
   "featured": {
-    "title": "Cẩm nang tuân thủ luật lao động cho doanh nghiệp SME",
-    "description": "Ấn phẩm đầu tay của GCW, hệ thống hoá toàn bộ quy định lao động, bảo hiểm xã hội và thuế TNCN mà doanh nghiệp SME cần nắm rõ khi vận hành nhân sự.",
+    "title": "Bộ nguyên tắc lãnh đạo nền tảng của GCW",
+    "description": "Ấn phẩm tổng hợp các nguyên tắc cốt lõi mà GCW áp dụng khi đồng hành cùng lãnh đạo doanh nghiệp: từ phát triển năng lực cá nhân, xây dựng niềm tin trong đội ngũ, đến thực thi chiến lược tạo kết quả đột phá.",
     "ctaLabel": "Tìm hiểu thêm",
     "ctaHref": "/contact"
   },
@@ -13,35 +13,134 @@
   "items": [
     {
       "id": "sach-01",
-      "eyebrow": "Chiến lược & tổ chức",
-      "title": "Xây dựng hệ thống nhân sự từ 0 đến bài bản",
-      "description": "Lộ trình từng bước để doanh nghiệp mới thành lập xây dựng bộ máy nhân sự chuẩn hoá ngay từ giai đoạn đầu.",
+      "eyebrow": "Phát triển lãnh đạo",
+      "title": "7 Thói Quen Của Người Hiệu Quả – Ấn Bản Kỷ Niệm 30 Năm",
+      "description": "Ấn bản kỷ niệm 30 năm hệ thống hoá bảy nguyên tắc nền tảng giúp mỗi cá nhân làm chủ tư duy, hành vi và kết quả công việc của chính mình.",
       "image": "/uploads/v89pqztek-k-unsplash-e24d82cb.jpg",
-      "downloadUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
-      "body": "<p><strong>1. Xây dựng hệ thống nhân sự từ 0 đến bài bản</strong></p><p>Đối với một doanh nghiệp mới thành lập, giai đoạn đầu thường tập trung toàn bộ nguồn lực vào sản phẩm và doanh số, khiến bộ máy nhân sự bị xây dựng một cách tự phát, thiếu định hướng dài hạn. Hệ quả là khi quy mô nhân sự tăng lên vài chục người, doanh nghiệp mới nhận ra mình đang thiếu quy trình tuyển dụng chuẩn hoá, thiếu mô tả công việc rõ ràng, và không có chính sách lương thưởng nhất quán. Việc xây dựng hệ thống nhân sự bài bản ngay từ đầu, dù quy mô còn nhỏ, sẽ giúp doanh nghiệp tiết kiệm đáng kể chi phí sửa sai và tạo nền tảng vững chắc cho giai đoạn tăng trưởng sau này.</p><p>Giai đoạn đầu tiên cần thực hiện là xác định cơ cấu tổ chức và mô tả công việc. Trước khi tuyển bất kỳ vị trí nào, doanh nghiệp cần trả lời rõ ràng: phòng ban nào cần tồn tại, mỗi vị trí đảm nhận trách nhiệm gì, và báo cáo cho ai. Một bản mô tả công việc (Job Description) tối thiểu cần có mục tiêu vị trí, nhiệm vụ chính, yêu cầu năng lực và tiêu chí đánh giá hoàn thành công việc. Đây là nền tảng để mọi hoạt động nhân sự khác — từ tuyển dụng đến đánh giá hiệu suất — có thể vận hành nhất quán.</p><p>Bước tiếp theo là xây dựng quy trình tuyển dụng chuẩn hoá. Một quy trình tuyển dụng chuyên nghiệp thường gồm các bước: xác định nhu cầu nhân sự, đăng tin và sàng lọc hồ sơ, phỏng vấn theo bộ tiêu chí thống nhất, ra quyết định và đàm phán offer, cuối cùng là ký hợp đồng lao động đúng quy định pháp luật. Nhiều doanh nghiệp SME bỏ qua bước xây dựng bộ tiêu chí phỏng vấn thống nhất, dẫn đến việc tuyển dụng phụ thuộc hoàn toàn vào cảm tính của người phỏng vấn, làm tăng tỷ lệ tuyển sai người.</p><p>Song song với tuyển dụng, doanh nghiệp cần thiết lập chính sách lương thưởng và phúc lợi cơ bản ngay từ giai đoạn đầu, dù đơn giản. Một khung lương tối thiểu theo cấp bậc, quy định rõ về thời gian thử việc, chế độ bảo hiểm xã hội, và các phúc lợi cơ bản sẽ giúp tránh tình trạng thoả thuận lương thưởng không nhất quán giữa các nhân sự cùng vị trí, một trong những nguyên nhân phổ biến gây mất công bằng nội bộ và rời bỏ nhân sự sớm.</p><p>Quy trình onboarding (hội nhập nhân sự mới) cũng là yếu tố thường bị bỏ qua nhưng có ảnh hưởng lớn đến tỷ lệ giữ chân nhân sự trong 3-6 tháng đầu. Một chương trình onboarding bài bản nên bao gồm: giới thiệu văn hoá và giá trị cốt lõi công ty, đào tạo nghiệp vụ cơ bản, gán người hướng dẫn (mentor) trong giai đoạn đầu, và các mốc đánh giá thử việc rõ ràng ở ngày thứ 30, 60, 90.</p><p>Về lâu dài, doanh nghiệp cần xây dựng cơ chế đánh giá hiệu suất và lộ trình phát triển nhân sự. Ngay cả khi đội ngũ còn nhỏ, một chu trình đánh giá định kỳ (theo quý hoặc theo năm) với các tiêu chí đo lường cụ thể sẽ giúp nhân sự hiểu rõ mình đang đóng góp như thế nào và có động lực phát triển. Đây cũng là cơ sở khách quan cho các quyết định tăng lương, thăng chức sau này.</p><p>Cuối cùng, không thể bỏ qua yếu tố hồ sơ pháp lý và tuân thủ lao động. Hợp đồng lao động, quy chế lương thưởng, nội quy lao động, và các thủ tục đăng ký bảo hiểm xã hội cần được chuẩn hoá và lưu trữ đầy đủ ngay từ những nhân sự đầu tiên. Việc trì hoãn xây dựng hồ sơ pháp lý thường khiến doanh nghiệp gặp rủi ro lớn khi mở rộng quy mô hoặc khi cần gọi vốn đầu tư, vì nhà đầu tư luôn yêu cầu rà soát tính tuân thủ pháp luật lao động như một phần của quá trình thẩm định.</p><p>Nhìn chung, xây dựng hệ thống nhân sự bài bản không đòi hỏi doanh nghiệp phải có nguồn lực lớn ngay từ đầu, mà quan trọng là tư duy hệ thống hoá ngay từ những bước đầu tiên. Một lộ trình rõ ràng, được triển khai từng bước theo đúng thứ tự ưu tiên, sẽ giúp doanh nghiệp SME tránh được tình trạng \"vừa chạy vừa xây\" gây lãng phí nguồn lực và tạo nền tảng nhân sự vững chắc cho giai đoạn tăng trưởng tiếp theo.</p>"
+      "downloadUrl": "",
+      "body": "<p><strong>7 Thói Quen Của Người Hiệu Quả</strong></p><p>Trước khi một tổ chức có thể vận hành hiệu quả, từng cá nhân trong tổ chức đó cần làm chủ được chính mình. Đây là tiền đề xuyên suốt của ấn phẩm này: hiệu quả không bắt đầu từ kỹ thuật quản lý, mà bắt đầu từ tư duy và thói quen của mỗi người lãnh đạo.</p><p>Ba thói quen đầu tiên xoay quanh hành trình từ phụ thuộc đến độc lập: chủ động chịu trách nhiệm thay vì đổ lỗi hoàn cảnh, bắt đầu bằng mục tiêu rõ ràng trước khi hành động, và ưu tiên những việc quan trọng thay vì chỉ chạy theo việc gấp. Đây là nền tảng để một cá nhân trở thành người làm chủ được công việc và cuộc sống của mình, thay vì bị cuốn theo guồng quay bên ngoài.</p><p>Ba thói quen tiếp theo mở rộng sang hành trình từ độc lập đến phụ thuộc lẫn nhau — nơi hiệu quả cá nhân chuyển hoá thành hiệu quả tập thể: tư duy cùng thắng thay vì thắng-thua, lắng nghe thấu hiểu trước khi tìm cách được thấu hiểu, và tạo ra giải pháp cộng hưởng tốt hơn bất kỳ ý tưởng ban đầu nào của từng cá nhân. Đây chính là nền tảng của một đội ngũ có khả năng cộng tác thực sự, thay vì chỉ làm việc cạnh nhau.</p><p>Thói quen thứ bảy — không ngừng đổi mới bản thân — đóng vai trò như một vòng lặp nuôi dưỡng sáu thói quen còn lại: duy trì thể chất, tinh thần, trí tuệ và các mối quan hệ ở trạng thái được chăm sóc liên tục, để năng lực lãnh đạo không bị bào mòn theo thời gian.</p><p>Với các tổ chức mà GCW đồng hành, ấn phẩm này thường là điểm khởi đầu: trước khi bàn đến chiến lược hay cơ cấu tổ chức, đội ngũ lãnh đạo cần một ngôn ngữ chung về hiệu quả cá nhân — nền tảng để mọi chương trình phát triển năng lực sau này có chỗ đứng vững chắc.</p>"
     },
     {
       "id": "sach-02",
-      "eyebrow": "Vận hành nhân sự",
-      "title": "Chiến lược lương thưởng cho doanh nghiệp tăng trưởng nhanh",
-      "description": "Nguyên tắc thiết kế chính sách lương thưởng minh bạch, cạnh tranh, phù hợp từng giai đoạn phát triển.",
-      "image": "/uploads/6entpvppl6i-unsplash-96301b9f.jpg",
-      "downloadUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
-      "body": "<h2><strong>Vì sao chính sách lương thưởng cần thay đổi theo giai đoạn tăng trưởng</strong></h2><p>Khi một doanh nghiệp bước vào giai đoạn tăng trưởng nhanh, chính sách lương thưởng vốn phù hợp ở giai đoạn khởi nghiệp thường bắt đầu bộc lộ những bất cập: thiếu tính cạnh tranh so với thị trường, thiếu minh bạch trong cách tính, và không còn gắn kết chặt chẽ với kết quả kinh doanh. Việc thiết kế lại chiến lược lương thưởng phù hợp với giai đoạn tăng trưởng là yếu tố sống còn để doanh nghiệp vừa giữ chân nhân tài hiện có, vừa thu hút được nhân sự chất lượng cao cho giai đoạn mở rộng.</p><h2><strong>Nguyên tắc 1 – Cạnh tranh với thị trường</strong></h2><p>Doanh nghiệp cần thường xuyên tham chiếu dữ liệu khảo sát lương của ngành để đảm bảo mức lương đề xuất nằm trong khoảng cạnh tranh, thay vì chỉ dựa vào ngân sách nội bộ. Việc định vị mức lương ở phân vị nào (ví dụ phân vị 50 hay phân vị 75 so với thị trường) cần được xác định rõ ràng dựa trên chiến lược nhân sự tổng thể — liệu doanh nghiệp muốn cạnh tranh bằng lương cứng cao, hay bằng các yếu tố khác như cổ phần, môi trường làm việc, lộ trình phát triển.</p><h2><strong>Nguyên tắc 2 – Minh bạch trong cách tính lương</strong></h2><p>Khi đội ngũ mở rộng nhanh, sự thiếu nhất quán trong cách trả lương giữa các nhân sự cùng cấp bậc dễ dẫn đến mâu thuẫn nội bộ và mất niềm tin. Một khung lương rõ ràng theo từng cấp bậc (grade), với biên độ lương tối thiểu — tối đa cho mỗi cấp, giúp cả người quản lý và nhân viên đều hiểu rõ căn cứ trả lương, giảm thiểu tình trạng đàm phán lương theo cảm tính.</p><h2><strong>Nguyên tắc 3 – Gắn thu nhập với hiệu suất (mô hình 3P)</strong></h2><p>Một mô hình phổ biến được nhiều doanh nghiệp áp dụng là cơ cấu 3P: Position (trả theo vị trí và mức độ phức tạp công việc), Person (trả theo năng lực và kinh nghiệm cá nhân), và Performance (trả theo kết quả công việc thực tế). Việc kết hợp cả ba yếu tố này giúp chính sách lương thưởng vừa đảm bảo công bằng nội bộ, vừa tạo động lực thúc đẩy hiệu suất.</p><h2><strong>Thiết kế thưởng ngắn hạn và dài hạn</strong></h2><p>Bên cạnh lương cứng, doanh nghiệp tăng trưởng nhanh cần thiết kế cơ chế thưởng linh hoạt, gồm cả thưởng ngắn hạn và thưởng dài hạn. Thưởng ngắn hạn (thưởng theo quý, theo dự án, theo KPI cá nhân) giúp thúc đẩy hiệu suất tức thời, trong khi các cơ chế dài hạn (thưởng giữ chân, thưởng theo thâm niên, hoặc trong một số trường hợp là quyền chọn cổ phần) giúp giữ chân nhân sự chủ chốt trong giai đoạn doanh nghiệp cần sự ổn định để mở rộng quy mô.</p><h2><strong>Quản trị ngân sách quỹ lương khi tăng trưởng nhanh</strong></h2><p>Một thách thức lớn khi tăng trưởng nhanh là quản trị ngân sách lương thưởng sao cho tăng trưởng quỹ lương không vượt quá tốc độ tăng trưởng doanh thu. Doanh nghiệp cần xây dựng mô hình dự báo quỹ lương gắn với kế hoạch tuyển dụng và kế hoạch kinh doanh, đồng thời thiết lập tỷ lệ quỹ lương trên doanh thu (hoặc trên biên lợi nhuận gộp) làm chỉ số kiểm soát định kỳ, tránh tình trạng chi phí nhân sự vượt tầm kiểm soát khi mở rộng quá nhanh.</p><h2><strong>Rủi ro thường gặp và cách phòng tránh</strong></h2><p>Rủi ro phổ biến mà các doanh nghiệp tăng trưởng nhanh thường gặp phải là tuyển dụng ồ ạt với mức lương ưu đãi cho người mới trong khi nhân sự cũ không được điều chỉnh tương xứng, gây ra hiện tượng \"nén lương\" (salary compression) — nhân viên có thâm niên nhận mức lương gần bằng hoặc thấp hơn nhân viên mới tuyển. Đây là nguyên nhân phổ biến dẫn đến làn sóng nghỉ việc ở nhóm nhân sự nòng cốt. Để phòng tránh, doanh nghiệp cần rà soát định kỳ khung lương và có cơ chế điều chỉnh lương chủ động cho nhân sự hiện hữu, thay vì chỉ phản ứng khi có đơn xin nghỉ việc.</p><p>Tóm lại, một chiến lược lương thưởng hiệu quả cho doanh nghiệp tăng trưởng nhanh cần được xây dựng dựa trên ba trụ cột: cạnh tranh với thị trường, minh bạch trong cách tính, và gắn kết chặt chẽ với hiệu suất kinh doanh. Việc đầu tư xây dựng hệ thống này ngay từ giai đoạn đầu của quá trình tăng trưởng sẽ giúp doanh nghiệp tránh được nhiều rủi ro về nhân sự trong tương lai.</p>"
+      "eyebrow": "Phát triển lãnh đạo",
+      "title": "Kỳ Vọng Nhiều, Quan Tâm Nhiều",
+      "description": "Nguyên tắc quản lý kép dành cho người quản lý: đặt kỳ vọng cao đồng thời quan tâm thực sự đến từng nhân viên, để vừa đạt kết quả vừa giữ được sự gắn kết của đội ngũ.",
+      "image": "",
+      "downloadUrl": "",
+      "body": ""
+    },
+    {
+      "id": "sach-03",
+      "eyebrow": "Phát triển lãnh đạo",
+      "title": "Thay Đổi: Biến Bất Định Thành Cơ Hội",
+      "description": "Khung tư duy giúp cá nhân và tổ chức nhìn nhận thay đổi không phải là mối đe doạ mà là cơ hội để thích nghi, học hỏi và phát triển.",
+      "image": "",
+      "downloadUrl": "",
+      "body": ""
     },
     {
       "id": "sach-04",
-      "eyebrow": "Tuân thủ lao động",
-      "title": "Sổ tay xử lý tình huống lao động thường gặp",
-      "description": "Tổng hợp cách xử lý đúng luật cho các tình huống lao động phổ biến mà doanh nghiệp SME hay lúng túng.",
+      "eyebrow": "Phát triển lãnh đạo",
+      "title": "5 Lựa Chọn Để Năng Suất Vượt Trội",
+      "description": "Khung quyết định giúp mỗi người chọn đúng việc quan trọng nhất giữa vô vàn lựa chọn cạnh tranh sự chú ý hàng ngày.",
+      "image": "",
+      "downloadUrl": "",
+      "body": ""
+    },
+    {
+      "id": "sach-05",
+      "eyebrow": "Phát triển lãnh đạo",
+      "title": "Khai Mở Tiềm Năng",
+      "description": "Phương pháp huấn luyện giúp lãnh đạo nhận diện và khơi dậy tiềm năng chưa được khai thác của từng thành viên trong đội ngũ.",
+      "image": "/uploads/6entpvppl6i-unsplash-96301b9f.jpg",
+      "downloadUrl": "",
+      "body": ""
+    },
+    {
+      "id": "sach-06",
+      "eyebrow": "Xây dựng văn hoá tin cậy",
+      "title": "Niềm Tin & Khai Phóng",
+      "description": "Phong cách lãnh đạo lấy niềm tin làm trung tâm, giúp người lãnh đạo truyền cảm hứng và khai phóng năng lực chủ động của đội ngũ, thay vì chỉ huy hoá và kiểm soát.",
+      "image": "",
+      "downloadUrl": "",
+      "body": "<h2><strong>Từ chỉ huy-kiểm soát đến niềm tin-khai phóng</strong></h2><p>Trong một thế giới công việc ngày càng linh hoạt và phụ thuộc vào tri thức, phong cách lãnh đạo chỉ huy và kiểm soát vốn phù hợp với môi trường công nghiệp đang dần mất tác dụng. Ấn phẩm này đề xuất một mô hình thay thế: lãnh đạo bằng niềm tin và khai phóng.</p><h2><strong>Ba hành vi nền tảng</strong></h2><p>Người lãnh đạo theo mô hình niềm tin-khai phóng thực hành ba hành vi cốt lõi: nhìn nhận tiềm năng thay vì chỉ đánh giá hiệu suất hiện tại của nhân viên; kết nối bằng sự tin tưởng thay vì kiểm soát chặt chẽ từng thao tác; và trao quyền có định hướng thay vì áp đặt cách làm việc.</p><h2><strong>Kết quả</strong></h2><p>Khi được áp dụng nhất quán, mô hình này giúp đội ngũ chủ động hơn, sáng tạo hơn và gắn kết hơn với tổ chức — bởi con người làm việc tốt nhất khi họ cảm nhận được sự tin tưởng thực sự, không phải khi bị giám sát.</p>"
+    },
+    {
+      "id": "sach-07",
+      "eyebrow": "Xây dựng văn hoá tin cậy",
+      "title": "Tốc Độ Của Niềm Tin",
+      "description": "Khi niềm tin trong tổ chức tăng lên, tốc độ ra quyết định tăng và chi phí vận hành giảm — nguyên lý cốt lõi được phân tích trong ấn phẩm này.",
       "image": "/uploads/3ym6i13y9lu-unsplash-b49eef3c.jpg",
-      "downloadUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
-      "body": "<h2><strong>Vì sao cần nắm rõ cách xử lý tình huống lao động</strong></h2><p>Trong quá trình vận hành, doanh nghiệp SME thường xuyên đối mặt với các tình huống lao động phát sinh mà nếu xử lý không đúng quy định pháp luật, có thể dẫn đến tranh chấp, khiếu nại, hoặc thậm chí là rủi ro pháp lý nghiêm trọng. Việc trang bị kiến thức xử lý đúng đắn cho các tình huống phổ biến sẽ giúp bộ phận nhân sự và người quản lý tự tin hơn khi đối diện với các vấn đề phát sinh trong quan hệ lao động.</p><h2><strong>Tình huống 1 – Nhân viên nghỉ việc không báo trước</strong></h2><p>Theo quy định pháp luật lao động hiện hành, người lao động có nghĩa vụ báo trước một khoảng thời gian nhất định tuỳ theo loại hợp đồng trước khi đơn phương chấm dứt hợp đồng. Khi nhân viên vi phạm thời hạn báo trước, doanh nghiệp cần lập biên bản ghi nhận sự việc, đồng thời có quyền yêu cầu bồi thường theo quy định. Tuy nhiên, doanh nghiệp cũng cần xem xét thấu đáo lý do nghỉ việc để có cách xử lý phù hợp, tránh gây căng thẳng không cần thiết trong quan hệ lao động.</p><h2><strong>Tình huống 2 – Xử lý kỷ luật lao động</strong></h2><p>Quy trình xử lý kỷ luật cần tuân thủ nghiêm ngặt các bước theo quy định: thông báo vi phạm, tổ chức họp xử lý kỷ luật với sự tham gia đầy đủ của các bên liên quan, lập biên bản cuộc họp, và ra quyết định kỷ luật bằng văn bản. Việc bỏ qua bất kỳ bước nào trong quy trình này đều có thể khiến quyết định kỷ luật bị coi là trái pháp luật nếu có tranh chấp xảy ra sau này.</p><h2><strong>Tình huống 3 – Chấm dứt hợp đồng lao động đúng luật</strong></h2><p>Doanh nghiệp cần phân biệt rõ giữa các trường hợp: hết hạn hợp đồng, thoả thuận chấm dứt, đơn phương chấm dứt hợp đồng từ phía người sử dụng lao động, và sa thải do vi phạm kỷ luật nghiêm trọng. Mỗi trường hợp có quy định riêng về thời hạn báo trước, nghĩa vụ trợ cấp thôi việc, và thủ tục thực hiện. Sai sót phổ biến nhất là doanh nghiệp đơn phương chấm dứt hợp đồng mà không có căn cứ pháp lý rõ ràng hoặc không tuân thủ thời hạn báo trước, dẫn đến nghĩa vụ bồi thường lớn hơn nhiều so với chi phí ban đầu.</p><h2><strong>Tình huống 4 – Tranh chấp lương, thưởng</strong></h2><p>Đây là loại tranh chấp phổ biến nhất trong quan hệ lao động, thường phát sinh từ sự không rõ ràng trong hợp đồng lao động hoặc quy chế lương thưởng nội bộ. Nguyên tắc xử lý là luôn ưu tiên đối chiếu với hợp đồng lao động và quy chế đã ban hành, đồng thời khuyến khích giải quyết thông qua thương lượng trực tiếp trước khi sự việc leo thang thành khiếu nại chính thức.</p><h2><strong>Tình huống 5 – Vi phạm nội quy nhiều lần</strong></h2><p>Trong trường hợp này, doanh nghiệp cần có hệ thống ghi nhận và lưu trữ đầy đủ các lần vi phạm trước đó, làm căn cứ cho các quyết định kỷ luật ở mức độ cao hơn nếu vi phạm tái diễn. Việc thiếu hồ sơ ghi nhận vi phạm trước đó thường khiến doanh nghiệp gặp khó khăn khi cần đưa ra quyết định kỷ luật nghiêm khắc hơn.</p><h2><strong>Tình huống 6 – Thai sản và nghỉ ốm dài ngày</strong></h2><p>Pháp luật lao động có các quy định bảo vệ đặc biệt đối với lao động nữ mang thai và lao động đang điều trị bệnh, bao gồm cả việc hạn chế quyền đơn phương chấm dứt hợp đồng trong các giai đoạn này. Doanh nghiệp cần nắm rõ các quy định bảo vệ này để tránh vi phạm pháp luật khi xử lý các tình huống liên quan.</p><p>Nguyên tắc chung xuyên suốt khi xử lý mọi tình huống lao động là luôn lưu trữ đầy đủ hồ sơ, chứng cứ bằng văn bản ở mọi bước xử lý, tuân thủ đúng trình tự thủ tục theo quy định pháp luật, và ưu tiên đối thoại, thương lượng trước khi áp dụng các biện pháp mang tính đối đầu. Đối với các tình huống phức tạp hoặc có giá trị tranh chấp lớn, doanh nghiệp nên tham vấn ý kiến chuyên gia pháp lý lao động trước khi ra quyết định cuối cùng, nhằm giảm thiểu rủi ro pháp lý và bảo vệ quyền lợi hợp pháp của cả doanh nghiệp lẫn người lao động.</p>"
+      "downloadUrl": "",
+      "body": "<h2><strong>Niềm tin không phải yếu tố \"mềm\"</strong></h2><p>Nhiều tổ chức vẫn xem niềm tin là một giá trị đạo đức mang tính cảm tính, khó đo lường và càng khó đưa vào chiến lược vận hành. Ấn phẩm này lập luận ngược lại: niềm tin là một biến số kinh tế có thể quan sát và tác động trực tiếp đến hai chỉ số cốt lõi của mọi tổ chức — tốc độ và chi phí.</p><h2><strong>Khi niềm tin thấp</strong></h2><p>Ở những tổ chức có mức độ tin cậy thấp, mọi quyết định đều cần thêm một lớp kiểm soát: phê duyệt nhiều cấp, xác minh lại thông tin, và các quy trình đối phó nhằm phòng ngừa rủi ro từ sự thiếu tin tưởng lẫn nhau. Hệ quả là tốc độ vận hành chậm lại và chi phí quản trị tăng lên một cách âm thầm nhưng đáng kể.</p><h2><strong>Khi niềm tin cao</strong></h2><p>Ngược lại, khi các thành viên trong tổ chức tin tưởng lẫn nhau, các lớp kiểm soát dư thừa có thể được gỡ bỏ. Thông tin lưu chuyển nhanh hơn, quyết định được đưa ra gần với nơi phát sinh vấn đề hơn, và năng lượng của đội ngũ được dồn vào sáng tạo giá trị thay vì phòng thủ lẫn nhau.</p><h2><strong>Xây dựng niềm tin bắt đầu từ đâu</strong></h2><p>Niềm tin trong tổ chức được xây dựng từ hai lớp: niềm tin vào năng lực (người này có làm được việc không) và niềm tin vào phẩm chất (người này có đáng tin cậy về động cơ và sự chính trực không). Người lãnh đạo cần chủ động thể hiện cả hai lớp niềm tin này một cách nhất quán — giữ lời hứa, minh bạch trong giao tiếp, và trao quyền có trách nhiệm cho đội ngũ — để niềm tin có thể lan toả từ cấp lãnh đạo xuống toàn tổ chức.</p><p>Với các tổ chức mà GCW đồng hành, việc đo lường và cải thiện mức độ tin cậy nội bộ thường là bước đi trước khi triển khai bất kỳ thay đổi lớn nào về cơ cấu hay chiến lược, bởi mọi thay đổi đều cần một nền tảng niềm tin đủ vững để được đội ngũ đón nhận.</p>"
+    },
+    {
+      "id": "sach-08",
+      "eyebrow": "Xây dựng văn hoá tin cậy",
+      "title": "Ai Cũng Xứng Đáng Một Người Quản Lý Giỏi",
+      "description": "Những thực hành thiết yếu giúp người quản lý, đặc biệt là quản lý mới nhậm chức, tạo ra trải nghiệm làm việc ý nghĩa và gắn kết cho từng nhân viên.",
+      "image": "",
+      "downloadUrl": "",
+      "body": ""
+    },
+    {
+      "id": "sach-09",
+      "eyebrow": "Xây dựng văn hoá tin cậy",
+      "title": "Trở Nên Tốt Hơn: 15 Thực Hành Xây Dựng Quan Hệ Công Việc Hiệu Quả",
+      "description": "Mười lăm thực hành đã được kiểm chứng giúp xây dựng và củng cố các mối quan hệ công việc bền vững — nền tảng của một đội ngũ vận hành hiệu quả.",
+      "image": "",
+      "downloadUrl": "",
+      "body": ""
+    },
+    {
+      "id": "sach-10",
+      "eyebrow": "Xây dựng văn hoá tin cậy",
+      "title": "Cẩm Nang Lãnh Đạo Về Định Kiến Vô Thức",
+      "description": "Cẩm nang giúp lãnh đạo nhận diện và vượt qua định kiến vô thức để xây dựng môi trường làm việc công bằng, bao trùm.",
+      "image": "",
+      "downloadUrl": "",
+      "body": ""
+    },
+    {
+      "id": "sach-11",
+      "eyebrow": "Tạo kết quả đột phá",
+      "title": "Đổi Mới Toàn Diện Và Chiến Thắng",
+      "description": "Phương pháp giúp tổ chức chủ động đổi mới toàn diện về sản phẩm, quy trình và mô hình vận hành, thay vì bị động ứng phó trước gián đoạn thị trường.",
+      "image": "/uploads/annie-spratt-qckxruozjrg-unsplash-e15fd1fb.jpg",
+      "downloadUrl": "",
+      "body": ""
+    },
+    {
+      "id": "sach-12",
+      "eyebrow": "Tạo kết quả đột phá",
+      "title": "Quản Lý Dự Án Cho Người Không Chuyên",
+      "description": "Nguyên tắc quản lý dự án thực dụng, dễ áp dụng cho những người quản lý không có nền tảng chuyên môn về quản lý dự án.",
+      "image": "",
+      "downloadUrl": "",
+      "body": ""
+    },
+    {
+      "id": "sach-13",
+      "eyebrow": "Tạo kết quả đột phá",
+      "title": "4 Kỷ Luật Thực Thi",
+      "description": "Bốn kỷ luật giúp đội ngũ biến mục tiêu chiến lược thành kết quả thực thi nhất quán, đo lường được, ngay cả khi công việc hàng ngày cuốn đi phần lớn sự chú ý.",
+      "image": "/uploads/imagine-buddy-vslbaidhwau-unsplash-341d5944.jpg",
+      "downloadUrl": "",
+      "body": ""
+    },
+    {
+      "id": "sach-14",
+      "eyebrow": "Tạo kết quả đột phá",
+      "title": "Dẫn Dắt Lòng Trung Thành: Giải Mã Sự Tận Tâm Của Khách Hàng",
+      "description": "Giải mã cách xây dựng lòng trung thành của khách hàng thông qua trải nghiệm nhất quán do chính đội ngũ tuyến đầu tạo ra mỗi ngày.",
+      "image": "",
+      "downloadUrl": "",
+      "body": ""
     }
   ],
   "cta": {
-    "heading": "Muốn nhận bản đầy đủ các ấn phẩm này?",
-    "body": "Để lại thông tin liên hệ, đội ngũ GCW sẽ gửi ấn phẩm phù hợp với giai đoạn phát triển của doanh nghiệp bạn.",
+    "heading": "Muốn nhận trọn bộ ấn phẩm này?",
+    "body": "Để lại thông tin liên hệ, đội ngũ GCW sẽ gửi ấn phẩm phù hợp với hành trình phát triển lãnh đạo của tổ chức bạn.",
     "label": "Đăng ký nhận ấn phẩm",
     "href": "/contact"
   }

@@ -1,43 +1,55 @@
 {
   "title": "Podcast",
-  "metaDescription": "Podcast GCW trò chuyện cùng chuyên gia nhân sự về tuân thủ lao động, vận hành nhân sự và những bài toán thực tế của doanh nghiệp SME Việt Nam.",
+  "metaDescription": "Podcast GCW trò chuyện cùng chuyên gia về phát triển lãnh đạo, xây dựng văn hoá tin cậy và tạo kết quả đột phá cho tổ chức, cập nhật đều đặn mỗi tháng.",
   "heading": "Podcast",
-  "intro": "Chuỗi podcast trò chuyện cùng chuyên gia GCW về các bài toán nhân sự thường gặp, từ tuân thủ lao động đến xây dựng chính sách lương thưởng.",
+  "intro": "Chuỗi podcast trò chuyện cùng chuyên gia GCW về hành trình phát triển năng lực lãnh đạo, từ xây dựng niềm tin trong đội ngũ đến thực thi chiến lược tạo kết quả đột phá.",
   "featured": {
     "label": "Tập mới nhất",
-    "title": "Tập 04: Thiết kế chính sách lương thưởng minh bạch",
-    "description": "Nguyên tắc xây dựng hệ thống lương thưởng công bằng, minh bạch và giữ chân nhân tài, cùng chuyên gia cố vấn GCW."
+    "title": "Tập 05: Dẫn dắt đội ngũ bằng niềm tin, không phải kiểm soát",
+    "description": "Cùng chuyên gia cố vấn GCW bàn về cách chuyển từ mô hình quản lý kiểm soát sang lãnh đạo bằng niềm tin, để đội ngũ chủ động và gắn kết hơn."
   },
   "seriesHeading": "Các chuỗi podcast",
   "series": [
     {
       "id": "series-01",
       "label": "Chuỗi định kỳ",
-      "title": "GCW On Air",
-      "description": "Trò chuyện cùng chuyên gia GCW về các bài toán vận hành nhân sự thường gặp mỗi tháng."
+      "title": "GCW Bàn Chuyện Lãnh Đạo",
+      "description": "Chuỗi phỏng vấn định kỳ hai tuần một lần cùng các chuyên gia và nhà lãnh đạo khách mời, bàn về những bài toán lãnh đạo và phát triển tổ chức thường gặp.",
+      "image": "",
+      "episodesUrl": "",
+      "body": ""
     },
     {
       "id": "series-02",
       "label": "Chuỗi giới hạn",
-      "title": "Câu Chuyện SME",
-      "description": "Góc nhìn thực tế từ các doanh nghiệp SME đã cùng GCW chuẩn hoá bộ máy nhân sự."
+      "title": "Đối Thoại C-Suite",
+      "description": "Chuỗi giới hạn với những cuộc trò chuyện thẳng thắn, không dàn dựng từ phòng họp ban lãnh đạo cấp cao về các quyết định khó và bài học thực tế.",
+      "image": "",
+      "episodesUrl": "",
+      "body": ""
     },
     {
       "id": "series-03",
       "label": "Chuỗi giới hạn",
-      "title": "Hỏi Đáp Tuân Thủ",
-      "description": "Giải đáp nhanh các câu hỏi thường gặp về luật lao động, bảo hiểm xã hội và thuế TNCN."
+      "title": "Trở Thành Lãnh Đạo Tốt Hơn",
+      "description": "Chuỗi giới hạn chia sẻ những lời khuyên lãnh đạo thực tế, dễ áp dụng ngay vào công việc quản lý hàng ngày.",
+      "image": "",
+      "episodesUrl": "",
+      "body": ""
     },
     {
       "id": "series-04",
-      "label": "Chuỗi định kỳ",
-      "title": "Case Study Talks",
-      "description": "Phân tích chuyên sâu các case study vận hành nhân sự cùng chuyên gia GCW."
+      "label": "Chuỗi giới hạn",
+      "title": "Huấn Luyện Viên 7 Thói Quen",
+      "description": "Chuỗi huấn luyện theo khung 7 Thói Quen Của Người Hiệu Quả, giúp người nghe áp dụng từng nguyên tắc vào thực tế công việc.",
+      "image": "",
+      "episodesUrl": "",
+      "body": ""
     }
   ],
   "cta": {
     "heading": "Muốn nhận thông báo khi có tập mới?",
-    "body": "Để lại email, GCW sẽ gửi thông báo ngay khi tập podcast mới được phát hành.",
+    "body": "Để lại email, GCW sẽ gửi thông báo ngay khi tập podcast phát triển lãnh đạo mới được phát hành.",
     "label": "Đăng ký nhận thông báo",
     "href": "/contact"
   }

@@ -1,0 +1,31 @@
+{
+  "title": "Xây dựng văn hoá tin cậy",
+  "metaDescription": "GCW giúp tổ chức xây dựng văn hoá tin cậy cao — tăng tốc độ ra quyết định, giảm chi phí vận hành và dẫn dắt thay đổi hiệu quả.",
+  "eyebrow": "Vì sao chọn GCW",
+  "heading": "Xây dựng văn hoá tin cậy",
+  "intro": "Chúng tôi kiến tạo văn hoá tin cậy cao trong tổ chức, nơi những ý tưởng tốt nhất được nuôi dưỡng và phát triển, giúp đội ngũ gắn kết bền vững.",
+  "stat": {
+    "value": "3,6x",
+    "label": "Tổ chức có độ tin cậy cao tăng trưởng doanh thu gấp 3,6 lần so với tổ chức có độ tin cậy thấp."
+  },
+  "programs": [
+    {
+      "name": "TỐC ĐỘ CỦA NIỀM TIN",
+      "description": "Xây dựng niềm tin trong tổ chức để tăng tốc độ ra quyết định, giảm chi phí vận hành và gắn kết đội ngũ.",
+      "href": "/services/toc-do-cua-niem-tin",
+      "image": "/images/offering-gcw-control.jpg"
+    },
+    {
+      "name": "DẪN DẮT THAY ĐỔI",
+      "description": "Trang bị năng lực dẫn dắt tổ chức vượt qua giai đoạn bất định và biến thay đổi thành cơ hội.",
+      "href": "/services/dan-dat-thay-doi",
+      "image": "/images/offering-thue-ca-nhan.jpg"
+    }
+  ],
+  "cta": {
+    "heading": "Sẵn sàng xây dựng văn hoá tin cậy cho tổ chức?",
+    "body": "Đặt lịch tư vấn để GCW đánh giá mức độ tin cậy hiện tại và đề xuất lộ trình phù hợp.",
+    "label": "Đặt lịch tư vấn",
+    "href": "/contact"
+  }
+}

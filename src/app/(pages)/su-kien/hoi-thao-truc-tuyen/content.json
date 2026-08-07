@@ -1,45 +1,155 @@
 {
   "title": "Hội thảo trực tuyến",
-  "metaDescription": "Chuỗi webinar của GCW chia sẻ kinh nghiệm thực tế về vận hành nhân sự, tuân thủ lao động và tối ưu chi phí nhân sự cho doanh nghiệp SME Việt Nam.",
+  "metaDescription": "Chuỗi webinar miễn phí của GCW cùng chuyên gia chia sẻ về lãnh đạo trong kỷ nguyên AI, xây dựng văn hoá tin cậy và tạo kết quả đột phá cho tổ chức.",
   "heading": "Hội thảo trực tuyến",
-  "intro": "Chuỗi webinar chia sẻ kinh nghiệm vận hành nhân sự thực tế, được GCW tổ chức định kỳ dành cho cộng đồng doanh nghiệp SME.",
+  "intro": "Chuỗi webinar miễn phí cùng chuyên gia GCW, chia sẻ góc nhìn thực chiến về phát triển lãnh đạo, văn hoá tổ chức và thực thi chiến lược, tổ chức định kỳ dành cho cộng đồng lãnh đạo doanh nghiệp.",
   "itemsHeading": "Lịch hội thảo trực tuyến",
   "items": [
     {
-      "id": "webinar-01",
-      "title": "Tối ưu chi phí nhân sự cho doanh nghiệp SME",
-      "description": "Webinar chia sẻ phương pháp rà soát và tối ưu chi phí lương, bảo hiểm xã hội và thuế TNCN.",
+      "id": "webinar-ai-chi-hieu-qua-khi-con-nguoi-san-sang",
+      "title": "AI Chỉ Hiệu Quả Khi Con Người Sẵn Sàng",
+      "description": "Webinar chia sẻ cẩm nang lãnh đạo giúp việc ứng dụng AI thực sự tạo ra giá trị — bắt đầu từ sự sẵn sàng của con người, không chỉ từ công nghệ.",
       "format": "Online",
-      "eventDate": "2026-08-20T09:00",
+      "eventDate": "2026-08-21T09:00",
       "location": "Link Zoom sẽ gửi sau khi đăng ký",
       "image": "",
       "body": "",
-      "speakers": "Bà Nguyễn Thị Ngân | Trưởng Chi nhánh Hà Nội, InCorp Vietnam\nÔng Jack Nguyễn | CEO, InCorp Vietnam",
-      "takeaways": "Lợi thế cạnh tranh của Việt Nam trong sản xuất và mở rộng kinh doanh\nCập nhật quy định đầu tư và pháp lý mới nhất cho doanh nghiệp nước ngoài",
-      "audience": "Nhà đầu tư đang tìm hiểu thị trường Việt Nam\nLãnh đạo doanh nghiệp SME muốn tối ưu chi phí nhân sự",
+      "speakers": "Ông Phạm Anh Tuấn | Chuyên gia Chuyển đổi Lãnh đạo, GCW",
+      "takeaways": "Vì sao thành công của AI phụ thuộc vào sự sẵn sàng của con người hơn là công nghệ\nCách xây dựng lộ trình chuẩn bị đội ngũ trước khi triển khai AI",
+      "audience": "Lãnh đạo cấp cao và quản lý cấp trung\nTrưởng phòng chuyển đổi số và nhân sự",
       "registerUrl": "",
-      "jarvisFormId": "form_QgNEpXvIHba9F1"
+      "jarvisFormId": ""
     },
     {
-      "id": "webinar-02",
-      "title": "Chuẩn hoá hồ sơ nhân sự trước khi gọi vốn",
-      "description": "Webinar hướng dẫn doanh nghiệp chuẩn bị hồ sơ nhân sự đáp ứng yêu cầu thẩm định của nhà đầu tư.",
+      "id": "webinar-bien-dau-tu-ai-thanh-hieu-suat-thuc-te",
+      "title": "Giúp Lãnh Đạo Biến Đầu Tư AI Thành Hiệu Suất Thực Tế",
+      "description": "Webinar chia sẻ khung hành động giúp lãnh đạo chuyển hoá ngân sách và công cụ AI thành hiệu suất đo lường được.",
       "format": "Online",
-      "eventDate": "2026-09-10T09:00",
+      "eventDate": "2026-09-04T14:00",
       "location": "Link Zoom sẽ gửi sau khi đăng ký"
     },
     {
-      "id": "webinar-03",
-      "title": "Quản lý lương, bảo hiểm xã hội và thuế TNCN đúng hạn",
-      "description": "Webinar tổng hợp quy trình tính lương và các mốc thời hạn quan trọng doanh nghiệp cần nắm rõ.",
+      "id": "webinar-nang-chuan-nang-tam-con-nguoi",
+      "title": "Nâng Chuẩn. Nâng Tầm Con Người.",
+      "description": "Webinar về cách lãnh đạo nâng chuẩn mực công việc đồng thời nâng tầm năng lực và động lực của đội ngũ.",
       "format": "Online",
-      "eventDate": "2026-11-12T09:00",
+      "eventDate": "2026-09-18T09:00",
+      "location": "Link Zoom sẽ gửi sau khi đăng ký"
+    },
+    {
+      "id": "webinar-lanh-dao-san-sang-cho-ai",
+      "title": "Lãnh Đạo Sẵn Sàng Cho AI — Xây Dựng Sự Tự Tin, Năng Lực, Kết Quả",
+      "description": "Webinar cung cấp lộ trình ba bước giúp đội ngũ quản lý tự tin dẫn dắt tổ chức trong giai đoạn ứng dụng AI.",
+      "format": "Online",
+      "eventDate": "2026-10-02T09:00",
+      "location": "Link Zoom sẽ gửi sau khi đăng ký",
+      "image": "/uploads/xy55bl5mzam-unsplash-e5d6e0fb.jpg",
+      "body": "<p>Sự tự tin để dẫn dắt trong thời đại AI không đến từ việc biết hết mọi công cụ, mà từ một khung năng lực rõ ràng và một lộ trình thực hành cụ thể.</p><p>Trong webinar này, đội ngũ GCW chia sẻ mô hình ba bước — Tự tin, Năng lực, Kết quả — giúp lãnh đạo và đội ngũ quản lý xây dựng nền tảng vững chắc để dẫn dắt tổ chức qua giai đoạn chuyển đổi công nghệ.</p>",
+      "speakers": "Bà Đặng Thu Hiền | Giám đốc Chương trình Lãnh đạo, GCW\nÔng Phạm Anh Tuấn | Chuyên gia Chuyển đổi Lãnh đạo, GCW",
+      "takeaways": "Mô hình ba bước xây dựng sự tự tin lãnh đạo trong môi trường AI\nCách gắn kết quả AI với các chỉ số hiệu suất tổ chức hiện có",
+      "audience": "Quản lý cấp trung đang dẫn dắt đội ngũ ứng dụng công nghệ mới\nGiám đốc nhân sự và giám đốc chuyển đổi số",
+      "registerUrl": "",
+      "jarvisFormId": ""
+    },
+    {
+      "id": "webinar-thuyet-trinh-tao-tac-dong",
+      "title": "Thuyết Trình Tạo Tác Động — Truyền Cảm Hứng Hành Động",
+      "description": "Webinar hướng dẫn kỹ thuật thuyết trình giúp thông điệp của bạn thực sự thúc đẩy hành động, không chỉ để lại ấn tượng.",
+      "format": "Online",
+      "eventDate": "2026-10-16T09:00",
+      "location": "Link Zoom sẽ gửi sau khi đăng ký"
+    },
+    {
+      "id": "webinar-dan-dat-qua-giai-doan-gian-doan",
+      "title": "Dẫn Dắt Qua Giai Đoạn Gián Đoạn",
+      "description": "Webinar chia sẻ cách lãnh đạo giữ vững định hướng và tinh thần đội ngũ khi tổ chức đối mặt gián đoạn liên tục.",
+      "format": "Online",
+      "eventDate": "2026-10-30T14:00",
+      "location": "Link Zoom sẽ gửi sau khi đăng ký"
+    },
+    {
+      "id": "webinar-niem-tin-khai-phong-tiem-nang",
+      "title": "Niềm Tin & Khai Phóng — Cách Lãnh Đạo Giỏi Giải Phóng Tiềm Năng",
+      "description": "Webinar khám phá mối liên hệ giữa niềm tin và hiệu suất, cùng cách lãnh đạo khai phóng tối đa năng lực đội ngũ.",
+      "format": "Online",
+      "eventDate": "2026-11-13T09:00",
+      "location": "Link Zoom sẽ gửi sau khi đăng ký"
+    },
+    {
+      "id": "webinar-tu-gian-doan-den-dinh-huong",
+      "title": "Từ Gián Đoạn Đến Định Hướng",
+      "description": "Webinar hướng dẫn quy trình giúp ban lãnh đạo nhanh chóng thiết lập lại định hướng sau biến động thị trường.",
+      "format": "Online",
+      "eventDate": "2026-11-27T09:00",
+      "location": "Link Zoom sẽ gửi sau khi đăng ký"
+    },
+    {
+      "id": "webinar-thu-hep-khoang-cach-nang-luc-lanh-dao",
+      "title": "Thu Hẹp Khoảng Cách Năng Lực Lãnh Đạo",
+      "description": "Webinar chỉ ra khoảng cách phổ biến giữa năng lực lãnh đạo hiện tại và yêu cầu của tổ chức trong giai đoạn tới.",
+      "format": "Online",
+      "eventDate": "2026-12-11T14:00",
+      "location": "Link Zoom sẽ gửi sau khi đăng ký"
+    },
+    {
+      "id": "webinar-hieu-ung-7-thoi-quen",
+      "title": "Hiệu Ứng 7 Thói Quen — Mở Khoá Tiềm Năng, Bứt Phá Hiệu Suất",
+      "description": "Webinar khám phá cách khung 7 Thói Quen giúp mở khoá tiềm năng cá nhân và bứt phá hiệu suất đội ngũ.",
+      "format": "Online",
+      "eventDate": "2026-12-18T09:00",
+      "location": "Link Zoom sẽ gửi sau khi đăng ký"
+    },
+    {
+      "id": "webinar-vuon-len-giua-gian-doan",
+      "title": "Vươn Lên Giữa Gián Đoạn",
+      "description": "Webinar chia sẻ cách đội ngũ không chỉ tồn tại mà thực sự phát triển mạnh mẽ giữa những giai đoạn gián đoạn liên tục.",
+      "format": "Online",
+      "eventDate": "2027-01-08T09:00",
+      "location": "Link Zoom sẽ gửi sau khi đăng ký",
+      "image": "/uploads/imagine-buddy-vslbaidhwau-unsplash-341d5944.jpg",
+      "body": "<p>Gián đoạn không còn là ngoại lệ mà đã trở thành trạng thái bình thường mới của môi trường kinh doanh. Những đội ngũ vươn lên mạnh mẽ nhất không phải là đội ngũ tránh được gián đoạn, mà là đội ngũ biết cách thích ứng nhanh và duy trì động lực xuyên suốt.</p><p>Webinar này chia sẻ những nguyên tắc và thực hành giúp lãnh đạo giữ vững tinh thần đội ngũ, đồng thời biến giai đoạn bất định thành cơ hội để bứt phá.</p>",
+      "speakers": "Bà Trịnh Hải Yến | Cố vấn Thực thi Chiến lược, GCW",
+      "takeaways": "Ba nguyên tắc giúp đội ngũ thích ứng nhanh với gián đoạn liên tục\nCách duy trì động lực và tinh thần đội ngũ trong giai đoạn bất định",
+      "audience": "Quản lý cấp trung đang dẫn dắt đội ngũ qua giai đoạn biến động\nLãnh đạo cấp cao chịu trách nhiệm về hiệu suất tổ chức",
+      "registerUrl": "",
+      "jarvisFormId": ""
+    },
+    {
+      "id": "webinar-nang-cap-ky-nang-doi-thoai-kho",
+      "title": "Nâng Cấp Kỹ Năng Đội Ngũ Để Xử Lý Đối Thoại Khó",
+      "description": "Webinar trang bị kỹ năng giúp đội ngũ xử lý những cuộc đối thoại khó một cách xây dựng và hiệu quả.",
+      "format": "Online",
+      "eventDate": "2027-01-22T14:00",
+      "location": "Link Zoom sẽ gửi sau khi đăng ký"
+    },
+    {
+      "id": "webinar-dan-dat-thay-doi-tai-noi-lam-viec",
+      "title": "Dẫn Dắt Thay Đổi Tại Nơi Làm Việc",
+      "description": "Webinar chia sẻ cách lãnh đạo dẫn dắt đội ngũ thích ứng với thay đổi liên tục tại nơi làm việc.",
+      "format": "Online",
+      "eventDate": "2027-02-05T09:00",
+      "location": "Link Zoom sẽ gửi sau khi đăng ký"
+    },
+    {
+      "id": "webinar-thuc-thi-voi-muc-dich-ro-rang",
+      "title": "Thực Thi Với Mục Đích Rõ Ràng",
+      "description": "Webinar về cách gắn kết mục tiêu công việc hàng ngày với mục đích lớn hơn để nâng cao hiệu suất thực thi.",
+      "format": "Online",
+      "eventDate": "2027-02-19T09:00",
+      "location": "Link Zoom sẽ gửi sau khi đăng ký"
+    },
+    {
+      "id": "webinar-chuyen-hoa-muc-tieu-chien-luoc",
+      "title": "Chuyển Hoá Mục Tiêu Chiến Lược Thành Kết Quả Đột Phá",
+      "description": "Webinar chia sẻ khung hành động giúp tổ chức biến mục tiêu chiến lược thành kết quả đột phá đo lường được.",
+      "format": "Online",
+      "eventDate": "2027-03-05T14:00",
       "location": "Link Zoom sẽ gửi sau khi đăng ký"
     }
   ],
   "cta": {
     "heading": "Muốn nhận lời mời tham dự webinar?",
-    "body": "Để lại thông tin liên hệ, GCW sẽ gửi lời mời ngay khi lịch hội thảo trực tuyến được chốt.",
+    "body": "Để lại thông tin liên hệ, GCW sẽ gửi lời mời ngay khi lịch hội thảo trực tuyến tiếp theo được chốt.",
     "label": "Đăng ký nhận lời mời",
     "href": "/contact"
   }

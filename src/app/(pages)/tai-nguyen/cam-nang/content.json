@@ -1,72 +1,75 @@
 {
   "title": "Cẩm nang & Công cụ",
-  "metaDescription": "Cẩm nang, checklist và công cụ tự đánh giá giúp doanh nghiệp SME rà soát tuân thủ nhân sự, tính lương, bảo hiểm xã hội và thuế TNCN chính xác.",
+  "metaDescription": "Cẩm nang, checklist và công cụ tự đánh giá giúp lãnh đạo phát triển năng lực, xây dựng văn hoá tin cậy và tạo kết quả đột phá cho đội ngũ của mình.",
   "heading": "Cẩm nang & Công cụ",
-  "intro": "Biểu mẫu, checklist và công cụ thực hành giúp doanh nghiệp tự rà soát tuân thủ nhân sự, không cần chờ đến đợt kiểm tra mới phát hiện thiếu sót.",
+  "intro": "Bộ cẩm nang, checklist và công cụ thực hành giúp lãnh đạo tự đánh giá năng lực, nhận diện điểm cần cải thiện và áp dụng ngay vào công việc hàng ngày.",
   "toolsHeading": "Công cụ tự đánh giá",
   "tools": [
     {
-      "id": "tool-01",
-      "title": "Công cụ tự đánh giá tuân thủ nhân sự",
-      "description": "Trả lời 15 câu hỏi nhanh để biết mức độ tuân thủ hiện tại của doanh nghiệp bạn.",
-      "ctaLabel": "Bắt đầu đánh giá",
+      "id": "tool-msb",
+      "title": "Công Cụ Xây Dựng Tuyên Ngôn Sứ Mệnh Cá Nhân",
+      "description": "Bộ câu hỏi dẫn dắt từng bước giúp bạn viết ra tuyên ngôn sứ mệnh cá nhân, xác định giá trị cốt lõi và định hướng rõ ràng cho cuộc sống và công việc của mình.",
+      "ctaLabel": "Bắt đầu xây dựng",
       "ctaHref": "/contact",
-      "image": "",
+      "image": "/uploads/6entpvppl6i-unsplash-96301b9f.jpg"
+    },
+    {
+      "id": "tool-disruptor",
+      "title": "Công Cụ Đánh Giá Tư Duy Đổi Mới",
+      "description": "Trả lời loạt câu hỏi ngắn để khám phá mức độ sẵn sàng thách thức lối mòn, chấp nhận sự mơ hồ và dẫn dắt đổi mới của bạn.",
+      "ctaLabel": "Khám phá hồ sơ đổi mới",
+      "ctaHref": "/contact",
+      "image": "/uploads/xy55bl5mzam-unsplash-e5d6e0fb.jpg",
       "assessment": {
         "questions": [
-          { "id": "q1", "text": "Doanh nghiệp có hợp đồng lao động bằng văn bản cho 100% nhân sự chính thức?" },
-          { "id": "q2", "text": "Nội quy lao động đã được đăng ký với cơ quan quản lý lao động (nếu có từ 10 lao động trở lên)?" },
-          { "id": "q3", "text": "Doanh nghiệp có thang, bảng lương được xây dựng và lưu trữ đầy đủ?" },
-          { "id": "q4", "text": "Người lao động được đóng BHXH, BHYT, BHTN đúng thời hạn kể từ ngày ký hợp đồng chính thức?" },
-          { "id": "q5", "text": "Doanh nghiệp có lưu trữ hồ sơ nhân sự (CV, hợp đồng, quyết định) đầy đủ và có hệ thống?" },
-          { "id": "q6", "text": "Thời giờ làm việc, làm thêm giờ được ghi nhận và tuân thủ giới hạn theo luật lao động?" },
-          { "id": "q7", "text": "Người lao động làm thêm giờ có thỏa thuận bằng văn bản trước khi thực hiện?" },
-          { "id": "q8", "text": "Mức lương trả cho người lao động đáp ứng quy định lương tối thiểu vùng hiện hành?" },
-          { "id": "q9", "text": "Doanh nghiệp quyết toán thuế TNCN cho người lao động đúng thời hạn hàng năm?" },
-          { "id": "q10", "text": "Hợp đồng thử việc (nếu có) tuân thủ đúng thời gian thử việc tối đa theo luật?" },
-          { "id": "q11", "text": "Chính sách nghỉ phép năm được áp dụng và người lao động được nghỉ đủ theo quy định?" },
-          { "id": "q12", "text": "Quy chế lương, thưởng nội bộ được ban hành bằng văn bản và phổ biến tới người lao động?" },
-          { "id": "q13", "text": "Doanh nghiệp có đánh giá định kỳ về an toàn, vệ sinh lao động tại nơi làm việc?" },
-          { "id": "q14", "text": "Quy trình xử lý kỷ luật lao động (nếu có) tuân thủ đúng trình tự pháp luật quy định?" },
-          { "id": "q15", "text": "Doanh nghiệp có kế hoạch rà soát, cập nhật hồ sơ tuân thủ nhân sự định kỳ (hàng năm/hàng quý)?" }
+          { "id": "q1", "text": "Bạn thường đặt câu hỏi \"tại sao chúng ta luôn làm theo cách này?\" ngay cả khi cách làm hiện tại vẫn đang hiệu quả?" },
+          { "id": "q2", "text": "Bạn cảm thấy thoải mái khi phải đưa ra quyết định trong điều kiện thông tin chưa đầy đủ hoặc còn nhiều mơ hồ?" },
+          { "id": "q3", "text": "Bạn chủ động tìm kiếm góc nhìn từ những ngành nghề, lĩnh vực khác để áp dụng vào công việc của mình?" },
+          { "id": "q4", "text": "Bạn sẵn sàng thử nghiệm một ý tưởng mới dù biết khả năng thất bại khá cao?" },
+          { "id": "q5", "text": "Bạn xem thất bại là cơ hội học hỏi thay vì điều cần né tránh bằng mọi giá?" },
+          { "id": "q6", "text": "Bạn thường thách thức các giả định mặc định trong ngành hoặc tổ chức của mình?" },
+          { "id": "q7", "text": "Bạn có xu hướng tìm ra vấn đề thực sự đằng sau một hiện tượng, thay vì chỉ xử lý triệu chứng bề mặt?" },
+          { "id": "q8", "text": "Bạn dễ dàng thích nghi khi kế hoạch ban đầu buộc phải thay đổi hoàn toàn?" },
+          { "id": "q9", "text": "Bạn chủ động học hỏi công nghệ hoặc xu hướng mới dù chúng chưa phổ biến rộng rãi?" },
+          { "id": "q10", "text": "Bạn khuyến khích người khác đưa ra ý tưởng táo bạo, kể cả khi ý tưởng đó đi ngược số đông?" },
+          { "id": "q11", "text": "Bạn sẵn sàng từ bỏ một cách làm quen thuộc nếu nhận ra nó không còn phù hợp?" },
+          { "id": "q12", "text": "Bạn coi sự thay đổi liên tục là điều bình thường, thay vì một mối đe doạ cần kiểm soát?" }
         ],
         "resultTiers": [
-          { "minScore": 12, "maxScore": 15, "label": "Tuân thủ tốt", "description": "Doanh nghiệp bạn đang tuân thủ tốt phần lớn quy định nhân sự. Hãy duy trì rà soát định kỳ để không bỏ sót các thay đổi pháp luật mới." },
-          { "minScore": 7, "maxScore": 11, "label": "Cần cải thiện", "description": "Doanh nghiệp còn một số khoảng trống tuân thủ có thể gây rủi ro khi bị thanh tra. Nên ưu tiên rà soát các mục chưa đạt." },
-          { "minScore": 0, "maxScore": 6, "label": "Rủi ro cao", "description": "Doanh nghiệp đang thiếu nhiều nền tảng tuân thủ nhân sự cơ bản, dễ phát sinh rủi ro pháp lý và tài chính. Nên rà soát và khắc phục sớm." }
+          { "minScore": 9, "maxScore": 12, "label": "Nhà đổi mới bứt phá", "description": "Bạn có tư duy cởi mở với sự thay đổi và sẵn sàng thách thức lối mòn. Hãy tiếp tục nuôi dưỡng tinh thần này và truyền cảm hứng đổi mới cho đội ngũ." },
+          { "minScore": 5, "maxScore": 8, "label": "Đang hình thành tư duy đổi mới", "description": "Bạn đã có một số biểu hiện của tư duy đổi mới nhưng vẫn còn e ngại trước sự mơ hồ hoặc rủi ro. Nên chủ động thử nghiệm nhiều hơn ở quy mô nhỏ." },
+          { "minScore": 0, "maxScore": 4, "label": "Ưu tiên sự ổn định", "description": "Bạn có xu hướng gắn bó với cách làm quen thuộc và ngại thay đổi. Nên bắt đầu bằng việc đặt câu hỏi về những giả định đang được mặc định là đúng." }
         ]
       }
     },
     {
-      "id": "tool-02",
-      "title": "Bộ tính lương Gross-Net nhanh",
-      "description": "Ước tính nhanh lương thực nhận, mức đóng bảo hiểm xã hội và thuế TNCN phải nộp hàng tháng.",
-      "ctaLabel": "Dùng công cụ",
-      "ctaHref": "/contact"
-    },
-    {
-      "id": "tool-03",
-      "title": "Đánh giá mức độ sẵn sàng mở rộng nhân sự",
-      "description": "Kiểm tra xem bộ máy nhân sự hiện tại đã sẵn sàng cho giai đoạn tăng trưởng tiếp theo chưa.",
-      "ctaLabel": "Kiểm tra ngay",
+      "id": "tool-7habits",
+      "title": "Công Cụ Đánh Giá Điểm Mạnh Theo 7 Thói Quen",
+      "description": "14 câu hỏi ngắn giúp bạn nhận diện thói quen nào trong 7 Thói Quen bạn đang làm tốt và thói quen nào cần rèn luyện thêm.",
+      "ctaLabel": "Đánh giá ngay",
       "ctaHref": "/contact",
+      "image": "/uploads/tax-unsplash-176a0d6a.jpg",
       "assessment": {
         "questions": [
-          { "id": "q1", "text": "Doanh nghiệp đã có sơ đồ tổ chức rõ ràng cho quy mô nhân sự hiện tại?" },
-          { "id": "q2", "text": "Quy trình tuyển dụng đã được chuẩn hoá (mô tả công việc, quy trình phỏng vấn, onboarding)?" },
-          { "id": "q3", "text": "Doanh nghiệp có ngân sách nhân sự được hoạch định cho 6-12 tháng tới?" },
-          { "id": "q4", "text": "Cấp quản lý cấp trung đã sẵn sàng để quản lý thêm nhân sự mới?" },
-          { "id": "q5", "text": "Hệ thống lương, thưởng, phúc lợi đã đủ cạnh tranh để thu hút nhân sự mới?" },
-          { "id": "q6", "text": "Quy trình đánh giá hiệu suất đã được áp dụng nhất quán cho toàn bộ nhân sự?" },
-          { "id": "q7", "text": "Doanh nghiệp có hệ thống/công cụ quản lý nhân sự (HRM) đáp ứng được quy mô mở rộng?" },
-          { "id": "q8", "text": "Văn hoá doanh nghiệp đã được định hình rõ để onboard nhân sự mới hiệu quả?" },
-          { "id": "q9", "text": "Doanh nghiệp có kế hoạch đào tạo, phát triển nhân sự khi mở rộng quy mô?" },
-          { "id": "q10", "text": "Lãnh đạo đã xác định rõ mục tiêu kinh doanh gắn với kế hoạch mở rộng nhân sự?" }
+          { "id": "q1", "text": "Bạn tập trung vào những điều mình có thể kiểm soát thay vì than phiền về những điều nằm ngoài tầm ảnh hưởng?" },
+          { "id": "q2", "text": "Khi gặp vấn đề, bạn chủ động tìm giải pháp thay vì chờ người khác hành động trước?" },
+          { "id": "q3", "text": "Bạn thường hình dung rõ kết quả mong muốn trước khi bắt tay vào một công việc quan trọng?" },
+          { "id": "q4", "text": "Các quyết định hàng ngày của bạn có gắn với mục tiêu dài hạn mà bạn đã xác định rõ ràng?" },
+          { "id": "q5", "text": "Bạn dành đủ thời gian cho những việc quan trọng nhưng không gấp, thay vì chỉ chạy theo việc gấp?" },
+          { "id": "q6", "text": "Bạn có thói quen lập kế hoạch tuần/ngày dựa trên mức độ ưu tiên thay vì cảm tính?" },
+          { "id": "q7", "text": "Khi đàm phán hoặc bất đồng, bạn tìm giải pháp có lợi cho cả hai bên thay vì chỉ bảo vệ lợi ích của mình?" },
+          { "id": "q8", "text": "Bạn tin rằng thành công của người khác không đồng nghĩa với thất bại của bản thân?" },
+          { "id": "q9", "text": "Bạn lắng nghe trọn vẹn để hiểu quan điểm của người khác trước khi đưa ra ý kiến của mình?" },
+          { "id": "q10", "text": "Bạn thường đặt câu hỏi làm rõ thay vì vội kết luận khi nghe người khác trình bày?" },
+          { "id": "q11", "text": "Bạn chủ động tìm kiếm sự khác biệt trong ý kiến của đội nhóm để tạo ra giải pháp tốt hơn?" },
+          { "id": "q12", "text": "Bạn tin rằng kết quả làm việc nhóm có thể vượt trội hơn tổng năng lực từng cá nhân cộng lại?" },
+          { "id": "q13", "text": "Bạn dành thời gian đều đặn để chăm sóc sức khoẻ thể chất, tinh thần và cảm xúc của bản thân?" },
+          { "id": "q14", "text": "Bạn chủ động học hỏi, trau dồi kỹ năng mới thay vì để bản thân \"giậm chân tại chỗ\"?" }
         ],
         "resultTiers": [
-          { "minScore": 8, "maxScore": 10, "label": "Sẵn sàng mở rộng", "description": "Bộ máy nhân sự hiện tại đã có nền tảng vững để mở rộng quy mô. Hãy tiếp tục theo dõi sát các chỉ số vận hành trong quá trình tăng trưởng." },
-          { "minScore": 4, "maxScore": 7, "label": "Cần chuẩn bị thêm", "description": "Doanh nghiệp có một số nền tảng tốt nhưng còn thiếu vài mảnh ghép quan trọng trước khi mở rộng quy mô nhân sự." },
-          { "minScore": 0, "maxScore": 3, "label": "Chưa sẵn sàng", "description": "Bộ máy nhân sự hiện tại chưa đủ nền tảng để mở rộng quy mô. Nên ưu tiên củng cố tổ chức, quy trình trước khi tuyển dụng thêm." }
+          { "minScore": 11, "maxScore": 14, "label": "Nền tảng 7 Thói Quen vững chắc", "description": "Bạn đang thực hành khá đều tay cả 7 thói quen. Hãy tiếp tục duy trì và trở thành hình mẫu cho đội ngũ noi theo." },
+          { "minScore": 6, "maxScore": 10, "label": "Đã có nền tảng, cần rèn luyện thêm", "description": "Bạn đã làm tốt một số thói quen nhưng vẫn còn khoảng trống ở những thói quen khác. Nên chọn 1-2 thói quen ưu tiên để rèn luyện trước." },
+          { "minScore": 0, "maxScore": 5, "label": "Mới bắt đầu hành trình 7 Thói Quen", "description": "Phần lớn các thói quen chưa trở thành nếp thực hành thường xuyên. Nên bắt đầu từ thói quen Chủ động và Bắt đầu từ mục tiêu trước khi mở rộng sang các thói quen còn lại." }
         ]
       }
     }
@@ -75,80 +78,120 @@
   "items": [
     {
       "id": "cam-nang-01",
-      "category": "Tuân thủ lao động",
-      "title": "Checklist rà soát hợp đồng lao động",
-      "description": "20 điểm cần kiểm tra để đảm bảo hợp đồng lao động tuân thủ đúng quy định pháp luật hiện hành."
+      "category": "Phát triển lãnh đạo",
+      "title": "Cẩm nang onboarding lãnh đạo mới trong 90 ngày đầu",
+      "description": "Lộ trình từng tuần giúp lãnh đạo mới nắm bắt vai trò, xây dựng niềm tin với đội ngũ và tạo ra kết quả sớm.",
+      "image": "/uploads/3ym6i13y9lu-unsplash-b49eef3c.jpg",
+      "fileUrl": ""
     },
     {
       "id": "cam-nang-02",
-      "category": "Tuân thủ lao động",
-      "title": "Checklist chuẩn bị hồ sơ nhân sự cho đợt thanh tra lao động",
-      "description": "Danh mục hồ sơ bắt buộc cần có để sẵn sàng cho các đợt thanh tra, kiểm tra lao động định kỳ."
+      "category": "Phát triển lãnh đạo",
+      "title": "Khung năng lực lãnh đạo theo từng cấp bậc quản lý",
+      "description": "Bộ tiêu chí năng lực tham khảo cho từng cấp quản lý, từ trưởng nhóm đến lãnh đạo cấp cao.",
+      "image": "",
+      "fileUrl": ""
     },
     {
       "id": "cam-nang-03",
-      "category": "Tuân thủ lao động",
-      "title": "Bộ câu hỏi đánh giá rủi ro tuân thủ nhân sự",
-      "description": "Tự đánh giá nhanh mức độ tuân thủ nhân sự hiện tại của doanh nghiệp trong 15 phút."
+      "category": "Phát triển lãnh đạo",
+      "title": "Cẩm nang dẫn dắt đội ngũ Gen Z hiệu quả",
+      "description": "Những nguyên tắc và phương pháp giao tiếp, tạo động lực phù hợp với thế hệ nhân sự trẻ.",
+      "image": "",
+      "fileUrl": ""
     },
     {
       "id": "cam-nang-04",
-      "category": "Tuân thủ lao động",
-      "title": "Biểu mẫu tính lương, bảo hiểm xã hội và thuế TNCN",
-      "description": "Công cụ tính toán nhanh lương gross-net, mức đóng bảo hiểm xã hội và thuế thu nhập cá nhân hàng tháng."
+      "category": "Phát triển lãnh đạo",
+      "title": "Công cụ đánh giá và chuẩn bị cho các cuộc đối thoại khó",
+      "description": "Khung câu hỏi giúp lãnh đạo đánh giá mức độ sẵn sàng và chuẩn bị tâm thế trước khi bước vào một cuộc trò chuyện nhạy cảm với đội ngũ.",
+      "image": "",
+      "fileUrl": ""
     },
     {
       "id": "cam-nang-05",
-      "category": "Vận hành nhân sự",
-      "title": "Checklist onboarding nhân sự mới 30 ngày đầu",
-      "description": "Danh mục việc cần làm theo từng tuần để nhân sự mới hoà nhập nhanh và hiệu quả."
+      "category": "Phát triển lãnh đạo",
+      "title": "Cẩm nang phòng ngừa và phục hồi sau kiệt sức trong công việc",
+      "description": "Dấu hiệu nhận biết kiệt sức nghề nghiệp (burnout) sớm và các bước phục hồi năng lượng dành cho lãnh đạo bận rộn.",
+      "image": "",
+      "fileUrl": ""
     },
     {
       "id": "cam-nang-06",
-      "category": "Vận hành nhân sự",
-      "title": "Biểu mẫu đánh giá hiệu suất nhân viên theo quý",
-      "description": "Mẫu đánh giá hiệu suất chuẩn hoá, dễ áp dụng cho mọi cấp bậc nhân sự."
+      "category": "Xây dựng văn hoá tin cậy",
+      "title": "Cẩm nang chiến thuật xây dựng niềm tin trong đội ngũ",
+      "description": "Các hành vi lãnh đạo cụ thể giúp xây dựng và duy trì niềm tin bền vững với đội ngũ.",
+      "image": "/uploads/annie-spratt-qckxruozjrg-unsplash-e15fd1fb.jpg",
+      "fileUrl": ""
     },
     {
       "id": "cam-nang-07",
-      "category": "Vận hành nhân sự",
-      "title": "Quy trình bàn giao công việc khi nhân sự nghỉ việc",
-      "description": "Các bước bàn giao công việc và hồ sơ cần thực hiện khi nhân sự thôi việc."
+      "category": "Xây dựng văn hoá tin cậy",
+      "title": "Cẩm nang con người & AI: xây dựng lực lượng lao động sẵn sàng cho tương lai",
+      "description": "Hướng dẫn giúp tổ chức chuẩn bị con người và văn hoá làm việc sẵn sàng thích ứng khi AI ngày càng phổ biến.",
+      "image": "",
+      "fileUrl": ""
     },
     {
       "id": "cam-nang-08",
-      "category": "Vận hành nhân sự",
-      "title": "Mẫu quy chế lương thưởng nội bộ",
-      "description": "Khung quy chế lương thưởng mẫu để doanh nghiệp điều chỉnh theo thực tế vận hành."
+      "category": "Xây dựng văn hoá tin cậy",
+      "title": "Cẩm nang giữ chân nhân tài và giảm tỷ lệ nghỉ việc",
+      "description": "Những yếu tố then chốt giúp doanh nghiệp giữ chân nhân sự giỏi và giảm tỷ lệ nghỉ việc trong giai đoạn cạnh tranh nhân lực.",
+      "image": "",
+      "fileUrl": ""
     },
     {
       "id": "cam-nang-09",
-      "category": "Chiến lược & tổ chức",
-      "title": "Mẫu sơ đồ tổ chức theo giai đoạn tăng trưởng",
-      "description": "Các mẫu sơ đồ tổ chức tham khảo cho từng quy mô doanh nghiệp từ 20 đến 200 nhân sự."
+      "category": "Xây dựng văn hoá tin cậy",
+      "title": "Cẩm nang nhận diện và vượt qua định kiến vô thức",
+      "description": "Hướng dẫn nhận diện định kiến vô thức và xây dựng môi trường làm việc công bằng, bao trùm cho mọi nhân sự.",
+      "image": "",
+      "fileUrl": ""
     },
     {
       "id": "cam-nang-10",
-      "category": "Chiến lược & tổ chức",
-      "title": "Checklist chuẩn bị hồ sơ nhân sự trước khi gọi vốn",
-      "description": "Danh mục hồ sơ nhân sự nhà đầu tư thường yêu cầu trong quá trình thẩm định."
+      "category": "Tạo kết quả đột phá",
+      "title": "Công cụ ưu tiên hoá khách hàng tiềm năng trong bán hàng",
+      "description": "Phương pháp giúp đội ngũ bán hàng tập trung nguồn lực vào những khách hàng tiềm năng mang lại giá trị lớn nhất.",
+      "image": "/uploads/v89pqztek-k-unsplash-e24d82cb.jpg",
+      "fileUrl": ""
     },
     {
       "id": "cam-nang-11",
-      "category": "Chiến lược & tổ chức",
-      "title": "Bộ khung năng lực cho vị trí quản lý cấp trung",
-      "description": "Khung năng lực mẫu giúp doanh nghiệp chuẩn hoá tiêu chí tuyển và đánh giá quản lý cấp trung."
+      "category": "Tạo kết quả đột phá",
+      "title": "Hướng dẫn áp dụng 4 Kỷ Luật Thực Thi",
+      "description": "Khung thực thi 4 kỷ luật giúp đội ngũ biến mục tiêu chiến lược thành kết quả đo lường được.",
+      "image": "",
+      "fileUrl": ""
     },
     {
       "id": "cam-nang-12",
-      "category": "Chiến lược & tổ chức",
-      "title": "Mẫu kế hoạch nhân sự theo quý",
-      "description": "Công cụ lập kế hoạch nhân sự theo từng quý, gắn với mục tiêu tăng trưởng kinh doanh."
+      "category": "Tạo kết quả đột phá",
+      "title": "Cẩm nang gắn kết đội nhóm làm việc từ xa",
+      "description": "Phương pháp duy trì sự gắn kết và hiệu suất cho đội nhóm làm việc phân tán, từ xa.",
+      "image": "/uploads/imagine-buddy-vslbaidhwau-unsplash-341d5944.jpg",
+      "fileUrl": ""
+    },
+    {
+      "id": "cam-nang-13",
+      "category": "Tạo kết quả đột phá",
+      "title": "Cẩm nang xây dựng cam kết và theo đuổi mục tiêu",
+      "description": "Cách thiết lập mục tiêu rõ ràng và duy trì cam kết thực sự từ từng thành viên trong suốt quá trình theo đuổi mục tiêu.",
+      "image": "",
+      "fileUrl": ""
+    },
+    {
+      "id": "cam-nang-14",
+      "category": "Tạo kết quả đột phá",
+      "title": "Lưới quyết định trong bán hàng tư vấn",
+      "description": "Công cụ giúp đội ngũ bán hàng xác định đúng mức độ ưu tiên và hướng tiếp cận phù hợp cho từng cơ hội bán hàng tư vấn.",
+      "image": "",
+      "fileUrl": ""
     }
   ],
   "cta": {
     "heading": "Cần bản đầy đủ của cẩm nang và công cụ?",
-    "body": "Để lại thông tin liên hệ, GCW sẽ gửi file cẩm nang phù hợp với nhu cầu vận hành nhân sự của doanh nghiệp bạn.",
+    "body": "Để lại thông tin liên hệ, GCW sẽ gửi file cẩm nang phù hợp với hành trình phát triển lãnh đạo của tổ chức bạn.",
     "label": "Đăng ký nhận cẩm nang",
     "href": "/contact"
   }

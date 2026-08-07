@@ -1,8 +1,8 @@
 {
   "title": "Tài nguyên",
-  "metaDescription": "Tài nguyên vận hành nhân sự của GCW: bài viết cập nhật hàng tuần tại Tin tức, cùng cẩm nang, video và ấn phẩm đang được xây dựng cho doanh nghiệp SME.",
-  "heading": "Tài nguyên vận hành nhân sự",
-  "intro": "Ngoài chuyên mục Tin tức đang cập nhật đều đặn, GCW đang xây dựng thêm các định dạng tài nguyên khác để hỗ trợ doanh nghiệp SME quản trị nhân sự bài bản hơn.",
+  "metaDescription": "Kho tài nguyên phát triển lãnh đạo của GCW: sách, cẩm nang, podcast, video và hội thảo giúp nhà quản lý xây dựng năng lực dẫn dắt tổ chức.",
+  "heading": "Tài nguyên phát triển lãnh đạo",
+  "intro": "Bên cạnh chuyên mục Tin tức & Kiến thức, GCW xây dựng kho tài nguyên đa dạng giúp lãnh đạo và đội ngũ quản lý phát triển năng lực dẫn dắt, xây dựng văn hoá tin cậy và tạo ra kết quả đột phá cho tổ chức.",
   "live": {
     "icon": "Newspaper",
     "title": "Tin tức & Kiến thức",
@@ -15,7 +15,7 @@
       "id": "books",
       "icon": "BookOpen",
       "title": "Sách & Ấn phẩm",
-      "description": "Ấn phẩm chuyên sâu về vận hành nhân sự, đúc kết từ kinh nghiệm thực tế cùng doanh nghiệp SME.",
+      "description": "Ấn phẩm chuyên sâu về lãnh đạo, văn hoá tin cậy và thực thi chiến lược, đúc kết từ kinh nghiệm đồng hành cùng các tổ chức của GCW.",
       "href": "/tai-nguyen/sach",
       "image": "/uploads/xy55bl5mzam-unsplash-e5d6e0fb.jpg"
     },
@@ -23,7 +23,7 @@
       "id": "guides",
       "icon": "ClipboardList",
       "title": "Cẩm nang & Công cụ",
-      "description": "Biểu mẫu và checklist thực hành giúp doanh nghiệp tự rà soát tuân thủ nhân sự.",
+      "description": "Cẩm nang và công cụ thực hành giúp nhà quản lý áp dụng ngay các nguyên tắc lãnh đạo vào công việc hàng ngày.",
       "href": "/tai-nguyen/cam-nang",
       "image": ""
     },
@@ -31,34 +31,34 @@
       "id": "podcasts",
       "icon": "Mic2",
       "title": "Podcast",
-      "description": "Chuỗi podcast trò chuyện cùng chuyên gia GCW về các bài toán nhân sự thường gặp.",
+      "description": "Chuỗi podcast trò chuyện cùng chuyên gia GCW về hành trình phát triển năng lực lãnh đạo và xây dựng tổ chức hiệu suất cao.",
       "href": "/tai-nguyen/podcast"
     },
     {
       "id": "videos",
       "icon": "Video",
       "title": "Video",
-      "description": "Video hướng dẫn thực hành các nghiệp vụ nhân sự phổ biến cho đội ngũ HR.",
+      "description": "Video ngắn gọn, trực quan giới thiệu các phương pháp lãnh đạo và kỹ năng quản lý đội nhóm hiệu quả.",
       "href": "/tai-nguyen/video"
     },
     {
       "id": "planners",
       "icon": "CalendarCheck",
       "title": "Kế hoạch mẫu",
-      "description": "Mẫu kế hoạch vận hành nhân sự theo từng giai đoạn phát triển doanh nghiệp.",
+      "description": "Mẫu kế hoạch hành động giúp nhà quản lý triển khai các sáng kiến phát triển lãnh đạo theo từng giai đoạn.",
       "href": "/tai-nguyen/ke-hoach-mau"
     },
     {
       "id": "on-demand-webcasts",
       "icon": "PlayCircle",
       "title": "Hội thảo lưu trữ",
-      "description": "Bản ghi các buổi hội thảo trực tuyến của GCW, xem lại bất cứ lúc nào.",
+      "description": "Bản ghi các buổi hội thảo trực tuyến của GCW về lãnh đạo và hiệu suất tổ chức, xem lại bất cứ lúc nào.",
       "href": "/tai-nguyen/hoi-thao-luu-tru"
     }
   ],
   "cta": {
-    "heading": "Muốn nhận tài nguyên mới đầu tiên?",
-    "body": "Để lại thông tin liên hệ, GCW sẽ gửi tài nguyên mới ngay khi phát hành.",
+    "heading": "Muốn nhận tài nguyên lãnh đạo mới nhất?",
+    "body": "Để lại thông tin liên hệ, GCW sẽ gửi tài nguyên phát triển lãnh đạo mới ngay khi phát hành.",
     "label": "Đăng ký nhận thông báo",
     "href": "/contact"
   }

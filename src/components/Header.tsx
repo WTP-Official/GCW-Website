@@ -36,7 +36,6 @@ import servicesContent from "@/app/(pages)/services/content.json";
 import packagesContent from "@/app/(pages)/packages/content.json";
 import aboutContent from "@/app/(pages)/about/content.json";
 import contactContent from "@/app/(pages)/contact/content.json";
-import homeContent from "@/app/content.json";
 import eventsContent from "@/app/(pages)/su-kien/content.json";
 import resourcesContent from "@/app/(pages)/tai-nguyen/content.json";
 
@@ -96,64 +95,54 @@ type NavItem = {
 };
 
 const NAV_ITEMS: NavItem[] = [
-  { label: "Trang chủ", href: "/" },
   {
-    label: "Về GCW",
-    href: "/about",
+    label: "Vì sao chọn GCW",
+    href: "/solutions",
     dropdown: {
       columns: [
         {
-          heading: "Vì sao chọn GCW",
           items: [
             {
-              href: "/about",
-              label: "Giới thiệu GCW",
+              href: "/solutions/phat-trien-lanh-dao",
+              label: "Phát triển lãnh đạo",
               description:
-                "Strategic HR Operator — đồng hành thực thi cùng doanh nghiệp SME.",
-              icon: Building2,
-              image: homeContent.positioning.image,
-            },
-            {
-              href: "/about#ecosystem",
-              label: "Hệ sinh thái WTP Group",
-              description:
-                "Mạng lưới các công ty thành viên đồng hành cùng doanh nghiệp SME.",
-              icon: Network,
-              image: "/images/case-tech-funding.jpg",
-            },
-            {
-              href: "/about#differentiators",
-              label: "Điểm khác biệt của GCW",
-              description:
-                "Vì sao doanh nghiệp lựa chọn GCW làm đối tác vận hành nhân sự.",
+                "Xây dựng đội ngũ lãnh đạo hiệu quả ở mọi cấp bậc, gắn kết mọi người quanh mục tiêu chung.",
               icon: Award,
-              image: "/images/case-manufacturing.jpg",
+              image: "/images/offering-gcw-safe.jpg",
             },
             {
-              href: "/#case-studies",
-              label: "Câu chuyện khách hàng",
-              description: homeContent.caseStudies.intro,
+              href: "/solutions/xay-dung-van-hoa",
+              label: "Xây dựng văn hoá tin cậy",
+              description:
+                "Kiến tạo văn hoá tin cậy cao, nơi những ý tưởng tốt nhất được nuôi dưỡng và phát triển.",
+              icon: Network,
+              image: "/images/offering-gcw-control.jpg",
+            },
+            {
+              href: "/solutions/tao-ket-qua-dot-pha",
+              label: "Tạo kết quả đột phá",
+              description: "Đồng hành thực thi cùng đội ngũ để đạt được mục tiêu quan trọng nhất.",
               icon: Rocket,
-              image: "/images/case-fdi.jpg",
+              image: "/images/offering-gcw-scale.jpg",
             },
           ],
         },
       ],
       featured: {
         icon: Building2,
-        heading: aboutContent.cta.heading,
-        body: aboutContent.cta.body,
-        cta: { href: aboutContent.cta.href, label: aboutContent.cta.label },
+        heading: "Xem toàn bộ lý do vì sao chọn GCW",
+        body: "Số liệu, triết lý và 3 trụ cột giúp GCW đồng hành cùng tổ chức của bạn.",
+        cta: { href: "/solutions", label: "Vì sao chọn GCW" },
       },
     },
   },
   {
-    label: "Dịch vụ",
+    label: "Chương trình",
     href: "/services",
     dropdown: {
       columns: [
         {
-          heading: "Gói dịch vụ cốt lõi",
+          heading: "Chương trình cốt lõi",
           items: servicesContent.services.map((service) => ({
             href: `/services/${service.slug}`,
             label: service.name,
@@ -163,15 +152,16 @@ const NAV_ITEMS: NavItem[] = [
           })),
         },
         {
-          heading: "Gói theo quy mô",
-          items: packagesContent.tiers.map((tier) => ({
+          heading: "Gói All Access",
+          items: packagesContent.included.categories.map((category) => ({
             href: "/packages",
-            label: tier.name,
-            description: tier.audience,
+            label: category.name,
+            description: category.description,
+            image: category.image,
           })),
         },
       ],
-      viewAll: { href: "/services", label: "Xem tất cả dịch vụ" },
+      viewAll: { href: "/services", label: "Xem tất cả chương trình" },
       featured: {
         icon: MessageSquareText,
         heading: contactContent.heading,
@@ -204,7 +194,31 @@ const NAV_ITEMS: NavItem[] = [
     },
   },
   { label: "Tài nguyên", href: "/tai-nguyen" },
-  { label: "Liên hệ", href: "/contact" },
+  { label: "Giáo dục", href: "/giao-duc" },
+  {
+    label: "Liên hệ",
+    href: "/contact",
+    dropdown: {
+      columns: [
+        {
+          items: [
+            {
+              href: "/about",
+              label: "Giới thiệu GCW",
+              description: aboutContent.hero.body,
+              icon: Building2,
+            },
+            {
+              href: "/contact",
+              label: "Liên hệ GCW",
+              description: contactContent.quote,
+              icon: MessageSquareText,
+            },
+          ],
+        },
+      ],
+    },
+  },
 ];
 
 // The external content app groups articles by topic — reuse that grouping for
@@ -241,13 +255,6 @@ const RESOURCES_COLUMN: DropdownColumn = {
     icon: ICONS[item.icon],
     image: item.image,
   })),
-};
-
-const DROPDOWN_GRID_BY_COLUMNS: Record<1 | 2 | 3 | 4, string> = {
-  1: "grid-cols-1",
-  2: "grid-cols-2",
-  3: "grid-cols-3",
-  4: "grid-cols-4",
 };
 
 export function Header() {
@@ -314,7 +321,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-30 border-b border-black/5 bg-white/95 backdrop-blur">
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-4">
+      <div className="mx-auto flex h-28 max-w-7xl items-center justify-between gap-4 px-6">
         <Link
           href="/"
           className="flex shrink-0 items-center"
@@ -326,7 +333,7 @@ export function Header() {
             width={375}
             height={116}
             priority
-            className="h-11 w-auto"
+            className="h-12 w-auto"
           />
         </Link>
 
@@ -349,131 +356,96 @@ export function Header() {
                 )}
               </Link>
 
-              {item.dropdown && (
-                <div className="invisible fixed inset-x-0 top-20 z-40 max-h-[calc(100vh-5rem)] -translate-y-1 overflow-y-auto border-t border-black/5 bg-white opacity-0 shadow-xl transition-all duration-200 ease-out group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
-                  <div className="mx-auto flex max-w-7xl gap-12 px-4 py-6">
-                    <div
-                      className={`grid flex-1 gap-x-10 gap-y-6 ${
-                        DROPDOWN_GRID_BY_COLUMNS[
-                          Math.min(item.dropdown.columns.length, 4) as
-                            | 1
-                            | 2
-                            | 3
-                            | 4
-                        ]
-                      }`}
-                    >
-                      {item.dropdown.columns.map((column, columnIndex) => (
-                        <div key={column.heading ?? columnIndex}>
-                          {column.heading && (
-                            <p className="mb-2 border-b border-black/5 pb-2 text-xs font-semibold uppercase tracking-wider text-muted">
-                              {column.heading}
-                            </p>
-                          )}
-                          <ul
-                            className={
-                              column.items.length > 4
-                                ? "grid grid-cols-2 gap-x-6 gap-y-0.5"
-                                : "space-y-0.5"
-                            }
-                          >
-                            {column.items.map((sub) => {
-                              const Icon = sub.icon;
-                              return (
-                                <li key={sub.label}>
-                                  <Link
-                                    href={sub.href}
-                                    className="flex items-start gap-3 rounded-md p-1.5 transition-colors hover:bg-surface"
-                                  >
-                                    {sub.image ? (
-                                      <span className="relative h-10 w-10 shrink-0 overflow-hidden rounded-md">
-                                        <Image
-                                          src={sub.image}
-                                          alt=""
-                                          fill
-                                          sizes="40px"
-                                          className="photo-grade object-cover"
-                                        />
-                                      </span>
-                                    ) : (
-                                      Icon && (
-                                        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-brand-50 text-brand-600">
-                                          <Icon
-                                            className="h-4 w-4"
-                                            aria-hidden="true"
-                                          />
-                                        </span>
-                                      )
-                                    )}
-                                    <span>
-                                      <span className="block text-sm font-medium text-ink">
-                                        {sub.label}
-                                      </span>
-                                      {sub.description && (
-                                        <span className="mt-0.5 line-clamp-1 block text-xs leading-relaxed text-muted">
-                                          {sub.description}
-                                        </span>
-                                      )}
+              {item.dropdown && (() => {
+                const flatItems = item.dropdown.columns.flatMap((c) => c.items);
+                const twoCol = flatItems.length > 3;
+                return (
+                  <div
+                    className={`invisible absolute left-0 top-full z-40 -translate-y-1 overflow-hidden rounded-md border border-black/10 bg-white opacity-0 shadow-xl transition-all duration-200 ease-out group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100 ${
+                      twoCol ? "w-[42rem]" : "w-[26rem]"
+                    }`}
+                  >
+                    <div className="p-6">
+                      <ul
+                        className={`gap-x-8 gap-y-6 ${twoCol ? "grid grid-cols-2" : "space-y-6"}`}
+                      >
+                        {flatItems.map((sub) => {
+                          const Icon = sub.icon;
+                          return (
+                            <li key={sub.label}>
+                              <Link href={sub.href} className="group/item flex gap-4">
+                                {sub.image ? (
+                                  <span className="relative h-20 w-24 shrink-0 overflow-hidden rounded-md">
+                                    <Image
+                                      src={sub.image}
+                                      alt=""
+                                      fill
+                                      sizes="96px"
+                                      className="photo-grade object-cover"
+                                    />
+                                  </span>
+                                ) : (
+                                  Icon && (
+                                    <span className="flex h-20 w-24 shrink-0 items-center justify-center rounded-md bg-brand-50 text-brand-600">
+                                      <Icon className="h-6 w-6" aria-hidden="true" />
                                     </span>
-                                  </Link>
-                                </li>
-                              );
-                            })}
-                          </ul>
-                        </div>
-                      ))}
+                                  )
+                                )}
+                                <span>
+                                  <span className="flex items-center gap-1 text-sm font-semibold text-brand-600 group-hover/item:text-brand-700">
+                                    {sub.label}
+                                    <ChevronDown
+                                      className="h-3.5 w-3.5 -rotate-90"
+                                      aria-hidden="true"
+                                    />
+                                  </span>
+                                  {sub.description && (
+                                    <span className="mt-1.5 line-clamp-2 block text-xs leading-relaxed text-ink-soft">
+                                      {sub.description}
+                                    </span>
+                                  )}
+                                </span>
+                              </Link>
+                            </li>
+                          );
+                        })}
+                      </ul>
 
                       {item.dropdown.viewAll && (
-                        <div
-                          className={
-                            DROPDOWN_GRID_BY_COLUMNS[
-                              Math.min(item.dropdown.columns.length, 4) as
-                                | 1
-                                | 2
-                                | 3
-                                | 4
-                            ] === "grid-cols-1"
-                              ? ""
-                              : "col-span-full"
-                          }
+                        <Link
+                          href={item.dropdown.viewAll.href}
+                          className="mt-6 inline-flex items-center gap-1 text-sm font-medium text-brand-600 hover:text-brand-700"
                         >
-                          <Link
-                            href={item.dropdown.viewAll.href}
-                            className="mt-1 inline-flex items-center gap-1 border-t border-black/5 pt-3 text-sm font-medium text-brand-600 hover:text-brand-700"
-                          >
-                            {item.dropdown.viewAll.label}
-                            <span aria-hidden="true">→</span>
-                          </Link>
-                        </div>
+                          {item.dropdown.viewAll.label}
+                          <span aria-hidden="true">→</span>
+                        </Link>
                       )}
                     </div>
 
                     {item.dropdown.featured && (
-                      <div className="hidden w-72 shrink-0 border-l border-black/5 pl-10 lg:block">
-                        <div className="flex h-10 w-10 items-center justify-center rounded-md bg-bg-dark text-white">
+                      <Link
+                        href={item.dropdown.featured.cta.href}
+                        className="flex items-center gap-4 border-t border-black/10 bg-surface-2 p-6 transition-colors hover:bg-surface-3"
+                      >
+                        <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-md bg-bg-dark text-white">
                           <item.dropdown.featured.icon
                             className="h-5 w-5"
                             aria-hidden="true"
                           />
-                        </div>
-                        <h3 className="mt-4 text-base leading-snug text-ink">
-                          {item.dropdown.featured.heading}
-                        </h3>
-                        <p className="mt-2 text-sm leading-relaxed text-ink-soft">
-                          {item.dropdown.featured.body}
-                        </p>
-                        <Link
-                          href={item.dropdown.featured.cta.href}
-                          className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-brand-600 hover:text-brand-700"
-                        >
-                          {item.dropdown.featured.cta.label}
-                          <span aria-hidden="true">→</span>
-                        </Link>
-                      </div>
+                        </span>
+                        <span>
+                          <span className="block text-sm font-semibold text-ink">
+                            {item.dropdown.featured.heading}
+                          </span>
+                          <span className="mt-1 line-clamp-1 block text-xs text-ink-soft">
+                            {item.dropdown.featured.body}
+                          </span>
+                        </span>
+                      </Link>
                     )}
                   </div>
-                </div>
-              )}
+                );
+              })()}
             </div>
           ))}
         </nav>

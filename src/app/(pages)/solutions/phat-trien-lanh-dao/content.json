@@ -1,0 +1,31 @@
+{
+  "title": "Phát triển lãnh đạo",
+  "metaDescription": "GCW giúp tổ chức phát triển lãnh đạo ở mọi cấp bậc — xây dựng năng lực cá nhân, tư duy nhân bội và khả năng dẫn dắt đội ngũ hiệu quả.",
+  "eyebrow": "Vì sao chọn GCW",
+  "heading": "Phát triển lãnh đạo",
+  "intro": "Chúng tôi xây dựng đội ngũ lãnh đạo hiệu quả ở mọi cấp bậc, gắn kết mọi người quanh mục tiêu và ưu tiên chung — từ quản lý mới đến lãnh đạo cấp cao.",
+  "stat": {
+    "value": "6x",
+    "label": "Đội ngũ được lãnh đạo tốt có khả năng đạt kết quả cao gấp 6 lần so với đội ngũ thiếu lãnh đạo hiệu quả."
+  },
+  "programs": [
+    {
+      "name": "7 THÓI QUEN HIỆU QUẢ",
+      "description": "Nền tảng hiệu quả cá nhân giúp lãnh đạo làm chủ tư duy, ưu tiên đúng việc quan trọng và xây dựng thói quen bền vững.",
+      "href": "/services/7-thoi-quen-hieu-qua",
+      "image": "/images/offering-gcw-safe.jpg"
+    },
+    {
+      "name": "NHÂN BỘI TIỀM NĂNG",
+      "description": "Phát triển tư duy lãnh đạo khai phóng, giúp nhà quản lý nhân bội trí tuệ và năng lực của đội ngũ.",
+      "href": "/services/nhan-boi-tiem-nang",
+      "image": "/images/offering-tuyen-dung.jpg"
+    }
+  ],
+  "cta": {
+    "heading": "Sẵn sàng phát triển đội ngũ lãnh đạo của bạn?",
+    "body": "Đặt lịch tư vấn để GCW đánh giá năng lực lãnh đạo hiện tại và đề xuất lộ trình phù hợp.",
+    "label": "Đặt lịch tư vấn",
+    "href": "/contact"
+  }
+}

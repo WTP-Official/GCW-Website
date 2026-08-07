@@ -1,0 +1,31 @@
+{
+  "title": "Tạo kết quả đột phá",
+  "metaDescription": "GCW đồng hành thực thi cùng đội ngũ để đạt được mục tiêu quan trọng nhất — từ kỷ luật thực thi chiến lược đến bán hàng khác biệt.",
+  "eyebrow": "Vì sao chọn GCW",
+  "heading": "Tạo kết quả đột phá",
+  "intro": "Chúng tôi đồng hành thực thi cùng đội ngũ để đạt được những mục tiêu quan trọng nhất, không chỉ dừng ở khuyến nghị trên giấy.",
+  "stat": {
+    "value": "133%",
+    "label": "Đội ngũ liên kết chặt chẽ với chiến lược có khả năng vượt trội hơn 133% so với đội ngũ thiếu liên kết."
+  },
+  "programs": [
+    {
+      "name": "4 KỶ LUẬT THỰC THI",
+      "description": "Hệ thống thực thi chiến lược giúp lãnh đạo tập trung, gắn kết và hoàn thành các mục tiêu quan trọng nhất.",
+      "href": "/services/4-ky-luat-thuc-thi",
+      "image": "/images/offering-gcw-scale.jpg"
+    },
+    {
+      "name": "BÁN HÀNG KHÁC BIỆT",
+      "description": "Phương pháp bán hàng tư vấn giúp đội ngũ kinh doanh xây dựng niềm tin và tạo kết quả bán hàng bền vững.",
+      "href": "/services/ban-hang-khac-biet",
+      "image": "/images/offering-tu-van-hr.jpg"
+    }
+  ],
+  "cta": {
+    "heading": "Sẵn sàng tạo kết quả đột phá cho tổ chức?",
+    "body": "Đặt lịch tư vấn để GCW đánh giá hiện trạng thực thi và đề xuất lộ trình phù hợp.",
+    "label": "Đặt lịch tư vấn",
+    "href": "/contact"
+  }
+}

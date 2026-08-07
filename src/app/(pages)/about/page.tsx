@@ -40,16 +40,14 @@ export default function AboutPage() {
 
   return (
     <main>
-      <section className="bg-bg-dark text-white">
+      <section className="border-b border-black/10 bg-white">
         <Reveal>
-          <div className="mx-auto max-w-3xl px-4 py-32 text-center sm:py-40">
-            <p className="text-sm font-medium uppercase tracking-widest text-white/50">
-              {hero.eyebrow}
-            </p>
-            <h1 className="mt-6 font-serif-hero text-3xl leading-snug sm:text-4xl">
+          <div className="mx-auto max-w-6xl px-4 py-16">
+            <p className="text-sm font-semibold text-ink">{hero.eyebrow}</p>
+            <h1 className="mt-2 max-w-2xl font-serif-hero text-5xl leading-[1.1] text-ink sm:text-6xl">
               {hero.heading}
             </h1>
-            <p className="mx-auto mt-6 max-w-xl text-lg text-white/70">
+            <p className="mt-6 max-w-xl text-lg text-ink-soft">
               {hero.body}
             </p>
           </div>
@@ -62,15 +60,15 @@ export default function AboutPage() {
             const Icon = ICONS[item.icon];
             return (
               <Reveal key={item.title} delay={index * 100}>
-                <div className="rounded-md border border-black/5 bg-surface p-6 transition-shadow hover:shadow-md">
-                  <span className="text-sm font-medium text-brand-600">
+                <div className="rounded-md bg-bg-dark p-6 text-white transition-shadow hover:shadow-md">
+                  <span className="text-sm font-medium text-brand-300">
                     {String(index + 1).padStart(2, "0")}
                   </span>
-                  <Icon className="mt-3 h-6 w-6 text-ink-soft" aria-hidden="true" />
-                  <h3 className="mt-4 text-lg text-ink">
+                  <Icon className="mt-3 h-6 w-6 text-white/70" aria-hidden="true" />
+                  <h3 className="mt-4 font-serif-hero text-lg leading-snug">
                     {item.title}
                   </h3>
-                  <p className="mt-2 text-sm text-ink-soft">
+                  <p className="mt-2 text-sm text-white/70">
                     {item.description}
                   </p>
                 </div>
@@ -104,7 +102,7 @@ export default function AboutPage() {
             <div className="mx-auto max-w-2xl text-center">
               <h2 className="font-serif-hero text-2xl leading-snug text-ink sm:text-3xl">
                 {ecosystem.heading.split(", ")[0]},{" "}
-                <em className="italic text-brand-600">
+                <em className="not-italic text-brand-600">
                   {ecosystem.heading.split(", ")[1]}
                 </em>
               </h2>
@@ -116,12 +114,12 @@ export default function AboutPage() {
               const Icon = ICONS[member.icon];
               return (
                 <Reveal key={member.name} delay={(index % 3) * 100}>
-                  <div className="rounded-md bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
-                    <Icon className="h-6 w-6 text-ink-soft" aria-hidden="true" />
-                    <h3 className="mt-4 text-base text-ink">
+                  <div className="rounded-md bg-bg-dark p-6 text-white transition-shadow hover:shadow-md">
+                    <Icon className="h-6 w-6 text-brand-300" aria-hidden="true" />
+                    <h3 className="mt-4 text-base text-white">
                       {member.name}
                     </h3>
-                    <p className="mt-2 text-sm text-ink-soft">
+                    <p className="mt-2 text-sm text-white/70">
                       {member.description}
                     </p>
                   </div>

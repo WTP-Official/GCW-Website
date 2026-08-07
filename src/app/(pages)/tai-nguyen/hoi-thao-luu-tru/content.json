@@ -1,38 +1,118 @@
 {
   "title": "Hội thảo lưu trữ",
-  "metaDescription": "Bản ghi các buổi hội thảo trực tuyến của GCW về quản trị nhân sự, tuân thủ lao động và vận hành nhân sự cho doanh nghiệp SME, xem lại bất cứ lúc nào.",
+  "metaDescription": "Bản ghi các buổi hội thảo trực tuyến của GCW về phát triển lãnh đạo, xây dựng văn hoá tin cậy và tạo kết quả đột phá, xem lại bất cứ lúc nào.",
   "heading": "Hội thảo lưu trữ",
-  "intro": "Bản ghi các buổi hội thảo trực tuyến của GCW, xem lại bất cứ lúc nào để không bỏ lỡ kiến thức vận hành nhân sự thực tiễn.",
+  "intro": "Bản ghi các buổi hội thảo trực tuyến của GCW, xem lại bất cứ lúc nào để không bỏ lỡ những góc nhìn thực chiến về lãnh đạo và phát triển tổ chức.",
   "categoriesHeading": "Hội thảo theo chủ đề",
   "items": [
     {
       "id": "luu-tru-01",
-      "category": "Tuân thủ lao động",
-      "title": "Tuân thủ lao động cho doanh nghiệp FDI mới gia nhập",
-      "description": "Tổng hợp các quy định lao động và thuế cần lưu ý khi mới vận hành tại Việt Nam.",
+      "category": "Phát triển lãnh đạo",
+      "title": "7 Thói Quen Của Người Hiệu Quả",
+      "description": "Giới thiệu tổng quan khung 7 Thói Quen và cách ứng dụng vào công việc lãnh đạo hàng ngày để đạt hiệu quả bền vững.",
       "image": "/uploads/tax-unsplash-176a0d6a.jpg",
-      "recordingUrl": "https://www.youtube.com/watch?v=YE7VzlLtp-4"
+      "recordingUrl": ""
+    },
+    {
+      "id": "luu-tru-02",
+      "category": "Phát triển lãnh đạo",
+      "title": "Thuyết Trình Tạo Tác Động",
+      "description": "Hướng dẫn kỹ thuật thuyết trình giúp thông điệp thực sự thúc đẩy hành động, không chỉ để lại ấn tượng nhất thời.",
+      "image": "",
+      "recordingUrl": ""
+    },
+    {
+      "id": "luu-tru-03",
+      "category": "Phát triển lãnh đạo",
+      "title": "Đối Thoại Trong Tình Huống Khó",
+      "description": "Phương pháp giúp lãnh đạo xử lý những cuộc đối thoại khó một cách xây dựng, duy trì mối quan hệ và kết quả công việc.",
+      "image": "",
+      "recordingUrl": ""
     },
     {
       "id": "luu-tru-04",
-      "category": "Vận hành nhân sự",
-      "title": "Quản trị nhân sự trong giai đoạn tăng trưởng nhanh",
-      "description": "Chia sẻ cách xây dựng bộ máy nhân sự bắt kịp tốc độ tăng trưởng doanh nghiệp.",
-      "image": "/uploads/imagine-buddy-vslbaidhwau-unsplash-341d5944.jpg",
-      "recordingUrl": "https://www.youtube.com/watch?v=YE7VzlLtp-4"
+      "category": "Phát triển lãnh đạo",
+      "title": "Xây Dựng Năng Lực Con Người Trong Thời Đại AI",
+      "description": "Góc nhìn về việc phát triển năng lực con người song hành cùng sự trỗi dậy của công nghệ AI trong tổ chức.",
+      "image": "",
+      "recordingUrl": ""
+    },
+    {
+      "id": "luu-tru-05",
+      "category": "Phát triển lãnh đạo",
+      "title": "Coaching Tạo Chuyển Hoá Thật Sự",
+      "description": "Phương pháp coaching giúp lãnh đạo tạo ra sự thay đổi bền vững thay vì chỉ nhắc nhở tức thời.",
+      "image": "",
+      "recordingUrl": ""
+    },
+    {
+      "id": "luu-tru-06",
+      "category": "Xây dựng văn hoá tin cậy",
+      "title": "Niềm Tin & Khai Phóng",
+      "description": "Khám phá mối liên hệ giữa niềm tin và hiệu suất, cùng cách lãnh đạo khai phóng tối đa năng lực đội ngũ.",
+      "image": "/uploads/annie-spratt-qckxruozjrg-unsplash-e15fd1fb.jpg",
+      "recordingUrl": ""
+    },
+    {
+      "id": "luu-tru-07",
+      "category": "Xây dựng văn hoá tin cậy",
+      "title": "Hiểu Định Kiến Để Khai Phóng Tiềm Năng",
+      "description": "Cách nhận diện và vượt qua định kiến vô thức để khai phóng tiềm năng của từng cá nhân trong tổ chức.",
+      "image": "",
+      "recordingUrl": ""
     },
     {
       "id": "luu-tru-08",
-      "category": "Chiến lược & tổ chức",
-      "title": "Thiết kế cơ cấu tổ chức cho giai đoạn mở rộng",
-      "description": "Hội thảo chia sẻ cách xây dựng sơ đồ tổ chức phù hợp với tốc độ tăng trưởng.",
-      "image": "/uploads/annie-spratt-qckxruozjrg-unsplash-e15fd1fb.jpg",
-      "recordingUrl": "https://www.youtube.com/watch?v=YE7VzlLtp-4"
+      "category": "Xây dựng văn hoá tin cậy",
+      "title": "Dẫn Dắt Thay Đổi Tại Nơi Làm Việc",
+      "description": "Chia sẻ cách lãnh đạo dẫn dắt đội ngũ thích ứng với thay đổi liên tục tại nơi làm việc.",
+      "image": "",
+      "recordingUrl": ""
+    },
+    {
+      "id": "luu-tru-09",
+      "category": "Xây dựng văn hoá tin cậy",
+      "title": "Cách Xây Dựng Kết Nối Và Hợp Tác",
+      "description": "Hội thảo về những thực hành cụ thể giúp xây dựng kết nối thật sự và tinh thần hợp tác giữa các thành viên trong đội ngũ.",
+      "image": "",
+      "recordingUrl": ""
+    },
+    {
+      "id": "luu-tru-10",
+      "category": "Tạo kết quả đột phá",
+      "title": "Thu Hẹp Khoảng Cách Năng Lực Lãnh Đạo",
+      "description": "Chỉ ra khoảng cách phổ biến giữa năng lực lãnh đạo hiện tại và yêu cầu của tổ chức trong giai đoạn tới.",
+      "image": "/uploads/v89pqztek-k-unsplash-e24d82cb.jpg",
+      "recordingUrl": ""
+    },
+    {
+      "id": "luu-tru-11",
+      "category": "Tạo kết quả đột phá",
+      "title": "Thực Thi Với Mục Đích Rõ Ràng",
+      "description": "Cách gắn kết mục tiêu công việc hàng ngày với mục đích lớn hơn để nâng cao hiệu suất đội ngũ.",
+      "image": "",
+      "recordingUrl": ""
+    },
+    {
+      "id": "luu-tru-12",
+      "category": "Tạo kết quả đột phá",
+      "title": "Chuyển Hoá Mục Tiêu Chiến Lược Thành Kết Quả Đột Phá",
+      "description": "Khung hành động giúp tổ chức biến mục tiêu chiến lược thành kết quả đo lường được rõ ràng.",
+      "image": "",
+      "recordingUrl": ""
+    },
+    {
+      "id": "luu-tru-13",
+      "category": "Tạo kết quả đột phá",
+      "title": "Nâng Tầm Và Duy Trì Điểm Trải Nghiệm Khách Hàng",
+      "description": "Về vai trò của lãnh đạo trong việc xây dựng văn hoá lấy khách hàng làm trung tâm và duy trì điểm trải nghiệm khi tổ chức mở rộng.",
+      "image": "",
+      "recordingUrl": ""
     }
   ],
   "cta": {
     "heading": "Muốn xem lại các buổi hội thảo khác?",
-    "body": "Để lại thông tin liên hệ, GCW sẽ gửi đường dẫn xem lại các buổi hội thảo trực tuyến đã tổ chức.",
+    "body": "Để lại thông tin liên hệ, GCW sẽ gửi đường dẫn xem lại các buổi hội thảo trực tuyến về phát triển lãnh đạo đã tổ chức.",
     "label": "Đăng ký xem hội thảo",
     "href": "/contact"
   }

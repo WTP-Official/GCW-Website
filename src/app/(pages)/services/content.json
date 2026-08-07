@@ -1,49 +1,55 @@
 {
-  "title": "Dịch vụ",
-  "metaDescription": "Sáu gói dịch vụ nhân sự của GCW: GCW SAFE, CONTROL, SCALE, Tuyển dụng, Thuế cá nhân và Tư vấn HR — vận hành nhân sự bài bản cho doanh nghiệp SME.",
-  "heading": "Các gói dịch vụ của GCW",
-  "intro": "GCW cung cấp sáu gói dịch vụ cốt lõi, có thể triển khai độc lập hoặc kết hợp theo giai đoạn phát triển của doanh nghiệp bạn.",
+  "title": "Các chương trình của GCW",
+  "metaDescription": "Sáu chương trình phát triển lãnh đạo của GCW: 7 Thói Quen Hiệu Quả, Tốc Độ Của Niềm Tin, 4 Kỷ Luật Thực Thi, Nhân Bội Tiềm Năng và nhiều chương trình khác.",
+  "heading": "Chương trình",
+  "intro": "Khám phá đầy đủ danh mục chương trình của GCW để tìm chương trình phù hợp với nhu cầu phát triển đang thay đổi của tổ chức bạn.",
   "services": [
     {
-      "slug": "gcw-safe",
+      "slug": "7-thoi-quen-hieu-qua",
       "icon": "ShieldCheck",
-      "name": "GCW SAFE",
-      "tagline": "Tuân thủ luật lao động, bảo hiểm xã hội và thuế thu nhập cá nhân — giảm thiểu rủi ro pháp lý cho doanh nghiệp.",
+      "pillar": "Phát triển lãnh đạo",
+      "name": "7 THÓI QUEN HIỆU QUẢ",
+      "tagline": "Nền tảng tư duy và hành vi giúp mỗi cá nhân chủ động, hiệu quả và tạo ảnh hưởng tích cực trong công việc.",
       "image": "/images/offering-gcw-safe.jpg"
     },
     {
-      "slug": "gcw-control",
-      "icon": "Gauge",
-      "name": "GCW CONTROL",
-      "tagline": "Kiểm soát chi phí nhân sự và tối ưu hiệu quả tuyển dụng theo từng giai đoạn phát triển.",
-      "image": "/images/offering-gcw-control.jpg"
-    },
-    {
-      "slug": "gcw-scale",
-      "icon": "TrendingUp",
-      "name": "GCW SCALE",
-      "tagline": "Xây dựng hệ thống nhân sự bài bản, sẵn sàng mở rộng cùng tốc độ tăng trưởng của doanh nghiệp.",
-      "image": "/images/offering-gcw-scale.jpg"
-    },
-    {
-      "slug": "tuyen-dung",
+      "slug": "nhan-boi-tiem-nang",
       "icon": "UserSearch",
-      "name": "GCW TUYỂN DỤNG",
-      "tagline": "Tuyển đúng người, đủ số lượng, kịp thời gian — với cam kết tối ưu chi phí tuyển dụng.",
+      "pillar": "Phát triển lãnh đạo",
+      "name": "NHÂN BỘI TIỀM NĂNG",
+      "tagline": "Giúp quản lý trở thành người khuếch đại trí tuệ đội ngũ, thay vì vô tình bóp nghẹt tiềm năng nhân sự.",
       "image": "/images/offering-tuyen-dung.jpg"
     },
     {
-      "slug": "thue-thu-nhap-ca-nhan",
+      "slug": "toc-do-cua-niem-tin",
+      "icon": "Gauge",
+      "pillar": "Xây dựng văn hoá tin cậy",
+      "name": "TỐC ĐỘ CỦA NIỀM TIN",
+      "tagline": "Xây dựng niềm tin trong tổ chức để ra quyết định nhanh hơn, giảm chi phí vận hành và tăng gắn kết đội ngũ.",
+      "image": "/images/offering-gcw-control.jpg"
+    },
+    {
+      "slug": "dan-dat-thay-doi",
       "icon": "Receipt",
-      "name": "GCW THUẾ CÁ NHÂN",
-      "tagline": "Quản lý thuế thu nhập cá nhân chuyên biệt cho nhóm khách hàng đặc thù như CEO, KOL, KOC.",
+      "pillar": "Xây dựng văn hoá tin cậy",
+      "name": "DẪN DẮT THAY ĐỔI",
+      "tagline": "Trang bị tư duy và kỹ năng để lãnh đạo biến sự bất định thành cơ hội, duy trì hiệu suất khi chuyển đổi.",
       "image": "/images/offering-thue-ca-nhan.jpg"
     },
     {
-      "slug": "tu-van-hr",
+      "slug": "4-ky-luat-thuc-thi",
+      "icon": "TrendingUp",
+      "pillar": "Tạo kết quả đột phá",
+      "name": "4 KỶ LUẬT THỰC THI",
+      "tagline": "Hệ thống thực thi chiến lược giúp đội ngũ đạt được mục tiêu tối quan trọng giữa muôn vàn việc cấp bách.",
+      "image": "/images/offering-gcw-scale.jpg"
+    },
+    {
+      "slug": "ban-hang-khac-biet",
       "icon": "MessageSquareText",
-      "name": "GCW TƯ VẤN HR",
-      "tagline": "Giải quyết các bài toán nhân sự cốt lõi, từ cơ cấu tổ chức đến chính sách nhân sự.",
+      "pillar": "Tạo kết quả đột phá",
+      "name": "BÁN HÀNG KHÁC BIỆT",
+      "tagline": "Phương pháp bán hàng tư vấn giúp đội kinh doanh tạo khác biệt và đạt kết quả bền vững, không phụ thuộc cá nhân.",
       "image": "/images/offering-tu-van-hr.jpg"
     }
   ]

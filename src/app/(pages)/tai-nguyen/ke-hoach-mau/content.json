@@ -1,38 +1,74 @@
 {
   "title": "Kế hoạch mẫu",
-  "metaDescription": "Mẫu kế hoạch vận hành nhân sự theo từng giai đoạn phát triển doanh nghiệp, từ mới thành lập đến chuẩn bị gọi vốn, do GCW biên soạn cho SME.",
+  "metaDescription": "Mẫu kế hoạch phát triển lãnh đạo, xây dựng đội ngũ kế cận và thực thi mục tiêu chiến lược, do GCW biên soạn cho doanh nghiệp Việt Nam.",
   "heading": "Kế hoạch mẫu",
-  "intro": "Mẫu kế hoạch vận hành nhân sự theo từng giai đoạn phát triển doanh nghiệp, giúp bạn chủ động nguồn lực thay vì xử lý bị động.",
+  "intro": "Mẫu kế hoạch thực hành giúp lãnh đạo chủ động xây dựng năng lực, văn hoá tin cậy và kết quả kinh doanh thay vì xử lý bị động từng vấn đề.",
   "itemsHeading": "Kế hoạch mẫu nổi bật",
   "items": [
     {
       "id": "ke-hoach-01",
-      "eyebrow": "Vận hành nhân sự",
-      "title": "Kế hoạch nhân sự theo quý cho doanh nghiệp tăng trưởng nhanh",
-      "description": "Mẫu kế hoạch chia theo từng quý, giúp doanh nghiệp chủ động nguồn lực nhân sự khi mở rộng quy mô."
+      "eyebrow": "Phát triển lãnh đạo",
+      "title": "Kế hoạch phát triển lãnh đạo cá nhân theo quý",
+      "description": "Mẫu kế hoạch giúp từng lãnh đạo xác định mục tiêu phát triển năng lực và theo dõi tiến độ theo quý."
     },
     {
       "id": "ke-hoach-02",
-      "eyebrow": "Chiến lược & tổ chức",
-      "title": "Lộ trình chuẩn hoá nhân sự trước khi gọi vốn",
-      "description": "Kế hoạch từng bước chuẩn hoá hồ sơ, chính sách và cơ cấu tổ chức trước vòng gọi vốn."
+      "eyebrow": "Phát triển lãnh đạo",
+      "title": "Lộ trình xây dựng đội ngũ kế cận",
+      "description": "Kế hoạch từng bước xác định và phát triển nhân sự tiềm năng cho các vị trí lãnh đạo chủ chốt."
     },
     {
       "id": "ke-hoach-03",
-      "eyebrow": "Vận hành nhân sự",
-      "title": "Kế hoạch tuyển dụng theo giai đoạn mở rộng thị trường",
-      "description": "Mẫu kế hoạch tuyển dụng gắn với lộ trình mở rộng thị trường và quy mô đội ngũ."
+      "eyebrow": "Phát triển lãnh đạo",
+      "title": "Mẫu kế hoạch onboarding lãnh đạo mới 90 ngày",
+      "description": "Lộ trình chi tiết theo từng mốc 30-60-90 ngày giúp lãnh đạo mới hoà nhập và tạo kết quả sớm."
     },
     {
       "id": "ke-hoach-04",
-      "eyebrow": "Tuân thủ lao động",
-      "title": "Lịch kiểm tra tuân thủ lao động định kỳ theo quý",
-      "description": "Mẫu lịch tự kiểm tra tuân thủ giúp doanh nghiệp chủ động phát hiện thiếu sót trước khi bị nhắc nhở."
+      "eyebrow": "Phát triển lãnh đạo",
+      "title": "Khung đánh giá năng lực lãnh đạo theo cấp bậc",
+      "description": "Công cụ đánh giá năng lực lãnh đạo tham khảo, áp dụng nhất quán cho từng cấp quản lý."
+    },
+    {
+      "id": "ke-hoach-05",
+      "eyebrow": "Xây dựng văn hoá tin cậy",
+      "title": "Mẫu kế hoạch xây dựng văn hoá tin cậy theo quý",
+      "description": "Kế hoạch hành động theo quý giúp lãnh đạo củng cố niềm tin và sự gắn kết trong đội ngũ."
+    },
+    {
+      "id": "ke-hoach-06",
+      "eyebrow": "Xây dựng văn hoá tin cậy",
+      "title": "Lịch huấn luyện định kỳ cho quản lý cấp trung",
+      "description": "Mẫu lịch coaching định kỳ giúp quản lý cấp trung phát triển năng lực và duy trì văn hoá tin cậy."
+    },
+    {
+      "id": "ke-hoach-07",
+      "eyebrow": "Xây dựng văn hoá tin cậy",
+      "title": "Mẫu kế hoạch ghi nhận và khen thưởng đội ngũ theo quý",
+      "description": "Khung kế hoạch giúp lãnh đạo duy trì thói quen ghi nhận, khen thưởng đúng lúc và đúng người."
+    },
+    {
+      "id": "ke-hoach-08",
+      "eyebrow": "Tạo kết quả đột phá",
+      "title": "Mẫu bảng điểm 4 Kỷ Luật Thực Thi",
+      "description": "Bảng điểm mẫu giúp đội ngũ theo dõi trực quan tiến độ thực thi các mục tiêu quan trọng nhất."
+    },
+    {
+      "id": "ke-hoach-09",
+      "eyebrow": "Tạo kết quả đột phá",
+      "title": "Mẫu kế hoạch truyền thông thay đổi tổ chức",
+      "description": "Kế hoạch truyền thông từng giai đoạn giúp tổ chức dẫn dắt thay đổi một cách nhất quán, rõ ràng."
+    },
+    {
+      "id": "ke-hoach-10",
+      "eyebrow": "Tạo kết quả đột phá",
+      "title": "Mẫu kế hoạch theo dõi chỉ số tiên phong hàng tuần",
+      "description": "Công cụ theo dõi các chỉ số tiên phong hàng tuần để chủ động điều chỉnh trước khi có kết quả cuối kỳ."
     }
   ],
   "cta": {
     "heading": "Muốn nhận mẫu kế hoạch phù hợp với doanh nghiệp bạn?",
-    "body": "Để lại thông tin liên hệ, GCW sẽ gửi mẫu kế hoạch nhân sự phù hợp với giai đoạn phát triển hiện tại.",
+    "body": "Để lại thông tin liên hệ, GCW sẽ gửi mẫu kế hoạch phát triển lãnh đạo phù hợp với giai đoạn hiện tại của tổ chức bạn.",
     "label": "Đăng ký nhận mẫu kế hoạch",
     "href": "/contact"
   }
