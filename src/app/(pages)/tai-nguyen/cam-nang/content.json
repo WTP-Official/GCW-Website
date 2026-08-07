@@ -10,7 +10,32 @@
       "title": "Công cụ tự đánh giá tuân thủ nhân sự",
       "description": "Trả lời 15 câu hỏi nhanh để biết mức độ tuân thủ hiện tại của doanh nghiệp bạn.",
       "ctaLabel": "Bắt đầu đánh giá",
-      "ctaHref": "/contact"
+      "ctaHref": "/contact",
+      "image": "",
+      "assessment": {
+        "questions": [
+          { "id": "q1", "text": "Doanh nghiệp có hợp đồng lao động bằng văn bản cho 100% nhân sự chính thức?" },
+          { "id": "q2", "text": "Nội quy lao động đã được đăng ký với cơ quan quản lý lao động (nếu có từ 10 lao động trở lên)?" },
+          { "id": "q3", "text": "Doanh nghiệp có thang, bảng lương được xây dựng và lưu trữ đầy đủ?" },
+          { "id": "q4", "text": "Người lao động được đóng BHXH, BHYT, BHTN đúng thời hạn kể từ ngày ký hợp đồng chính thức?" },
+          { "id": "q5", "text": "Doanh nghiệp có lưu trữ hồ sơ nhân sự (CV, hợp đồng, quyết định) đầy đủ và có hệ thống?" },
+          { "id": "q6", "text": "Thời giờ làm việc, làm thêm giờ được ghi nhận và tuân thủ giới hạn theo luật lao động?" },
+          { "id": "q7", "text": "Người lao động làm thêm giờ có thỏa thuận bằng văn bản trước khi thực hiện?" },
+          { "id": "q8", "text": "Mức lương trả cho người lao động đáp ứng quy định lương tối thiểu vùng hiện hành?" },
+          { "id": "q9", "text": "Doanh nghiệp quyết toán thuế TNCN cho người lao động đúng thời hạn hàng năm?" },
+          { "id": "q10", "text": "Hợp đồng thử việc (nếu có) tuân thủ đúng thời gian thử việc tối đa theo luật?" },
+          { "id": "q11", "text": "Chính sách nghỉ phép năm được áp dụng và người lao động được nghỉ đủ theo quy định?" },
+          { "id": "q12", "text": "Quy chế lương, thưởng nội bộ được ban hành bằng văn bản và phổ biến tới người lao động?" },
+          { "id": "q13", "text": "Doanh nghiệp có đánh giá định kỳ về an toàn, vệ sinh lao động tại nơi làm việc?" },
+          { "id": "q14", "text": "Quy trình xử lý kỷ luật lao động (nếu có) tuân thủ đúng trình tự pháp luật quy định?" },
+          { "id": "q15", "text": "Doanh nghiệp có kế hoạch rà soát, cập nhật hồ sơ tuân thủ nhân sự định kỳ (hàng năm/hàng quý)?" }
+        ],
+        "resultTiers": [
+          { "minScore": 12, "maxScore": 15, "label": "Tuân thủ tốt", "description": "Doanh nghiệp bạn đang tuân thủ tốt phần lớn quy định nhân sự. Hãy duy trì rà soát định kỳ để không bỏ sót các thay đổi pháp luật mới." },
+          { "minScore": 7, "maxScore": 11, "label": "Cần cải thiện", "description": "Doanh nghiệp còn một số khoảng trống tuân thủ có thể gây rủi ro khi bị thanh tra. Nên ưu tiên rà soát các mục chưa đạt." },
+          { "minScore": 0, "maxScore": 6, "label": "Rủi ro cao", "description": "Doanh nghiệp đang thiếu nhiều nền tảng tuân thủ nhân sự cơ bản, dễ phát sinh rủi ro pháp lý và tài chính. Nên rà soát và khắc phục sớm." }
+        ]
+      }
     },
     {
       "id": "tool-02",
@@ -24,7 +49,26 @@
       "title": "Đánh giá mức độ sẵn sàng mở rộng nhân sự",
       "description": "Kiểm tra xem bộ máy nhân sự hiện tại đã sẵn sàng cho giai đoạn tăng trưởng tiếp theo chưa.",
       "ctaLabel": "Kiểm tra ngay",
-      "ctaHref": "/contact"
+      "ctaHref": "/contact",
+      "assessment": {
+        "questions": [
+          { "id": "q1", "text": "Doanh nghiệp đã có sơ đồ tổ chức rõ ràng cho quy mô nhân sự hiện tại?" },
+          { "id": "q2", "text": "Quy trình tuyển dụng đã được chuẩn hoá (mô tả công việc, quy trình phỏng vấn, onboarding)?" },
+          { "id": "q3", "text": "Doanh nghiệp có ngân sách nhân sự được hoạch định cho 6-12 tháng tới?" },
+          { "id": "q4", "text": "Cấp quản lý cấp trung đã sẵn sàng để quản lý thêm nhân sự mới?" },
+          { "id": "q5", "text": "Hệ thống lương, thưởng, phúc lợi đã đủ cạnh tranh để thu hút nhân sự mới?" },
+          { "id": "q6", "text": "Quy trình đánh giá hiệu suất đã được áp dụng nhất quán cho toàn bộ nhân sự?" },
+          { "id": "q7", "text": "Doanh nghiệp có hệ thống/công cụ quản lý nhân sự (HRM) đáp ứng được quy mô mở rộng?" },
+          { "id": "q8", "text": "Văn hoá doanh nghiệp đã được định hình rõ để onboard nhân sự mới hiệu quả?" },
+          { "id": "q9", "text": "Doanh nghiệp có kế hoạch đào tạo, phát triển nhân sự khi mở rộng quy mô?" },
+          { "id": "q10", "text": "Lãnh đạo đã xác định rõ mục tiêu kinh doanh gắn với kế hoạch mở rộng nhân sự?" }
+        ],
+        "resultTiers": [
+          { "minScore": 8, "maxScore": 10, "label": "Sẵn sàng mở rộng", "description": "Bộ máy nhân sự hiện tại đã có nền tảng vững để mở rộng quy mô. Hãy tiếp tục theo dõi sát các chỉ số vận hành trong quá trình tăng trưởng." },
+          { "minScore": 4, "maxScore": 7, "label": "Cần chuẩn bị thêm", "description": "Doanh nghiệp có một số nền tảng tốt nhưng còn thiếu vài mảnh ghép quan trọng trước khi mở rộng quy mô nhân sự." },
+          { "minScore": 0, "maxScore": 3, "label": "Chưa sẵn sàng", "description": "Bộ máy nhân sự hiện tại chưa đủ nền tảng để mở rộng quy mô. Nên ưu tiên củng cố tổ chức, quy trình trước khi tuyển dụng thêm." }
+        ]
+      }
     }
   ],
   "categoriesHeading": "Cẩm nang theo chủ đề",

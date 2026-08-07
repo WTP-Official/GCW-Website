@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function AdminHomePage() {
   return (
-    <main className="mx-auto max-w-4xl px-4 py-16">
+    <main className="flex flex-col w-full items-center px-4 py-16">
       <h1 className="text-2xl text-ink">Quản lý nội dung</h1>
       <p className="mt-2 text-sm text-ink-soft">
         Thêm / sửa / xóa các mục trên trang Tài nguyên và Sự kiện. Chỉ hoạt động
@@ -35,11 +35,11 @@ export default function AdminHomePage() {
       </div>
 
       <p className="mt-10 border-t border-black/5 pt-6 text-xs text-muted">
-        Trang admin này chưa có xác thực, nên <code>middleware.ts</code> đã
-        chặn (trả 404) mọi request tới <code>/admin</code> và{" "}
-        <code>/api/admin</code> khi không chạy ở môi trường development. Chỉ
-        dùng khi chạy dev cục bộ rồi tự commit + push thay đổi trong các file{" "}
-        <code>content.json</code> tương ứng.
+        Trang admin này chưa có xác thực, nên <code>middleware.ts</code> đã chặn
+        (trả 404) mọi request tới <code>/admin</code> và <code>/api/admin</code>{" "}
+        khi không chạy ở môi trường development. Chỉ dùng khi chạy dev cục bộ
+        rồi tự commit + push thay đổi trong các file <code>content.json</code>{" "}
+        tương ứng.
       </p>
     </main>
   );

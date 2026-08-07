@@ -11,7 +11,11 @@
       "description": "Hội nghị chuyên đề dành cho doanh nghiệp đang mở rộng quy mô, cần chuẩn hoá bộ máy nhân sự.",
       "format": "Offline",
       "eventDate": "2026-09-05T08:30",
-      "location": "Văn phòng GCW, TP.HCM"
+      "location": "Văn phòng GCW, TP.HCM",
+      "image": "",
+      "registerUrl": "",
+      "jarvisFormId": "",
+      "body": ""
     },
     {
       "id": "hoi-nghi-02",

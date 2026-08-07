@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { getEntity } from "../lib/entities";
 import { EntityManager } from "./components/EntityManager";
+import { SingletonEntityForm } from "./components/SingletonEntityForm";
 
 export async function generateMetadata({
   params,
@@ -28,7 +29,7 @@ export default async function EntityAdminPage({
   if (!entity) notFound();
 
   return (
-    <main className="mx-auto max-w-4xl px-4 py-16">
+    <main className="flex flex-col w-full items-center px-4 py-16">
       <Link
         href="/admin"
         className="inline-flex items-center gap-1.5 text-sm font-medium text-brand-600 hover:text-brand-700"
@@ -49,7 +50,11 @@ export default async function EntityAdminPage({
       </p>
 
       <div className="mt-10">
-        <EntityManager slug={entity.slug} fields={entity.fields} />
+        {entity.mode === "singleton" ? (
+          <SingletonEntityForm slug={entity.slug} fields={entity.fields} />
+        ) : (
+          <EntityManager slug={entity.slug} fields={entity.fields} />
+        )}
       </div>
     </main>
   );

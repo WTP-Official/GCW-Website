@@ -1,8 +1,27 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowLeft, type LucideIcon } from "lucide-react";
+import { ArrowLeft, CheckCircle2, type LucideIcon } from "lucide-react";
 import { ImagePlaceholder } from "@/components/ImagePlaceholder";
 import { Reveal } from "@/components/Reveal";
+import { JarvisFormEmbed } from "@/components/JarvisFormEmbed";
+import {
+  formatEventDateOnly,
+  formatEventTimeOnly,
+} from "@/lib/formatEventMeta";
+
+function parseLines(raw?: string) {
+  return (raw ?? "")
+    .split("\n")
+    .map((line) => line.trim())
+    .filter(Boolean);
+}
+
+function parseSpeakers(raw?: string) {
+  return parseLines(raw).map((line) => {
+    const [name, role] = line.split("|").map((part) => part.trim());
+    return { name, role };
+  });
+}
 
 export function ItemDetail({
   icon: Icon,
@@ -10,8 +29,16 @@ export function ItemDetail({
   heading,
   image,
   body,
+  format,
+  eventDate,
+  location,
+  duration,
+  speakers,
+  takeaways,
+  audience,
   tags,
   primaryAction,
+  jarvisFormId,
   backHref,
   backLabel,
   cta,
@@ -21,24 +48,42 @@ export function ItemDetail({
   heading: string;
   image?: string;
   body: string;
+  format?: string;
+  eventDate?: string;
+  location?: string;
+  duration?: string;
+  speakers?: string;
+  takeaways?: string;
+  audience?: string;
   tags?: string[];
   primaryAction?: { label: string; href: string };
+  jarvisFormId?: string;
   backHref: string;
   backLabel: string;
   cta: { heading: string; body: string; label: string; href: string };
 }) {
+  const speakerList = parseSpeakers(speakers);
+  const takeawayList = parseLines(takeaways);
+  const audienceList = parseLines(audience);
+  const eventDateOnly = formatEventDateOnly(eventDate);
+  const eventTimeOnly = formatEventTimeOnly(eventDate);
   return (
     <main>
       <section className="bg-bg-dark text-white">
         <Reveal>
           <div className="mx-auto max-w-3xl px-4 py-28 text-center sm:py-32">
-            <Icon className="mx-auto h-8 w-8 text-white/60" aria-hidden="true" />
+            <Icon
+              className="mx-auto h-8 w-8 text-white/60"
+              aria-hidden="true"
+            />
             {eyebrow && (
               <p className="mt-4 text-sm font-medium uppercase tracking-widest text-white/50">
                 {eyebrow}
               </p>
             )}
-            <h1 className="mt-3 font-serif-hero text-3xl leading-snug sm:text-4xl">{heading}</h1>
+            <h1 className="mt-3 font-serif-hero text-3xl leading-snug sm:text-4xl">
+              {heading}
+            </h1>
           </div>
         </Reveal>
       </section>
@@ -55,14 +100,23 @@ export function ItemDetail({
         <Reveal delay={100}>
           {image ? (
             <div className="relative mt-8 aspect-[16/9] w-full overflow-hidden rounded-md">
-              <Image src={image} alt={heading} fill sizes="(min-width: 768px) 768px, 100vw" className="object-cover" />
+              <Image
+                src={image}
+                alt={heading}
+                fill
+                sizes="(min-width: 768px) 768px, 100vw"
+                className="object-cover"
+              />
             </div>
           ) : (
-            <ImagePlaceholder icon={Icon} className="mt-8 aspect-[16/9] w-full rounded-md" />
+            <ImagePlaceholder
+              icon={Icon}
+              className="mt-8 aspect-[16/9] w-full rounded-md"
+            />
           )}
         </Reveal>
 
-        {primaryAction && (
+        {primaryAction && !jarvisFormId && (
           <a
             href={primaryAction.href}
             target="_blank"
@@ -82,6 +136,131 @@ export function ItemDetail({
           <p className="mt-8 whitespace-pre-line text-ink-soft">{body}</p>
         )}
 
+        {(eventDateOnly || eventTimeOnly || format || location || duration) && (
+          <div className="mt-12">
+            <h2 className="text-xl font-semibold text-ink">Chi tiết sự kiện</h2>
+            <dl className="mt-4 space-y-2.5 text-base">
+              {eventDateOnly && (
+                <div className="flex gap-2">
+                  <dt className="shrink-0 font-semibold text-ink">Ngày:</dt>
+                  <dd className="text-ink-soft">{eventDateOnly}</dd>
+                </div>
+              )}
+              {eventTimeOnly && (
+                <div className="flex gap-2">
+                  <dt className="shrink-0 font-semibold text-ink">
+                    Thời gian:
+                  </dt>
+                  <dd className="text-ink-soft">{eventTimeOnly}</dd>
+                </div>
+              )}
+              {format && (
+                <div className="flex gap-2">
+                  <dt className="shrink-0 font-semibold text-ink">
+                    Hình thức:
+                  </dt>
+                  <dd className="text-ink-soft">{format}</dd>
+                </div>
+              )}
+              {location && (
+                <div className="flex gap-2">
+                  <dt className="shrink-0 font-semibold text-ink">Địa điểm:</dt>
+                  <dd className="text-ink-soft">{location}</dd>
+                </div>
+              )}
+              {duration && (
+                <div className="flex gap-2">
+                  <dt className="shrink-0 font-semibold text-ink">
+                    Thời lượng:
+                  </dt>
+                  <dd className="text-ink-soft">{duration}</dd>
+                </div>
+              )}
+            </dl>
+          </div>
+        )}
+
+        {speakerList.length > 0 && (
+          <div className="mt-12">
+            <h2 className="text-xl font-semibold text-ink">Diễn giả nổi bật</h2>
+            <div className="mt-4 grid gap-4 sm:grid-cols-2">
+              {speakerList.map((speaker, index) => (
+                <div
+                  key={`${speaker.name}-${index}`}
+                  className="flex items-center gap-4 rounded-md bg-bg-muted p-4"
+                >
+                  <div
+                    className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-brand-600 text-base font-semibold text-white"
+                    aria-hidden="true"
+                  >
+                    {speaker.name?.charAt(0).toUpperCase()}
+                  </div>
+                  <div>
+                    <p className="font-semibold text-ink">{speaker.name}</p>
+                    {speaker.role && (
+                      <p className="text-sm font-medium text-brand-600">
+                        {speaker.role}
+                      </p>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {takeawayList.length > 0 && (
+          <div className="mt-12">
+            <h2 className="text-xl font-semibold text-ink">
+              Những điều bạn sẽ học được
+            </h2>
+            <ul className="mt-4 space-y-3">
+              {takeawayList.map((item, index) => (
+                <li
+                  key={index}
+                  className="flex items-start gap-3 text-ink-soft"
+                >
+                  <CheckCircle2
+                    className="mt-0.5 h-5 w-5 shrink-0 text-brand-600"
+                    aria-hidden="true"
+                  />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {audienceList.length > 0 && (
+          <div className="mt-12">
+            <h2 className="text-xl font-semibold text-ink">
+              Đối tượng nên tham dự
+            </h2>
+            <ul className="mt-4 space-y-3">
+              {audienceList.map((item, index) => (
+                <li
+                  key={index}
+                  className="flex items-start gap-3 text-ink-soft"
+                >
+                  <CheckCircle2
+                    className="mt-0.5 h-5 w-5 shrink-0 text-brand-600"
+                    aria-hidden="true"
+                  />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {jarvisFormId && (
+          <JarvisFormEmbed
+            formId={jarvisFormId}
+            title={`Đăng ký: ${heading}`}
+            className="mt-4 rounded-md"
+          />
+        )}
+
         {tags && tags.length > 0 && (
           <div className="mt-6 flex flex-wrap gap-2">
             {tags.map((tag) => (
@@ -99,7 +278,9 @@ export function ItemDetail({
       <section className="bg-bg-muted">
         <Reveal>
           <div className="mx-auto max-w-2xl px-4 py-24 text-center">
-            <h2 className="text-2xl leading-snug text-ink sm:text-3xl">{cta.heading}</h2>
+            <h2 className="text-2xl leading-snug text-ink sm:text-3xl">
+              {cta.heading}
+            </h2>
             <p className="mt-4 text-ink-soft">{cta.body}</p>
             <Link
               href={cta.href}

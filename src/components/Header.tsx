@@ -204,10 +204,6 @@ const NAV_ITEMS: NavItem[] = [
     },
   },
   { label: "Tài nguyên", href: "/tai-nguyen" },
-  {
-    label: "Đào tạo",
-    href: "/about#ecosystem",
-  },
   { label: "Liên hệ", href: "/contact" },
 ];
 
@@ -243,6 +239,7 @@ const RESOURCES_COLUMN: DropdownColumn = {
     label: item.title,
     description: item.description,
     icon: ICONS[item.icon],
+    image: item.image,
   })),
 };
 
@@ -389,18 +386,18 @@ export function Header() {
                                     className="flex items-start gap-3 rounded-md p-1.5 transition-colors hover:bg-surface"
                                   >
                                     {sub.image ? (
-                                      <span className="relative h-10 w-14 shrink-0 overflow-hidden rounded-md">
+                                      <span className="relative h-10 w-10 shrink-0 overflow-hidden rounded-md">
                                         <Image
                                           src={sub.image}
                                           alt=""
                                           fill
-                                          sizes="56px"
+                                          sizes="40px"
                                           className="photo-grade object-cover"
                                         />
                                       </span>
                                     ) : (
                                       Icon && (
-                                        <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-brand-50 text-brand-600">
+                                        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-brand-50 text-brand-600">
                                           <Icon
                                             className="h-4 w-4"
                                             aria-hidden="true"

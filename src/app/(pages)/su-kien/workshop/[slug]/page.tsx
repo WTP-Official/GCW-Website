@@ -16,6 +16,10 @@ type Item = {
   registerUrl?: string;
   image?: string;
   body?: string;
+  speakers?: string;
+  takeaways?: string;
+  audience?: string;
+  jarvisFormId?: string;
 };
 
 const itemList = content.items as Item[];
@@ -51,7 +55,15 @@ export default async function WorkshopDetailPage({
       heading={item.title}
       image={item.image}
       body={item.body || item.description}
+      format={item.format}
+      eventDate={item.eventDate}
+      location={item.location}
+      duration={item.duration}
+      speakers={item.speakers}
+      takeaways={item.takeaways}
+      audience={item.audience}
       primaryAction={item.registerUrl ? { label: "Đăng ký tham dự", href: item.registerUrl } : undefined}
+      jarvisFormId={item.jarvisFormId}
       backHref="/su-kien/workshop"
       backLabel="Quay lại danh sách"
       cta={content.cta}

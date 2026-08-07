@@ -11,7 +11,15 @@
       "description": "Workshop thực chiến giúp đội ngũ quản lý xây dựng sơ đồ tổ chức phù hợp với giai đoạn tăng trưởng.",
       "format": "Offline",
       "location": "Tại doanh nghiệp (theo yêu cầu)",
-      "duration": "1 ngày"
+      "duration": "1 ngày",
+      "image": "",
+      "eventDate": "2026-08-08T07:32",
+      "registerUrl": "",
+      "jarvisFormId": "form_9bulJM4tHRIj16",
+      "body": "<p>Hãy tham gia cùng chúng tôi trong một sự kiện đầy giá trị được thiết kế dành cho các cá nhân và doanh nghiệp nước ngoài đang hoạt động tại Việt Nam, do đội ngũ chuyên gia của WTP GCW phối hợp cùng FiinGroup dẫn dắt.</p><p>Việt Nam đang nhanh chóng được công nhận là một trong những điểm đến hàng đầu cho đầu tư nước ngoài, nhờ lực lượng lao động lành nghề, chi phí sản xuất cạnh tranh, mạng lưới hiệp định thương mại ngày càng mở rộng và vị trí chiến lược tại khu vực Đông Nam Á. Khi chuỗi cung ứng toàn cầu tiếp tục chuyển dịch, các doanh nghiệp ngày càng hướng tới Việt Nam như một điểm đến cho hoạt động sản xuất, tìm nguồn cung ứng và mở rộng thị trường.</p><p>Sự kiện này quy tụ các chuyên gia hàng đầu trong ngành nhằm mang đến những góc nhìn quan trọng về vai trò ngày càng lớn của Việt Nam trong thương mại và đầu tư toàn cầu.</p>",
+      "speakers": "MS. NGAN NGUYEN | Trưởng Chi nhánh Hà Nội, InCorp Vietnam",
+      "takeaways": "Lợi thế cạnh tranh của Việt Nam — vì sao các doanh nghiệp lựa chọn Việt Nam cho hoạt động sản xuất và mở rộng kinh doanh\n",
+      "audience": "Nhà đầu tư và doanh nhân đang tìm hiểu thị trường đang phát triển của Việt Nam\n"
     },
     {
       "id": "workshop-02",
@@ -19,7 +27,12 @@
       "description": "Workshop hướng dẫn thiết kế hệ thống lương thưởng công bằng, cạnh tranh và dễ vận hành.",
       "format": "Offline",
       "location": "Tại doanh nghiệp (theo yêu cầu)",
-      "duration": "1 ngày"
+      "duration": "1 ngày",
+      "image": "",
+      "eventDate": "",
+      "registerUrl": "",
+      "jarvisFormId": "form_9bulJM4tHRIj16",
+      "body": "<p>hello</p>"
     },
     {
       "id": "workshop-03",

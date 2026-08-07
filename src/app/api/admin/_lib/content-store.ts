@@ -33,6 +33,36 @@ export async function readContentItems(contentFile: string, itemsKey: string) {
   return (data[itemsKey] as Record<string, unknown>[]) ?? [];
 }
 
+export async function readContentObject(contentFile: string, key: string) {
+  const raw = await readFile(contentFilePath(contentFile), "utf-8");
+  const data = JSON.parse(raw) as Record<string, unknown>;
+  return (data[key] as Record<string, unknown>) ?? {};
+}
+
+/**
+ * Same as mutateContentItems, but for a singleton object value (e.g. a
+ * "featured" card) instead of an array of records.
+ */
+export async function mutateContentObject<T>(
+  contentFile: string,
+  key: string,
+  mutate: (value: Record<string, unknown>) => {
+    value: Record<string, unknown>;
+    result: T;
+  },
+): Promise<T> {
+  const filePath = contentFilePath(contentFile);
+  return withFileLock(filePath, async () => {
+    const raw = await readFile(filePath, "utf-8");
+    const data = JSON.parse(raw) as Record<string, unknown>;
+    const current = (data[key] as Record<string, unknown>) ?? {};
+    const { value, result } = mutate(current);
+    data[key] = value;
+    await writeFile(filePath, `${JSON.stringify(data, null, 2)}\n`, "utf-8");
+    return result;
+  });
+}
+
 /**
  * Reads, lets `mutate` edit the items array in place (return the array to
  * persist), and writes the whole file back — all under the per-file lock.

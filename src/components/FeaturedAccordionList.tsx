@@ -13,7 +13,7 @@ type AccordionItem = {
   actionHref?: string;
 };
 type AccordionCategory = { heading: string; items: AccordionItem[] };
-type ToolCard = {
+export type ToolCard = {
   id: string;
   title: string;
   description: string;
@@ -37,11 +37,13 @@ export function FeaturedAccordionList({
   content,
   backHref,
   backLabel,
+  renderToolAction,
 }: {
   icon: ReactNode;
   content: Content;
   backHref: string;
   backLabel: string;
+  renderToolAction?: (tool: ToolCard) => ReactNode | undefined;
 }) {
   const { heading, intro, toolsHeading, tools, categoriesHeading, categories, cta } = content;
 
@@ -91,12 +93,14 @@ export function FeaturedAccordionList({
                         <h3 className="text-lg leading-snug">{tool.title}</h3>
                         <p className="mt-2 text-sm text-white/70">{tool.description}</p>
                       </div>
-                      <Link
-                        href={tool.ctaHref}
-                        className="mt-6 inline-flex w-fit items-center rounded-full bg-brand-600 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-brand-700"
-                      >
-                        {tool.ctaLabel}
-                      </Link>
+                      {renderToolAction?.(tool) ?? (
+                        <Link
+                          href={tool.ctaHref}
+                          className="mt-6 inline-flex w-fit items-center rounded-full bg-brand-600 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-brand-700"
+                        >
+                          {tool.ctaLabel}
+                        </Link>
+                      )}
                     </div>
                   </div>
                 </Reveal>

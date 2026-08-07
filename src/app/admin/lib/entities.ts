@@ -23,7 +23,13 @@ export type EntityConfig = {
   description: string;
   /** Path to the route's content.json, relative to src/app/(pages)/. */
   contentFile: string;
-  /** Key within that content.json holding this entity's item array. */
+  /**
+   * "list" (default): itemsKey holds an array of records, editable via
+   * add/edit/delete. "singleton": itemsKey holds a single object with no
+   * id — only one edit form, no add/delete.
+   */
+  mode?: "list" | "singleton";
+  /** Key within that content.json holding this entity's item array (or object, for mode: "singleton"). */
   itemsKey: string;
   publicHref: string;
   fields: FieldConfig[];
@@ -68,6 +74,21 @@ export const ENTITIES: EntityConfig[] = [
         optional: true,
       },
       { key: "body", label: "Nội dung chi tiết (trang riêng)", type: "richtext", optional: true },
+    ],
+  },
+  {
+    slug: "tai-nguyen-sach-featured",
+    label: "Sách & Ấn phẩm — Ấn phẩm nổi bật",
+    description: "Card ấn phẩm nổi bật hiển thị ở đầu /tai-nguyen/sach",
+    contentFile: "tai-nguyen/sach/content.json",
+    mode: "singleton",
+    itemsKey: "featured",
+    publicHref: "/tai-nguyen/sach",
+    fields: [
+      { key: "title", label: "Tiêu đề", type: "text" },
+      { key: "description", label: "Mô tả", type: "textarea" },
+      { key: "ctaLabel", label: "Nhãn nút", type: "text" },
+      { key: "ctaHref", label: "Đường dẫn nút", type: "text" },
     ],
   },
   {
@@ -237,6 +258,28 @@ export const ENTITIES: EntityConfig[] = [
         placeholder: "Link Zoom sẽ gửi sau khi đăng ký",
         optional: true,
       },
+      { key: "body", label: "Giới thiệu sự kiện (About the Event)", type: "richtext", optional: true },
+      {
+        key: "speakers",
+        label: "Diễn giả nổi bật (mỗi dòng: Tên | Vai trò, tổ chức)",
+        type: "textarea",
+        placeholder: "Bà Nguyễn Thị Ngân | Trưởng Chi nhánh Hà Nội, InCorp Vietnam",
+        optional: true,
+      },
+      {
+        key: "takeaways",
+        label: "Những điều bạn sẽ học được (mỗi dòng 1 ý)",
+        type: "textarea",
+        placeholder: "Lợi thế cạnh tranh của Việt Nam — vì sao doanh nghiệp chọn Việt Nam để mở rộng",
+        optional: true,
+      },
+      {
+        key: "audience",
+        label: "Đối tượng nên tham dự (mỗi dòng 1 ý)",
+        type: "textarea",
+        placeholder: "Nhà đầu tư đang tìm hiểu thị trường Việt Nam",
+        optional: true,
+      },
       {
         key: "registerUrl",
         label: "Đường dẫn đăng ký tham dự",
@@ -244,7 +287,6 @@ export const ENTITIES: EntityConfig[] = [
         placeholder: "https://...",
         optional: true,
       },
-      { key: "body", label: "Nội dung chi tiết (trang riêng)", type: "richtext", optional: true },
     ],
   },
   {
@@ -267,6 +309,28 @@ export const ENTITIES: EntityConfig[] = [
         placeholder: "Văn phòng GCW, TP.HCM",
         optional: true,
       },
+      { key: "body", label: "Giới thiệu sự kiện (About the Event)", type: "richtext", optional: true },
+      {
+        key: "speakers",
+        label: "Diễn giả nổi bật (mỗi dòng: Tên | Vai trò, tổ chức)",
+        type: "textarea",
+        placeholder: "Bà Nguyễn Thị Ngân | Trưởng Chi nhánh Hà Nội, InCorp Vietnam",
+        optional: true,
+      },
+      {
+        key: "takeaways",
+        label: "Những điều bạn sẽ học được (mỗi dòng 1 ý)",
+        type: "textarea",
+        placeholder: "Lợi thế cạnh tranh của Việt Nam — vì sao doanh nghiệp chọn Việt Nam để mở rộng",
+        optional: true,
+      },
+      {
+        key: "audience",
+        label: "Đối tượng nên tham dự (mỗi dòng 1 ý)",
+        type: "textarea",
+        placeholder: "Nhà đầu tư đang tìm hiểu thị trường Việt Nam",
+        optional: true,
+      },
       {
         key: "registerUrl",
         label: "Đường dẫn đăng ký tham dự",
@@ -274,7 +338,6 @@ export const ENTITIES: EntityConfig[] = [
         placeholder: "https://...",
         optional: true,
       },
-      { key: "body", label: "Nội dung chi tiết (trang riêng)", type: "richtext", optional: true },
     ],
   },
   {
@@ -304,6 +367,28 @@ export const ENTITIES: EntityConfig[] = [
         placeholder: "1 ngày / Nửa ngày",
         optional: true,
       },
+      { key: "body", label: "Giới thiệu sự kiện (About the Event)", type: "richtext", optional: true },
+      {
+        key: "speakers",
+        label: "Diễn giả nổi bật (mỗi dòng: Tên | Vai trò, tổ chức)",
+        type: "textarea",
+        placeholder: "Bà Nguyễn Thị Ngân | Trưởng Chi nhánh Hà Nội, InCorp Vietnam",
+        optional: true,
+      },
+      {
+        key: "takeaways",
+        label: "Những điều bạn sẽ học được (mỗi dòng 1 ý)",
+        type: "textarea",
+        placeholder: "Lợi thế cạnh tranh của Việt Nam — vì sao doanh nghiệp chọn Việt Nam để mở rộng",
+        optional: true,
+      },
+      {
+        key: "audience",
+        label: "Đối tượng nên tham dự (mỗi dòng 1 ý)",
+        type: "textarea",
+        placeholder: "Nhà đầu tư đang tìm hiểu thị trường Việt Nam",
+        optional: true,
+      },
       {
         key: "registerUrl",
         label: "Đường dẫn đăng ký tham dự",
@@ -311,7 +396,6 @@ export const ENTITIES: EntityConfig[] = [
         placeholder: "https://...",
         optional: true,
       },
-      { key: "body", label: "Nội dung chi tiết (trang riêng)", type: "richtext", optional: true },
     ],
   },
   {

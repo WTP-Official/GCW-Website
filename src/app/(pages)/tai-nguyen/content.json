@@ -16,14 +16,16 @@
       "icon": "BookOpen",
       "title": "Sách & Ấn phẩm",
       "description": "Ấn phẩm chuyên sâu về vận hành nhân sự, đúc kết từ kinh nghiệm thực tế cùng doanh nghiệp SME.",
-      "href": "/tai-nguyen/sach"
+      "href": "/tai-nguyen/sach",
+      "image": "/uploads/xy55bl5mzam-unsplash-e5d6e0fb.jpg"
     },
     {
       "id": "guides",
       "icon": "ClipboardList",
       "title": "Cẩm nang & Công cụ",
       "description": "Biểu mẫu và checklist thực hành giúp doanh nghiệp tự rà soát tuân thủ nhân sự.",
-      "href": "/tai-nguyen/cam-nang"
+      "href": "/tai-nguyen/cam-nang",
+      "image": ""
     },
     {
       "id": "podcasts",

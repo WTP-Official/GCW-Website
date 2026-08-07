@@ -3,7 +3,9 @@
 import { useEffect, useState, type ChangeEvent, type FormEvent } from "react";
 import Image from "next/image";
 import type { FieldConfig } from "../../lib/entities";
-import { RichTextEditor } from "./RichTextEditor";
+import { ConfirmDialog } from "./ConfirmDialog";
+import { FieldRow } from "./FieldRow";
+import { toUploadableFile } from "./toUploadableFile";
 
 type Item = Record<string, unknown> & { id: string };
 
@@ -26,8 +28,25 @@ export function EntityManager({
   const [error, setError] = useState<string | null>(null);
   const [saving, setSaving] = useState(false);
   const [uploadingKey, setUploadingKey] = useState<string | null>(null);
+  const [originalImages, setOriginalImages] = useState<Record<string, string>>(
+    {},
+  );
+  const [deleteTarget, setDeleteTarget] = useState<Item | null>(null);
+  const [deleting, setDeleting] = useState(false);
 
-  async function handleFileChange(fieldKey: string, e: ChangeEvent<HTMLInputElement>) {
+  function deleteUpload(url: string) {
+    if (!url.startsWith("/uploads/")) return;
+    fetch("/api/admin/upload", {
+      method: "DELETE",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ url }),
+    }).catch(() => {});
+  }
+
+  async function handleFileChange(
+    fieldKey: string,
+    e: ChangeEvent<HTMLInputElement>,
+  ) {
     const file = e.target.files?.[0];
     e.target.value = "";
     if (!file) return;
@@ -36,7 +55,7 @@ export function EntityManager({
     setError(null);
 
     const body = new FormData();
-    body.append("file", file);
+    body.append("file", toUploadableFile(file));
     const res = await fetch("/api/admin/upload", { method: "POST", body });
     const data = await res.json().catch(() => ({}));
 
@@ -45,13 +64,47 @@ export function EntityManager({
       setError(data.error ?? "Tải ảnh lên thất bại, vui lòng thử lại.");
       return;
     }
+
+    const previous = form[fieldKey];
     setForm((prev) => ({ ...prev, [fieldKey]: data.url }));
+    // Only clean up an abandoned in-session upload, never the persisted
+    // original — that one is only safe to delete once the form is saved.
+    if (previous && previous !== originalImages[fieldKey]) {
+      deleteUpload(previous);
+    }
+  }
+
+  function clearImage(fieldKey: string) {
+    const current = form[fieldKey];
+    setForm((prev) => ({ ...prev, [fieldKey]: "" }));
+    if (current && current !== originalImages[fieldKey]) {
+      deleteUpload(current);
+    }
+  }
+
+  // Saving/deleting writes to content.json, which the public page for this
+  // entity imports directly — that write briefly kicks off a dev-server
+  // recompile, and a reload fetch that lands in that window can come back
+  // as an HTML 404 instead of JSON. Retry a couple of times so the list
+  // below doesn't get stuck showing pre-edit data.
+  async function tryLoad(): Promise<boolean> {
+    try {
+      const res = await fetch(`/api/admin/${slug}`, { cache: "no-store" });
+      if (!res.ok) return false;
+      const data = await res.json();
+      if (!Array.isArray(data)) return false;
+      setItems(data);
+      return true;
+    } catch {
+      return false;
+    }
   }
 
   async function load() {
-    const res = await fetch(`/api/admin/${slug}`);
-    const data = await res.json();
-    setItems(data);
+    for (let attempt = 0; attempt < 4; attempt++) {
+      if (attempt > 0) await new Promise((r) => setTimeout(r, 400));
+      if (await tryLoad()) return;
+    }
   }
 
   useEffect(() => {
@@ -62,20 +115,26 @@ export function EntityManager({
   function startEdit(item: Item) {
     setEditingId(item.id);
     const next: Record<string, string> = {};
+    const images: Record<string, string> = {};
     for (const field of fields) {
       const value = item[field.key];
       next[field.key] =
         field.type === "tags" && Array.isArray(value)
           ? value.join(", ")
           : String(value ?? "");
+      if (field.type === "image" && typeof value === "string" && value) {
+        images[field.key] = value;
+      }
     }
     setForm(next);
+    setOriginalImages(images);
     setError(null);
   }
 
   function cancelEdit() {
     setEditingId(null);
     setForm(emptyForm(fields));
+    setOriginalImages({});
     setError(null);
   }
 
@@ -110,23 +169,93 @@ export function EntityManager({
       setError(data.error ?? "Có lỗi xảy ra, vui lòng thử lại.");
       return;
     }
+    // Now that the new value is actually saved, the old file (if replaced or
+    // cleared) is no longer referenced anywhere and is safe to delete.
+    for (const field of fields) {
+      if (field.type !== "image") continue;
+      const original = originalImages[field.key];
+      if (original && original !== payload[field.key]) {
+        deleteUpload(original);
+      }
+    }
     cancelEdit();
     load();
   }
 
-  async function handleDelete(id: string) {
-    if (!window.confirm("Xóa mục này?")) return;
+  async function confirmDelete() {
+    if (!deleteTarget) return;
+    const id = deleteTarget.id;
+    setDeleting(true);
     await fetch(`/api/admin/${slug}/${id}`, { method: "DELETE" });
     if (editingId === id) cancelEdit();
+    for (const field of fields) {
+      if (field.type !== "image") continue;
+      const value = deleteTarget[field.key];
+      if (typeof value === "string" && value) deleteUpload(value);
+    }
+    setDeleting(false);
+    setDeleteTarget(null);
     load();
   }
 
   if (items === null) {
-    return <p className="text-sm text-ink-soft">Đang tải...</p>;
+    return (
+      <div className="space-y-10 w-4xl">
+        <div className="animate-pulse rounded-md border border-black/5 bg-surface p-6">
+          <div className="h-4 w-28 rounded bg-black/10" />
+          <div className="mt-4 grid gap-4 sm:grid-cols-2">
+            {fields.map((field) => (
+              <div
+                key={field.key}
+                className={
+                  field.type === "textarea" || field.type === "richtext"
+                    ? "sm:col-span-2"
+                    : ""
+                }
+              >
+                <div className="h-3.5 w-24 rounded bg-black/10" />
+                <div
+                  className={`mt-2 rounded-md bg-black/5 ${
+                    field.type === "textarea" || field.type === "richtext"
+                      ? "h-24"
+                      : "h-10"
+                  }`}
+                />
+              </div>
+            ))}
+          </div>
+          <div className="mt-4 h-10 w-32 rounded-md bg-black/10" />
+        </div>
+
+        <div>
+          <div className="h-4 w-40 animate-pulse rounded bg-black/10" />
+          <ul className="mt-4 space-y-3">
+            {[0, 1, 2].map((i) => (
+              <li
+                key={i}
+                className="flex animate-pulse items-center justify-between gap-4 rounded-md border border-black/5 bg-white p-4"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="h-12 w-12 shrink-0 rounded-md bg-black/10" />
+                  <div className="space-y-2">
+                    <div className="h-3.5 w-40 rounded bg-black/10" />
+                    <div className="h-3 w-56 rounded bg-black/5" />
+                  </div>
+                </div>
+                <div className="flex shrink-0 gap-3">
+                  <div className="h-3.5 w-8 rounded bg-black/10" />
+                  <div className="h-3.5 w-8 rounded bg-black/10" />
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    );
   }
 
   return (
-    <div className="space-y-10">
+    <div className="space-y-10 w-4xl">
       <form
         onSubmit={handleSubmit}
         className="rounded-md border border-black/5 bg-surface p-6"
@@ -136,112 +265,15 @@ export function EntityManager({
         </h2>
         <div className="mt-4 grid gap-4 sm:grid-cols-2">
           {fields.map((field) => (
-            <div
+            <FieldRow
               key={field.key}
-              className={
-                field.type === "textarea" || field.type === "richtext"
-                  ? "sm:col-span-2"
-                  : ""
-              }
-            >
-              <label
-                className="block text-sm font-medium text-ink"
-                htmlFor={field.key}
-              >
-                {field.label}
-              </label>
-              {field.type === "richtext" ? (
-                <RichTextEditor
-                  id={field.key}
-                  value={form[field.key]}
-                  onChange={(html) => setForm({ ...form, [field.key]: html })}
-                />
-              ) : field.type === "textarea" ? (
-                <textarea
-                  id={field.key}
-                  required={!field.optional}
-                  rows={3}
-                  value={form[field.key]}
-                  onChange={(e) =>
-                    setForm({ ...form, [field.key]: e.target.value })
-                  }
-                  className="mt-1 w-full rounded-md border border-black/10 bg-white px-3 py-2 text-sm text-ink outline-none focus:border-brand-600"
-                />
-              ) : field.type === "image" ? (
-                <div className="mt-1 flex items-center gap-3">
-                  {form[field.key] && (
-                    <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-md border border-black/10 bg-white">
-                      <Image
-                        src={form[field.key]}
-                        alt=""
-                        fill
-                        sizes="64px"
-                        className="object-cover"
-                      />
-                    </div>
-                  )}
-                  <div className="flex flex-col gap-1">
-                    <input
-                      id={field.key}
-                      type="file"
-                      accept="image/jpeg,image/png,image/webp,image/avif,image/gif"
-                      disabled={uploadingKey === field.key}
-                      onChange={(e) => handleFileChange(field.key, e)}
-                      className="text-sm text-ink-soft file:mr-3 file:rounded-md file:border-0 file:bg-brand-50 file:px-3 file:py-1.5 file:text-sm file:font-medium file:text-brand-600 hover:file:bg-brand-100"
-                    />
-                    {uploadingKey === field.key && (
-                      <span className="text-xs text-ink-soft">Đang tải lên...</span>
-                    )}
-                    {form[field.key] && (
-                      <button
-                        type="button"
-                        onClick={() => setForm({ ...form, [field.key]: "" })}
-                        className="w-fit text-xs font-medium text-red-600 hover:text-red-700"
-                      >
-                        Xóa ảnh
-                      </button>
-                    )}
-                  </div>
-                </div>
-              ) : field.type === "select" ? (
-                <select
-                  id={field.key}
-                  required
-                  value={form[field.key]}
-                  onChange={(e) =>
-                    setForm({ ...form, [field.key]: e.target.value })
-                  }
-                  className="mt-1 w-full rounded-md border border-black/10 bg-white px-3 py-2 text-sm text-ink outline-none focus:border-brand-600"
-                >
-                  <option value="" disabled>
-                    Chọn...
-                  </option>
-                  {field.options?.map((option) => (
-                    <option key={option} value={option}>
-                      {option}
-                    </option>
-                  ))}
-                </select>
-              ) : (
-                <input
-                  id={field.key}
-                  type={
-                    field.type === "url"
-                      ? "url"
-                      : field.type === "datetime-local"
-                        ? "datetime-local"
-                        : "text"
-                  }
-                  required={field.type !== "tags" && !field.optional}
-                  placeholder={field.placeholder}
-                  value={form[field.key]}
-                  onChange={(e) =>
-                    setForm({ ...form, [field.key]: e.target.value })
-                  }
-                  className="mt-1 w-full rounded-md border border-black/10 bg-white px-3 py-2 text-sm text-ink outline-none focus:border-brand-600"
-                />
-              )}
-            </div>
+              field={field}
+              value={form[field.key]}
+              onChange={(value) => setForm({ ...form, [field.key]: value })}
+              uploading={uploadingKey === field.key}
+              onFileChange={(e) => handleFileChange(field.key, e)}
+              onClearImage={() => clearImage(field.key)}
+            />
           ))}
         </div>
 
@@ -280,7 +312,13 @@ export function EntityManager({
               <div className="flex items-start gap-3">
                 {typeof item.image === "string" && item.image && (
                   <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-md border border-black/10 bg-white">
-                    <Image src={item.image} alt="" fill sizes="48px" className="object-cover" />
+                    <Image
+                      src={item.image}
+                      alt=""
+                      fill
+                      sizes="48px"
+                      className="object-cover"
+                    />
                   </div>
                 )}
                 <div>
@@ -294,18 +332,18 @@ export function EntityManager({
                   )}
                 </div>
               </div>
-              <div className="flex shrink-0 gap-3">
+              <div className="flex shrink-0 gap-2">
                 <button
                   type="button"
                   onClick={() => startEdit(item)}
-                  className="text-sm font-medium text-brand-600 hover:text-brand-700"
+                  className="cursor-pointer rounded-md border border-brand-200 bg-brand-50 px-3 py-1.5 text-sm font-medium text-brand-600 transition-colors hover:bg-brand-100 hover:text-brand-700"
                 >
                   Sửa
                 </button>
                 <button
                   type="button"
-                  onClick={() => handleDelete(item.id)}
-                  className="text-sm font-medium text-red-600 hover:text-red-700"
+                  onClick={() => setDeleteTarget(item)}
+                  className="cursor-pointer rounded-md border border-red-200 bg-red-50 px-3 py-1.5 text-sm font-medium text-red-600 transition-colors hover:bg-red-100 hover:text-red-700"
                 >
                   Xóa
                 </button>
@@ -317,6 +355,16 @@ export function EntityManager({
           <p className="mt-4 text-sm text-ink-soft">Chưa có mục nào.</p>
         )}
       </div>
+
+      {deleteTarget && (
+        <ConfirmDialog
+          title="Xóa mục này?"
+          description={`"${String(deleteTarget.title ?? deleteTarget.name ?? deleteTarget.id)}" sẽ bị xóa vĩnh viễn.`}
+          pending={deleting}
+          onConfirm={confirmDelete}
+          onCancel={() => setDeleteTarget(null)}
+        />
+      )}
     </div>
   );
 }
