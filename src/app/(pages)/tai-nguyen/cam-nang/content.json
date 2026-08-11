@@ -3,6 +3,10 @@
   "metaDescription": "Cẩm nang, checklist và công cụ tự đánh giá giúp lãnh đạo phát triển năng lực, xây dựng văn hoá tin cậy và tạo kết quả đột phá cho đội ngũ của mình.",
   "heading": "Cẩm nang & Công cụ",
   "intro": "Bộ cẩm nang, checklist và công cụ thực hành giúp lãnh đạo tự đánh giá năng lực, nhận diện điểm cần cải thiện và áp dụng ngay vào công việc hàng ngày.",
+  "highlight": {
+    "heading": "Công cụ thực hành, không chỉ là lý thuyết.",
+    "body": "Mỗi cẩm nang và công cụ được GCW xây dựng để lãnh đạo có thể áp dụng ngay vào công việc — từ tự đánh giá năng lực bản thân đến triển khai từng bước cụ thể cho đội ngũ.\n\nKhám phá bên dưới theo 3 trụ cột: Phát triển lãnh đạo, Xây dựng văn hoá tin cậy và Tạo kết quả đột phá."
+  },
   "toolsHeading": "Công cụ tự đánh giá",
   "tools": [
     {
@@ -10,7 +14,7 @@
       "title": "Công Cụ Xây Dựng Tuyên Ngôn Sứ Mệnh Cá Nhân",
       "description": "Bộ câu hỏi dẫn dắt từng bước giúp bạn viết ra tuyên ngôn sứ mệnh cá nhân, xác định giá trị cốt lõi và định hướng rõ ràng cho cuộc sống và công việc của mình.",
       "ctaLabel": "Bắt đầu xây dựng",
-      "ctaHref": "/contact",
+      "ctaHref": "/tai-nguyen/cam-nang/cong-cu/tool-msb",
       "image": "/uploads/6entpvppl6i-unsplash-96301b9f.jpg"
     },
     {
@@ -18,7 +22,7 @@
       "title": "Công Cụ Đánh Giá Tư Duy Đổi Mới",
       "description": "Trả lời loạt câu hỏi ngắn để khám phá mức độ sẵn sàng thách thức lối mòn, chấp nhận sự mơ hồ và dẫn dắt đổi mới của bạn.",
       "ctaLabel": "Khám phá hồ sơ đổi mới",
-      "ctaHref": "/contact",
+      "ctaHref": "/tai-nguyen/cam-nang/cong-cu/tool-disruptor",
       "image": "/uploads/xy55bl5mzam-unsplash-e5d6e0fb.jpg",
       "assessment": {
         "questions": [
@@ -47,7 +51,7 @@
       "title": "Công Cụ Đánh Giá Điểm Mạnh Theo 7 Thói Quen",
       "description": "14 câu hỏi ngắn giúp bạn nhận diện thói quen nào trong 7 Thói Quen bạn đang làm tốt và thói quen nào cần rèn luyện thêm.",
       "ctaLabel": "Đánh giá ngay",
-      "ctaHref": "/contact",
+      "ctaHref": "/tai-nguyen/cam-nang/cong-cu/tool-7habits",
       "image": "/uploads/tax-unsplash-176a0d6a.jpg",
       "assessment": {
         "questions": [
@@ -82,7 +86,7 @@
       "title": "Cẩm nang onboarding lãnh đạo mới trong 90 ngày đầu",
       "description": "Lộ trình từng tuần giúp lãnh đạo mới nắm bắt vai trò, xây dựng niềm tin với đội ngũ và tạo ra kết quả sớm.",
       "image": "/uploads/3ym6i13y9lu-unsplash-b49eef3c.jpg",
-      "fileUrl": ""
+      "fileUrl": "/downloads/cam-nang-gcw-mau.pdf"
     },
     {
       "id": "cam-nang-02",
@@ -90,7 +94,7 @@
       "title": "Khung năng lực lãnh đạo theo từng cấp bậc quản lý",
       "description": "Bộ tiêu chí năng lực tham khảo cho từng cấp quản lý, từ trưởng nhóm đến lãnh đạo cấp cao.",
       "image": "",
-      "fileUrl": ""
+      "fileUrl": "/downloads/cam-nang-gcw-mau.pdf"
     },
     {
       "id": "cam-nang-03",
@@ -98,7 +102,7 @@
       "title": "Cẩm nang dẫn dắt đội ngũ Gen Z hiệu quả",
       "description": "Những nguyên tắc và phương pháp giao tiếp, tạo động lực phù hợp với thế hệ nhân sự trẻ.",
       "image": "",
-      "fileUrl": ""
+      "fileUrl": "/downloads/cam-nang-gcw-mau.pdf"
     },
     {
       "id": "cam-nang-04",
@@ -106,7 +110,7 @@
       "title": "Công cụ đánh giá và chuẩn bị cho các cuộc đối thoại khó",
       "description": "Khung câu hỏi giúp lãnh đạo đánh giá mức độ sẵn sàng và chuẩn bị tâm thế trước khi bước vào một cuộc trò chuyện nhạy cảm với đội ngũ.",
       "image": "",
-      "fileUrl": ""
+      "fileUrl": "/downloads/cam-nang-gcw-mau.pdf"
     },
     {
       "id": "cam-nang-05",
@@ -114,7 +118,7 @@
       "title": "Cẩm nang phòng ngừa và phục hồi sau kiệt sức trong công việc",
       "description": "Dấu hiệu nhận biết kiệt sức nghề nghiệp (burnout) sớm và các bước phục hồi năng lượng dành cho lãnh đạo bận rộn.",
       "image": "",
-      "fileUrl": ""
+      "fileUrl": "/downloads/cam-nang-gcw-mau.pdf"
     },
     {
       "id": "cam-nang-06",
@@ -122,7 +126,7 @@
       "title": "Cẩm nang chiến thuật xây dựng niềm tin trong đội ngũ",
       "description": "Các hành vi lãnh đạo cụ thể giúp xây dựng và duy trì niềm tin bền vững với đội ngũ.",
       "image": "/uploads/annie-spratt-qckxruozjrg-unsplash-e15fd1fb.jpg",
-      "fileUrl": ""
+      "fileUrl": "/downloads/cam-nang-gcw-mau.pdf"
     },
     {
       "id": "cam-nang-07",
@@ -130,7 +134,7 @@
       "title": "Cẩm nang con người & AI: xây dựng lực lượng lao động sẵn sàng cho tương lai",
       "description": "Hướng dẫn giúp tổ chức chuẩn bị con người và văn hoá làm việc sẵn sàng thích ứng khi AI ngày càng phổ biến.",
       "image": "",
-      "fileUrl": ""
+      "fileUrl": "/downloads/cam-nang-gcw-mau.pdf"
     },
     {
       "id": "cam-nang-08",
@@ -138,7 +142,7 @@
       "title": "Cẩm nang giữ chân nhân tài và giảm tỷ lệ nghỉ việc",
       "description": "Những yếu tố then chốt giúp doanh nghiệp giữ chân nhân sự giỏi và giảm tỷ lệ nghỉ việc trong giai đoạn cạnh tranh nhân lực.",
       "image": "",
-      "fileUrl": ""
+      "fileUrl": "/downloads/cam-nang-gcw-mau.pdf"
     },
     {
       "id": "cam-nang-09",
@@ -146,7 +150,7 @@
       "title": "Cẩm nang nhận diện và vượt qua định kiến vô thức",
       "description": "Hướng dẫn nhận diện định kiến vô thức và xây dựng môi trường làm việc công bằng, bao trùm cho mọi nhân sự.",
       "image": "",
-      "fileUrl": ""
+      "fileUrl": "/downloads/cam-nang-gcw-mau.pdf"
     },
     {
       "id": "cam-nang-10",
@@ -154,7 +158,7 @@
       "title": "Công cụ ưu tiên hoá khách hàng tiềm năng trong bán hàng",
       "description": "Phương pháp giúp đội ngũ bán hàng tập trung nguồn lực vào những khách hàng tiềm năng mang lại giá trị lớn nhất.",
       "image": "/uploads/v89pqztek-k-unsplash-e24d82cb.jpg",
-      "fileUrl": ""
+      "fileUrl": "/downloads/cam-nang-gcw-mau.pdf"
     },
     {
       "id": "cam-nang-11",
@@ -162,7 +166,7 @@
       "title": "Hướng dẫn áp dụng 4 Kỷ Luật Thực Thi",
       "description": "Khung thực thi 4 kỷ luật giúp đội ngũ biến mục tiêu chiến lược thành kết quả đo lường được.",
       "image": "",
-      "fileUrl": ""
+      "fileUrl": "/downloads/cam-nang-gcw-mau.pdf"
     },
     {
       "id": "cam-nang-12",
@@ -170,7 +174,7 @@
       "title": "Cẩm nang gắn kết đội nhóm làm việc từ xa",
       "description": "Phương pháp duy trì sự gắn kết và hiệu suất cho đội nhóm làm việc phân tán, từ xa.",
       "image": "/uploads/imagine-buddy-vslbaidhwau-unsplash-341d5944.jpg",
-      "fileUrl": ""
+      "fileUrl": "/downloads/cam-nang-gcw-mau.pdf"
     },
     {
       "id": "cam-nang-13",
@@ -178,7 +182,7 @@
       "title": "Cẩm nang xây dựng cam kết và theo đuổi mục tiêu",
       "description": "Cách thiết lập mục tiêu rõ ràng và duy trì cam kết thực sự từ từng thành viên trong suốt quá trình theo đuổi mục tiêu.",
       "image": "",
-      "fileUrl": ""
+      "fileUrl": "/downloads/cam-nang-gcw-mau.pdf"
     },
     {
       "id": "cam-nang-14",
@@ -186,7 +190,7 @@
       "title": "Lưới quyết định trong bán hàng tư vấn",
       "description": "Công cụ giúp đội ngũ bán hàng xác định đúng mức độ ưu tiên và hướng tiếp cận phù hợp cho từng cơ hội bán hàng tư vấn.",
       "image": "",
-      "fileUrl": ""
+      "fileUrl": "/downloads/cam-nang-gcw-mau.pdf"
     }
   ],
   "cta": {

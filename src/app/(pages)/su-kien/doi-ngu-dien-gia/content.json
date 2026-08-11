@@ -3,6 +3,12 @@
   "metaDescription": "Đội ngũ chuyên gia cố vấn lãnh đạo của GCW sẵn sàng chia sẻ tại sự kiện của đối tác về phát triển lãnh đạo, văn hoá tin cậy và tạo kết quả đột phá.",
   "heading": "Đội ngũ diễn giả",
   "intro": "Đội ngũ chuyên gia cố vấn lãnh đạo của GCW sẵn sàng chia sẻ tại sự kiện của đối tác — liên hệ để trao đổi lịch diễn giả phù hợp với chủ đề sự kiện của bạn.",
+  "highlight": {
+    "heading": "Biến sự kiện tiếp theo của bạn thành sự kiện đáng nhớ nhất!",
+    "body": "Chọn từ đội ngũ chuyên gia cố vấn giàu kinh nghiệm thực chiến của GCW, mang góc nhìn chuyên môn đến gần hơn với khán giả của bạn.\n\nDù là sự kiện khởi động năm mới, tổng kết cuối năm, hội nghị thường niên hay sự kiện riêng lẻ, GCW luôn có diễn giả phù hợp với dịp của bạn.",
+    "ctaLabel": "Đặt lịch diễn giả",
+    "ctaHref": "/contact"
+  },
   "speakersHeading": "Chuyên gia tiêu biểu",
   "speakers": [
     {
@@ -176,5 +182,10 @@
     "body": "Để lại thông tin sự kiện, đội ngũ GCW sẽ liên hệ trao đổi chủ đề và lịch diễn giả phù hợp.",
     "label": "Liên hệ mời diễn giả",
     "href": "/contact"
+  },
+  "leadForm": {
+    "heading": "Câu hỏi về việc đặt lịch diễn giả?",
+    "body": "Từ hậu cần đến nội dung bàn giao, đội ngũ GCW đồng hành cùng bạn xuyên suốt quá trình chuẩn bị. Điền thông tin bên dưới để bắt đầu.",
+    "jarvisFormId": "form_QgNEpXvIHba9F1"
   }
 }

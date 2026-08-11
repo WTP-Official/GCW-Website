@@ -4,7 +4,6 @@ import content from "./content.json";
 import { FeaturedAccordionList, type ToolCard } from "@/components/FeaturedAccordionList";
 import { groupByCategory } from "@/lib/groupByCategory";
 import { GrossNetCalculatorButton } from "./_components/GrossNetCalculatorButton";
-import { SelfAssessmentButton } from "./_components/SelfAssessmentButton";
 
 export const metadata: Metadata = {
   title: content.title,
@@ -22,24 +21,9 @@ type Item = {
   fileUrl?: string;
 };
 
-type ToolAssessment = {
-  questions: { id: string; text: string }[];
-  resultTiers: { minScore: number; maxScore: number; label: string; description: string }[];
-};
-
-function renderToolAction(tool: ToolCard & { assessment?: ToolAssessment }) {
+function renderToolAction(tool: ToolCard) {
   if (tool.id === "tool-02") {
     return <GrossNetCalculatorButton label={tool.ctaLabel} />;
-  }
-  if (tool.assessment) {
-    return (
-      <SelfAssessmentButton
-        ctaLabel={tool.ctaLabel}
-        title={tool.title}
-        questions={tool.assessment.questions}
-        resultTiers={tool.assessment.resultTiers}
-      />
-    );
   }
   return undefined;
 }

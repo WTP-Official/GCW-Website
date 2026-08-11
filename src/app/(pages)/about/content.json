@@ -6,21 +6,46 @@
     "heading": "Đối tác phát triển lãnh đạo — đồng hành thực thi, không chỉ đào tạo lý thuyết",
     "body": "Công ty Cổ phần GCW (GCW JSC) là đối tác phát triển lãnh đạo và hiệu suất tổ chức cho doanh nghiệp Việt Nam. Chúng tôi mang đến khung năng lực được kiểm chứng toàn cầu, đội ngũ chuyên gia cố vấn giàu kinh nghiệm và công nghệ đo lường tác động, để mọi chương trình đào tạo đều chuyển hoá thành kết quả thực thi."
   },
-  "pillars": [
+  "whoWeAre": {
+    "heading": "Chúng tôi là ai",
+    "body": "Là đối tác phát triển lãnh đạo và hiệu suất tổ chức, GCW mang đến lợi thế con người cho chiến lược của bạn™. Với hơn 40 năm kinh nghiệm được đúc kết qua mạng lưới đối tác tại hơn 160 quốc gia, GCW đồng hành cùng hàng chục ngàn lãnh đạo, đội ngũ và tổ chức đạt được kết quả đột phá và chuyển hoá cách họ thực thi chiến lược ở quy mô lớn.\n\nChúng tôi phát triển những nhà lãnh đạo xuất sắc ở mọi cấp bậc để gắn kết con người quanh mục tiêu và ưu tiên tạo nên hiệu suất vượt trội. Thông qua các khung năng lực và thực hành lấy nguyên tắc làm trung tâm đã được kiểm chứng, chúng tôi giúp tổ chức — từ doanh nghiệp lớn đến doanh nghiệp vừa và nhỏ, trường học và cơ quan nhà nước — xây dựng đội ngũ lãnh đạo tin cậy cao, văn hoá hiệu suất cao để chuyển hoá chiến lược thành thực thi nhất quán."
+  },
+  "links": [
     {
-      "icon": "ShieldCheck",
-      "title": "Con người quyết định thành bại chiến lược",
-      "description": "Mọi lộ trình đồng hành đều bắt đầu từ phát triển năng lực lãnh đạo và xây dựng niềm tin, trước khi bàn đến công cụ hay quy trình."
+      "icon": "Compass",
+      "name": "Sứ mệnh, Tầm nhìn & Giá trị",
+      "description": "Khám phá điều thôi thúc chúng tôi khai phóng sự vĩ đại trong chính mình và người khác.",
+      "href": "#ecosystem"
     },
     {
       "icon": "Users",
-      "title": "Đồng hành thực thi cùng đội ngũ",
-      "description": "GCW không bàn giao tài liệu đào tạo rồi rời đi — chuyên gia trực tiếp đồng hành cùng đội ngũ quản lý trong suốt hành trình áp dụng."
+      "name": "Đội ngũ diễn giả & chuyên gia",
+      "description": "Gặp gỡ đội ngũ chuyên gia định hình văn hoá và kết quả của GCW.",
+      "href": "/su-kien/doi-ngu-dien-gia"
     },
     {
-      "icon": "Building2",
-      "title": "Gắn với mục tiêu kinh doanh",
-      "description": "Chương trình phát triển lãnh đạo được thiết kế bám sát chiến lược tăng trưởng, gọi vốn hoặc mở rộng thị trường của từng tổ chức."
+      "icon": "Award",
+      "name": "Cam kết văn hoá chiến thắng",
+      "description": "Tìm hiểu cách chúng tôi gắn kết con người và đạt kết quả tốt với văn hoá chiến thắng của mình.",
+      "href": "#differentiators"
+    },
+    {
+      "icon": "Network",
+      "name": "Hệ sinh thái WTP Group",
+      "description": "GCW là một mắt xích trong hệ sinh thái các công ty đồng hành cùng doanh nghiệp Việt Nam.",
+      "href": "#ecosystem"
+    },
+    {
+      "icon": "Newspaper",
+      "name": "Tin tức & Truyền thông",
+      "description": "Khám phá các bài viết và kiến thức mới nhất từ đội ngũ chuyên gia GCW.",
+      "href": "/blog"
+    },
+    {
+      "icon": "MessageSquareText",
+      "name": "Liên hệ GCW",
+      "description": "Kết nối với đại diện GCW ngay hôm nay.",
+      "href": "/contact"
     }
   ],
   "stats": [

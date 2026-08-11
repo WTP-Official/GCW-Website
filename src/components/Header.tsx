@@ -253,7 +253,6 @@ const RESOURCES_COLUMN: DropdownColumn = {
     label: item.title,
     description: item.description,
     icon: ICONS[item.icon],
-    image: item.image,
   })),
 };
 
@@ -302,11 +301,11 @@ export function Header() {
             viewAll: { href: "/blog", label: "Xem tất cả tin tức" },
             featured: {
               icon: Newspaper,
-              heading: resourcesContent.live.title,
-              body: resourcesContent.live.description,
+              heading: resourcesContent.items[0].title,
+              body: resourcesContent.items[0].description,
               cta: {
-                href: resourcesContent.live.href,
-                label: resourcesContent.live.label,
+                href: resourcesContent.items[0].href,
+                label: resourcesContent.items[0].label,
               },
             },
           },

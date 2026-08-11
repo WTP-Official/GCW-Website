@@ -16,6 +16,7 @@ export default function WebcastsPage() {
       backHref="/su-kien"
       backLabel="Quay lại Sự kiện"
       basePath="/su-kien/hoi-thao-truc-tuyen"
+      imageLayout="side"
     />
   );
 }

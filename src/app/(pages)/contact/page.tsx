@@ -19,22 +19,22 @@ function formatPhoneLabel(phone: string) {
 export default function ContactPage() {
   return (
     <main>
-      <section className="bg-bg-dark text-white">
-        <div className="mx-auto grid max-w-6xl gap-12 px-4 py-24 lg:grid-cols-2 lg:items-start lg:py-32">
+      <section className="bg-white">
+        <div className="mx-auto grid max-w-6xl gap-12 px-4 py-16 lg:grid-cols-2 lg:items-start">
           <Reveal>
             <div>
-              <h1 className="font-serif-hero text-3xl leading-snug sm:text-4xl">
+              <h1 className="font-serif-hero text-5xl leading-[1.1] text-ink sm:text-6xl">
                 {content.heading}
               </h1>
-              <p className="mt-6 max-w-md text-lg text-white/70">
+              <p className="mt-6 max-w-md text-lg text-ink-soft">
                 &ldquo;{content.quote}&rdquo;
               </p>
 
-              <div className="mt-10 grid gap-8 border-t border-white/10 pt-8 sm:grid-cols-2">
+              <div className="mt-10 grid gap-8 border-t border-black/10 pt-8 sm:grid-cols-2">
                 <div>
-                  <h3 className="text-sm font-semibold text-white">Thông tin</h3>
-                  <ul className="mt-3 space-y-2 text-sm text-white/70">
-                    <li className="font-medium text-white">
+                  <h3 className="text-sm font-semibold text-ink">Thông tin</h3>
+                  <ul className="mt-3 space-y-2 text-sm text-ink-soft">
+                    <li className="font-medium text-ink">
                       {content.company.legalName}
                     </li>
                     <li>MST: {content.company.taxCode}</li>
@@ -47,19 +47,19 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <h3 className="text-sm font-semibold text-white">Liên hệ</h3>
-                  <ul className="mt-3 space-y-2 text-sm text-white/70">
+                  <h3 className="text-sm font-semibold text-ink">Liên hệ</h3>
+                  <ul className="mt-3 space-y-2 text-sm text-ink-soft">
                     <li className="flex flex-wrap items-center gap-1">
                       <Phone
-                        className="mr-1 h-4 w-4 text-white/70"
+                        className="mr-1 h-4 w-4 text-ink-soft"
                         aria-hidden="true"
                       />
                       {content.phones.map((phone, i) => (
                         <span key={phone}>
-                          {i > 0 && <span className="mx-1 text-white/40">|</span>}
+                          {i > 0 && <span className="mx-1 text-muted">|</span>}
                           <a
                             href={`tel:${phone}`}
-                            className="transition-colors hover:text-white"
+                            className="transition-colors hover:text-brand-600"
                           >
                             {formatPhoneLabel(phone)}
                           </a>
@@ -68,26 +68,26 @@ export default function ContactPage() {
                     </li>
                     <li className="flex items-center gap-2">
                       <Mail
-                        className="h-4 w-4 text-white/70"
+                        className="h-4 w-4 text-ink-soft"
                         aria-hidden="true"
                       />
                       <a
                         href={`mailto:${content.email}`}
-                        className="transition-colors hover:text-white"
+                        className="transition-colors hover:text-brand-600"
                       >
                         {content.email}
                       </a>
                     </li>
                     <li className="flex items-center gap-2">
                       <Globe
-                        className="h-4 w-4 text-white/70"
+                        className="h-4 w-4 text-ink-soft"
                         aria-hidden="true"
                       />
                       <a
                         href={`https://${content.website}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="transition-colors hover:text-white"
+                        className="transition-colors hover:text-brand-600"
                       >
                         {content.website}
                       </a>
@@ -100,6 +100,9 @@ export default function ContactPage() {
 
           <Reveal delay={150}>
             <div>
+              <p className="mb-4 text-sm font-semibold text-ink">
+                Điền vào biểu mẫu bên dưới để kết nối với đại diện GCW.
+              </p>
               <JarvisFormEmbed
                 formId={content.jarvisFormId}
                 title="Biểu mẫu liên hệ GCW"

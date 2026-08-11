@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 export default function EducationPage() {
-  const { hero, audiences, programsHeading, programs, caseStudiesHeading, caseStudies, cta } =
+  const { hero, highlight, audiences, programsHeading, programs, caseStudiesHeading, caseStudies, cta } =
     content;
 
   return (
@@ -24,6 +24,15 @@ export default function EducationPage() {
           <p className="mt-6 max-w-xl text-lg text-ink-soft">{hero.body}</p>
         </div>
       </section>
+
+      {highlight && (
+        <section className="border-b border-black/10 bg-white">
+          <div className="mx-auto grid max-w-6xl gap-8 px-4 py-16 lg:grid-cols-2">
+            <p className="font-serif-hero text-2xl leading-snug text-ink sm:text-3xl">{highlight.heading}</p>
+            <p className="text-sm text-ink-soft">{highlight.body}</p>
+          </div>
+        </section>
+      )}
 
       <section className="border-b border-black/10 py-16">
         <div className="mx-auto max-w-6xl px-4">

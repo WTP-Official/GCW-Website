@@ -14,7 +14,8 @@ type SeriesItem = {
 type Content = {
   heading: string;
   intro: string;
-  featured: { label: string; title: string; description: string };
+  highlight?: { heading: string; body: string };
+  featured: { label: string; title: string; description: string; image?: string };
   seriesHeading: string;
   series: SeriesItem[];
   cta: { heading: string; body: string; label: string; href: string };
@@ -33,7 +34,7 @@ export function FeaturedSeriesGrid({
   backLabel: string;
   basePath: string;
 }) {
-  const { heading, intro, featured, seriesHeading, series, cta } = content;
+  const { heading, intro, highlight, featured, seriesHeading, series, cta } = content;
 
   return (
     <main>
@@ -46,6 +47,21 @@ export function FeaturedSeriesGrid({
         </Reveal>
       </section>
 
+      {highlight && (
+        <section className="border-b border-black/10 bg-white">
+          <Reveal>
+            <div className="mx-auto grid max-w-6xl gap-8 px-4 py-16 lg:grid-cols-2">
+              <p className="font-serif-hero text-2xl leading-snug text-ink sm:text-3xl">{highlight.heading}</p>
+              <div className="space-y-4 text-sm text-ink-soft">
+                {highlight.body.split("\n\n").map((paragraph) => (
+                  <p key={paragraph}>{paragraph}</p>
+                ))}
+              </div>
+            </div>
+          </Reveal>
+        </section>
+      )}
+
       <section className="mx-auto max-w-6xl px-4 py-24">
         <Link
           href={backHref}
@@ -57,8 +73,18 @@ export function FeaturedSeriesGrid({
 
         <Reveal>
           <div className="mt-10 grid gap-8 overflow-hidden rounded-md bg-bg-dark text-white sm:grid-cols-2">
-            <div className="flex aspect-video w-full items-center justify-center bg-black/20 sm:aspect-auto">
-              <Icon className="h-10 w-10 text-white/50" aria-hidden="true" />
+            <div className="relative flex aspect-video w-full items-center justify-center bg-black/20 sm:aspect-auto">
+              {featured.image ? (
+                <Image
+                  src={featured.image}
+                  alt={featured.title}
+                  fill
+                  sizes="(min-width: 640px) 50vw, 100vw"
+                  className="object-cover"
+                />
+              ) : (
+                <Icon className="h-10 w-10 text-white/50" aria-hidden="true" />
+              )}
             </div>
             <div className="flex flex-col justify-center p-8">
               <p className="text-sm font-medium uppercase tracking-widest text-white/50">

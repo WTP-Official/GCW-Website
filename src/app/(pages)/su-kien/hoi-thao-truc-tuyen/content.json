@@ -3,6 +3,10 @@
   "metaDescription": "Chuỗi webinar miễn phí của GCW cùng chuyên gia chia sẻ về lãnh đạo trong kỷ nguyên AI, xây dựng văn hoá tin cậy và tạo kết quả đột phá cho tổ chức.",
   "heading": "Hội thảo trực tuyến",
   "intro": "Chuỗi webinar miễn phí cùng chuyên gia GCW, chia sẻ góc nhìn thực chiến về phát triển lãnh đạo, văn hoá tổ chức và thực thi chiến lược, tổ chức định kỳ dành cho cộng đồng lãnh đạo doanh nghiệp.",
+  "highlight": {
+    "heading": "Tham gia hội thảo trực tuyến hoặc xem lại theo yêu cầu.",
+    "body": "Khám phá cách GCW mang đến lợi thế con người cho chiến lược của bạn qua các buổi chia sẻ miễn phí. Chỉ trong 60 phút, nhận những góc nhìn và chiến lược thực chiến giúp lãnh đạo, đội ngũ và tổ chức bứt phá hiệu suất.\n\nXem lịch hội thảo bên dưới để đăng ký tham dự trực tiếp cùng chuyên gia GCW — hoặc xem lại bất cứ khi nào bạn sẵn sàng."
+  },
   "itemsHeading": "Lịch hội thảo trực tuyến",
   "items": [
     {
@@ -12,7 +16,7 @@
       "format": "Online",
       "eventDate": "2026-08-21T09:00",
       "location": "Link Zoom sẽ gửi sau khi đăng ký",
-      "image": "",
+      "image": "/uploads/3ym6i13y9lu-unsplash-b49eef3c.jpg",
       "body": "",
       "speakers": "Ông Phạm Anh Tuấn | Chuyên gia Chuyển đổi Lãnh đạo, GCW",
       "takeaways": "Vì sao thành công của AI phụ thuộc vào sự sẵn sàng của con người hơn là công nghệ\nCách xây dựng lộ trình chuẩn bị đội ngũ trước khi triển khai AI",
@@ -26,7 +30,8 @@
       "description": "Webinar chia sẻ khung hành động giúp lãnh đạo chuyển hoá ngân sách và công cụ AI thành hiệu suất đo lường được.",
       "format": "Online",
       "eventDate": "2026-09-04T14:00",
-      "location": "Link Zoom sẽ gửi sau khi đăng ký"
+      "location": "Link Zoom sẽ gửi sau khi đăng ký",
+      "image": "/uploads/6entpvppl6i-unsplash-96301b9f.jpg"
     },
     {
       "id": "webinar-nang-chuan-nang-tam-con-nguoi",
@@ -34,7 +39,8 @@
       "description": "Webinar về cách lãnh đạo nâng chuẩn mực công việc đồng thời nâng tầm năng lực và động lực của đội ngũ.",
       "format": "Online",
       "eventDate": "2026-09-18T09:00",
-      "location": "Link Zoom sẽ gửi sau khi đăng ký"
+      "location": "Link Zoom sẽ gửi sau khi đăng ký",
+      "image": "/uploads/annie-spratt-qckxruozjrg-unsplash-e15fd1fb.jpg"
     },
     {
       "id": "webinar-lanh-dao-san-sang-cho-ai",
@@ -57,7 +63,8 @@
       "description": "Webinar hướng dẫn kỹ thuật thuyết trình giúp thông điệp của bạn thực sự thúc đẩy hành động, không chỉ để lại ấn tượng.",
       "format": "Online",
       "eventDate": "2026-10-16T09:00",
-      "location": "Link Zoom sẽ gửi sau khi đăng ký"
+      "location": "Link Zoom sẽ gửi sau khi đăng ký",
+      "image": "/uploads/v89pqztek-k-unsplash-e24d82cb.jpg"
     },
     {
       "id": "webinar-dan-dat-qua-giai-doan-gian-doan",
@@ -65,7 +72,8 @@
       "description": "Webinar chia sẻ cách lãnh đạo giữ vững định hướng và tinh thần đội ngũ khi tổ chức đối mặt gián đoạn liên tục.",
       "format": "Online",
       "eventDate": "2026-10-30T14:00",
-      "location": "Link Zoom sẽ gửi sau khi đăng ký"
+      "location": "Link Zoom sẽ gửi sau khi đăng ký",
+      "image": "/uploads/imagine-buddy-vslbaidhwau-unsplash-341d5944.jpg"
     },
     {
       "id": "webinar-niem-tin-khai-phong-tiem-nang",
@@ -73,7 +81,8 @@
       "description": "Webinar khám phá mối liên hệ giữa niềm tin và hiệu suất, cùng cách lãnh đạo khai phóng tối đa năng lực đội ngũ.",
       "format": "Online",
       "eventDate": "2026-11-13T09:00",
-      "location": "Link Zoom sẽ gửi sau khi đăng ký"
+      "location": "Link Zoom sẽ gửi sau khi đăng ký",
+      "image": "/uploads/3ym6i13y9lu-unsplash-b49eef3c.jpg"
     },
     {
       "id": "webinar-tu-gian-doan-den-dinh-huong",
@@ -81,7 +90,8 @@
       "description": "Webinar hướng dẫn quy trình giúp ban lãnh đạo nhanh chóng thiết lập lại định hướng sau biến động thị trường.",
       "format": "Online",
       "eventDate": "2026-11-27T09:00",
-      "location": "Link Zoom sẽ gửi sau khi đăng ký"
+      "location": "Link Zoom sẽ gửi sau khi đăng ký",
+      "image": "/uploads/6entpvppl6i-unsplash-96301b9f.jpg"
     },
     {
       "id": "webinar-thu-hep-khoang-cach-nang-luc-lanh-dao",
@@ -89,7 +99,8 @@
       "description": "Webinar chỉ ra khoảng cách phổ biến giữa năng lực lãnh đạo hiện tại và yêu cầu của tổ chức trong giai đoạn tới.",
       "format": "Online",
       "eventDate": "2026-12-11T14:00",
-      "location": "Link Zoom sẽ gửi sau khi đăng ký"
+      "location": "Link Zoom sẽ gửi sau khi đăng ký",
+      "image": "/uploads/annie-spratt-qckxruozjrg-unsplash-e15fd1fb.jpg"
     },
     {
       "id": "webinar-hieu-ung-7-thoi-quen",
@@ -97,7 +108,8 @@
       "description": "Webinar khám phá cách khung 7 Thói Quen giúp mở khoá tiềm năng cá nhân và bứt phá hiệu suất đội ngũ.",
       "format": "Online",
       "eventDate": "2026-12-18T09:00",
-      "location": "Link Zoom sẽ gửi sau khi đăng ký"
+      "location": "Link Zoom sẽ gửi sau khi đăng ký",
+      "image": "/uploads/v89pqztek-k-unsplash-e24d82cb.jpg"
     },
     {
       "id": "webinar-vuon-len-giua-gian-doan",
@@ -120,7 +132,8 @@
       "description": "Webinar trang bị kỹ năng giúp đội ngũ xử lý những cuộc đối thoại khó một cách xây dựng và hiệu quả.",
       "format": "Online",
       "eventDate": "2027-01-22T14:00",
-      "location": "Link Zoom sẽ gửi sau khi đăng ký"
+      "location": "Link Zoom sẽ gửi sau khi đăng ký",
+      "image": "/uploads/xy55bl5mzam-unsplash-e5d6e0fb.jpg"
     },
     {
       "id": "webinar-dan-dat-thay-doi-tai-noi-lam-viec",
@@ -128,7 +141,8 @@
       "description": "Webinar chia sẻ cách lãnh đạo dẫn dắt đội ngũ thích ứng với thay đổi liên tục tại nơi làm việc.",
       "format": "Online",
       "eventDate": "2027-02-05T09:00",
-      "location": "Link Zoom sẽ gửi sau khi đăng ký"
+      "location": "Link Zoom sẽ gửi sau khi đăng ký",
+      "image": "/uploads/3ym6i13y9lu-unsplash-b49eef3c.jpg"
     },
     {
       "id": "webinar-thuc-thi-voi-muc-dich-ro-rang",
@@ -136,7 +150,8 @@
       "description": "Webinar về cách gắn kết mục tiêu công việc hàng ngày với mục đích lớn hơn để nâng cao hiệu suất thực thi.",
       "format": "Online",
       "eventDate": "2027-02-19T09:00",
-      "location": "Link Zoom sẽ gửi sau khi đăng ký"
+      "location": "Link Zoom sẽ gửi sau khi đăng ký",
+      "image": "/uploads/6entpvppl6i-unsplash-96301b9f.jpg"
     },
     {
       "id": "webinar-chuyen-hoa-muc-tieu-chien-luoc",
@@ -144,7 +159,8 @@
       "description": "Webinar chia sẻ khung hành động giúp tổ chức biến mục tiêu chiến lược thành kết quả đột phá đo lường được.",
       "format": "Online",
       "eventDate": "2027-03-05T14:00",
-      "location": "Link Zoom sẽ gửi sau khi đăng ký"
+      "location": "Link Zoom sẽ gửi sau khi đăng ký",
+      "image": "/uploads/annie-spratt-qckxruozjrg-unsplash-e15fd1fb.jpg"
     }
   ],
   "cta": {

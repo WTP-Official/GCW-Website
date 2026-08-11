@@ -3,6 +3,23 @@
   "metaDescription": "Workshop phát triển cá nhân của GCW giúp lãnh đạo và quản lý xây dựng thói quen hiệu quả, niềm tin đội nhóm và năng lực thực thi trong tổ chức.",
   "heading": "Workshop phát triển cá nhân",
   "intro": "Chương trình workshop thực chiến giúp từng cá nhân và đội ngũ quản lý nâng cao năng lực lãnh đạo, thiết kế riêng theo bài toán và ngữ cảnh của từng doanh nghiệp.",
+  "formatsHeading": "Chọn cách trải nghiệm workshop",
+  "formats": [
+    {
+      "name": "Trực tuyến trực tiếp & Tại doanh nghiệp",
+      "description": "Trải nghiệm nội dung giúp bạn đạt được mục tiêu quan trọng nhất — trực tuyến trực tiếp hoặc ngay tại doanh nghiệp.",
+      "ctaLabel": "Tìm hiểu thêm"
+    },
+    {
+      "name": "Tự học theo tiến độ",
+      "description": "Không sắp xếp được thời điểm phù hợp? Trải nghiệm nội dung chất lượng cao theo nhịp độ của riêng bạn.",
+      "ctaLabel": "Tìm hiểu thêm"
+    }
+  ],
+  "explainer": {
+    "heading": "Nội dung của chúng tôi, theo cách của bạn.",
+    "body": "Các workshop phát triển cá nhân được thiết kế cho từng cá nhân và đội ngũ nhỏ. Nếu doanh nghiệp bạn cần giải pháp quy mô tổ chức, hãy xem qua gói All Access của GCW.\n\nDù bạn là lãnh đạo cấp cao, quản lý hay nhân sự đóng góp trực tiếp, nội dung của chúng tôi giúp bạn xây dựng tư duy, kỹ năng và công cụ cần thiết để thành công theo cách phù hợp nhất với bạn."
+  },
   "itemsHeading": "Workshop tiêu biểu",
   "items": [
     {

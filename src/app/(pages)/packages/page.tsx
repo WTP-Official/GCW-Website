@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 export default function PackagesPage() {
-  const { hero, resources, included, stats, testimonial, cta } = content;
+  const { hero, resources, included, stats, testimonial, options, cta } = content;
 
   return (
     <main>
@@ -114,6 +114,32 @@ export default function PackagesPage() {
           </p>
         </div>
       </section>
+
+      {options && (
+        <section className="border-b border-black/10 bg-white py-16">
+          <div className="mx-auto max-w-6xl px-4">
+            <h2 className="font-serif-hero text-3xl leading-snug text-ink sm:text-4xl">
+              {options.heading}
+            </h2>
+            <div className="mt-10 grid gap-6 sm:grid-cols-3">
+              {options.tiers.map((tier) => (
+                <div key={tier.name} className="rounded-md bg-bg-dark p-6 text-white">
+                  <h3 className="font-serif-hero text-xl leading-snug">{tier.name}</h3>
+                  <p className="mt-3 text-sm text-white/70">{tier.description}</p>
+                  <p className="mt-6 text-xs font-semibold uppercase tracking-wide text-white/50">
+                    Chương trình tiêu biểu
+                  </p>
+                  <ul className="mt-2 space-y-1.5 text-sm text-white/70">
+                    {tier.courses.map((course) => (
+                      <li key={course}>{course}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="bg-bg-muted">
         <div className="mx-auto max-w-2xl px-4 py-24 text-center">

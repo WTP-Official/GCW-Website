@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowLeft, type LucideIcon } from "lucide-react";
 import { Reveal } from "@/components/Reveal";
+import { JarvisFormEmbed } from "@/components/JarvisFormEmbed";
 
 type Speaker = {
   id: string;
@@ -15,9 +16,11 @@ type Speaker = {
 type Content = {
   heading: string;
   intro: string;
+  highlight?: { heading: string; body: string; ctaLabel?: string; ctaHref?: string };
   speakersHeading: string;
   speakers: Speaker[];
-  cta: { heading: string; body: string; label: string; href: string };
+  cta?: { heading: string; body: string; label: string; href: string };
+  leadForm?: { heading: string; body: string; jarvisFormId: string };
 };
 
 export function SpeakerGrid({
@@ -33,7 +36,7 @@ export function SpeakerGrid({
   backLabel: string;
   basePath: string;
 }) {
-  const { heading, intro, speakersHeading, speakers, cta } = content;
+  const { heading, intro, highlight, speakersHeading, speakers, cta, leadForm } = content;
 
   return (
     <main>
@@ -45,6 +48,29 @@ export function SpeakerGrid({
           </div>
         </Reveal>
       </section>
+
+      {highlight && (
+        <section className="border-b border-black/10 bg-white">
+          <Reveal>
+            <div className="mx-auto max-w-3xl px-4 py-16 text-center">
+              <h2 className="font-serif-hero text-3xl leading-snug text-ink sm:text-4xl">{highlight.heading}</h2>
+              <div className="mt-4 space-y-3 text-ink-soft">
+                {highlight.body.split("\n\n").map((paragraph) => (
+                  <p key={paragraph}>{paragraph}</p>
+                ))}
+              </div>
+              {highlight.ctaLabel && highlight.ctaHref && (
+                <Link
+                  href={highlight.ctaHref}
+                  className="mt-6 inline-flex items-center gap-2 rounded-full bg-brand-600 px-6 py-3 text-sm font-medium text-white shadow-sm transition-all hover:-translate-y-0.5 hover:bg-brand-700 hover:shadow-md"
+                >
+                  {highlight.ctaLabel}
+                </Link>
+              )}
+            </div>
+          </Reveal>
+        </section>
+      )}
 
       <section className="mx-auto max-w-6xl px-4 py-24">
         <Link
@@ -84,20 +110,36 @@ export function SpeakerGrid({
         </div>
       </section>
 
-      <section className="bg-bg-muted">
-        <Reveal>
-          <div className="mx-auto max-w-2xl px-4 py-24 text-center">
-            <h2 className="text-2xl leading-snug text-ink sm:text-3xl">{cta.heading}</h2>
-            <p className="mt-4 text-ink-soft">{cta.body}</p>
-            <Link
-              href={cta.href}
-              className="mt-8 inline-flex items-center gap-2 rounded-md bg-brand-600 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-brand-700"
-            >
-              {cta.label}
-            </Link>
-          </div>
-        </Reveal>
-      </section>
+      {leadForm && (
+        <section className="border-t border-black/10 bg-white">
+          <Reveal>
+            <div className="mx-auto grid max-w-6xl gap-10 px-4 py-24 lg:grid-cols-2 lg:items-start">
+              <div>
+                <h2 className="font-serif-hero text-4xl leading-tight text-ink sm:text-5xl">{leadForm.heading}</h2>
+                <p className="mt-4 max-w-md text-ink-soft">{leadForm.body}</p>
+              </div>
+              <JarvisFormEmbed formId={leadForm.jarvisFormId} title={leadForm.heading} className="rounded-md" />
+            </div>
+          </Reveal>
+        </section>
+      )}
+
+      {!leadForm && cta && (
+        <section className="bg-bg-muted">
+          <Reveal>
+            <div className="mx-auto max-w-2xl px-4 py-24 text-center">
+              <h2 className="text-2xl leading-snug text-ink sm:text-3xl">{cta.heading}</h2>
+              <p className="mt-4 text-ink-soft">{cta.body}</p>
+              <Link
+                href={cta.href}
+                className="mt-8 inline-flex items-center gap-2 rounded-md bg-brand-600 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-brand-700"
+              >
+                {cta.label}
+              </Link>
+            </div>
+          </Reveal>
+        </section>
+      )}
     </main>
   );
 }

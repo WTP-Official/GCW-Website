@@ -14,6 +14,7 @@ type CatalogItem = {
 type Content = {
   heading: string;
   intro: string;
+  highlight?: { heading: string; body: string };
   featured?: { title: string; description: string; ctaLabel: string; ctaHref: string };
   itemsHeading: string;
   items: CatalogItem[];
@@ -33,7 +34,7 @@ export function FeaturedCatalogGrid({
   backLabel: string;
   basePath: string;
 }) {
-  const { heading, intro, featured, itemsHeading, items, cta } = content;
+  const { heading, intro, highlight, featured, itemsHeading, items, cta } = content;
 
   return (
     <main>
@@ -45,6 +46,21 @@ export function FeaturedCatalogGrid({
           </div>
         </Reveal>
       </section>
+
+      {highlight && (
+        <section className="border-b border-black/10 bg-white">
+          <Reveal>
+            <div className="mx-auto grid max-w-6xl gap-8 px-4 py-16 lg:grid-cols-2">
+              <p className="font-serif-hero text-2xl leading-snug text-ink sm:text-3xl">{highlight.heading}</p>
+              <div className="space-y-4 text-sm text-ink-soft">
+                {highlight.body.split("\n\n").map((paragraph) => (
+                  <p key={paragraph}>{paragraph}</p>
+                ))}
+              </div>
+            </div>
+          </Reveal>
+        </section>
+      )}
 
       <section className="mx-auto max-w-6xl px-4 py-24">
         <Link
@@ -76,33 +92,31 @@ export function FeaturedCatalogGrid({
         )}
 
         <h2 className="mt-16 text-2xl leading-snug text-ink sm:text-3xl">{itemsHeading}</h2>
-        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {items.map((item, index) => (
-            <Reveal key={item.id} delay={(index % 3) * 100}>
+            <Reveal key={item.id} delay={(index % 4) * 80}>
               <Link
                 href={`${basePath}/${item.id}`}
-                className="group flex flex-col overflow-hidden rounded-md bg-bg-dark text-white transition-shadow hover:shadow-md"
+                className="group flex h-full flex-col rounded-md bg-bg-dark p-6 text-white transition-shadow hover:shadow-md"
               >
+                <p className="text-xs font-medium uppercase tracking-widest text-white/50">
+                  {item.eyebrow}
+                </p>
+                <h3 className="mt-3 text-lg leading-snug group-hover:text-brand-200">
+                  {item.title}
+                </h3>
+                <p className="mt-2 text-sm text-white/70">{item.description}</p>
                 {item.image && (
-                  <div className="relative aspect-[4/3] w-full shrink-0">
+                  <div className="relative mt-6 aspect-[3/4] w-20 shrink-0 overflow-hidden rounded-sm">
                     <Image
                       src={item.image}
                       alt={item.title}
                       fill
-                      sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                      sizes="80px"
                       className="object-cover"
                     />
                   </div>
                 )}
-                <div className="flex flex-1 flex-col p-6">
-                  <p className="text-xs font-medium uppercase tracking-widest text-white/50">
-                    {item.eyebrow}
-                  </p>
-                  <h3 className="mt-3 text-lg leading-snug group-hover:text-brand-200">
-                    {item.title}
-                  </h3>
-                  <p className="mt-2 text-sm text-white/70">{item.description}</p>
-                </div>
               </Link>
             </Reveal>
           ))}

@@ -3,6 +3,11 @@
   "metaDescription": "Hội nghị chuyên đề của GCW quy tụ cộng đồng lãnh đạo doanh nghiệp Việt Nam, bàn về năng lực lãnh đạo, văn hoá tin cậy và thực thi chiến lược trong kỷ nguyên AI.",
   "heading": "Hội nghị & sự kiện",
   "intro": "Hội nghị chuyên đề quy tụ cộng đồng lãnh đạo doanh nghiệp và chuyên gia phát triển tổ chức, nơi GCW đồng hành chia sẻ và kết nối định kỳ.",
+  "heroImage": "/uploads/6entpvppl6i-unsplash-96301b9f.jpg",
+  "highlight": {
+    "heading": "Diễn giả khách mời hàng đầu, chuyên gia giàu kinh nghiệm thực chiến và không gian kết nối chất lượng.",
+    "body": "Là thành viên hệ sinh thái WTP Group, GCW đồng hành cùng nhiều hội nghị và diễn đàn phát triển tổ chức lớn tại Việt Nam. Xem lịch hội nghị GCW tham gia bên dưới và kết nối cùng đội ngũ chúng tôi."
+  },
   "itemsHeading": "Hội nghị sắp diễn ra",
   "items": [
     {
@@ -80,6 +85,11 @@
       "location": "Dreamplex, TP.HCM"
     }
   ],
+  "leadForm": {
+    "heading": "Nâng tầm đội ngũ. Trò chuyện cùng chuyên gia GCW.",
+    "body": "Tìm hiểu cách GCW đồng hành cùng lãnh đạo, đội ngũ và tổ chức của bạn để tạo ra kết quả đột phá. Điền thông tin bên dưới để kết nối với đội ngũ GCW.",
+    "jarvisFormId": "form_QgNEpXvIHba9F1"
+  },
   "cta": {
     "heading": "Muốn cùng GCW tham dự các hội nghị lãnh đạo sắp tới?",
     "body": "Để lại thông tin liên hệ, GCW sẽ gửi lời mời khi lịch hội nghị được công bố chính thức, hoặc trao đổi cơ hội đồng hành cùng đội ngũ diễn giả.",

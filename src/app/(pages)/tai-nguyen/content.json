@@ -1,23 +1,25 @@
 {
   "title": "Tài nguyên",
   "metaDescription": "Kho tài nguyên phát triển lãnh đạo của GCW: sách, cẩm nang, podcast, video và hội thảo giúp nhà quản lý xây dựng năng lực dẫn dắt tổ chức.",
-  "heading": "Tài nguyên phát triển lãnh đạo",
-  "intro": "Bên cạnh chuyên mục Tin tức & Kiến thức, GCW xây dựng kho tài nguyên đa dạng giúp lãnh đạo và đội ngũ quản lý phát triển năng lực dẫn dắt, xây dựng văn hoá tin cậy và tạo ra kết quả đột phá cho tổ chức.",
-  "live": {
-    "icon": "Newspaper",
-    "title": "Tin tức & Kiến thức",
-    "description": "Bài viết cập nhật về tuân thủ lao động, lương - bảo hiểm xã hội - thuế TNCN và quản trị nhân sự cho doanh nghiệp SME.",
-    "href": "/blog",
-    "label": "Xem tất cả bài viết"
-  },
+  "heading": "Tài nguyên",
+  "intro": "Khám phá toàn bộ tài nguyên phát triển năng lực cá nhân và tổ chức của GCW, dành cho lãnh đạo và đội ngũ quản lý.",
+  "heroImage": "/uploads/tax-unsplash-176a0d6a.jpg",
   "items": [
+    {
+      "id": "blog",
+      "icon": "Newspaper",
+      "title": "Tin tức & Kiến thức",
+      "description": "Bài viết cập nhật về tuân thủ lao động, lương - bảo hiểm xã hội - thuế TNCN và quản trị nhân sự cho doanh nghiệp SME.",
+      "href": "/blog",
+      "label": "Xem chuyên mục"
+    },
     {
       "id": "books",
       "icon": "BookOpen",
       "title": "Sách & Ấn phẩm",
       "description": "Ấn phẩm chuyên sâu về lãnh đạo, văn hoá tin cậy và thực thi chiến lược, đúc kết từ kinh nghiệm đồng hành cùng các tổ chức của GCW.",
       "href": "/tai-nguyen/sach",
-      "image": "/uploads/xy55bl5mzam-unsplash-e5d6e0fb.jpg"
+      "label": "Xem sách"
     },
     {
       "id": "guides",
@@ -25,41 +27,31 @@
       "title": "Cẩm nang & Công cụ",
       "description": "Cẩm nang và công cụ thực hành giúp nhà quản lý áp dụng ngay các nguyên tắc lãnh đạo vào công việc hàng ngày.",
       "href": "/tai-nguyen/cam-nang",
-      "image": ""
-    },
-    {
-      "id": "podcasts",
-      "icon": "Mic2",
-      "title": "Podcast",
-      "description": "Chuỗi podcast trò chuyện cùng chuyên gia GCW về hành trình phát triển năng lực lãnh đạo và xây dựng tổ chức hiệu suất cao.",
-      "href": "/tai-nguyen/podcast"
-    },
-    {
-      "id": "videos",
-      "icon": "Video",
-      "title": "Video",
-      "description": "Video ngắn gọn, trực quan giới thiệu các phương pháp lãnh đạo và kỹ năng quản lý đội nhóm hiệu quả.",
-      "href": "/tai-nguyen/video"
-    },
-    {
-      "id": "planners",
-      "icon": "CalendarCheck",
-      "title": "Kế hoạch mẫu",
-      "description": "Mẫu kế hoạch hành động giúp nhà quản lý triển khai các sáng kiến phát triển lãnh đạo theo từng giai đoạn.",
-      "href": "/tai-nguyen/ke-hoach-mau"
+      "label": "Xem cẩm nang"
     },
     {
       "id": "on-demand-webcasts",
       "icon": "PlayCircle",
       "title": "Hội thảo lưu trữ",
       "description": "Bản ghi các buổi hội thảo trực tuyến của GCW về lãnh đạo và hiệu suất tổ chức, xem lại bất cứ lúc nào.",
-      "href": "/tai-nguyen/hoi-thao-luu-tru"
+      "href": "/tai-nguyen/hoi-thao-luu-tru",
+      "label": "Xem hội thảo lưu trữ"
+    },
+    {
+      "id": "podcasts",
+      "icon": "Mic2",
+      "title": "Podcast",
+      "description": "Chuỗi podcast trò chuyện cùng chuyên gia GCW về hành trình phát triển năng lực lãnh đạo và xây dựng tổ chức hiệu suất cao.",
+      "href": "/tai-nguyen/podcast",
+      "label": "Nghe podcast"
+    },
+    {
+      "id": "videos",
+      "icon": "Video",
+      "title": "Video",
+      "description": "Video ngắn gọn, trực quan giới thiệu các phương pháp lãnh đạo và kỹ năng quản lý đội nhóm hiệu quả.",
+      "href": "/tai-nguyen/video",
+      "label": "Xem video"
     }
-  ],
-  "cta": {
-    "heading": "Muốn nhận tài nguyên lãnh đạo mới nhất?",
-    "body": "Để lại thông tin liên hệ, GCW sẽ gửi tài nguyên phát triển lãnh đạo mới ngay khi phát hành.",
-    "label": "Đăng ký nhận thông báo",
-    "href": "/contact"
-  }
+  ]
 }

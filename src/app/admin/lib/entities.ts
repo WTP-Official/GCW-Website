@@ -176,28 +176,6 @@ export const ENTITIES: EntityConfig[] = [
     ],
   },
   {
-    slug: "tai-nguyen-ke-hoach-mau",
-    label: "Kế hoạch mẫu",
-    description: "Danh sách kế hoạch mẫu ở /tai-nguyen/ke-hoach-mau",
-    contentFile: "tai-nguyen/ke-hoach-mau/content.json",
-    itemsKey: "items",
-    publicHref: "/tai-nguyen/ke-hoach-mau",
-    fields: [
-      { key: "eyebrow", label: "Chủ đề", type: "select", options: PILLARS },
-      { key: "title", label: "Tiêu đề", type: "text" },
-      { key: "image", label: "Hình ảnh", type: "image" },
-      { key: "description", label: "Mô tả", type: "textarea" },
-      {
-        key: "fileUrl",
-        label: "Đường dẫn tải file mẫu (.docx/.xlsx/.pdf)",
-        type: "url",
-        placeholder: "https://...",
-        optional: true,
-      },
-      { key: "body", label: "Nội dung chi tiết (trang riêng)", type: "richtext", optional: true },
-    ],
-  },
-  {
     slug: "tai-nguyen-hoi-thao-luu-tru-items",
     label: "Hội thảo lưu trữ theo chủ đề",
     description: "Danh sách hội thảo lưu trữ ở /tai-nguyen/hoi-thao-luu-tru, nhóm theo 3 chủ đề",

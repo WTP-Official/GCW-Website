@@ -71,6 +71,26 @@
     { "value": "06", "label": "chương trình cốt lõi trong thư viện GCW" },
     { "value": "40+", "label": "năm kinh nghiệm và hàng trăm lượt triển khai" }
   ],
+  "options": {
+    "heading": "Các gói All Access của GCW",
+    "tiers": [
+      {
+        "name": "Gói Hiệu Quả Cá Nhân",
+        "description": "Xây dựng thói quen hiệu quả cho từng cá nhân và năng lực tạo dựng niềm tin, hợp tác và kết quả.",
+        "courses": ["7 Thói Quen Hiệu Quả", "Nhân Bội Tiềm Năng", "Và nhiều chương trình khác"]
+      },
+      {
+        "name": "Gói All Access",
+        "description": "Phát triển lãnh đạo xuất sắc, gắn kết con người để tạo kết quả đột phá. Bao gồm toàn bộ Gói Hiệu Quả Cá Nhân, cùng chương trình lãnh đạo chuyên sâu.",
+        "courses": ["Tốc Độ Của Niềm Tin", "Dẫn Dắt Thay Đổi", "Và nhiều chương trình khác"]
+      },
+      {
+        "name": "Gói All Access Plus",
+        "description": "Sử dụng khung thực thi chung để huy động đội ngũ lớn đạt chỉ số kinh doanh trọng yếu. Bao gồm toàn bộ Gói All Access, cùng chương trình bán hàng chuyên sâu.",
+        "courses": ["4 Kỷ Luật Thực Thi", "Bán Hàng Khác Biệt", "Và nhiều chương trình khác"]
+      }
+    ]
+  },
   "testimonial": {
     "quote": "Gói All Access giúp chúng tôi xây dựng chương trình phát triển lãnh đạo bài bản với chi phí hợp lý. Sự linh hoạt của hình thức tự học giúp đội ngũ tiếp cận đúng nội dung, đúng thời điểm cần thiết.",
     "author": "Giám đốc Nhân sự",
