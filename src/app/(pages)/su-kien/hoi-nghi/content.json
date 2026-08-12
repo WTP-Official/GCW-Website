@@ -18,8 +18,7 @@
       "eventDate": "2026-09-17T08:30",
       "location": "Trung tâm Hội nghị Quốc gia, Hà Nội",
       "image": "/uploads/annie-spratt-qckxruozjrg-unsplash-e15fd1fb.jpg",
-      "registerUrl": "",
-      "jarvisFormId": "",
+      "jarvisFormId": "form_QgNEpXvIHba9F1",
       "body": "<p>Hội nghị Lãnh đạo Doanh nghiệp Việt Nam 2026 quy tụ ban điều hành, chủ doanh nghiệp và chuyên gia phát triển tổ chức để cùng nhìn lại một năm nhiều biến động và định hình năng lực lãnh đạo cho giai đoạn tới.</p><p>Đội ngũ cố vấn của GCW sẽ tham gia chia sẻ về cách xây dựng đội ngũ quản lý kế cận, giữ vững kỷ luật thực thi khi tổ chức mở rộng quy mô, và tận dụng AI như một đòn bẩy cho năng suất lãnh đạo thay vì một mối đe doạ.</p><p>Đây là dịp để lãnh đạo doanh nghiệp Việt Nam kết nối, học hỏi lẫn nhau và mang về những khung tư duy có thể áp dụng ngay cho tổ chức của mình.</p>",
       "speakers": "Ông Lê Minh Khoa | Nhà sáng lập & Cố vấn trưởng, GCW\nBà Đặng Thu Hiền | Giám đốc Chương trình Lãnh đạo, GCW",
       "takeaways": "Khung năng lực lãnh đạo cần thiết để dẫn dắt tổ chức trong kỷ nguyên AI\nCách xây dựng đội ngũ quản lý kế cận sẵn sàng cho giai đoạn tăng trưởng tiếp theo",
@@ -31,7 +30,8 @@
       "description": "Diễn đàn khu vực chia sẻ xu hướng phát triển tổ chức, đo lường hiệu suất và xây dựng văn hoá tin cậy trong doanh nghiệp.",
       "format": "Kết hợp (Online & Offline)",
       "eventDate": "2026-10-08T08:30",
-      "location": "Khách sạn Rex, TP.HCM (kết hợp trực tuyến)"
+      "location": "Khách sạn Rex, TP.HCM (kết hợp trực tuyến)",
+      "jarvisFormId": "form_QgNEpXvIHba9F1"
     },
     {
       "id": "hoi-nghi-thuong-dinh-van-hoa-doanh-nghiep",
@@ -39,7 +39,8 @@
       "description": "Sự kiện bàn về cách xây dựng văn hoá tin cậy, gắn kết đội ngũ và giữ nhân tài trong giai đoạn tổ chức liên tục thay đổi.",
       "format": "Offline",
       "eventDate": "2026-10-29T08:30",
-      "location": "Văn phòng GCW, TP.HCM"
+      "location": "Văn phòng GCW, TP.HCM",
+      "jarvisFormId": "form_QgNEpXvIHba9F1"
     },
     {
       "id": "dien-dan-tang-truong-ben-vung-doanh-nghiep-vua-va-nho",
@@ -49,8 +50,7 @@
       "eventDate": "2026-11-12T08:30",
       "location": "Trung tâm Hội nghị White Palace, TP.HCM",
       "image": "",
-      "registerUrl": "",
-      "jarvisFormId": "",
+      "jarvisFormId": "form_QgNEpXvIHba9F1",
       "body": ""
     },
     {
@@ -61,8 +61,7 @@
       "eventDate": "2026-11-26T08:30",
       "location": "Trung tâm Hội nghị Quốc gia, Hà Nội (kết hợp trực tuyến)",
       "image": "/uploads/v89pqztek-k-unsplash-e24d82cb.jpg",
-      "registerUrl": "",
-      "jarvisFormId": "",
+      "jarvisFormId": "form_QgNEpXvIHba9F1",
       "body": "<p>Công nghệ và AI đang thay đổi cách các tổ chức vận hành, nhưng khoảng cách lớn nhất không nằm ở công cụ mà ở năng lực lãnh đạo để dẫn dắt sự thay đổi đó.</p><p>Tại hội nghị này, đội ngũ GCW chia sẻ khung đánh giá mức độ sẵn sàng AI của đội ngũ quản lý, cùng những bài học thực tế từ các tổ chức đã chuyển hoá thành công đầu tư công nghệ thành kết quả kinh doanh đo lường được.</p>",
       "speakers": "Ông Phạm Anh Tuấn | Chuyên gia Chuyển đổi Lãnh đạo, GCW",
       "takeaways": "Cách chuyển hoá năng lực AI thành kết quả kinh doanh đo lường được\nKhung đánh giá mức độ sẵn sàng AI của đội ngũ quản lý",
@@ -74,7 +73,8 @@
       "description": "Summit dành cho lãnh đạo bàn về kỷ luật thực thi và cách biến mục tiêu chiến lược thành kết quả đo lường được.",
       "format": "Offline",
       "eventDate": "2026-12-10T08:30",
-      "location": "Văn phòng GCW, TP.HCM"
+      "location": "Văn phòng GCW, TP.HCM",
+      "jarvisFormId": "form_QgNEpXvIHba9F1"
     },
     {
       "id": "dien-dan-ket-noi-lanh-dao-tre-viet-nam",
@@ -82,7 +82,8 @@
       "description": "Diễn đàn kết nối thế hệ lãnh đạo trẻ, chia sẻ kinh nghiệm xây dựng đội ngũ và dẫn dắt thay đổi trong tổ chức.",
       "format": "Offline",
       "eventDate": "2026-12-18T08:30",
-      "location": "Dreamplex, TP.HCM"
+      "location": "Dreamplex, TP.HCM",
+      "jarvisFormId": "form_QgNEpXvIHba9F1"
     }
   ],
   "leadForm": {

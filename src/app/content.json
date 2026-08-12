@@ -26,6 +26,40 @@
       "description": "Đồng hành thực thi cùng đội ngũ để đạt được những mục tiêu quan trọng nhất, không chỉ dừng ở khuyến nghị."
     }
   ],
+  "featuredResources": [
+    {
+      "eyebrow": "Cẩm nang miễn phí",
+      "title": "Cẩm nang onboarding lãnh đạo mới trong 90 ngày đầu",
+      "description": "Lộ trình từng tuần giúp lãnh đạo mới nắm bắt vai trò, xây dựng niềm tin với đội ngũ và tạo ra kết quả sớm.",
+      "ctaLabel": "Tải về",
+      "href": "/tai-nguyen/cam-nang",
+      "dark": true
+    },
+    {
+      "eyebrow": "Cẩm nang miễn phí",
+      "title": "Cẩm nang chiến thuật xây dựng niềm tin trong đội ngũ",
+      "description": "Các hành vi lãnh đạo cụ thể giúp xây dựng và duy trì niềm tin bền vững với đội ngũ.",
+      "ctaLabel": "Tải về",
+      "href": "/tai-nguyen/cam-nang",
+      "dark": false
+    },
+    {
+      "eyebrow": "Cẩm nang miễn phí",
+      "title": "Hướng dẫn áp dụng 4 Kỷ Luật Thực Thi",
+      "description": "Khung thực thi 4 kỷ luật giúp đội ngũ biến mục tiêu chiến lược thành kết quả đo lường được.",
+      "ctaLabel": "Tải về",
+      "href": "/tai-nguyen/cam-nang",
+      "dark": true
+    },
+    {
+      "eyebrow": "Hội thảo trực tuyến",
+      "title": "7 Thói Quen Của Người Hiệu Quả",
+      "description": "Giới thiệu tổng quan khung 7 Thói Quen và cách ứng dụng vào công việc lãnh đạo hàng ngày để đạt hiệu quả bền vững.",
+      "ctaLabel": "Xem lại",
+      "href": "/tai-nguyen/hoi-thao-luu-tru",
+      "dark": false
+    }
+  ],
   "stats": [
     { "value": "160+", "label": "Quốc gia đã triển khai chương trình cùng mạng lưới đối tác" },
     { "value": "40+", "label": "Năm kinh nghiệm phát triển lãnh đạo và hiệu suất tổ chức" },

@@ -30,6 +30,36 @@ export function ValueProps() {
             </Reveal>
           ))}
         </div>
+
+        <div className="mt-14 grid gap-px overflow-hidden rounded-md bg-black/5 sm:grid-cols-2 lg:grid-cols-4">
+          {content.featuredResources.map((resource, index) => (
+            <Reveal key={resource.title} delay={index * 75}>
+              <div
+                className={
+                  resource.dark
+                    ? "flex h-full min-h-[420px] flex-col justify-between bg-bg-dark p-8 text-white"
+                    : "flex h-full min-h-[420px] flex-col justify-between bg-bg-muted p-8 text-ink"
+                }
+              >
+                <div>
+                  <p className={resource.dark ? "text-xs font-medium text-white/60" : "text-xs font-medium text-ink-soft"}>
+                    {resource.eyebrow}
+                  </p>
+                  <p className="mt-4 font-serif-hero text-2xl leading-snug">{resource.title}</p>
+                  <p className={resource.dark ? "mt-6 text-sm text-white/70" : "mt-6 text-sm text-ink-soft"}>
+                    {resource.description}
+                  </p>
+                </div>
+                <Link
+                  href={resource.href}
+                  className="mt-8 inline-flex w-fit items-center rounded-full bg-brand-600 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-brand-700"
+                >
+                  {resource.ctaLabel}
+                </Link>
+              </div>
+            </Reveal>
+          ))}
+        </div>
       </div>
     </section>
   );

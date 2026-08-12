@@ -31,8 +31,7 @@
       "duration": "1 ngày",
       "image": "/uploads/6entpvppl6i-unsplash-96301b9f.jpg",
       "eventDate": "2026-09-11T08:30",
-      "registerUrl": "",
-      "jarvisFormId": "",
+      "jarvisFormId": "form_QgNEpXvIHba9F1",
       "body": "<p>Trước khi có thể dẫn dắt người khác, mỗi lãnh đạo cần làm chủ được chính mình. Workshop này giúp người tham gia nhìn lại cách mình đang đặt ưu tiên, phản ứng với áp lực và duy trì hiệu quả trong công việc hằng ngày.</p><p>Thông qua các bài thực hành cá nhân và thảo luận nhóm nhỏ, học viên xây dựng một bộ thói quen thực tế, phù hợp với vai trò và bối cảnh công việc của riêng mình, thay vì áp dụng một công thức chung chung.</p>",
       "speakers": "Bà Đặng Thu Hiền | Giám đốc Chương trình Lãnh đạo, GCW",
       "takeaways": "Cách nhận diện và loại bỏ những thói quen đang cản trở hiệu quả cá nhân\nKhung xây dựng thói quen mới bền vững, phù hợp với nhịp làm việc thực tế",
@@ -47,8 +46,7 @@
       "duration": "1 ngày",
       "image": "",
       "eventDate": "",
-      "registerUrl": "",
-      "jarvisFormId": "",
+      "jarvisFormId": "form_QgNEpXvIHba9F1",
       "body": "<p>Một mục tiêu chỉ tạo ra kết quả khi có một bảng điểm để theo dõi và một nhịp trách nhiệm giải trình để duy trì sự tập trung. Workshop này giúp đội ngũ quản lý thiết kế cả hai.</p>"
     },
     {
@@ -57,7 +55,8 @@
       "description": "Workshop giúp lãnh đạo chuyển từ phong cách quản lý ôm việc sang phong cách khai phóng năng lực và trí tuệ của đội ngũ.",
       "format": "Offline",
       "location": "Tại doanh nghiệp (theo yêu cầu)",
-      "duration": "Nửa ngày"
+      "duration": "Nửa ngày",
+      "jarvisFormId": "form_QgNEpXvIHba9F1"
     },
     {
       "id": "workshop-dan-dat-qua-thay-doi-bat-dinh",
@@ -68,8 +67,7 @@
       "duration": "Nửa ngày",
       "image": "",
       "eventDate": "2026-10-14T08:30",
-      "registerUrl": "",
-      "jarvisFormId": "",
+      "jarvisFormId": "form_QgNEpXvIHba9F1",
       "body": "",
       "speakers": "Ông Vũ Đình Phong | Chuyên gia Lãnh đạo Chuyển đổi, GCW",
       "takeaways": "Bốn giai đoạn tâm lý phổ biến của đội ngũ khi đối mặt thay đổi\nCách giao tiếp giữ vững niềm tin đội ngũ trong giai đoạn bất định",
@@ -81,7 +79,8 @@
       "description": "Workshop thực hành giúp các thành viên trong đội nhóm xây dựng niềm tin lẫn nhau, nền tảng cho sự cộng tác hiệu quả.",
       "format": "Offline",
       "location": "Tại doanh nghiệp (theo yêu cầu)",
-      "duration": "Nửa ngày"
+      "duration": "Nửa ngày",
+      "jarvisFormId": "form_QgNEpXvIHba9F1"
     },
     {
       "id": "workshop-thuyet-trinh-tao-tac-dong",
@@ -92,8 +91,7 @@
       "duration": "1 ngày",
       "image": "",
       "eventDate": "2026-11-04T08:30",
-      "registerUrl": "",
-      "jarvisFormId": "",
+      "jarvisFormId": "form_QgNEpXvIHba9F1",
       "body": "<p>Một bài thuyết trình tạo tác động không phải là bài thuyết trình nhiều thông tin nhất, mà là bài thuyết trình khiến người nghe hành động. Workshop này rèn luyện học viên qua các bài thực hành trình bày trực tiếp, có phản hồi từ chuyên gia và đồng nghiệp.</p>",
       "speakers": "Bà Trịnh Hải Yến | Cố vấn Thực thi Chiến lược, GCW",
       "takeaways": "Cấu trúc thông điệp giúp bài thuyết trình dễ nhớ và dễ hành động\nKỹ thuật xử lý câu hỏi khó và giữ sự tự tin trước đám đông",
@@ -105,7 +103,8 @@
       "description": "Workshop trang bị kỹ năng và ngôn ngữ cần thiết để xử lý các cuộc trò chuyện nhạy cảm, xung đột hoặc phản hồi hiệu suất.",
       "format": "Offline",
       "location": "Tại doanh nghiệp (theo yêu cầu)",
-      "duration": "1 ngày"
+      "duration": "1 ngày",
+      "jarvisFormId": "form_QgNEpXvIHba9F1"
     },
     {
       "id": "workshop-quan-ly-du-an-khong-chuyen",
@@ -113,7 +112,8 @@
       "description": "Workshop trang bị các nguyên tắc quản lý dự án cốt lõi cho quản lý chưa qua đào tạo bài bản về quản lý dự án.",
       "format": "Offline",
       "location": "Tại doanh nghiệp (theo yêu cầu)",
-      "duration": "1 ngày"
+      "duration": "1 ngày",
+      "jarvisFormId": "form_QgNEpXvIHba9F1"
     },
     {
       "id": "workshop-ban-hang-tu-van-khac-biet",
@@ -121,7 +121,8 @@
       "description": "Workshop giúp đội ngũ kinh doanh chuyển từ bán sản phẩm sang tư vấn giải pháp, tạo khác biệt và xây dựng niềm tin với khách hàng.",
       "format": "Offline",
       "location": "Tại doanh nghiệp (theo yêu cầu)",
-      "duration": "1 ngày"
+      "duration": "1 ngày",
+      "jarvisFormId": "form_QgNEpXvIHba9F1"
     },
     {
       "id": "workshop-lanh-dao-thoi-dai-ai",
@@ -132,8 +133,7 @@
       "duration": "Nửa ngày",
       "image": "/uploads/tax-unsplash-176a0d6a.jpg",
       "eventDate": "2026-12-02T08:30",
-      "registerUrl": "",
-      "jarvisFormId": "",
+      "jarvisFormId": "form_QgNEpXvIHba9F1",
       "body": "<p>AI không thay thế lãnh đạo, nhưng lãnh đạo biết ứng dụng AI sẽ tạo khoảng cách rõ rệt với những người không thích ứng kịp. Workshop này giúp quản lý xây dựng tư duy đúng và bộ năng lực cần thiết để dẫn dắt đội ngũ qua giai đoạn chuyển đổi này.</p>",
       "speakers": "Ông Phạm Anh Tuấn | Chuyên gia Chuyển đổi Lãnh đạo, GCW",
       "takeaways": "Khung tư duy giúp lãnh đạo tiếp cận AI như một đòn bẩy thay vì mối đe doạ\nCách xây dựng lộ trình nâng năng lực AI cho đội ngũ theo từng cấp độ",
