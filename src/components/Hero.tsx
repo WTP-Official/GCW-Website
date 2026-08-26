@@ -5,18 +5,35 @@ import { Reveal } from "@/components/Reveal";
 
 export function Hero() {
   const { hero } = content;
+  // GIF/APNG/WebP động: bỏ qua tối ưu ảnh để giữ animation
+  const isAnimated = /\.(gif|apng|webp)$/i.test(hero.image);
 
   return (
     <section className="relative overflow-hidden text-white">
       <div className="absolute inset-0">
-        <Image
-          src={hero.image}
-          alt=""
-          fill
-          priority
-          sizes="100vw"
-          className="photo-grade object-cover"
-        />
+        {hero.video ? (
+          <video
+            src={hero.video}
+            poster={hero.image}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            aria-hidden="true"
+            className="photo-grade absolute inset-0 h-full w-full object-cover"
+          />
+        ) : (
+          <Image
+            src={hero.image}
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            unoptimized={isAnimated}
+            className="photo-grade object-cover"
+          />
+        )}
         <div className="absolute inset-0 bg-linear-to-r from-ink/95 via-ink/70 to-ink/30" />
       </div>
 
