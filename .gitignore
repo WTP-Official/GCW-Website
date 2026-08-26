@@ -61,3 +61,5 @@ next-env.d.ts
 
 /services_pages/*
 /services_screenshots/*
+# npm cache (HOME trung voi repo root)
+/.npm/
