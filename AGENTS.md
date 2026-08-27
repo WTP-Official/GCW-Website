@@ -127,3 +127,14 @@ src/app/(pages)/
 **Use `priority`** (not `loading="eager"`) for images that are above the fold on initial load: page hero backgrounds, the first hero slider slide, and event banners. All other images get lazy loading by default.
 
 **AVIF/WebP** are enabled in `next.config.ts` (`formats: ["image/avif", "image/webp"]`). Vercel's image optimization serves the best format automatically — no manual conversion needed.
+
+## Asset uploads (images, videos)
+
+**Rule:** The user must place the raw file directly into the project's `public/` folder (e.g. `public/images/`) themselves. Claude cannot receive it — not via drag-and-drop into chat, not via a path on the user's local machine — because Claude's coding environment doesn't have access to the user's local filesystem or chat attachments. Once the file exists inside the project folder, all wiring (moving/renaming if needed, updating `content.json` paths, `<Image>`/`<video>` usage) is Claude's job, not the user's.
+
+**Why:** This came up when a user wanted to swap the homepage hero video — asking them for a file path or a chat drag-and-drop doesn't work in this setup, but asking them to hand-edit `content.json` afterward is also wrong, since that's exactly the kind of code change Claude should own.
+
+**How:**
+
+- Tell the user which folder to drop the file into (usually `public/images/`) and, if relevant, what filename/format/size makes sense for the use case (e.g. MP4 for background video, kept small since it autoplays).
+- Once the user confirms the file is there, Claude verifies it exists, then updates every reference to it (`content.json` fields, component code) and reports back — the user never edits `content.json` or component code by hand for this.
