@@ -12,19 +12,6 @@ const PUBLIC_BASE = "/blog";
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  // The admin CRUD UI has no auth — only allow it when running locally in dev.
-  if (
-    pathname === "/admin" ||
-    pathname.startsWith("/admin/") ||
-    pathname === "/api/admin" ||
-    pathname.startsWith("/api/admin/")
-  ) {
-    if (process.env.NODE_ENV !== "development") {
-      return new NextResponse(null, { status: 404 });
-    }
-    return NextResponse.next();
-  }
-
   // /resources was renamed back to /blog — redirect old URLs so existing links work.
   if (pathname === "/resources" || pathname.startsWith("/resources/")) {
     const cleanPath = pathname.replace("/resources", PUBLIC_BASE);
@@ -88,9 +75,5 @@ export const config = {
     "/wtp-gcw/blog/:path*",
     "/_next/static/:path*",
     "/static/:path*",
-    "/admin",
-    "/admin/:path*",
-    "/api/admin",
-    "/api/admin/:path*",
   ],
 };
