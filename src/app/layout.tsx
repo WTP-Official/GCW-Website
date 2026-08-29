@@ -67,7 +67,7 @@ export default function RootLayout({
       lang="vi"
       className={`${beVietnamPro.variable} ${tiemposFine.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-white text-ink-soft">
+      <body className="min-h-full flex flex-col overflow-x-hidden bg-white text-ink-soft">
         <Header />
         {children}
         <Footer />

@@ -10,7 +10,7 @@ export function Hero() {
 
   return (
     <section className="relative overflow-hidden bg-white text-white">
-      <div className="absolute top-[5px] bottom-0 left-1/2 w-full max-w-[1320px] -translate-x-1/2">
+      <div className="absolute top-[5px] bottom-0 left-1/2 w-full max-w-[1360px] -translate-x-1/2">
         {hero.video ? (
           <video
             src={hero.video}
@@ -37,7 +37,7 @@ export function Hero() {
         <div className="absolute inset-0 bg-linear-to-r from-ink/95 via-ink/70 to-ink/30" />
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-4 py-12 sm:py-16 lg:py-20">
+      <div className="relative mx-auto max-w-7xl px-3 py-12 sm:py-16 lg:py-20">
         <div className="ml-[5px] max-w-[660px]">
           <Reveal>
             <p className="text-sm font-medium uppercase tracking-widest text-white/60">

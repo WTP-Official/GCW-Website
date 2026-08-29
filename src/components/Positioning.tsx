@@ -9,7 +9,7 @@ export function Positioning() {
   return (
     <>
       <section className="py-10 sm:py-12">
-        <div className="mx-auto grid max-w-6xl gap-x-16 gap-y-8 px-4 lg:grid-cols-2">
+        <div className="mx-auto grid max-w-6xl gap-x-16 gap-y-8 px-3 lg:grid-cols-2">
           <Reveal>
             <h2 className="font-serif-hero text-3xl leading-snug text-ink sm:text-4xl">
               {positioning.heading}
@@ -29,7 +29,7 @@ export function Positioning() {
           </Reveal>
         </div>
       </section>
-      <div className="mx-auto max-w-[1320px] px-4">
+      <div className="mx-auto max-w-[1320px] px-3">
         <span className="block h-px w-full bg-black" aria-hidden="true" />
       </div>
     </>

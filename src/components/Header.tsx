@@ -332,7 +332,7 @@ export function Header() {
             width={1182}
             height={709}
             priority
-            className="h-24 w-auto"
+            className="h-[127px] w-auto"
           />
         </Link>
 
@@ -484,7 +484,7 @@ export function Header() {
         }`}
       >
         <nav className="min-h-0">
-          <div className="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-4">
+          <div className="mx-auto flex max-w-6xl flex-col gap-1 px-3 py-4">
             {navItems.map((item) => (
               <div key={item.href}>
                 <div className="flex items-center justify-between">

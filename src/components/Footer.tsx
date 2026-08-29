@@ -89,7 +89,7 @@ export function Footer() {
       <div className="absolute inset-0 z-[15] bg-footer-dark opacity-90" />
       <div className="relative z-20 mx-auto max-w-none px-[70px] pt-[52px] pb-4">
         <div className="flex flex-col gap-10 sm:flex-row sm:justify-between">
-          <div className="max-w-4xl shrink-0">
+          <div className="max-w-4xl min-w-0 shrink-0">
             <div className="flex items-center gap-4">
               <Image
                 src="/GCW_Icon_Color_Transparent.png"
@@ -115,11 +115,11 @@ export function Footer() {
                 <Hash className="h-4 w-4 shrink-0" aria-hidden="true" />
                 MST: 0316153919
               </p>
-              <p className="flex items-center gap-2 text-base whitespace-nowrap text-footer-light/70">
+              <p className="flex items-center gap-2 text-base text-footer-light/70">
                 <MapPin className="h-4 w-4 shrink-0" aria-hidden="true" />
                 Add-1: 75 Đường 39, Khu đô thị Vạn Phúc, Phường Hiệp Bình, Tp. Hồ Chí Minh
               </p>
-              <p className="flex items-center gap-2 text-base whitespace-nowrap text-footer-light/70">
+              <p className="flex items-center gap-2 text-base text-footer-light/70">
                 <MapPin className="h-4 w-4 shrink-0" aria-hidden="true" />
                 Add-2: A4 Đường D4, KDC Him Lam, Phường Tân Hưng, Tp. Hồ Chí Minh
               </p>

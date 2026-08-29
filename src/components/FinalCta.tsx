@@ -8,7 +8,7 @@ export function FinalCta() {
   return (
     <section className="border-t border-black/10">
       <Reveal>
-        <div className="mx-auto grid max-w-6xl gap-8 border-b border-black/10 px-4 py-16 lg:grid-cols-2 lg:items-center lg:gap-16">
+        <div className="mx-auto grid max-w-6xl gap-8 border-b border-black/10 px-3 py-16 lg:grid-cols-2 lg:items-center lg:gap-16">
           <h2 className="font-serif-hero text-3xl leading-snug text-ink sm:text-4xl">
             {finalCta.heading}
           </h2>

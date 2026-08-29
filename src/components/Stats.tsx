@@ -8,7 +8,7 @@ export function Stats() {
   return (
     <>
       <section className="-mt-[50px] bg-white">
-        <div className="mx-auto max-w-6xl px-4 py-10 sm:py-12">
+        <div className="mx-auto max-w-6xl px-3 py-10 sm:py-12">
           <div className="flex flex-wrap gap-x-8 gap-y-12">
             {content.stats.map((stat, index) => (
               <Reveal key={stat.label} delay={index * 100} className="min-w-40 flex-1">
@@ -26,7 +26,7 @@ export function Stats() {
           </div>
         </div>
       </section>
-      <div className="mx-auto max-w-[1320px] px-4">
+      <div className="mx-auto max-w-[1320px] px-3">
         <span className="block h-px w-full bg-black" aria-hidden="true" />
       </div>
     </>
