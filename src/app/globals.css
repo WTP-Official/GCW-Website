@@ -36,8 +36,6 @@
 
   --font-sans: var(--font-be-vietnam-pro), ui-sans-serif, system-ui, sans-serif;
   --font-heading: var(--font-sans);
-  /* Light-weight hero/section headline treatment — same family as body,
-     dropped to a light weight for the editorial hero look. */
   --font-serif-hero: var(--font-sans);
 
   /* Sharper, less consumer-app corners across button/card/image-frame utilities */

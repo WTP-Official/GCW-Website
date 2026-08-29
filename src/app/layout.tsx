@@ -1,5 +1,6 @@
 ﻿import type { Metadata } from "next";
 import { Be_Vietnam_Pro } from "next/font/google";
+import localFont from "next/font/local";
 import Script from "next/script";
 import "./globals.css";
 import { BASE_URL, GOOGLE_VERIFICATION_TOKENS } from "@/constants/site";
@@ -11,6 +12,13 @@ const beVietnamPro = Be_Vietnam_Pro({
   variable: "--font-be-vietnam-pro",
   subsets: ["latin", "vietnamese"],
   weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
+});
+
+const tiemposFine = localFont({
+  variable: "--font-tiempos-fine",
+  src: "../../public/fonts/TiemposFine-Light.woff2",
+  weight: "300",
   display: "swap",
 });
 
@@ -57,7 +65,7 @@ export default function RootLayout({
   return (
     <html
       lang="vi"
-      className={`${beVietnamPro.variable} h-full antialiased`}
+      className={`${beVietnamPro.variable} ${tiemposFine.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-white text-ink-soft">
         <Header />

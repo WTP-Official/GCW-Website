@@ -7,8 +7,8 @@ const LINKS = ["/solutions", "/solutions", "/solutions"];
 
 export function ValueProps() {
   return (
-    <section className="border-b border-black/5 py-20">
-      <div className="mx-auto max-w-6xl px-4">
+    <section className="py-20">
+      <div className="mx-auto max-w-[1320px] px-4">
         <Reveal>
           <h2 className="font-serif-hero text-3xl leading-snug text-ink sm:text-4xl">
             Là đối tác phát triển lãnh đạo và hiệu suất tổ chức, GCW giúp bạn:
@@ -31,14 +31,14 @@ export function ValueProps() {
           ))}
         </div>
 
-        <div className="mt-14 grid gap-px overflow-hidden rounded-md bg-black/5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-14 grid gap-[35px] sm:grid-cols-2 lg:grid-cols-4">
           {content.featuredResources.map((resource, index) => (
             <Reveal key={resource.title} delay={index * 75}>
               <div
                 className={
                   resource.dark
-                    ? "flex h-full min-h-[420px] flex-col justify-between bg-bg-dark p-8 text-white"
-                    : "flex h-full min-h-[420px] flex-col justify-between bg-bg-muted p-8 text-ink"
+                    ? "flex h-full min-h-[420px] flex-col justify-between rounded-lg bg-bg-dark p-8 text-white"
+                    : "flex h-full min-h-[420px] flex-col justify-between rounded-lg bg-bg-muted p-8 text-ink"
                 }
               >
                 <div>
@@ -60,6 +60,8 @@ export function ValueProps() {
             </Reveal>
           ))}
         </div>
+
+        <span className="mt-14 block h-px w-full bg-black" aria-hidden="true" />
       </div>
     </section>
   );

@@ -319,24 +319,25 @@ export function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-30 border-b border-black/5 bg-white/95 backdrop-blur">
-      <div className="mx-auto flex h-28 max-w-7xl items-center justify-between gap-4 px-6">
+    <header className="sticky top-0 z-30 bg-white/95 backdrop-blur">
+      <div className="mx-auto mt-[10px] flex h-16 max-w-7xl items-center justify-between gap-4 px-6">
         <Link
           href="/"
           className="flex shrink-0 items-center"
           onClick={closeAll}
         >
           <Image
-            src="/logo.avif"
+            src="/GCW_Logo-Horizontal_Slogan_Color_Transparent.png"
             alt="GCW"
-            width={375}
-            height={116}
+            width={1182}
+            height={709}
             priority
-            className="h-12 w-auto"
+            className="h-24 w-auto"
           />
         </Link>
 
-        <nav className="hidden h-full items-stretch lg:flex">
+        <div className="hidden items-center gap-6 lg:flex">
+        <nav className="flex h-full items-stretch">
           {navItems.map((item) => (
             <div
               key={item.href}
@@ -449,13 +450,14 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden shrink-0 items-center gap-3 lg:flex">
+        <div className="flex shrink-0 items-center gap-3">
           <Link
             href="/contact"
             className="inline-flex shrink-0 items-center whitespace-nowrap rounded-full border border-brand-600 px-5 py-2.5 text-sm font-medium text-brand-600 transition-colors hover:bg-brand-600 hover:text-white"
           >
             Đặt lịch tư vấn
           </Link>
+        </div>
         </div>
 
         <button
@@ -472,6 +474,8 @@ export function Header() {
           )}
         </button>
       </div>
+
+      <div className="mx-auto my-[20px] h-px w-full max-w-[1320px] bg-black" aria-hidden="true" />
 
       <div
         inert={!isMenuOpen}

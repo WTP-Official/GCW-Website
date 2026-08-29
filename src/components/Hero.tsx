@@ -9,8 +9,8 @@ export function Hero() {
   const isAnimated = /\.(gif|apng|webp)$/i.test(hero.image);
 
   return (
-    <section className="relative overflow-hidden text-white">
-      <div className="absolute inset-0">
+    <section className="relative overflow-hidden bg-white text-white">
+      <div className="absolute top-[5px] bottom-0 left-1/2 w-full max-w-[1320px] -translate-x-1/2">
         {hero.video ? (
           <video
             src={hero.video}
@@ -38,27 +38,26 @@ export function Hero() {
       </div>
 
       <div className="relative mx-auto max-w-7xl px-4 py-24 sm:py-32 lg:py-40">
-        <div className="max-w-4xl">
+        <div className="ml-[5px] max-w-[660px]">
           <Reveal>
             <p className="text-sm font-medium uppercase tracking-widest text-white/60">
               {hero.eyebrow}
             </p>
           </Reveal>
           <Reveal delay={80}>
-            <h1 className="mt-6 font-serif-hero text-5xl leading-[1.1] sm:text-6xl lg:text-7xl">
-              <span className="block">{hero.headingLine1}</span>
+            <h1 className="mt-6 text-left font-serif-hero text-5xl leading-[1.1] sm:text-6xl lg:text-7xl">
+              <span className="block">
+                {hero.headingLine1} <em className="italic text-white">{hero.headingEmphasis}</em>,
+              </span>
               <span
-                className="my-3 block h-px max-w-md bg-white/30 sm:my-4"
+                className="my-3 block h-px w-full bg-white/30 sm:my-4"
                 aria-hidden="true"
               />
-              <span className="block">
-                <em className="italic text-white">{hero.headingEmphasis}</em>
-                {hero.headingLine2Suffix}
-              </span>
+              <span className="block">{hero.headingLine2Suffix}</span>
             </h1>
           </Reveal>
           <Reveal delay={200}>
-            <p className="mt-8 max-w-lg text-lg text-white/80">
+            <p className="mt-8 max-w-none text-lg whitespace-nowrap text-white/80">
               {hero.subheading}
             </p>
           </Reveal>

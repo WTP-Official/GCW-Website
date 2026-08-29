@@ -12,7 +12,7 @@ export function FinalCta() {
           <h2 className="font-serif-hero text-3xl leading-snug text-ink sm:text-4xl">
             {finalCta.heading}
           </h2>
-          <div className="lg:border-l lg:border-black/10 lg:pl-16">
+          <div className="lg:border-l lg:border-black lg:pl-16">
             <p className="text-ink-soft">{finalCta.body}</p>
             <Link
               href={finalCta.cta.href}
