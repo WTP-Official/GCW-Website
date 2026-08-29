@@ -320,14 +320,23 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-30 bg-white/95 backdrop-blur">
-      <div className="mx-auto mt-[10px] flex h-16 max-w-7xl items-center justify-between gap-4 px-6">
+      <div className="mx-auto flex max-w-[1360px] items-center justify-end px-3 pt-3">
+        <Link
+          href="/contact"
+          className="inline-flex shrink-0 items-center whitespace-nowrap rounded-full border border-brand-600 px-5 py-2.5 text-sm font-medium text-brand-600 transition-colors hover:bg-brand-600 hover:text-white"
+        >
+          Đặt lịch tư vấn
+        </Link>
+      </div>
+
+      <div className="mx-auto mt-1 flex h-16 max-w-[1360px] items-center justify-between gap-4 px-3">
         <Link
           href="/"
           className="flex shrink-0 items-center"
           onClick={closeAll}
         >
           <Image
-            src="/GCW_Logo-Horizontal_Slogan_Color_Transparent.png"
+            src="/GCW_Logo-Horizontal_Color_Transparent_PRIMARY.png"
             alt="GCW"
             width={1182}
             height={709}
@@ -336,8 +345,7 @@ export function Header() {
           />
         </Link>
 
-        <div className="hidden items-center gap-6 lg:flex">
-        <nav className="flex h-full items-stretch">
+        <nav className="hidden h-full items-stretch lg:flex">
           {navItems.map((item) => (
             <div
               key={item.href}
@@ -450,16 +458,6 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="flex shrink-0 items-center gap-3">
-          <Link
-            href="/contact"
-            className="inline-flex shrink-0 items-center whitespace-nowrap rounded-full border border-brand-600 px-5 py-2.5 text-sm font-medium text-brand-600 transition-colors hover:bg-brand-600 hover:text-white"
-          >
-            Đặt lịch tư vấn
-          </Link>
-        </div>
-        </div>
-
         <button
           type="button"
           onClick={() => setIsMenuOpen((open) => !open)}
@@ -475,7 +473,7 @@ export function Header() {
         </button>
       </div>
 
-      <div className="mx-auto my-[20px] h-px w-full max-w-[1320px] bg-black" aria-hidden="true" />
+      <div className="mx-auto mt-[40px] h-px w-full max-w-[1360px] bg-black" aria-hidden="true" />
 
       <div
         inert={!isMenuOpen}
@@ -484,7 +482,7 @@ export function Header() {
         }`}
       >
         <nav className="min-h-0">
-          <div className="mx-auto flex max-w-6xl flex-col gap-1 px-3 py-4">
+          <div className="mx-auto flex max-w-[1360px] flex-col gap-1 px-3 py-4">
             {navItems.map((item) => (
               <div key={item.href}>
                 <div className="flex items-center justify-between">

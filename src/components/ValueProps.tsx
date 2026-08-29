@@ -8,7 +8,7 @@ const LINKS = ["/solutions", "/solutions", "/solutions"];
 export function ValueProps() {
   return (
     <section className="py-20">
-      <div className="mx-auto max-w-[1320px] px-3">
+      <div className="mx-auto max-w-[1360px] px-3">
         <Reveal>
           <h2 className="font-serif-hero text-3xl leading-snug text-ink sm:text-4xl">
             Là đối tác phát triển lãnh đạo và hiệu suất tổ chức, GCW giúp bạn:

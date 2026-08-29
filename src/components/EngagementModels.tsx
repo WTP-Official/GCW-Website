@@ -10,7 +10,7 @@ export function EngagementModels() {
   return (
     <>
       <section className="py-10 sm:py-12">
-        <div className="mx-auto max-w-6xl px-3">
+        <div className="mx-auto max-w-[1360px] px-3">
           <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.5fr)] lg:gap-16">
             <Reveal>
               <div className="relative hidden h-full min-h-[420px] w-full overflow-hidden rounded-xl lg:block">
@@ -60,7 +60,7 @@ export function EngagementModels() {
           </div>
         </div>
       </section>
-      <div className="mx-auto max-w-[1320px] px-3">
+      <div className="mx-auto max-w-[1360px] px-3">
         <span className="block h-px w-full bg-black" aria-hidden="true" />
       </div>
     </>

@@ -92,10 +92,10 @@ export function Footer() {
           <div className="max-w-4xl min-w-0 shrink-0">
             <div className="flex items-center gap-4">
               <Image
-                src="/GCW_Icon_Color_Transparent.png"
+                src="/uploads/GCW_Logo-Horizontal_White-Reverse_Transparent.png"
                 alt="GCW"
                 width={1182}
-                height={1182}
+                height={709}
                 className="h-[104px] w-auto shrink-0"
               />
               <div>

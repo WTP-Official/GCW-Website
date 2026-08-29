@@ -9,7 +9,7 @@ export function CaseStudies() {
   return (
     <>
       <section id="case-studies" className="scroll-mt-24 border-t border-black/5 py-10 sm:py-12">
-        <div className="mx-auto max-w-6xl px-3">
+        <div className="mx-auto max-w-[1360px] px-3">
           <Reveal>
             <h2 className="font-serif-hero text-3xl leading-snug text-ink sm:text-4xl">
               {caseStudies.heading}
@@ -39,7 +39,7 @@ export function CaseStudies() {
           </div>
         </div>
       </section>
-      <div className="mx-auto max-w-[1320px] px-3">
+      <div className="mx-auto max-w-[1360px] px-3">
         <span className="block h-px w-full bg-black" aria-hidden="true" />
       </div>
     </>
